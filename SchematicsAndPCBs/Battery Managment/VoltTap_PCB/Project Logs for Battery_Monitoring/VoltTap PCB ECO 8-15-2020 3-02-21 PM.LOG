@@ -1,0 +1,30 @@
+Change Component Designator: OldDesignator=F13 NewDesignator=F11
+Change Component Designator: OldDesignator=F15 NewDesignator=F12
+Change Component Designator: OldDesignator=F16 NewDesignator=F13
+Change Component Designator: OldDesignator=F17 NewDesignator=F14
+Change Component Designator: OldDesignator=F18 NewDesignator=F15
+Change Component Designator: OldDesignator=F19 NewDesignator=F16
+Change Component Designator: OldDesignator=F20 NewDesignator=F17
+Change Component Designator: OldDesignator=F21 NewDesignator=F18
+Change Component Designator: OldDesignator=F22 NewDesignator=F19
+Change Component Designator: OldDesignator=F24 NewDesignator=F20
+Change Net Name : Old Net Name=NetF13_1 New Net Name=NetF11_1
+Change Net Name : Old Net Name=NetF13_2 New Net Name=NetF11_2
+Change Net Name : Old Net Name=NetF15_1 New Net Name=NetF12_1
+Change Net Name : Old Net Name=NetF15_2 New Net Name=NetF12_2
+Change Net Name : Old Net Name=NetF16_1 New Net Name=NetF13_1
+Change Net Name : Old Net Name=NetF16_2 New Net Name=NetF13_2
+Change Net Name : Old Net Name=NetF17_1 New Net Name=NetF14_1
+Change Net Name : Old Net Name=NetF17_2 New Net Name=NetF14_2
+Change Net Name : Old Net Name=NetF18_1 New Net Name=NetF15_1
+Change Net Name : Old Net Name=NetF18_2 New Net Name=NetF15_2
+Change Net Name : Old Net Name=NetF19_1 New Net Name=NetF16_1
+Change Net Name : Old Net Name=NetF19_2 New Net Name=NetF16_2
+Change Net Name : Old Net Name=NetF20_1 New Net Name=NetF17_1
+Change Net Name : Old Net Name=NetF20_2 New Net Name=NetF17_2
+Change Net Name : Old Net Name=NetF21_1 New Net Name=NetF18_1
+Change Net Name : Old Net Name=NetF21_2 New Net Name=NetF18_2
+Change Net Name : Old Net Name=NetF22_1 New Net Name=NetF19_1
+Change Net Name : Old Net Name=NetF22_2 New Net Name=NetF19_2
+Change Net Name : Old Net Name=NetF24_1 New Net Name=NetF20_1
+Change Net Name : Old Net Name=NetF24_2 New Net Name=NetF20_2

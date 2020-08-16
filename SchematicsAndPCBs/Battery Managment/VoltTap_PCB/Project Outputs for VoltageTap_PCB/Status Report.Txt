@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [VoltageTap_PCB.PrjPcb]
+   Generated File[VoltTap.TXT]
+   Generated File[VoltTap.LDP]
+   Generated File[VoltTap.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:30:38 AM On 8/16/2020

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetF9_1 Pin=F9-1
+Removed Pin From Net: NetName=NetF9_1 Pin=J20-22
+Removed Member From Class: ClassName=VoltTap Member=F11
+Added Pin To Net: NetName=NetF9_1 Pin=F10-1
+Added Pin To Net: NetName=NetF9_1 Pin=J20-9
+Added Pin To Net: NetName=NetF9_1 Pin=J20-20
+Change Net Name : Old Net Name=NetF9_1 New Net Name=NetF10_1

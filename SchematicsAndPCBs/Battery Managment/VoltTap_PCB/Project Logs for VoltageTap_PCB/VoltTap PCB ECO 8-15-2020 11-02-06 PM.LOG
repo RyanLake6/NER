@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetF10_1 Pin=J20-9
+Added Component: Designator=F10(C1T5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/ProductDetail/Bel-Fuse/C1T5?qs=GtFly9OVs8%2FF1GxRAaUoTA%3D%3D#.Xzf8gWXWqWc.link"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF10_1 Pin=F9-1
+Added Pin To Net: NetName=NetF10_2 Pin=F10-2
+Added Pin To Net: NetName=NetF10_1 Pin=J20-22
+Change Net Name : Old Net Name=NetF10_1 New Net Name=NetF9_1
+Added Pin To Net: NetName=NetF10_1 Pin=F10-1
+Added Pin To Net: NetName=NetF10_1 Pin=J20-9
+Added Net: Name=NetF10_1
+Added Member To Class: ClassName=VoltTap Member=Component F10 C1T5

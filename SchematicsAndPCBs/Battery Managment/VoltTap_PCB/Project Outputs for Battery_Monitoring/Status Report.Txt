@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Battery_Monitoring.PrjPcb]
+   Generated File[VoltTap.TXT]
+   Generated File[VoltTap.LDP]
+   Generated File[VoltTap.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 6:28:06 PM On 8/15/2020
