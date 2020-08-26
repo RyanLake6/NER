@@ -1,0 +1,6 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=Therm_PCB\Therm_PCB.PrjPcb
+[Project2]
+ProjectPath=VoltTap_PCB\VoltageTap_PCB.PrjPcb

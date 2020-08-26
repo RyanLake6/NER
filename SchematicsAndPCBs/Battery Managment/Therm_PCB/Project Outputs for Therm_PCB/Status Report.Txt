@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Therm_PCB.PrjPcb]
+   Generated File[Therms.TXT]
+   Generated File[Therms.LDP]
+   Generated File[Therms.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:22:53 AM On 8/16/2020
