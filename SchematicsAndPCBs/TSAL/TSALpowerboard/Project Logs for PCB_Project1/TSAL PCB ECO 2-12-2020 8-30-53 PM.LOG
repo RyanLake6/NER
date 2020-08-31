@@ -1,0 +1,8 @@
+Change Component Description : Designator=C4 Old Description=Capacitors, Aluminum Electrolytic, Radial, Can, 1500µF, 25V New Description=Capacitors, Aluminum Electrolytic, Radial, Can, 1500µF, 25V 
+Change Component Description : Designator=C5 Old Description=Capacitors, Aluminum Electrolytic, Radial, Can, 1500µF, 25V New Description=Capacitors, Aluminum Electrolytic, Radial, Can, 1500µF, 25V 
+Added Component: Designator=J1(282837-2)
+Added Pin To Net: NetName=HV- Pin=J1-1
+Added Pin To Net: NetName=HV+ Pin=J1-2
+Added Member To Class: ClassName=TSAL Member=Component J1 282837-2
+Added Member To Class: ClassName=TSAL Member=Component R3 220
+Added Room: Name=TSAL

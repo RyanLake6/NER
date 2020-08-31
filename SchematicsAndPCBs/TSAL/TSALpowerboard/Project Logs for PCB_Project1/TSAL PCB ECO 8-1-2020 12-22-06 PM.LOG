@@ -1,0 +1,139 @@
+Added Component: Designator=C3(450BXW100MEFR18X30)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_BXW.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/rubycon/450BXW100MEFR18X30/1189-3221-ND/6050094"; VariantName = "[No Variations]"
+Added Component: Designator=C4(25ZLS1500MEFC12.5X20)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_zls.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/rubycon/25ZLS1500MEFC12.5X20/1189-2590-ND/4977137"; VariantName = "[No Variations]"
+Added Component: Designator=C5(25ZLS1500MEFC12.5X20)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_zls.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/rubycon/25ZLS1500MEFC12.5X20/1189-2590-ND/4977137"; VariantName = "[No Variations]"
+Added Component: Designator=C6(ESY827M025AH5AA)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://content.kemet.com/datasheets/KEM_A4007_ESY.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/kemet/ESY827M025AH5AA/399-6647-ND/3083062"; VariantName = "[No Variations]"
+Added Component: Designator=C7(DE2B3SA331KN3AY02F)
+Added Component: Designator=C8(DE2B3SA331KN3AY02F)
+Added Component: Designator=C9(C0603C105K3RACTU)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/kemet/C0603C105K3RACTU/399-7376-1-ND/3317410"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CKG57KX7T2W105K335JH)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_megacap_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/tdk-corporation/CKG57KX7T2W105K335JH/445-10489-1-ND/3932416"; VariantName = "[No Variations]"
+Added Component: Designator=D3(214AA)
+Added Component: Designator=F2(0477002.MXEP)
+Added Component: Designator=J1(282837-2)
+Added Component: Designator=J2(0430450412)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.molex.com/pdm_docs/sd/430450412_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/molex/0430450412/WM1790-ND/252503"; VariantName = "[No Variations]"
+Added Component: Designator=L1(1267AY2R2NP3)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundferritetypeforpl/m_dg8040c.ashx?la=en"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/murata-electronics/1267AY-2R2N=P3/490-10831-2-ND/5271472"; VariantName = "[No Variations]"
+Added Component: Designator=R4(Resistor 0603)
+Added Component: Designator=R5(Resistor 0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3EKF6041V/P6.04KHCT-ND/198452"; VariantName = "[No Variations]"
+Added Component: Designator=R10(Resistor 0603)
+Added Component: Designator=R20(Resistor 0603)
+Added Component: Designator=U3(BPM1234SJ)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/397/BPM1234SJ_1612EE-1272167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.mouser.com/ProductDetail/Tamura/BPM1234SJ?qs=JtOM4tvdyp3RA%2FViNUppcg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U4(TO-243AA(SOT-89-3))
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/268/20005399A-909415.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/microchip-technology/LR8N8-G/LR8N8-GCT-ND/4918747"; VariantName = "[No Variations]"
+Added Component: Designator=U5(SFH617A)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.vishay.com/docs/83740/sfh617a.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/SFH617A-2X017T/SFH617A-2X017TCT-ND/8556837"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=HV- Pin=C3-1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=12V- Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=12V- Pin=C5-1
+Added Pin To Net: NetName=NetC4_2 Pin=C5-2
+Added Pin To Net: NetName=12V- Pin=C6-1
+Added Pin To Net: NetName=12V+ Pin=C6-2
+Added Pin To Net: NetName=12V- Pin=C7-1
+Added Pin To Net: NetName=NetC3_2 Pin=C7-2
+Added Pin To Net: NetName=12V- Pin=C8-1
+Added Pin To Net: NetName=HV- Pin=C8-2
+Added Pin To Net: NetName=HV- Pin=C9-1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=HV- Pin=C10-1
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=HV+ Pin=D3-1
+Added Pin To Net: NetName=NetC10_2 Pin=D3-2
+Added Pin To Net: NetName=HV+ Pin=F2-1
+Added Pin To Net: NetName=NetC3_2 Pin=F2-2
+Added Pin To Net: NetName=HV- Pin=J1-1
+Added Pin To Net: NetName=HV+ Pin=J1-2
+Added Pin To Net: NetName=LedON Pin=J2-1
+Added Pin To Net: NetName=555out Pin=J2-2
+Added Pin To Net: NetName=12V+ Pin=J2-3
+Added Pin To Net: NetName=12V- Pin=J2-4
+Added Pin To Net: NetName=NetC4_2 Pin=L1-1
+Added Pin To Net: NetName=12V+ Pin=L1-2
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=HV- Pin=R4-2
+Added Pin To Net: NetName=NetC9_2 Pin=R5-1
+Added Pin To Net: NetName=NetR4_1 Pin=R5-2
+Added Pin To Net: NetName=NetC9_2 Pin=R10-1
+Added Pin To Net: NetName=NetR10_2 Pin=R10-2
+Added Pin To Net: NetName=NetR20_1 Pin=R20-1
+Added Pin To Net: NetName=LED- Pin=R20-2
+Added Pin To Net: NetName=NetC3_2 Pin=U3-1
+Added Pin To Net: NetName=HV- Pin=U3-3
+Added Pin To Net: NetName=12V- Pin=U3-8
+Added Pin To Net: NetName=12V- Pin=U3-9
+Added Pin To Net: NetName=12V- Pin=U3-10
+Added Pin To Net: NetName=12V- Pin=U3-11
+Added Pin To Net: NetName=NetC4_2 Pin=U3-12
+Added Pin To Net: NetName=NetC4_2 Pin=U3-13
+Added Pin To Net: NetName=12V+ Pin=U3-14
+Added Pin To Net: NetName=NetC10_2 Pin=U4-1
+Added Pin To Net: NetName=NetC9_2 Pin=U4-2
+Added Pin To Net: NetName=NetR4_1 Pin=U4-3
+Added Pin To Net: NetName=NetR10_2 Pin=U5-1
+Added Pin To Net: NetName=HV- Pin=U5-2
+Added Pin To Net: NetName=12V- Pin=U5-3
+Added Pin To Net: NetName=NetR20_1 Pin=U5-4
+Added Member To Class: ClassName=TSAL Member=Component C3 450V, 100uF
+Added Member To Class: ClassName=TSAL Member=Component C4 25V, 1500µF
+Added Member To Class: ClassName=TSAL Member=Component C5 25V, 1500µF
+Added Member To Class: ClassName=TSAL Member=Component C6 25V, 820µF
+Added Member To Class: ClassName=TSAL Member=Component C7 400V, 330pF
+Added Member To Class: ClassName=TSAL Member=Component C8 400V, 330pF
+Added Member To Class: ClassName=TSAL Member=Component C9 25V 1uF
+Added Member To Class: ClassName=TSAL Member=Component C10 450V 1uF
+Added Member To Class: ClassName=TSAL Member=Component D3 SMBJ5363B
+Added Member To Class: ClassName=TSAL Member=Component F2 0477002.MXEP, 1A, 400V
+Added Member To Class: ClassName=TSAL Member=Component J1 282837-2
+Added Member To Class: ClassName=TSAL Member=Component J2 0430450412
+Added Member To Class: ClassName=TSAL Member=Component L1 1267AY-2R2N=P3
+Added Member To Class: ClassName=TSAL Member=Component R4 18.2K
+Added Member To Class: ClassName=TSAL Member=Component R5 6.04K
+Added Member To Class: ClassName=TSAL Member=Component R10 220
+Added Member To Class: ClassName=TSAL Member=Component R20 120 ohm
+Added Member To Class: ClassName=TSAL Member=Component U3 BPM1234SJ
+Added Member To Class: ClassName=TSAL Member=Component U4 LR8N8-G
+Added Member To Class: ClassName=TSAL Member=Component U5 SFH617A
+Added Room: Name=TSAL
