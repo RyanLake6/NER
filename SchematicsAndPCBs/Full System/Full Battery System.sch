@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Full-Battery-System-rescue:TSM2500-FSAE_Components U?
-U 1 1 5DC5A085
-P 3100 1200
-F 0 "U?" H 3100 1200 50  0001 C CNN
-F 1 "TSM2500" H 3125 1223 50  0000 C CNN
-F 2 "" H 3100 1200 50  0001 C CNN
-F 3 "" H 3100 1200 50  0001 C CNN
-	1    3100 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Battery BT2
 U 1 1 5DC5D68C
 P 2750 3400
@@ -769,4 +758,15 @@ Wire Wire Line
 	1600 4700 1600 7450
 Wire Wire Line
 	1600 7450 2350 7450
+$Comp
+L NER:TSM2500 U?
+U 1 1 5F581E55
+P 3100 1200
+F 0 "U?" H 3100 1200 50  0001 C CNN
+F 1 "TSM2500" H 3125 1223 50  0000 C CNN
+F 2 "" H 3100 1200 50  0001 C CNN
+F 3 "" H 3100 1200 50  0001 C CNN
+	1    3100 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
