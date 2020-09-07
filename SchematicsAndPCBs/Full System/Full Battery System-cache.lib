@@ -159,11 +159,11 @@ X CAN_H 9 -450 -500 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Full-Battery-System-rescue_TSM2500-FSAE_Components
+# NER_TSM2500
 #
-DEF Full-Battery-System-rescue_TSM2500-FSAE_Components U 0 40 Y Y 1 F N
+DEF NER_TSM2500 U 0 40 Y Y 1 F N
 F0 "U" 0 0 50 H I C CNN
-F1 "Full-Battery-System-rescue_TSM2500-FSAE_Components" 0 0 50 H V C CNN
+F1 "NER_TSM2500" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

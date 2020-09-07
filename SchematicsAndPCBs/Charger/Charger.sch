@@ -57,17 +57,6 @@ F 3 "~" H 1550 2500 50  0001 C CNN
 	1    1550 2500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Charger-rescue:TSM2500-FSAE_Components U?
-U 1 1 5D991285
-P 4700 1700
-F 0 "U?" H 4700 1700 50  0001 C CNN
-F 1 "TSM2500" H 4750 1733 50  0000 C CNN
-F 2 "" H 4700 1700 50  0001 C CNN
-F 3 "http://www.thunderstruck-ev.com/images/ThunderStruck%20TSM2500%20ManualV1.05.pdf" H 4700 1700 50  0001 C CNN
-	1    4700 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 2300 3000 2300
 Wire Wire Line
@@ -152,9 +141,20 @@ Accumulator+
 Text Label 6450 2000 0    50   ~ 0
 Accumulator-
 Wire Wire Line
-	1450 1850 4100 1850
-Wire Wire Line
 	3000 2100 3000 2300
 Wire Wire Line
 	3200 2250 3200 2500
+Wire Wire Line
+	1450 1850 4100 1850
+$Comp
+L NER:TSM2500 U?
+U 1 1 5F55A277
+P 4700 1700
+F 0 "U?" H 4700 1700 50  0001 C CNN
+F 1 "TSM2500" H 4725 1723 50  0000 C CNN
+F 2 "" H 4700 1700 50  0001 C CNN
+F 3 "" H 4700 1700 50  0001 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
