@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Shutdown-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -85,7 +84,7 @@ F 3 "~" H 1800 4800 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L FSAE_Components:3PoleSwitchingRelay K1
+L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K1
 U 1 1 5DDDA065
 P 3900 1350
 F 0 "K1" H 3900 1465 50  0000 C CNN
@@ -201,7 +200,7 @@ IMDErrorIndicator
 Text Label 4200 3150 3    39   ~ 0
 IMDErrorIndicator
 $Comp
-L FSAE_Components:3PoleSwitchingRelay K2
+L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K2
 U 1 1 5DE0D324
 P 6700 1350
 F 0 "K2" H 6700 1465 50  0000 C CNN

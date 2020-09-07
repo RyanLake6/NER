@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Shutdown Circuit"
-Date "2020-05-07"
+Date "2020-09-06"
 Rev "4"
 Comp "Northeastern FSAE"
 Comment1 "Matthew McCauley"
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR?
+L Shutdown-rescue:GND-power #PWR?
 U 1 1 5D954484
 P 1800 6400
 F 0 "#PWR?" H 1800 6150 50  0001 C CNN
@@ -27,7 +27,7 @@ $EndComp
 Wire Wire Line
 	1800 6100 1800 6250
 $Comp
-L Device:Battery_Cell BT1
+L Shutdown-rescue:Battery_Cell-Device BT1
 U 1 1 5DDBD933
 P 1800 6000
 F 0 "BT1" H 1918 6096 50  0000 L CNN
@@ -40,7 +40,7 @@ $EndComp
 Wire Wire Line
 	1800 5800 1800 5550
 $Comp
-L Device:Fuse F1
+L Shutdown-rescue:Fuse-Device F1
 U 1 1 5DDBF689
 P 1800 5400
 F 0 "F1" H 1860 5446 50  0000 L CNN
@@ -51,7 +51,7 @@ F 3 "~" H 1800 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_Open SW2
+L Shutdown-rescue:SW_Push_Open-Switch SW2
 U 1 1 5DDC9C70
 P 1800 4150
 F 0 "SW2" V 1846 4098 50  0000 R CNN
@@ -62,7 +62,7 @@ F 3 "~" H 1800 4350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_Push_Open SW3
+L Shutdown-rescue:SW_Push_Open-Switch SW3
 U 1 1 5DDCB505
 P 1800 3400
 F 0 "SW3" V 1846 3348 50  0000 R CNN
@@ -73,7 +73,7 @@ F 3 "~" H 1800 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST SW1
+L Shutdown-rescue:SW_SPST-Switch SW1
 U 1 1 5DDCF9C3
 P 1800 4800
 F 0 "SW1" V 1846 4898 50  0000 L CNN
@@ -95,7 +95,7 @@ F 3 "" H 3900 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW5
+L Shutdown-rescue:SW_Push-Switch SW5
 U 1 1 5DDDF7AD
 P 3050 1550
 F 0 "SW5" H 3050 1835 50  0000 C CNN
@@ -120,7 +120,7 @@ Wire Wire Line
 	3350 1550 3450 1550
 Connection ~ 3350 1550
 $Comp
-L Diode:1N4001 D1
+L Shutdown-rescue:1N4001-Diode D1
 U 1 1 5DDE3BD5
 P 3900 1100
 F 0 "D1" H 3900 1316 50  0000 C CNN
@@ -149,7 +149,7 @@ Wire Wire Line
 	4450 1100 4450 1050
 Connection ~ 4450 1100
 $Comp
-L power:GND #PWR?
+L Shutdown-rescue:GND-power #PWR?
 U 1 1 5DDEE3D1
 P 4450 1050
 F 0 "#PWR?" H 4450 800 50  0001 C CNN
@@ -211,7 +211,7 @@ F 3 "" H 6700 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW6
+L Shutdown-rescue:SW_Push-Switch SW6
 U 1 1 5DE0D32A
 P 5850 1550
 F 0 "SW6" H 5850 1835 50  0000 C CNN
@@ -236,7 +236,7 @@ Wire Wire Line
 	6150 1550 6250 1550
 Connection ~ 6150 1550
 $Comp
-L Diode:1N4001 D2
+L Shutdown-rescue:1N4001-Diode D2
 U 1 1 5DE0D338
 P 6700 1100
 F 0 "D2" H 6700 1316 50  0000 C CNN
@@ -265,7 +265,7 @@ Wire Wire Line
 	7250 1100 7250 1050
 Connection ~ 7250 1100
 $Comp
-L power:GND #PWR?
+L Shutdown-rescue:GND-power #PWR?
 U 1 1 5DE0D348
 P 7250 1050
 F 0 "#PWR?" H 7250 800 50  0001 C CNN
@@ -314,7 +314,7 @@ BMSErrorIndicator
 Wire Wire Line
 	4700 2200 6250 2200
 $Comp
-L Device:LED D3
+L Shutdown-rescue:LED-Device D3
 U 1 1 5DE1D84D
 P 8300 1650
 F 0 "D3" H 8293 1395 50  0000 C CNN
@@ -325,7 +325,7 @@ F 3 "~" H 8300 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D4
+L Shutdown-rescue:LED-Device D4
 U 1 1 5DE1EC2E
 P 8300 2050
 F 0 "D4" H 8293 1795 50  0000 C CNN
@@ -354,7 +354,7 @@ Wire Wire Line
 	8650 1650 8800 1650
 Connection ~ 8650 1650
 $Comp
-L power:GND #PWR?
+L Shutdown-rescue:GND-power #PWR?
 U 1 1 5DE25ACA
 P 8800 1650
 F 0 "#PWR?" H 8800 1400 50  0001 C CNN
@@ -367,7 +367,7 @@ $EndComp
 Wire Wire Line
 	9000 2300 9000 2600
 $Comp
-L Switch:SW_Push_Open SW7
+L Shutdown-rescue:SW_Push_Open-Switch SW7
 U 1 1 5DE273AC
 P 9000 2800
 F 0 "SW7" V 9046 2747 50  0000 R CNN
@@ -378,7 +378,7 @@ F 3 "~" H 9000 3000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST SW8
+L Shutdown-rescue:SW_SPST-Switch SW8
 U 1 1 5DE2B1DC
 P 9000 3750
 F 0 "SW8" V 8954 3848 50  0000 L CNN
@@ -393,7 +393,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 5000 1800 5250
 $Comp
-L Relay:G5Q-1 K3
+L Shutdown-rescue:G5Q-1-Relay K3
 U 1 1 5DE3787E
 P 6100 4750
 F 0 "K3" V 5533 4750 50  0000 C CNN
@@ -404,7 +404,7 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 6750 4600 50  0001 L C
 	0    -1   1    0   
 $EndComp
 $Comp
-L Relay:G5Q-1A K4
+L Shutdown-rescue:G5Q-1A-Relay K4
 U 1 1 5DE3DEF2
 P 4650 4400
 F 0 "K4" V 5117 4400 50  0000 C CNN
@@ -415,7 +415,7 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 5750 4100 50  0001 C C
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Relay:G5Q-1A K5
+L Shutdown-rescue:G5Q-1A-Relay K5
 U 1 1 5DE454B3
 P 4650 5450
 F 0 "K5" V 4083 5450 50  0000 C CNN
@@ -447,7 +447,7 @@ Wire Wire Line
 	4100 5250 4100 4600
 Connection ~ 4100 4600
 $Comp
-L Relay:G5Q-1A K6
+L Shutdown-rescue:G5Q-1A-Relay K6
 U 1 1 5DE60F11
 P 4650 6350
 F 0 "K6" V 5117 6350 50  0000 C CNN
@@ -470,7 +470,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 6150 5150 6100
 $Comp
-L Device:Battery BT2
+L Shutdown-rescue:Battery-Device BT2
 U 1 1 5DE6CF19
 P 5150 5900
 F 0 "BT2" H 5258 5946 50  0000 L CNN
@@ -530,7 +530,7 @@ Wire Wire Line
 Text Label 9400 4950 0    50   ~ 0
 LatchingStartStopController
 $Comp
-L Relay:MSxx-1Bxx-75 K7
+L Shutdown-rescue:MSxx-1Bxx-75-Relay K7
 U 1 1 5E4F9AAA
 P 3900 7150
 F 0 "K7" H 3470 7104 50  0000 R CNN
@@ -553,7 +553,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 7600 3300 7600
 $Comp
-L Device:R R2
+L Shutdown-rescue:R-Device R2
 U 1 1 5E50BD90
 P 3300 6550
 F 0 "R2" H 3370 6596 50  0000 L CNN
@@ -580,7 +580,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 4200 4350 4200
 $Comp
-L Device:R R1
+L Shutdown-rescue:R-Device R1
 U 1 1 5E53702E
 P 3500 5050
 F 0 "R1" H 3570 5096 50  0000 L CNN
@@ -623,7 +623,7 @@ Connection ~ 9000 4950
 Wire Wire Line
 	9000 4950 9400 4950
 $Comp
-L Device:Fuse F2
+L Shutdown-rescue:Fuse-Device F2
 U 1 1 5EB9BA99
 P 1400 3050
 F 0 "F2" V 1203 3050 50  0000 C CNN
@@ -634,7 +634,7 @@ F 3 "~" H 1400 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F3
+L Shutdown-rescue:Fuse-Device F3
 U 1 1 5EBD6006
 P 1400 3350
 F 0 "F3" V 1203 3350 50  0000 C CNN
@@ -662,7 +662,7 @@ Wire Notes Line
 Text Notes 1600 4750 2    28   ~ 0
 Fusebox for \nGLV Instruments
 $Comp
-L Device:Fuse F4
+L Shutdown-rescue:Fuse-Device F4
 U 1 1 5EC4170A
 P 1400 3650
 F 0 "F4" V 1203 3650 50  0000 C CNN
@@ -673,7 +673,7 @@ F 3 "~" H 1400 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F5
+L Shutdown-rescue:Fuse-Device F5
 U 1 1 5EC41710
 P 1400 3950
 F 0 "F5" V 1203 3950 50  0000 C CNN
@@ -684,7 +684,7 @@ F 3 "~" H 1400 3950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F6
+L Shutdown-rescue:Fuse-Device F6
 U 1 1 5EC4B84C
 P 1400 4250
 F 0 "F6" V 1203 4250 50  0000 C CNN
@@ -695,7 +695,7 @@ F 3 "~" H 1400 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F7
+L Shutdown-rescue:Fuse-Device F7
 U 1 1 5EC4B852
 P 1400 4550
 F 0 "F7" V 1203 4550 50  0000 C CNN
@@ -761,7 +761,7 @@ Wire Wire Line
 Wire Notes Line
 	1650 2500 1200 2500
 $Comp
-L Device:Fuse F8
+L Shutdown-rescue:Fuse-Device F8
 U 1 1 5EB64294
 P 1400 2750
 F 0 "F8" V 1203 2750 50  0000 C CNN
@@ -780,7 +780,7 @@ Wire Wire Line
 Wire Wire Line
 	950  2750 950  2200
 $Comp
-L Switch:SW_SPST SW4
+L Shutdown-rescue:SW_SPST-Switch SW4
 U 1 1 5EB81F74
 P 1400 2200
 F 0 "SW4" H 1400 2435 50  0000 C CNN
