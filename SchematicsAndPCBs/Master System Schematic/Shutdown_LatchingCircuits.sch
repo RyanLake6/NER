@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -126,9 +127,11 @@ F 3 "~" H 6500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K2
+L NER:3PoleSwitchingRelay K2
 U 1 1 5DE0D324
 P 7350 2500
+AR Path="/5DE0D324" Ref="K2"  Part="1" 
+AR Path="/5F45AFB3/5DE0D324" Ref="K2"  Part="1" 
 F 0 "K2" H 7350 2615 50  0000 C CNN
 F 1 "3PoleSwitchingRelay" H 7350 2524 50  0000 C CNN
 F 2 "" H 7350 2500 50  0001 C CNN
@@ -213,9 +216,11 @@ F 3 "~" H 3300 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K1
+L NER:3PoleSwitchingRelay K1
 U 1 1 5DDDA065
 P 4150 2400
+AR Path="/5DDDA065" Ref="K1"  Part="1" 
+AR Path="/5F45AFB3/5DDDA065" Ref="K1"  Part="1" 
 F 0 "K1" H 4150 2515 50  0000 C CNN
 F 1 "3PoleSwitchingRelay" H 4150 2424 50  0000 C CNN
 F 2 "" H 4150 2400 50  0001 C CNN
