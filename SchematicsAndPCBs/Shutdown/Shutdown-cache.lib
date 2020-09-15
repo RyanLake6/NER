@@ -41,30 +41,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Shutdown-rescue_1N4001-Diode
+# NER_3PoleSwitchingRelay
 #
-DEF Shutdown-rescue_1N4001-Diode D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Shutdown-rescue_1N4001-Diode" 0 -100 50 H V C CNN
-F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- D*DO?41*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Shutdown-rescue_3PoleSwitchingRelay-FSAE_Components
-#
-DEF Shutdown-rescue_3PoleSwitchingRelay-FSAE_Components K 0 40 Y Y 1 F N
+DEF NER_3PoleSwitchingRelay K 0 40 Y Y 1 F N
 F0 "K" 0 0 50 H V C CNN
-F1 "Shutdown-rescue_3PoleSwitchingRelay-FSAE_Components" 0 0 50 H V C CNN
+F1 "NER_3PoleSwitchingRelay" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -106,6 +87,25 @@ X ~ 6 -450 -850 100 R 50 50 1 1 P
 X ~ 7 450 -750 100 L 50 50 1 1 P
 X ~ 8 450 -950 100 L 50 50 1 1 P
 X ~ 9 -450 -1200 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Shutdown-rescue_1N4001-Diode
+#
+DEF Shutdown-rescue_1N4001-Diode D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Shutdown-rescue_1N4001-Diode" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

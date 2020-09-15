@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Shutdown-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -167,7 +168,7 @@ Wire Notes Line
 Text Notes 3650 750  2    39   ~ 0
 Active-High Output Relay Latch
 $Comp
-L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K2
+L NER:3PoleSwitchingRelay K2
 U 1 1 5DE0D324
 P 6700 1350
 F 0 "K2" H 6700 1465 50  0000 C CNN
@@ -754,10 +755,10 @@ F 3 "" H 5050 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D5
 U 1 1 5F5FAA05
 P 5050 2600
-F 0 "D?" V 5100 2400 50  0000 C CNN
+F 0 "D5" V 5100 2400 50  0000 C CNN
 F 1 "LED" V 5000 2400 50  0000 C CNN
 F 2 "" H 5050 2600 50  0001 C CNN
 F 3 "~" H 5050 2600 50  0001 C CNN
@@ -770,7 +771,7 @@ Wire Wire Line
 	3450 2200 3550 2200
 Connection ~ 3450 2200
 $Comp
-L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K1
+L NER:3PoleSwitchingRelay K1
 U 1 1 5DDDA065
 P 3900 1350
 F 0 "K1" H 3900 1465 50  0000 C CNN
@@ -794,10 +795,10 @@ F 3 "" H 7850 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D6
 U 1 1 5F6CFD4F
 P 7850 2650
-F 0 "D?" V 7900 2450 50  0000 C CNN
+F 0 "D6" V 7900 2450 50  0000 C CNN
 F 1 "LED" V 7800 2450 50  0000 C CNN
 F 2 "" H 7850 2650 50  0001 C CNN
 F 3 "~" H 7850 2650 50  0001 C CNN
@@ -807,10 +808,10 @@ $EndComp
 Wire Wire Line
 	6100 2550 6100 3150
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 5F718C39
 P 4650 2450
-F 0 "R?" V 4550 2450 50  0000 C CNN
+F 0 "R3" V 4550 2450 50  0000 C CNN
 F 1 "500" V 4450 2450 50  0000 C CNN
 F 2 "" V 4580 2450 50  0001 C CNN
 F 3 "~" H 4650 2450 50  0001 C CNN
@@ -824,10 +825,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 2450 5050 2450
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5F73B323
 P 7400 2450
-F 0 "R?" V 7300 2450 50  0000 C CNN
+F 0 "R4" V 7300 2450 50  0000 C CNN
 F 1 "500" V 7200 2450 50  0000 C CNN
 F 2 "" V 7330 2450 50  0001 C CNN
 F 3 "~" H 7400 2450 50  0001 C CNN
