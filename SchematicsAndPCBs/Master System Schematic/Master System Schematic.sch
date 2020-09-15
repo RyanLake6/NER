@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -359,7 +360,7 @@ $EndComp
 Wire Wire Line
 	4300 2200 4450 2200
 $Comp
-L NER_MASTERSYS_PART_LIBRARY:Emrax228HV_Motor U?
+L NER:Emrax228HV_Motor U?
 U 1 1 5F972C2B
 P 10650 5800
 F 0 "U?" H 10600 5950 50  0000 L CNN
@@ -370,7 +371,7 @@ F 3 "" H 10650 5800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L NER_MASTERSYS_PART_LIBRARY:RinehartPM100DX_MotorController U?
+L NER:RinehartPM100DX_MotorController U?
 U 1 1 5F97D518
 P 10100 5500
 F 0 "U?" H 10100 5665 50  0000 C CNN
@@ -381,7 +382,7 @@ F 3 "" H 10100 5500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L NER_MASTERSYS_PART_LIBRARY:Bender_Isometer_IR155-3204 U?
+L NER:Bender_Isometer_IR155-3204 U?
 U 1 1 5F94A015
 P 4100 3650
 F 0 "U?" H 4100 3765 50  0000 C CNN
@@ -532,23 +533,6 @@ Wire Wire Line
 	3350 4350 3250 4350
 Wire Wire Line
 	3250 4350 3250 4000
-$Comp
-L Device:LED D?
-U 1 1 605F9012
-P 2400 6100
-F 0 "D?" H 2400 5850 50  0000 C CNN
-F 1 "TRACTIVE SYSTEM ACTIVE LAMP" H 2400 5950 50  0000 C CNN
-F 2 "" H 2400 6100 50  0001 C CNN
-F 3 "~" H 2400 6100 50  0001 C CNN
-	1    2400 6100
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2550 6100 3200 6100
-Wire Wire Line
-	2250 6100 2200 6100
-Wire Wire Line
-	2200 6100 2200 6200
 Wire Bus Line
 	4950 6800 5050 6800
 Wire Bus Line
@@ -618,10 +602,10 @@ Wire Bus Line
 	5050 6150 6300 6150
 Connection ~ 5050 6150
 $Comp
-L Full-Battery-System-rescue:OrionBMS2-FSAE_Components U?
+L NER:OrionBMS2 U1
 U 1 1 606C5173
 P 7450 3400
-F 0 "U?" H 7450 700 50  0000 C CNN
+F 0 "U1" H 7450 700 50  0000 C CNN
 F 1 "OrionBMS2" H 7450 600 50  0000 C CNN
 F 2 "" H 7450 3400 50  0001 C CNN
 F 3 "" H 7450 3400 50  0001 C CNN
@@ -639,7 +623,7 @@ Wire Bus Line
 Wire Bus Line
 	6300 4100 6300 5000
 $Comp
-L Full-Battery-System-rescue:OrionCurrentSens-FSAE_Components U?
+L NER:OrionCurrentSens U?
 U 1 1 6111F589
 P 5900 7700
 F 0 "U?" H 5900 7700 50  0000 C CNN
@@ -1009,8 +993,6 @@ Wire Wire Line
 	4950 5700 5450 5700
 Wire Wire Line
 	1450 850  1450 2900
-Wire Wire Line
-	2200 6200 3200 6200
 Wire Notes Line
 	8800 1950 10950 1950
 Wire Notes Line
@@ -1021,4 +1003,27 @@ Wire Notes Line
 	8800 1000 8800 1950
 Text Notes 8800 1000 0    50   ~ 0
 RTDS & LATCHING START
+$Comp
+L NER:TSAL U?
+U 1 1 5F652630
+P 2450 5950
+F 0 "U?" H 2342 6075 50  0000 C CNN
+F 1 "TSAL" H 2342 5984 50  0000 C CNN
+F 2 "" H 2450 5950 50  0001 C CNN
+F 3 "" H 2450 5950 50  0001 C CNN
+	1    2450 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6100 2900 6100
+Wire Wire Line
+	2900 6100 2900 6050
+Wire Wire Line
+	2900 6050 2750 6050
+Wire Wire Line
+	2750 6250 2900 6250
+Wire Wire Line
+	2900 6250 2900 6200
+Wire Wire Line
+	2900 6200 3200 6200
 $EndSCHEMATC

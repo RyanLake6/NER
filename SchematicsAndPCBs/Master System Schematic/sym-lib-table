@@ -1,7 +1,3 @@
 (sym_lib_table
-  (lib (name TSV-rescue)(type Legacy)(uri "C:/Users/dylan/Documents/GitHub/NER/SchematicsAndPCBs/Tractive System/TSV-rescue.lib")(options "")(descr ""))
-  (lib (name Shutdown-rescue)(type Legacy)(uri C:/Users/dylan/Documents/GitHub/NER/SchematicsAndPCBs/Shutdown/Shutdown-rescue.lib)(options "")(descr ""))
   (lib (name NER_MASTERSYS_PART_LIBRARY)(type Legacy)(uri ${KIPRJMOD}/NER_MASTERSYS_PART_LIBRARY.lib)(options "")(descr ""))
-  (lib (name Full-Battery-System-rescue)(type Legacy)(uri "C:/Users/dylan/Documents/GitHub/NER/SchematicsAndPCBs/Full System/Full Battery System-rescue.lib")(options "")(descr ""))
-  (lib (name Charger-rescue)(type Legacy)(uri C:/Users/dylan/Documents/GitHub/NER/SchematicsAndPCBs/Charger/Charger-rescue.lib)(options "")(descr ""))
 )

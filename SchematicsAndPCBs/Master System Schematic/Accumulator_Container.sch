@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TSV-rescue:TSAL_ISOLATION-FSAE-TSV-shematic-rescue U1
+L NER:TSAL_ISOLATION U1
 U 1 1 5E5145FA
 P 9900 5450
+AR Path="/5E5145FA" Ref="U1"  Part="1" 
+AR Path="/5F45B05E/5E5145FA" Ref="U1"  Part="1" 
 F 0 "U1" H 9925 5565 50  0000 C CNN
 F 1 "TSAL_ISOLATION" H 9900 5500 50  0000 C CNN
 F 2 "" H 9900 5450 50  0001 C CNN
