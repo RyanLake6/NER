@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=HV- Pin=C1-1
+Removed Pin From Net: NetName=HV- Pin=C2-1
+Removed Pin From Net: NetName=HV+ Pin=F1-1
+Removed Pin From Net: NetName=HV- Pin=R2-2
+Removed Pin From Net: NetName=12V- Pin=R7-2
+Removed Pin From Net: NetName=HV- Pin=U2-2
+Removed Pin From Net: NetName=LedON Pin=U2-3
+Removed Pin From Net: NetName=555out Pin=U2-4
+Removed Pin From Net: NetName=LED- Pin=U5-4
+Removed Member From Class: ClassName=TSAL Member=C1
+Removed Member From Class: ClassName=TSAL Member=C2
+Removed Member From Class: ClassName=TSAL Member=D1
+Removed Member From Class: ClassName=TSAL Member=F1
+Removed Member From Class: ClassName=TSAL Member=R1
+Removed Member From Class: ClassName=TSAL Member=R2
+Removed Member From Class: ClassName=TSAL Member=R3
+Removed Member From Class: ClassName=TSAL Member=R7
+Removed Member From Class: ClassName=TSAL Member=U1
+Removed Member From Class: ClassName=TSAL Member=U2
+Change Component Comment : Designator=F2 Old Comment=0477002.MXEP, 2A, 400V New Comment=0477002.MXEP, 1A, 400V
+Added Component: Designator=R20(Resistor 0603)
+Added Pin To Net: NetName=LED- Pin=R20-2
+Added Pin To Net: NetName=12V- Pin=U5-3
+Added Pin To Net: NetName=NetR20_1 Pin=R20-1
+Added Pin To Net: NetName=NetR20_1 Pin=U5-4
+Added Net: Name=NetR20_1
+Added Member To Class: ClassName=TSAL Member=Component R20 120 ohm
+Added Room: Name=TSAL
