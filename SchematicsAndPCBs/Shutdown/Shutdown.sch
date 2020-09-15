@@ -84,25 +84,14 @@ F 3 "~" H 1800 4800 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K1
-U 1 1 5DDDA065
-P 3900 1350
-F 0 "K1" H 3900 1465 50  0000 C CNN
-F 1 "3PoleSwitchingRelay" H 3900 1374 50  0000 C CNN
-F 2 "" H 3900 1350 50  0001 C CNN
-F 3 "" H 3900 1350 50  0001 C CNN
-	1    3900 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Shutdown-rescue:SW_Push-Switch SW5
 U 1 1 5DDDF7AD
-P 3050 1550
-F 0 "SW5" H 3050 1835 50  0000 C CNN
-F 1 "IMBReset" H 3050 1744 50  0000 C CNN
-F 2 "" H 3050 1750 50  0001 C CNN
-F 3 "~" H 3050 1750 50  0001 C CNN
-	1    3050 1550
+P 2150 1000
+F 0 "SW5" H 2150 1285 50  0000 C CNN
+F 1 "IMBReset" H 2150 1194 50  0000 C CNN
+F 2 "" H 2150 1200 50  0001 C CNN
+F 3 "~" H 2150 1200 50  0001 C CNN
+	1    2150 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -160,25 +149,7 @@ F 3 "" H 4450 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4350 2300 4700 2300
-Wire Wire Line
 	4700 2300 4700 2200
-Wire Wire Line
-	4350 2450 4650 2450
-Wire Wire Line
-	4650 2450 4650 2950
-Wire Wire Line
-	3450 2550 3300 2550
-Wire Wire Line
-	3300 2550 3300 2950
-Wire Wire Line
-	3300 2950 4100 2950
-Wire Wire Line
-	4100 2950 4100 3150
-Wire Wire Line
-	4650 2950 4200 2950
-Wire Wire Line
-	4200 2950 4200 3150
 Text Label 2500 1550 2    50   ~ 0
 IMDOutput
 Wire Wire Line
@@ -195,10 +166,6 @@ Wire Notes Line
 	4850 650  2650 650 
 Text Notes 3650 750  2    39   ~ 0
 Active-High Output Relay Latch
-Text Label 4100 3150 3    39   ~ 0
-IMDErrorIndicator
-Text Label 4200 3150 3    39   ~ 0
-IMDErrorIndicator
 $Comp
 L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K2
 U 1 1 5DE0D324
@@ -213,12 +180,12 @@ $EndComp
 $Comp
 L Shutdown-rescue:SW_Push-Switch SW6
 U 1 1 5DE0D32A
-P 5850 1550
-F 0 "SW6" H 5850 1835 50  0000 C CNN
-F 1 "BLSReset" H 5850 1744 50  0000 C CNN
-F 2 "" H 5850 1750 50  0001 C CNN
-F 3 "~" H 5850 1750 50  0001 C CNN
-	1    5850 1550
+P 5150 950
+F 0 "SW6" H 5150 1235 50  0000 C CNN
+F 1 "BLSReset" H 5150 1144 50  0000 C CNN
+F 2 "" H 5150 1150 50  0001 C CNN
+F 3 "~" H 5150 1150 50  0001 C CNN
+	1    5150 950 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -276,21 +243,7 @@ F 3 "" H 7250 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7150 2450 7450 2450
-Wire Wire Line
-	7450 2450 7450 2950
-Wire Wire Line
 	6250 2550 6100 2550
-Wire Wire Line
-	6100 2550 6100 2950
-Wire Wire Line
-	6100 2950 6900 2950
-Wire Wire Line
-	6900 2950 6900 3150
-Wire Wire Line
-	7450 2950 7000 2950
-Wire Wire Line
-	7000 2950 7000 3150
 Text Label 5300 1550 2    50   ~ 0
 BMSOutput
 Wire Wire Line
@@ -307,10 +260,6 @@ Wire Notes Line
 	7650 650  5450 650 
 Text Notes 6450 750  2    39   ~ 0
 Active-High Output Relay Latch
-Text Label 6900 3150 3    39   ~ 0
-BMSErrorIndicator
-Text Label 7000 3150 3    39   ~ 0
-BMSErrorIndicator
 Wire Wire Line
 	4700 2200 6250 2200
 $Comp
@@ -513,8 +462,6 @@ TS-
 Connection ~ 1800 6250
 Wire Wire Line
 	1800 6250 1800 6400
-Wire Wire Line
-	1800 3050 1800 3200
 Text Label 1050 4950 3    39   ~ 0
 IMD
 Wire Wire Line
@@ -755,9 +702,6 @@ Wire Wire Line
 	1150 4550 1250 4550
 Wire Wire Line
 	2450 6250 1800 6250
-Connection ~ 3450 2200
-Wire Wire Line
-	3450 2200 3550 2200
 Wire Notes Line
 	1650 2500 1200 2500
 $Comp
@@ -778,7 +722,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 2750 950  2750
 Wire Wire Line
-	950  2750 950  2200
+	950  2750 950  2400
 $Comp
 L Shutdown-rescue:SW_SPST-Switch SW4
 U 1 1 5EB81F74
@@ -791,8 +735,6 @@ F 3 "~" H 1400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 2200 3450 2200
-Wire Wire Line
 	1200 2200 950  2200
 Wire Notes Line
 	1650 2500 1650 4800
@@ -800,4 +742,140 @@ Wire Notes Line
 	1200 2500 1200 4800
 Wire Wire Line
 	1800 3600 1800 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5F5F2D04
+P 5050 2850
+F 0 "#PWR?" H 5050 2600 50  0001 C CNN
+F 1 "GND" H 5055 2677 50  0000 C CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F5FAA05
+P 5050 2600
+F 0 "D?" V 5100 2400 50  0000 C CNN
+F 1 "LED" V 5000 2400 50  0000 C CNN
+F 2 "" H 5050 2600 50  0001 C CNN
+F 3 "~" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 2200 3450 2200
+Wire Wire Line
+	3450 2200 3550 2200
+Connection ~ 3450 2200
+$Comp
+L Shutdown-rescue:3PoleSwitchingRelay-FSAE_Components K1
+U 1 1 5DDDA065
+P 3900 1350
+F 0 "K1" H 3900 1465 50  0000 C CNN
+F 1 "3PoleSwitchingRelay" H 3900 1374 50  0000 C CNN
+F 2 "" H 3900 1350 50  0001 C CNN
+F 3 "" H 3900 1350 50  0001 C CNN
+	1    3900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2750 5050 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CFD49
+P 7850 2900
+F 0 "#PWR?" H 7850 2650 50  0001 C CNN
+F 1 "GND" H 7855 2727 50  0000 C CNN
+F 2 "" H 7850 2900 50  0001 C CNN
+F 3 "" H 7850 2900 50  0001 C CNN
+	1    7850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F6CFD4F
+P 7850 2650
+F 0 "D?" V 7900 2450 50  0000 C CNN
+F 1 "LED" V 7800 2450 50  0000 C CNN
+F 2 "" H 7850 2650 50  0001 C CNN
+F 3 "~" H 7850 2650 50  0001 C CNN
+	1    7850 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 2550 6100 3150
+$Comp
+L Device:R R?
+U 1 1 5F718C39
+P 4650 2450
+F 0 "R?" V 4550 2450 50  0000 C CNN
+F 1 "500" V 4450 2450 50  0000 C CNN
+F 2 "" V 4580 2450 50  0001 C CNN
+F 3 "~" H 4650 2450 50  0001 C CNN
+	1    4650 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 2300 4700 2300
+Wire Wire Line
+	4500 2450 4350 2450
+Wire Wire Line
+	4800 2450 5050 2450
+$Comp
+L Device:R R?
+U 1 1 5F73B323
+P 7400 2450
+F 0 "R?" V 7300 2450 50  0000 C CNN
+F 1 "500" V 7200 2450 50  0000 C CNN
+F 2 "" V 7330 2450 50  0001 C CNN
+F 3 "~" H 7400 2450 50  0001 C CNN
+	1    7400 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 2450 7850 2450
+Wire Wire Line
+	7850 2500 7850 2450
+Wire Wire Line
+	7250 2450 7150 2450
+Wire Wire Line
+	7850 2800 7850 2900
+Wire Wire Line
+	1800 3050 1800 3200
+Connection ~ 950  2400
+Wire Wire Line
+	950  2400 950  2200
+Wire Wire Line
+	3150 2400 3150 2550
+Wire Wire Line
+	3150 2550 3450 2550
+Wire Wire Line
+	950  2400 3150 2400
+Wire Wire Line
+	3150 2550 3150 3150
+Wire Wire Line
+	3150 3150 6100 3150
+Connection ~ 3150 2550
+Wire Wire Line
+	4950 950  4950 1200
+Wire Wire Line
+	4950 1200 5650 1200
+Wire Wire Line
+	5650 1200 5650 1550
+Wire Wire Line
+	5350 950  6050 950 
+Wire Wire Line
+	6050 950  6050 1550
+Wire Wire Line
+	1950 1000 1950 1150
+Wire Wire Line
+	1950 1150 2850 1150
+Wire Wire Line
+	2850 1150 2850 1550
+Wire Wire Line
+	3250 1550 3250 1000
+Wire Wire Line
+	3250 1000 2350 1000
 $EndSCHEMATC
