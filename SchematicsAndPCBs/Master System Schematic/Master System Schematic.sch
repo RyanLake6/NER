@@ -2,12 +2,12 @@ EESchema Schematic File Version 4
 LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-08-25"
-Rev "1"
+Date "2020-09-17"
+Rev "2"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""

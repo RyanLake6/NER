@@ -6,9 +6,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
 Title ""
-Date ""
-Rev ""
-Comp ""
+Date "2020-09-17"
+Rev "2"
+Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
 Comment3 ""

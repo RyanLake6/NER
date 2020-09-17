@@ -2,13 +2,13 @@ EESchema Schematic File Version 4
 LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 8 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Accumulator Segment"
+Date "2020-09-17"
+Rev "2"
+Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -2138,13 +2138,13 @@ Segment+
 Text HLabel 5800 6900 2    50   Output ~ 0
 Segment-
 Text HLabel 1450 850  0    50   Output ~ 0
-Segment1_ThermistorA
+Segment_ThermistorA
 Text HLabel 1450 1150 0    50   Output ~ 0
-Segment1_ThermistorB
+Segment_ThermistorB
 Text HLabel 1450 1450 0    50   Output ~ 0
-Segment1_ThermistorC
+Segment_ThermistorC
 Text HLabel 1450 1750 0    50   Output ~ 0
-Segment1_ThermistorD
+Segment_ThermistorD
 Text HLabel 10100 4850 2    50   Output ~ 0
 Segment1_VoltageTap1_-
 Text HLabel 10100 4700 2    50   Output ~ 0
@@ -2361,13 +2361,13 @@ F 3 "~" H 1650 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1450 2050 0    50   Output ~ 0
-Segment1_ThermistorE
+Segment_ThermistorE
 Text HLabel 1450 2350 0    50   Output ~ 0
-Segment1_ThermistorF
+Segment_ThermistorF
 Text HLabel 1450 2650 0    50   Output ~ 0
-Segment1_ThermistorG
+Segment_ThermistorG
 Text HLabel 1450 2950 0    50   Output ~ 0
-Segment1_ThermistorH
+Segment_ThermistorH
 $Comp
 L Device:Thermistor TH5
 U 1 1 611D2661
@@ -2425,13 +2425,13 @@ F 3 "~" H 1650 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1450 3250 0    50   Output ~ 0
-Segment1_ThermistorI
+Segment_ThermistorI
 Text HLabel 1450 3550 0    50   Output ~ 0
-Segment1_ThermistorJ
+Segment_ThermistorJ
 Text HLabel 1450 3850 0    50   Output ~ 0
-Segment1_ThermistorK
+Segment_ThermistorK
 Text HLabel 1450 4150 0    50   Output ~ 0
-Segment1_ThermistorL
+Segment_ThermistorL
 $Comp
 L Device:Thermistor TH9
 U 1 1 611D30F4
@@ -2489,13 +2489,13 @@ F 3 "~" H 1650 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1450 4450 0    50   Output ~ 0
-Segment1_ThermistorM
+Segment_ThermistorM
 Text HLabel 1450 4750 0    50   Output ~ 0
-Segment1_ThermistorN
+Segment_ThermistorN
 Text HLabel 1450 5050 0    50   Output ~ 0
-Segment1_ThermistorO
+Segment_ThermistorO
 Text HLabel 1450 5350 0    50   Output ~ 0
-Segment1_ThermistorP
+Segment_ThermistorP
 $Comp
 L Device:Thermistor TH13
 U 1 1 611D2669
@@ -2553,9 +2553,9 @@ F 3 "~" H 1650 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1450 5650 0    50   Output ~ 0
-Segment1_ThermistorQ
+Segment_ThermistorQ
 Text HLabel 1450 5950 0    50   Output ~ 0
-Segment1_ThermistorR
+Segment_ThermistorR
 $Comp
 L Device:Thermistor TH17
 U 1 1 611D30FC
@@ -2585,11 +2585,11 @@ F 3 "~" H 1650 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1450 6250 0    50   Output ~ 0
-Segment1_ThermistorS
+Segment_ThermistorS
 Text HLabel 1450 6850 0    50   Output ~ 0
-Segment1_ThermistorU
+Segmen_ThermistorU
 Text HLabel 1450 7150 0    50   Output ~ 0
-Segment1_ThermistorV
+Segment_ThermistorV
 $Comp
 L Device:Thermistor TH20
 U 1 1 60A88014
@@ -2633,9 +2633,9 @@ F 3 "~" H 1650 7150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 1600 7400 0    50   Output ~ 0
-Segment1_Thermistor_GND
+Segment_Thermistor_GND
 Text HLabel 1450 6550 0    50   Output ~ 0
-Segment1_ThermistorT
+Segment_ThermistorT
 Wire Wire Line
 	1850 850  1900 850 
 Wire Wire Line
@@ -2775,14 +2775,6 @@ Wire Wire Line
 	5400 600  5400 800 
 Wire Wire Line
 	2150 600  2150 7050
-Text Notes 7350 7500 0    50   ~ 0
-Battery Segment 1
-Text Notes 8100 7650 0    50   ~ 0
-8/25/2020
-Text Notes 10550 7650 0    50   ~ 0
-1
-Text Notes 7000 7100 0    50   ~ 0
-Northeastern Electric Racing
 Text Notes 500  7750 0    50   ~ 0
 *Thermistors are distributed evenly throughout the segment
 $EndSCHEMATC

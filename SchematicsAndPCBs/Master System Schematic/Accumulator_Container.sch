@@ -2,13 +2,13 @@ EESchema Schematic File Version 4
 LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 4 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Accumulator Container"
+Date "2020-09-17"
+Rev "2"
+Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -398,66 +398,8 @@ Text Label 9900 2500 0    50   ~ 0
 31_20
 Text Label 9950 2300 2    50   ~ 0
 32_20
-Text Notes 7350 7500 0    50   ~ 0
-Accumulator
-Text Notes 8100 7650 0    50   ~ 0
-8/25/2020
-Text Notes 10550 7650 0    50   ~ 0
-1
-Text Notes 7000 7150 0    50   ~ 0
-Northeastern Electric Racing
 Text Label 3000 3450 0    50   ~ 0
 6_2
-$Sheet
-S 1250 4400 1550 2350
-U 60F80F7E
-F0 "Battery Segment 2" 50
-F1 "BatterySegment2.sch" 50
-F2 "Segment2_+" O R 2800 4450 50 
-F3 "Segment2_-" O R 2800 4550 50 
-F4 "Segment2_ThermistorA" O L 1250 4450 50 
-F5 "Segment2_ThermistorB" O L 1250 4500 50 
-F6 "Segment2_ThermistorC" O L 1250 4550 50 
-F7 "Segment2_ThermistorD" O L 1250 4600 50 
-F8 "Segment2_ThermistorE" O L 1250 4650 50 
-F9 "Segment2_ThermistorF" O L 1250 4700 50 
-F10 "Segment2_ThermistorG" O L 1250 4750 50 
-F11 "Segment2_ThermistorH" O L 1250 4800 50 
-F12 "Segment2_ThermistorI" O L 1250 4850 50 
-F13 "Segment2_ThermistorJ" O L 1250 4900 50 
-F14 "Segment2_ThermistorK" O L 1250 4950 50 
-F15 "Segment2_ThermistorL" O L 1250 5000 50 
-F16 "Segment2_ThermistorM" O L 1250 5050 50 
-F17 "Segment2_ThermistorN" O L 1250 5100 50 
-F18 "Segment2_ThermistorO" O L 1250 5150 50 
-F19 "Segment2_ThermistorP" O L 1250 5200 50 
-F20 "Segment2_ThermistorQ" O L 1250 5250 50 
-F21 "Segment2_ThermistorR" O L 1250 5300 50 
-F22 "Segment2_ThermistorS" O L 1250 5350 50 
-F23 "Segment2_ThermistorU" O L 1250 5450 50 
-F24 "Segment2_ThermistorV" O L 1250 5500 50 
-F25 "Segment2_Thermistor_GND" O L 1250 5550 50 
-F26 "Segment2_ThermistorT" O L 1250 5400 50 
-F27 "Segment2_VoltageTap20" O L 1250 6600 50 
-F28 "Segment2_VoltageTap21" O L 1250 6550 50 
-F29 "Segment2_VoltageTap22" O L 1250 6500 50 
-F30 "Segment2_VoltageTap23" O L 1250 6450 50 
-F31 "Segment2_VoltageTap24" O L 1250 6400 50 
-F32 "Segment2_VoltageTap25_-" O L 1250 6300 50 
-F33 "Segment2_VoltageTap25" O L 1250 6250 50 
-F34 "Segment2_VoltageTap26" O L 1250 6200 50 
-F35 "Segment2_VoltageTap27" O L 1250 6150 50 
-F36 "Segment2_VoltageTap28" O L 1250 6100 50 
-F37 "Segment2_VoltageTap29" O L 1250 6050 50 
-F38 "Segment2_VoltageTap30" O L 1250 6000 50 
-F39 "Segment2_VoltageTap31" O L 1250 5950 50 
-F40 "Segment2_VoltageTap32" O L 1250 5900 50 
-F41 "Segment2_VoltageTap33" O L 1250 5850 50 
-F42 "Segment2_VoltageTap34" O L 1250 5800 50 
-F43 "Segment2_VoltageTap35" O L 1250 5750 50 
-F44 "Segment2_VoltageTap36" O L 1250 5700 50 
-F45 "Segment2_VoltageTap19" O L 1250 6650 50 
-$EndSheet
 $Sheet
 S 1250 1250 1550 2350
 U 611D0342
@@ -675,57 +617,6 @@ Wire Wire Line
 	10750 4050 10400 4050
 Wire Wire Line
 	10400 4150 10750 4150
-$Sheet
-S 3200 4800 1550 2350
-U 5F7F6054
-F0 "Battery Segment 1" 50
-F1 "BatterySegment1.sch" 50
-F2 "Segment1_+" O R 4750 4850 50 
-F3 "Segment1_-" O R 4750 4950 50 
-F4 "Segment1_ThermistorA" O L 3200 4850 50 
-F5 "Segment1_ThermistorB" O L 3200 4900 50 
-F6 "Segment1_ThermistorC" O L 3200 4950 50 
-F7 "Segment1_ThermistorD" O L 3200 5000 50 
-F8 "Segment1_VoltageTap1_-" O L 3200 7050 50 
-F9 "Segment1_VoltageTap1" O L 3200 7000 50 
-F10 "Segment1_VoltageTap2" O L 3200 6950 50 
-F11 "Segment1_VoltageTap3" O L 3200 6900 50 
-F12 "Segment1_VoltageTap4" O L 3200 6850 50 
-F13 "Segment1_VoltageTap5" O L 3200 6800 50 
-F14 "Segment1_VoltageTap6" O L 3200 6750 50 
-F15 "Segment1_VoltageTap7" O L 3200 6700 50 
-F16 "Segment1_VoltageTap8" O L 3200 6650 50 
-F17 "Segment1_VoltageTap9" O L 3200 6600 50 
-F18 "Segment1_VoltageTap10" O L 3200 6550 50 
-F19 "Segment1_VoltageTap11" O L 3200 6500 50 
-F20 "Segment1_VoltageTap12" O L 3200 6450 50 
-F21 "Segment1_VoltageTap13_-" O L 3200 6350 50 
-F22 "Segment1_VoltageTap13" O L 3200 6300 50 
-F23 "Segment1_VoltageTap14" O L 3200 6250 50 
-F24 "Segment1_VoltageTap15" O L 3200 6200 50 
-F25 "Segment1_VoltageTap16" O L 3200 6150 50 
-F26 "Segment1_VoltageTap17" O L 3200 6100 50 
-F27 "Segment1_VoltageTap18" O L 3200 6050 50 
-F28 "Segment1_ThermistorE" O L 3200 5050 50 
-F29 "Segment1_ThermistorF" O L 3200 5100 50 
-F30 "Segment1_ThermistorG" O L 3200 5150 50 
-F31 "Segment1_ThermistorH" O L 3200 5200 50 
-F32 "Segment1_ThermistorI" O L 3200 5250 50 
-F33 "Segment1_ThermistorJ" O L 3200 5300 50 
-F34 "Segment1_ThermistorK" O L 3200 5350 50 
-F35 "Segment1_ThermistorL" O L 3200 5400 50 
-F36 "Segment1_ThermistorM" O L 3200 5450 50 
-F37 "Segment1_ThermistorN" O L 3200 5500 50 
-F38 "Segment1_ThermistorO" O L 3200 5550 50 
-F39 "Segment1_ThermistorP" O L 3200 5600 50 
-F40 "Segment1_ThermistorQ" O L 3200 5650 50 
-F41 "Segment1_ThermistorR" O L 3200 5700 50 
-F42 "Segment1_ThermistorS" O L 3200 5750 50 
-F43 "Segment1_ThermistorU" O L 3200 5850 50 
-F44 "Segment1_ThermistorV" O L 3200 5900 50 
-F45 "Segment1_Thermistor_GND" O L 3200 5950 50 
-F46 "Segment1_ThermistorT" O L 3200 5800 50 
-$EndSheet
 Entry Wire Line
 	3200 4850 3100 4950
 Entry Wire Line
@@ -1329,6 +1220,110 @@ Wire Wire Line
 	9350 5600 9350 6150
 Wire Wire Line
 	9350 4150 9800 4150
+Connection ~ 9350 4150
+Wire Wire Line
+	9350 4150 9350 5600
+$Sheet
+S 1250 4400 1550 2350
+U 60F80F7E
+F0 "Battery Segment 2" 50
+F1 "BatterySegment.sch" 50
+F2 "Segment2_ThermistorA" O L 1250 4450 50 
+F3 "Segment2_ThermistorB" O L 1250 4500 50 
+F4 "Segment2_ThermistorC" O L 1250 4550 50 
+F5 "Segment2_ThermistorD" O L 1250 4600 50 
+F6 "Segment2_ThermistorE" O L 1250 4650 50 
+F7 "Segment2_ThermistorF" O L 1250 4700 50 
+F8 "Segment2_ThermistorG" O L 1250 4750 50 
+F9 "Segment2_ThermistorH" O L 1250 4800 50 
+F10 "Segment2_ThermistorI" O L 1250 4850 50 
+F11 "Segment2_ThermistorJ" O L 1250 4900 50 
+F12 "Segment2_ThermistorK" O L 1250 4950 50 
+F13 "Segment2_ThermistorL" O L 1250 5000 50 
+F14 "Segment2_ThermistorM" O L 1250 5050 50 
+F15 "Segment2_ThermistorN" O L 1250 5100 50 
+F16 "Segment2_ThermistorO" O L 1250 5150 50 
+F17 "Segment2_ThermistorP" O L 1250 5200 50 
+F18 "Segment2_ThermistorQ" O L 1250 5250 50 
+F19 "Segment2_ThermistorR" O L 1250 5300 50 
+F20 "Segment2_ThermistorS" O L 1250 5350 50 
+F21 "Segment2_ThermistorU" O L 1250 5450 50 
+F22 "Segment2_ThermistorV" O L 1250 5500 50 
+F23 "Segment2_Thermistor_GND" O L 1250 5550 50 
+F24 "Segment2_ThermistorT" O L 1250 5400 50 
+F25 "Segment2_VoltageTap20" O L 1250 6600 50 
+F26 "Segment2_VoltageTap21" O L 1250 6550 50 
+F27 "Segment2_VoltageTap22" O L 1250 6500 50 
+F28 "Segment2_VoltageTap23" O L 1250 6450 50 
+F29 "Segment2_VoltageTap24" O L 1250 6400 50 
+F30 "Segment2_VoltageTap25_-" O L 1250 6300 50 
+F31 "Segment2_VoltageTap25" O L 1250 6250 50 
+F32 "Segment2_VoltageTap26" O L 1250 6200 50 
+F33 "Segment2_VoltageTap27" O L 1250 6150 50 
+F34 "Segment2_VoltageTap28" O L 1250 6100 50 
+F35 "Segment2_VoltageTap29" O L 1250 6050 50 
+F36 "Segment2_VoltageTap30" O L 1250 6000 50 
+F37 "Segment2_VoltageTap31" O L 1250 5950 50 
+F38 "Segment2_VoltageTap32" O L 1250 5900 50 
+F39 "Segment2_VoltageTap33" O L 1250 5850 50 
+F40 "Segment2_VoltageTap34" O L 1250 5800 50 
+F41 "Segment2_VoltageTap35" O L 1250 5750 50 
+F42 "Segment2_VoltageTap36" O L 1250 5700 50 
+F43 "Segment2_VoltageTap19" O L 1250 6650 50 
+F44 "Segment+" O R 2800 4450 50 
+F45 "Segment-" O R 2800 4550 50 
+$EndSheet
+$Sheet
+S 3200 4800 1550 2350
+U 5F7F6054
+F0 "Battery Segment 1" 50
+F1 "BatterySegment.sch" 50
+F2 "Segment+" O R 4750 4850 50 
+F3 "Segment-" O R 4750 4950 50 
+F4 "Segment1_ThermistorA" O L 3200 4850 50 
+F5 "Segment1_ThermistorB" O L 3200 4900 50 
+F6 "Segment1_ThermistorC" O L 3200 4950 50 
+F7 "Segment1_ThermistorD" O L 3200 5000 50 
+F8 "Segment1_VoltageTap1_-" O L 3200 7050 50 
+F9 "Segment1_VoltageTap1" O L 3200 7000 50 
+F10 "Segment1_VoltageTap2" O L 3200 6950 50 
+F11 "Segment1_VoltageTap3" O L 3200 6900 50 
+F12 "Segment1_VoltageTap4" O L 3200 6850 50 
+F13 "Segment1_VoltageTap5" O L 3200 6800 50 
+F14 "Segment1_VoltageTap6" O L 3200 6750 50 
+F15 "Segment1_VoltageTap7" O L 3200 6700 50 
+F16 "Segment1_VoltageTap8" O L 3200 6650 50 
+F17 "Segment1_VoltageTap9" O L 3200 6600 50 
+F18 "Segment1_VoltageTap10" O L 3200 6550 50 
+F19 "Segment1_VoltageTap11" O L 3200 6500 50 
+F20 "Segment1_VoltageTap12" O L 3200 6450 50 
+F21 "Segment1_VoltageTap13_-" O L 3200 6350 50 
+F22 "Segment1_VoltageTap13" O L 3200 6300 50 
+F23 "Segment1_VoltageTap14" O L 3200 6250 50 
+F24 "Segment1_VoltageTap15" O L 3200 6200 50 
+F25 "Segment1_VoltageTap16" O L 3200 6150 50 
+F26 "Segment1_VoltageTap17" O L 3200 6100 50 
+F27 "Segment1_VoltageTap18" O L 3200 6050 50 
+F28 "Segment1_ThermistorE" O L 3200 5050 50 
+F29 "Segment1_ThermistorF" O L 3200 5100 50 
+F30 "Segment1_ThermistorG" O L 3200 5150 50 
+F31 "Segment1_ThermistorH" O L 3200 5200 50 
+F32 "Segment1_ThermistorI" O L 3200 5250 50 
+F33 "Segment1_ThermistorJ" O L 3200 5300 50 
+F34 "Segment1_ThermistorK" O L 3200 5350 50 
+F35 "Segment1_ThermistorL" O L 3200 5400 50 
+F36 "Segment1_ThermistorM" O L 3200 5450 50 
+F37 "Segment1_ThermistorN" O L 3200 5500 50 
+F38 "Segment1_ThermistorO" O L 3200 5550 50 
+F39 "Segment1_ThermistorP" O L 3200 5600 50 
+F40 "Segment1_ThermistorQ" O L 3200 5650 50 
+F41 "Segment1_ThermistorR" O L 3200 5700 50 
+F42 "Segment1_ThermistorS" O L 3200 5750 50 
+F43 "Segment1_ThermistorU" O L 3200 5850 50 
+F44 "Segment1_ThermistorV" O L 3200 5900 50 
+F45 "Segment1_Thermistor_GND" O L 3200 5950 50 
+F46 "Segment1_ThermistorT" O L 3200 5800 50 
+$EndSheet
 Wire Bus Line
 	3100 1100 3100 1350
 Wire Bus Line
@@ -1353,7 +1348,4 @@ Wire Bus Line
 	1150 4550 1150 5650
 Wire Bus Line
 	3100 4950 3100 6050
-Connection ~ 9350 4150
-Wire Wire Line
-	9350 4150 9350 5600
 $EndSCHEMATC
