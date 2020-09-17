@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name NER_MASTERSYS_PART_LIBRARY)(type Legacy)(uri ${KIPRJMOD}/NER_MASTERSYS_PART_LIBRARY.lib)(options "")(descr ""))
 )
