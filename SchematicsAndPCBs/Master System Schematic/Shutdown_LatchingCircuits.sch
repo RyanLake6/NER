@@ -2,13 +2,13 @@ EESchema Schematic File Version 4
 LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
-Sheet 2 8
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 2 9
+Title "Shutdown Latching Circuits"
+Date "2020-09-17"
+Rev "2"
+Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
 Comment3 ""

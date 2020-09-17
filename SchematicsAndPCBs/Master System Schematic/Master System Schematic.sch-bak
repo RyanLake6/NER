@@ -2,12 +2,12 @@ EESchema Schematic File Version 4
 LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-08-25"
-Rev "1"
+Date "2020-09-17"
+Rev "2"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -534,91 +534,6 @@ Wire Wire Line
 Wire Wire Line
 	3250 4350 3250 4000
 $Comp
-L Device:LED D?
-U 1 1 605F9012
-P 2400 6100
-F 0 "D?" H 2400 5850 50  0000 C CNN
-F 1 "TRACTIVE SYSTEM ACTIVE LAMP" H 2400 5950 50  0000 C CNN
-F 2 "" H 2400 6100 50  0001 C CNN
-F 3 "~" H 2400 6100 50  0001 C CNN
-	1    2400 6100
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2550 6100 3200 6100
-Wire Wire Line
-	2250 6100 2200 6100
-Wire Wire Line
-	2200 6100 2200 6200
-Wire Bus Line
-	4950 6800 5050 6800
-Wire Bus Line
-	4950 6700 5050 6700
-Wire Bus Line
-	5050 6700 5050 6800
-Wire Bus Line
-	4950 6600 5050 6600
-Wire Bus Line
-	5050 6600 5050 6700
-Connection ~ 5050 6700
-Wire Bus Line
-	5050 6500 5050 6600
-Connection ~ 5050 6600
-Entry Wire Line
-	6750 5400 6650 5500
-Entry Bus Bus
-	6750 5500 6650 5600
-Entry Wire Line
-	6750 5600 6650 5700
-Entry Bus Bus
-	6750 5700 6650 5800
-Entry Wire Line
-	6750 5900 6650 6000
-Entry Bus Bus
-	6750 6000 6650 6100
-Wire Wire Line
-	6650 5700 6500 5700
-Wire Bus Line
-	6650 5800 6500 5800
-Wire Wire Line
-	6400 5500 6650 5500
-Wire Bus Line
-	6650 5600 6400 5600
-Wire Bus Line
-	6400 5600 6400 5500
-Wire Wire Line
-	6650 6000 6600 6000
-Wire Bus Line
-	6600 6000 6600 6100
-Wire Bus Line
-	6650 6100 6600 6100
-Wire Bus Line
-	4950 6500 5050 6500
-Wire Bus Line
-	6600 6500 5050 6500
-Connection ~ 5050 6500
-Wire Bus Line
-	4950 6400 6500 6400
-Wire Bus Line
-	4950 6150 5050 6150
-Wire Bus Line
-	5050 6150 5050 6050
-Wire Bus Line
-	4950 5850 5050 5850
-Wire Bus Line
-	4950 5950 5050 5950
-Connection ~ 5050 5950
-Wire Bus Line
-	5050 5950 5050 5850
-Wire Bus Line
-	4950 6050 5050 6050
-Connection ~ 5050 6050
-Wire Bus Line
-	5050 6050 5050 5950
-Wire Bus Line
-	5050 6150 6300 6150
-Connection ~ 5050 6150
-$Comp
 L NER:OrionBMS2 U1
 U 1 1 606C5173
 P 7450 3400
@@ -629,16 +544,6 @@ F 3 "" H 7450 3400 50  0001 C CNN
 	1    7450 3400
 	-1   0    0    -1  
 $EndComp
-Entry Bus Bus
-	6650 4100 6750 4000
-Wire Bus Line
-	6650 4100 6300 4100
-Entry Bus Bus
-	6650 5000 6750 4900
-Wire Bus Line
-	6650 5000 6300 5000
-Wire Bus Line
-	6300 4100 6300 5000
 $Comp
 L NER:OrionCurrentSens U?
 U 1 1 6111F589
@@ -656,22 +561,6 @@ Text GLabel 8300 4650 3    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
 	8150 3600 8250 3600
-Wire Bus Line
-	6600 6500 6600 6100
-Connection ~ 6600 6100
-Wire Bus Line
-	4950 6300 6400 6300
-Wire Bus Line
-	6500 6400 6500 5800
-Connection ~ 6500 5800
-Wire Bus Line
-	6500 5800 6500 5700
-Wire Bus Line
-	6400 6300 6400 5600
-Connection ~ 6400 5600
-Wire Bus Line
-	6300 6150 6300 5000
-Connection ~ 6300 5000
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 616A5218
@@ -838,16 +727,14 @@ F10 "IMD_HV_SENSE-" O R 4950 5350 50
 F11 "IMD_HV_SENSE+" O R 4950 5450 50 
 F12 "TSMP-" O L 3200 7050 50 
 F13 "TSMP+" O L 3200 6950 50 
-F14 "Segment1_Thermistors_A-V" O R 4950 5850 50 
-F15 "Segment2_Thermistors_A-V" O R 4950 5950 50 
-F16 "Segment3_Thermistors_A-V" O R 4950 6050 50 
-F17 "Segment4_Thermistors_A-V" O R 4950 6150 50 
-F18 "VoltageTaps_1-12" O R 4950 6300 50 
-F19 "VoltageTaps_13-24" O R 4950 6400 50 
-F20 "VoltageTaps_25-36" O R 4950 6500 50 
-F21 "VoltageTaps_37-48" O R 4950 6600 50 
-F22 "VoltageTaps_49-60" O R 4950 6700 50 
-F23 "VoltageTaps_61-72" O R 4950 6800 50 
+F14 "Segment1_Thermistors" O R 4950 5950 50 
+F15 "Segment2_Thermistors" O R 4950 6050 50 
+F16 "Segment3_Thermistors" O R 4950 6150 50 
+F17 "Segment4_Thermistors" O R 4950 6250 50 
+F18 "Segment1_VoltageTaps" O R 4950 6400 50 
+F19 "Segment2_VoltageTaps" O R 4950 6500 50 
+F20 "Segment3_VoltageTaps" O R 4950 6600 50 
+F21 "Segment4_VoltageTaps" O R 4950 6700 50 
 $EndSheet
 Wire Wire Line
 	4950 5350 5050 5350
@@ -1010,8 +897,6 @@ Wire Wire Line
 	4950 5700 5450 5700
 Wire Wire Line
 	1450 850  1450 2900
-Wire Wire Line
-	2200 6200 3200 6200
 Wire Notes Line
 	8800 1950 10950 1950
 Wire Notes Line
@@ -1022,4 +907,44 @@ Wire Notes Line
 	8800 1000 8800 1950
 Text Notes 8800 1000 0    50   ~ 0
 RTDS & LATCHING START
+$Comp
+L NER:TSAL U?
+U 1 1 5F652630
+P 2450 5950
+F 0 "U?" H 2342 6075 50  0000 C CNN
+F 1 "TSAL" H 2342 5984 50  0000 C CNN
+F 2 "" H 2450 5950 50  0001 C CNN
+F 3 "" H 2450 5950 50  0001 C CNN
+	1    2450 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6100 2900 6100
+Wire Wire Line
+	2900 6100 2900 6050
+Wire Wire Line
+	2900 6050 2750 6050
+Wire Wire Line
+	2750 6250 2900 6250
+Wire Wire Line
+	2900 6250 2900 6200
+Wire Wire Line
+	2900 6200 3200 6200
+$Comp
+L NER:OrionThermExp U?
+U 1 1 60D40686
+P 7750 6700
+F 0 "U?" H 7750 6825 50  0000 C CNN
+F 1 "OrionThermExp" H 7750 6734 50  0000 C CNN
+F 2 "" H 7750 6700 50  0001 C CNN
+F 3 "" H 7750 6700 50  0001 C CNN
+	1    7750 6700
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9450 7150 1950 2300
+U 60D53BFB
+F0 "BMS Container" 50
+F1 "BMSContainer.sch" 50
+$EndSheet
 $EndSCHEMATC
