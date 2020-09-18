@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title "NER FH 2020-2021 Master Electrical Schematic"
 Date "2020-09-17"
 Rev "2"
@@ -912,4 +911,10 @@ Wire Bus Line
 	5600 5950 5600 4850
 Wire Bus Line
 	5600 4850 6000 4850
+$Sheet
+S 13300 2850 1700 1550
+U 5F647A32
+F0 "Driver IO Enclosure" 50
+F1 "Driver IO Enclosure.sch" 50
+$EndSheet
 $EndSCHEMATC
