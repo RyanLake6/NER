@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -800,14 +801,14 @@ Wire Wire Line
 Wire Wire Line
 	1450 850  1450 2900
 Wire Notes Line
-	14200 1550 16350 1550
+	9250 9600 11400 9600
 Wire Notes Line
-	16350 1550 16350 600 
+	11400 9600 11400 8650
 Wire Notes Line
-	16350 600  14200 600 
+	11400 8650 9250 8650
 Wire Notes Line
-	14200 600  14200 1550
-Text Notes 14200 600  0    50   ~ 0
+	9250 8650 9250 9600
+Text Notes 9250 8650 0    50   ~ 0
 RTDS & LATCHING START
 $Comp
 L NER:TSAL U?
