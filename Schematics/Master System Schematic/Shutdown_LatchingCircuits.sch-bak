@@ -13,262 +13,220 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 7800 3800
-NoConn ~ 7800 3250
-NoConn ~ 7800 2900
-NoConn ~ 4600 2800
-NoConn ~ 4600 3150
-NoConn ~ 4600 3700
 Wire Wire Line
-	4350 4000 4350 4450
-Wire Wire Line
-	4350 4450 4600 4450
-Wire Wire Line
-	4450 4000 4450 4350
-Wire Wire Line
-	4600 4350 4450 4350
-Text HLabel 4600 4450 2    50   Output ~ 0
-IMDErrorIndicatorControl_OUT
-Text HLabel 4600 4350 2    50   Output ~ 0
-IMDErrorIndicatorControl_IN
-Wire Wire Line
-	7550 4550 7800 4550
-Wire Wire Line
-	7650 4450 7800 4450
-Wire Wire Line
-	7550 4100 7550 4550
-Wire Wire Line
-	7650 4100 7650 4450
-Text HLabel 7800 4450 2    50   Output ~ 0
-BMSErrorIndicatorControl_IN
-Text HLabel 7800 4550 2    50   Output ~ 0
-BMSErrorIndicatorControl_OUT
-Connection ~ 6200 2700
-Text HLabel 5850 1500 0    50   Input ~ 0
-BMS_Status
-Connection ~ 3000 2600
-Text HLabel 2650 1500 0    50   Input ~ 0
-IMD_Status
-Text Notes 7100 1900 2    39   ~ 0
-Active-High Output Relay Latch
-Wire Notes Line
-	8300 1800 6100 1800
-Wire Notes Line
-	6100 4200 6100 1800
-Wire Notes Line
-	8300 1800 8300 4200
-Wire Wire Line
-	5950 2700 6200 2700
-Wire Notes Line
-	8300 4200 6100 4200
-Wire Wire Line
-	6800 1950 8050 1950
-Wire Wire Line
-	8100 4100 7650 4100
-Wire Wire Line
-	6750 4100 7550 4100
-Wire Wire Line
-	6750 3700 6750 4100
-Wire Wire Line
-	6900 3700 6750 3700
-Wire Wire Line
-	8100 3600 8100 4100
-Wire Wire Line
-	7800 3600 8100 3600
-Wire Wire Line
-	7900 2700 7800 2700
-Wire Wire Line
-	7900 2250 7900 2700
-Wire Wire Line
-	7500 2250 7900 2250
-Wire Wire Line
-	8050 1950 8050 3100
-Wire Wire Line
-	6800 2250 6800 2700
-Connection ~ 6800 2250
-Wire Wire Line
-	6800 2250 7200 2250
-Wire Wire Line
-	6800 1950 6800 2250
+	4800 2850 5050 2850
 $Comp
-L Diode:1N4001 D2
-U 1 1 5DE0D338
-P 7350 2250
-F 0 "D2" H 7350 2466 50  0000 C CNN
-F 1 "1N4001" H 7350 2375 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7350 2075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7350 2250 50  0001 C CNN
-	1    7350 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 6800 2700
-Wire Wire Line
-	6800 2700 6900 2700
-Wire Wire Line
-	6800 2700 6700 2700
-Wire Wire Line
-	7800 3100 8050 3100
-Wire Wire Line
-	6200 3000 6900 3000
-Wire Wire Line
-	6200 2700 6200 3000
-Wire Wire Line
-	6300 2700 6200 2700
-$Comp
-L Switch:SW_Push SW6
-U 1 1 5DE0D32A
-P 6500 2700
-F 0 "SW6" H 6500 2985 50  0000 C CNN
-F 1 "BMS_LatchReset" H 6500 2894 50  0000 C CNN
-F 2 "" H 6500 2900 50  0001 C CNN
-F 3 "~" H 6500 2900 50  0001 C CNN
-	1    6500 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L NER:3PoleSwitchingRelay K2
-U 1 1 5DE0D324
-P 7350 2500
-AR Path="/5DE0D324" Ref="K2"  Part="1" 
-AR Path="/5F45AFB3/5DE0D324" Ref="K2"  Part="1" 
-F 0 "K2" H 7350 2615 50  0000 C CNN
-F 1 "3PoleSwitchingRelay" H 7350 2524 50  0000 C CNN
-F 2 "" H 7350 2500 50  0001 C CNN
-F 3 "" H 7350 2500 50  0001 C CNN
-	1    7350 2500
-	1    0    0    -1  
-$EndComp
-Text Notes 3900 1800 2    39   ~ 0
-Active-High Output Relay Latch
-Wire Notes Line
-	5100 1700 2900 1700
-Wire Notes Line
-	2900 4100 2900 1700
-Wire Notes Line
-	5100 1700 5100 4100
-Wire Wire Line
-	2750 2600 3000 2600
-Wire Notes Line
-	5100 4100 2900 4100
-Wire Wire Line
-	3600 1850 4850 1850
-Wire Wire Line
-	4900 4000 4450 4000
-Wire Wire Line
-	3550 4000 4350 4000
-Wire Wire Line
-	3550 3600 3550 4000
-Wire Wire Line
-	3700 3600 3550 3600
-Wire Wire Line
-	4900 3500 4900 4000
-Wire Wire Line
-	4600 3500 4900 3500
-Wire Wire Line
-	4700 2600 4600 2600
-Wire Wire Line
-	4700 2150 4700 2600
-Wire Wire Line
-	4300 2150 4700 2150
-Wire Wire Line
-	4850 1850 4850 3000
-Wire Wire Line
-	3600 2150 3600 2600
-Connection ~ 3600 2150
-Wire Wire Line
-	3600 2150 4000 2150
-Wire Wire Line
-	3600 1850 3600 2150
-$Comp
-L Diode:1N4001 D1
+L LatchingFaultBoard-rescue:1N4001-Diode-Shutdown-rescue D1
 U 1 1 5DDE3BD5
-P 4150 2150
-F 0 "D1" H 4150 2366 50  0000 C CNN
-F 1 "1N4001" H 4150 2275 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4150 1975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4150 2150 50  0001 C CNN
-	1    4150 2150
+P 4350 2000
+F 0 "D1" H 4350 2216 50  0000 C CNN
+F 1 "1N4001" H 4350 2125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 1825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 2000 50  0001 C CNN
+	1    4350 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3600 2600
 Wire Wire Line
-	3600 2600 3700 2600
+	3800 2000 4200 2000
 Wire Wire Line
-	3600 2600 3500 2600
+	5050 1700 5050 2850
 Wire Wire Line
-	4600 3000 4850 3000
+	4500 2000 4900 2000
 Wire Wire Line
-	3000 2900 3700 2900
+	4900 2450 4800 2450
 Wire Wire Line
-	3000 2600 3000 2900
-Wire Wire Line
-	3100 2600 3000 2600
+	3800 1700 5050 1700
 $Comp
-L Switch:SW_Push SW5
-U 1 1 5DDDF7AD
-P 3300 2600
-F 0 "SW5" H 3300 2885 50  0000 C CNN
-F 1 "IMD_LatchReset" H 3300 2794 50  0000 C CNN
-F 2 "" H 3300 2800 50  0001 C CNN
-F 3 "~" H 3300 2800 50  0001 C CNN
-	1    3300 2600
+L LatchingFaultBoard-rescue:3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue K2
+U 1 1 5DE0D324
+P 4350 4600
+F 0 "K2" H 4350 4715 50  0000 C CNN
+F 1 "3PoleSwitchingRelay" H 4350 4624 50  0000 C CNN
+F 2 "" H 4350 4600 50  0001 C CNN
+F 3 "" H 4350 4600 50  0001 C CNN
+	1    4350 4600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4800 5200 5050 5200
 $Comp
-L NER:3PoleSwitchingRelay K1
+L LatchingFaultBoard-rescue:1N4001-Diode-Shutdown-rescue D2
+U 1 1 5DE0D338
+P 4350 4350
+F 0 "D2" H 4350 4566 50  0000 C CNN
+F 1 "1N4001" H 4350 4475 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 4175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 4350 50  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4050 3800 4350
+Wire Wire Line
+	3800 4350 4200 4350
+Wire Wire Line
+	5050 4050 5050 5200
+Wire Wire Line
+	4500 4350 4900 4350
+Wire Wire Line
+	4900 4350 4900 4800
+Wire Wire Line
+	4900 4800 4800 4800
+Wire Wire Line
+	3800 4050 5050 4050
+$Comp
+L LatchingFaultBoard-rescue:3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue K1
 U 1 1 5DDDA065
-P 4150 2400
-AR Path="/5DDDA065" Ref="K1"  Part="1" 
-AR Path="/5F45AFB3/5DDDA065" Ref="K1"  Part="1" 
-F 0 "K1" H 4150 2515 50  0000 C CNN
-F 1 "3PoleSwitchingRelay" H 4150 2424 50  0000 C CNN
-F 2 "" H 4150 2400 50  0001 C CNN
-F 3 "" H 4150 2400 50  0001 C CNN
-	1    4150 2400
+P 4350 2250
+F 0 "K1" H 4350 2365 50  0000 C CNN
+F 1 "3PoleSwitchingRelay" H 4350 2274 50  0000 C CNN
+F 2 "" H 4350 2250 50  0001 C CNN
+F 3 "" H 4350 2250 50  0001 C CNN
+	1    4350 2250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5F718C39
+P 5100 3350
+F 0 "R?" V 5000 3350 50  0000 C CNN
+F 1 "500" V 4900 3350 50  0000 C CNN
+F 2 "" V 5030 3350 50  0001 C CNN
+F 3 "~" H 5100 3350 50  0001 C CNN
+	1    5100 3350
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	7800 3450 9200 3450
+	4950 3350 4800 3350
+$Comp
+L Device:R R?
+U 1 1 5F73B323
+P 5050 5700
+F 0 "R?" V 4950 5700 50  0000 C CNN
+F 1 "500" V 4850 5700 50  0000 C CNN
+F 2 "" V 4980 5700 50  0001 C CNN
+F 3 "~" H 5050 5700 50  0001 C CNN
+	1    5050 5700
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2500 3250 2500 5450
+	4900 5700 4800 5700
+Connection ~ 4900 4800
 Wire Wire Line
-	2500 3250 3700 3250
+	3800 1700 3800 2000
 Wire Wire Line
-	9200 3450 9200 5450
-Text HLabel 6100 5900 2    50   Output ~ 0
-ShutdownLatch_Control_IN
-Text HLabel 6100 6000 2    50   Output ~ 0
-ShutdownLatch_Control_OUT
+	4900 2000 4900 2450
 Wire Wire Line
-	5850 5450 5850 6000
+	3800 2450 3900 2450
 Wire Wire Line
-	5850 6000 6100 6000
+	2350 2750 2350 2550
+Connection ~ 3800 2450
 Wire Wire Line
-	6000 5450 6000 5900
+	3800 2000 3800 2450
+Connection ~ 3800 2000
 Wire Wire Line
-	6000 5900 6100 5900
+	5450 3200 5450 3850
 Wire Wire Line
-	6000 5450 9200 5450
-Text GLabel 8400 2250 2    50   UnSpc ~ 0
+	5450 3850 3650 3850
+Wire Wire Line
+	3650 3850 3650 5450
+Wire Wire Line
+	4800 3200 5450 3200
+Wire Wire Line
+	3650 5450 3900 5450
+Wire Wire Line
+	3050 5800 3050 3450
+Wire Wire Line
+	5250 3350 6500 3350
+Wire Wire Line
+	5200 5700 6500 5700
+Wire Wire Line
+	2150 2450 3800 2450
+Wire Wire Line
+	2350 4900 2350 5100
+Wire Wire Line
+	2150 3100 3900 3100
+Wire Wire Line
+	2150 4800 3800 4800
+Wire Wire Line
+	3800 4350 3800 4800
+Connection ~ 3800 4350
+Connection ~ 3800 4800
+Wire Wire Line
+	3800 4800 3900 4800
+Wire Wire Line
+	4800 5550 6500 5550
+Connection ~ 2350 5100
+Wire Wire Line
+	2350 5100 3900 5100
+Wire Wire Line
+	2150 5100 2350 5100
+Wire Wire Line
+	2150 4900 2350 4900
+Connection ~ 2350 2750
+Wire Wire Line
+	2350 2750 3900 2750
+Wire Wire Line
+	2150 2750 2350 2750
+Wire Wire Line
+	2150 2550 2350 2550
+NoConn ~ 4800 2650
+NoConn ~ 4800 3000
+NoConn ~ 4800 3550
+NoConn ~ 4800 5000
+NoConn ~ 4800 5350
+NoConn ~ 4800 5900
+Wire Wire Line
+	4900 4800 5600 4800
+Connection ~ 4900 2450
+Wire Wire Line
+	4900 2450 5600 2450
+Text HLabel 6500 5700 2    50   Input ~ 0
+BMS_Fault_Indicator
+Text HLabel 6500 5550 2    50   Input ~ 0
+Shutdown_OUT
+Text GLabel 5700 3600 2    50   UnSpc ~ 0
 CHASSIS_GND
+Text HLabel 6500 3350 2    50   Input ~ 0
+IMD_Fault_Indicator
+Text HLabel 2150 4900 0    50   Input ~ 0
+BMS_Latch_Reset+
+Text HLabel 2150 4800 0    50   Input ~ 0
+BMS_Latch_Reset-
+Text HLabel 2150 3450 0    50   Input ~ 0
+GLV+_Fused
+Text HLabel 2150 3100 0    50   Input ~ 0
+Shutdown_IN
+Text HLabel 2150 2750 0    50   Input ~ 0
+IMD_Status
+Text HLabel 2150 2550 0    50   Input ~ 0
+IMD_Latch_Reset+
+Text HLabel 2150 2450 0    50   Input ~ 0
+IMD_Latch_Reset-
+Text HLabel 2150 5100 0    50   Input ~ 0
+BMS_Status
+Wire Notes Line
+	2200 6150 6450 6150
+Wire Notes Line
+	6450 1400 2200 1400
+Text Notes 2200 1400 0    50   ~ 0
+Latching Fault Circuit PCB
+Wire Notes Line
+	6450 1400 6450 6150
+Wire Notes Line
+	2200 1400 2200 6150
+Connection ~ 3050 3450
 Wire Wire Line
-	8400 2250 7900 2250
-Connection ~ 7900 2250
-Text GLabel 5200 2150 2    50   UnSpc ~ 0
-CHASSIS_GND
+	3050 3450 3900 3450
 Wire Wire Line
-	4700 2150 5200 2150
-Connection ~ 4700 2150
+	3050 5800 3900 5800
 Wire Wire Line
-	4600 3350 6900 3350
+	2150 3450 3050 3450
 Wire Wire Line
-	2500 5450 5850 5450
+	5600 2450 5600 3600
 Wire Wire Line
-	2650 1500 2750 1500
+	5700 3600 5600 3600
+Connection ~ 5600 3600
 Wire Wire Line
-	2750 1500 2750 2600
-Wire Wire Line
-	5850 1500 5950 1500
-Wire Wire Line
-	5950 1500 5950 2700
+	5600 3600 5600 4800
 $EndSCHEMATC
