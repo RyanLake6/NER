@@ -913,7 +913,7 @@ Wire Bus Line
 Wire Bus Line
 	5600 4850 6000 4850
 $Sheet
-S 11600 900  1700 1550
+S 10350 8750 1700 1550
 U 5F647A32
 F0 "Driver IO Enclosure" 50
 F1 "Driver IO Enclosure.sch" 50
