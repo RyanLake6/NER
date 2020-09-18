@@ -301,12 +301,12 @@ Wire Wire Line
 $Comp
 L NER:OrionCurrentSens U?
 U 1 1 6111F589
-P 8450 8300
-F 0 "U?" H 8450 8300 50  0000 C CNN
-F 1 "OrionCurrentSens" H 8450 8350 50  0000 C CNN
-F 2 "" H 8450 8300 50  0001 C CNN
-F 3 "" H 8450 8300 50  0001 C CNN
-	1    8450 8300
+P 8250 8300
+F 0 "U?" H 8250 8300 50  0000 C CNN
+F 1 "OrionCurrentSens" H 8250 8350 50  0000 C CNN
+F 2 "" H 8250 8300 50  0001 C CNN
+F 3 "" H 8250 8300 50  0001 C CNN
+	1    8250 8300
 	-1   0    0    1   
 $EndComp
 Text GLabel 10400 6200 2    50   UnSpc ~ 0
@@ -386,7 +386,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3250 5350 3650
 Wire Wire Line
-	7650 7200 7950 7200
+	7650 7200 7750 7200
 Wire Wire Line
 	7900 5750 7650 5750
 Wire Wire Line
@@ -667,11 +667,9 @@ F 3 "" H 15300 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 7100 8050 7100
+	7650 7100 7850 7100
 Wire Wire Line
-	8950 8450 8950 8250
-Wire Wire Line
-	8050 7100 8050 8150
+	7850 7100 7850 8150
 Wire Wire Line
 	14950 8250 14950 8300
 Wire Wire Line
@@ -717,11 +715,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 1100 10350 6100
 Wire Wire Line
-	7950 7200 7950 8450
-Wire Wire Line
-	8850 8150 12000 8150
-Wire Wire Line
-	8950 8250 12000 8250
+	7750 7200 7750 8450
 Wire Wire Line
 	7700 5850 7650 5850
 Wire Wire Line
@@ -731,13 +725,19 @@ Wire Wire Line
 Wire Wire Line
 	8450 5450 8450 7100
 Wire Wire Line
-	8450 7100 8050 7100
-Connection ~ 8050 7100
-Wire Wire Line
 	8550 5550 8550 7200
-Connection ~ 7950 7200
 Wire Wire Line
-	7950 7200 8550 7200
+	7750 8450 8750 8450
+Connection ~ 7750 7200
+Connection ~ 7850 7100
 Wire Wire Line
-	7950 8450 8950 8450
+	7850 7100 8450 7100
+Wire Wire Line
+	7750 7200 8550 7200
+Wire Wire Line
+	8650 8150 12000 8150
+Wire Wire Line
+	8750 8450 8750 8250
+Wire Wire Line
+	8750 8250 12000 8250
 $EndSCHEMATC
