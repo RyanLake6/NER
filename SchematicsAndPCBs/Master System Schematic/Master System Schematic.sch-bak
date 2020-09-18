@@ -911,10 +911,4 @@ Wire Bus Line
 	5600 5950 5600 4850
 Wire Bus Line
 	5600 4850 6000 4850
-$Sheet
-S 13300 2850 1700 1550
-U 5F647A32
-F0 "Driver IO" 50
-F1 "Driver IO.sch" 50
-$EndSheet
 $EndSCHEMATC
