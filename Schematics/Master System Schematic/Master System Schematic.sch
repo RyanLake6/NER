@@ -16,28 +16,15 @@ $EndDescr
 $Comp
 L Device:Battery_Cell BT?
 U 1 1 5F633A5B
-P 1750 7350
+P 1750 7650
 AR Path="/5F45AFB3/5F633A5B" Ref="BT?"  Part="1" 
 AR Path="/5F633A5B" Ref="BT1"  Part="1" 
-F 0 "BT1" H 2100 7450 50  0000 L CNN
-F 1 "12V GLV Battery" H 1900 7350 50  0000 L CNN
-F 2 "" V 1750 7410 50  0001 C CNN
-F 3 "~" V 1750 7410 50  0001 C CNN
-	1    1750 7350
+F 0 "BT1" H 2100 7750 50  0000 L CNN
+F 1 "12V GLV Battery" H 1900 7650 50  0000 L CNN
+F 2 "" V 1750 7710 50  0001 C CNN
+F 3 "~" V 1750 7710 50  0001 C CNN
+	1    1750 7650
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Fuse F?
-U 1 1 5F633A62
-P 1750 6800
-AR Path="/5F45AFB3/5F633A62" Ref="F?"  Part="1" 
-AR Path="/5F633A62" Ref="F1"  Part="1" 
-F 0 "F1" H 1400 6750 50  0000 L CNN
-F 1 "GLV Main Fuse" H 1150 6850 50  0000 L CNN
-F 2 "" V 1680 6800 50  0001 C CNN
-F 3 "~" H 1750 6800 50  0001 C CNN
-	1    1750 6800
-	-1   0    0    1   
 $EndComp
 $Comp
 L Switch:SW_Push_Open SW?
@@ -134,7 +121,7 @@ F 3 "~" H 5350 4950 50  0001 C CNN
 	1    5350 4950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1900 7600 2    50   UnSpc ~ 0
+Text GLabel 1900 7900 2    50   UnSpc ~ 0
 CHASSIS_GND
 Text Label 5600 5250 0    50   ~ 0
 LatchingStartStopController
@@ -184,7 +171,7 @@ $EndComp
 Text GLabel 6050 4500 2    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
-	1900 7600 1750 7600
+	1900 7900 1750 7900
 Wire Wire Line
 	4650 3450 4750 3450
 Connection ~ 4750 3450
@@ -220,11 +207,11 @@ Wire Wire Line
 	6050 3500 6650 3500
 Connection ~ 6050 4050
 Wire Wire Line
-	1750 7450 1750 7600
+	1750 7750 1750 7900
 Wire Wire Line
 	4750 3250 4950 3250
 Wire Wire Line
-	1750 6950 1750 7150
+	1750 7250 1750 7450
 Wire Wire Line
 	1750 6300 1750 6650
 Wire Wire Line
@@ -740,4 +727,15 @@ Wire Wire Line
 	8750 8450 8750 8250
 Wire Wire Line
 	8750 8250 12000 8250
+$Comp
+L Device:CircuitBreaker_1P CB1
+U 1 1 5F6B20F0
+P 1750 6950
+F 0 "CB1" H 1803 6996 50  0000 L CNN
+F 1 "GLV Main Breaker [40A]" H 1803 6905 50  0000 L CNN
+F 2 "" H 1750 6950 50  0001 C CNN
+F 3 "~" H 1750 6950 50  0001 C CNN
+	1    1750 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
