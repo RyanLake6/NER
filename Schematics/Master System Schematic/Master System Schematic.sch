@@ -35,7 +35,7 @@ AR Path="/5F633A68" Ref="SW2"  Part="1"
 F 0 "SW2" V 1200 6000 50  0000 R CNN
 F 1 "SideMounted (BRB)" V 1300 6300 50  0000 R CNN
 F 2 "" H 1250 5650 50  0001 C CNN
-F 3 "~" H 1250 5650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 5650 50  0001 C CNN
 	1    1250 5450
 	0    1    1    0   
 $EndComp
@@ -48,7 +48,7 @@ AR Path="/5F633A6E" Ref="SW3"  Part="1"
 F 0 "SW3" V 1200 5250 50  0000 R CNN
 F 1 "SideMounted (BRB)" V 1300 5550 50  0000 R CNN
 F 2 "" H 1250 4900 50  0001 C CNN
-F 3 "~" H 1250 4900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 4900 50  0001 C CNN
 	1    1250 4700
 	0    1    1    0   
 $EndComp
@@ -61,7 +61,7 @@ AR Path="/5F633A74" Ref="SW1"  Part="1"
 F 0 "SW1" V 1250 5700 50  0000 L CNN
 F 1 "GLVMS" V 1350 5650 50  0000 L CNN
 F 2 "" H 1250 6100 50  0001 C CNN
-F 3 "~" H 1250 6100 50  0001 C CNN
+F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 1250 6100 50  0001 C CNN
 	1    1250 6100
 	0    -1   1    0   
 $EndComp
@@ -74,7 +74,7 @@ AR Path="/5F633AC3" Ref="SW?"  Part="1"
 F 0 "SW?" V 2300 2400 50  0000 C CNN
 F 1 "Brake Over-Travel Switch" V 2200 2350 50  0000 C CNN
 F 2 "" H 2300 2950 50  0001 C CNN
-F 3 "~" H 2300 2950 50  0001 C CNN
+F 3 "https://www.mcmaster.com/cadinlnord%2fnull" H 2300 2950 50  0001 C CNN
 	1    2300 2950
 	0    -1   -1   0   
 $EndComp
@@ -104,7 +104,7 @@ AR Path="/5F67997D" Ref="SW?"  Part="1"
 F 0 "SW?" V 5396 3297 50  0000 R CNN
 F 1 "Cockpit Shutdown (BRB)" V 5305 3297 50  0000 R CNN
 F 2 "" H 5350 3550 50  0001 C CNN
-F 3 "~" H 5350 3550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 5350 3550 50  0001 C CNN
 	1    5350 3350
 	0    1    1    0   
 $EndComp
@@ -117,7 +117,7 @@ AR Path="/5F67998A" Ref="SW?"  Part="1"
 F 0 "SW?" V 5304 4698 50  0000 L CNN
 F 1 "TSMS" V 5395 4698 50  0000 L CNN
 F 2 "" H 5350 4600 50  0001 C CNN
-F 3 "~" H 5350 4600 50  0001 C CNN
+F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 5350 4600 50  0001 C CNN
 	1    5350 4600
 	0    -1   -1   0   
 $EndComp
@@ -140,7 +140,7 @@ AR Path="/5F67996F" Ref="D?"  Part="1"
 F 0 "D?" H 5593 2095 50  0000 C CNN
 F 1 "SSOK1" H 5593 2186 50  0000 C CNN
 F 2 "" H 5600 2350 50  0001 C CNN
-F 3 "~" H 5600 2350 50  0001 C CNN
+F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-truck-and-trailer-lights-4-double-bullseye-led-side-clearance-lights-w-12-high-flux-leds-pigtail-connector/596/" H 5600 2350 50  0001 C CNN
 	1    5600 2350
 	-1   0    0    1   
 $EndComp
@@ -153,7 +153,7 @@ AR Path="/5F679969" Ref="D?"  Part="1"
 F 0 "D?" H 5593 1695 50  0000 C CNN
 F 1 "SSOK2" H 5593 1786 50  0000 C CNN
 F 2 "" H 5600 1950 50  0001 C CNN
-F 3 "~" H 5600 1950 50  0001 C CNN
+F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-truck-and-trailer-lights-4-double-bullseye-led-side-clearance-lights-w-12-high-flux-leds-pigtail-connector/596/" H 5600 1950 50  0001 C CNN
 	1    5600 1950
 	-1   0    0    1   
 $EndComp
@@ -392,7 +392,7 @@ P 2550 1500
 F 0 "D?" H 2543 1716 50  0000 C CNN
 F 1 "IMD Fault Indicator" H 2543 1625 50  0000 C CNN
 F 2 "" H 2550 1500 50  0001 C CNN
-F 3 "~" H 2550 1500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1500 50  0001 C CNN
 	1    2550 1500
 	1    0    0    -1  
 $EndComp
@@ -403,7 +403,7 @@ P 2550 1900
 F 0 "D?" H 2550 1800 50  0000 C CNN
 F 1 "BMS Fault Indicator" H 2550 1700 50  0000 C CNN
 F 2 "" H 2550 1900 50  0001 C CNN
-F 3 "~" H 2550 1900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1900 50  0001 C CNN
 	1    2550 1900
 	1    0    0    -1  
 $EndComp
@@ -445,7 +445,7 @@ P 3300 7700
 F 0 "SW?" H 3300 7850 50  0000 C CNN
 F 1 "IMD_FaultLatch_Reset" H 3300 7950 50  0000 C CNN
 F 2 "" H 3300 7900 50  0001 C CNN
-F 3 "~" H 3300 7900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/57/Bulgin_2010_p194-10070.pdf" H 3300 7900 50  0001 C CNN
 	1    3300 7700
 	-1   0    0    1   
 $EndComp
@@ -456,7 +456,7 @@ P 3300 7150
 F 0 "SW?" H 3300 7300 50  0000 C CNN
 F 1 "BMS_FaultLatch_Reset" H 3300 7400 50  0000 C CNN
 F 2 "" H 3300 7350 50  0001 C CNN
-F 3 "~" H 3300 7350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/57/Bulgin_2010_p194-10070.pdf" H 3300 7350 50  0001 C CNN
 	1    3300 7150
 	-1   0    0    1   
 $EndComp
