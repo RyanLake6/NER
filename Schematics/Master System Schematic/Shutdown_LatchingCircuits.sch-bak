@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 10
+Sheet 2 11
 Title "Shutdown Latching Circuits"
 Date "2020-09-17"
 Rev "2"
@@ -141,7 +141,7 @@ Text HLabel 6500 5700 2    50   Input ~ 0
 BMS_Fault_Indicator
 Text HLabel 6500 5550 2    50   Input ~ 0
 Shutdown_OUT
-Text GLabel 5700 3600 2    50   UnSpc ~ 0
+Text GLabel 6600 3600 2    50   UnSpc ~ 0
 CHASSIS_GND
 Text HLabel 6500 3350 2    50   Input ~ 0
 IMD_Fault_Indicator
@@ -180,8 +180,6 @@ Wire Wire Line
 	2150 3450 3050 3450
 Wire Wire Line
 	5600 2450 5600 3600
-Wire Wire Line
-	5700 3600 5600 3600
 Connection ~ 5600 3600
 Wire Wire Line
 	5600 3600 5600 4800
@@ -229,4 +227,6 @@ F 3 "" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5600 3600 6600 3600
 $EndSCHEMATC
