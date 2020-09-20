@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 10
+Sheet 4 11
 Title "Accumulator Container"
 Date "2020-09-17"
 Rev "2"
@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L NER:TSAL_ISOLATION U1
-U 1 1 5E5145FA
-P 10650 5750
-AR Path="/5E5145FA" Ref="U1"  Part="1" 
-AR Path="/5F45B05E/5E5145FA" Ref="U1"  Part="1" 
-F 0 "U1" H 10675 5865 50  0000 C CNN
-F 1 "TSAL_ISOLATION" H 10650 5800 50  0000 C CNN
-F 2 "" H 10650 5750 50  0001 C CNN
-F 3 "" H 10650 5750 50  0001 C CNN
-	1    10650 5750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5E504806
@@ -213,23 +200,23 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5F1E9418
-P 11950 5800
-F 0 "J2" H 11842 5985 50  0000 C CNN
-F 1 "TSAL Connector" H 11842 5894 50  0000 C CNN
-F 2 "" H 11950 5800 50  0001 C CNN
-F 3 "~" H 11950 5800 50  0001 C CNN
-	1    11950 5800
+P 12350 5800
+F 0 "J2" H 12242 5985 50  0000 C CNN
+F 1 "TSAL Connector" H 12242 5894 50  0000 C CNN
+F 2 "" H 12350 5800 50  0001 C CNN
+F 3 "~" H 12350 5800 50  0001 C CNN
+	1    12350 5800
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5F1EC371
-P 11950 5800
-F 0 "J?" H 11922 5728 50  0001 R CNN
-F 1 "Conn_01x02_Male" H 11922 5683 50  0001 R CNN
-F 2 "" H 11950 5800 50  0001 C CNN
-F 3 "~" H 11950 5800 50  0001 C CNN
-	1    11950 5800
+P 12350 5800
+F 0 "J?" H 12322 5728 50  0001 R CNN
+F 1 "Conn_01x02_Male" H 12322 5683 50  0001 R CNN
+F 2 "" H 12350 5800 50  0001 C CNN
+F 3 "~" H 12350 5800 50  0001 C CNN
+	1    12350 5800
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -265,9 +252,9 @@ Text Label 9300 3350 0    50   ~ 0
 11_2
 Text Label 8900 6450 0    50   ~ 0
 12_2
-Text Label 11150 5800 0    50   ~ 0
+Text Label 11550 5800 0    50   ~ 0
 21_20
-Text Label 11150 5900 0    50   ~ 0
+Text Label 11550 5900 0    50   ~ 0
 22_20
 Text Label 7650 2200 0    50   ~ 0
 25_20
@@ -450,9 +437,9 @@ Text HLabel 12500 4350 2    50   Output ~ 0
 TS+
 Text HLabel 12500 4450 2    50   Output ~ 0
 TS-
-Text HLabel 12150 5800 2    50   Output ~ 0
+Text HLabel 12550 5800 2    50   Output ~ 0
 TSAL+
-Text HLabel 12150 5900 2    50   Output ~ 0
+Text HLabel 12550 5900 2    50   Output ~ 0
 TSAL-
 Text HLabel 12150 2600 2    50   Output ~ 0
 IMD_HV_SENSE-
@@ -495,8 +482,6 @@ Wire Wire Line
 Wire Wire Line
 	10350 4350 10350 4100
 Wire Wire Line
-	10300 5800 10250 5800
-Wire Wire Line
 	10250 5800 10250 4350
 Connection ~ 10250 4350
 Wire Wire Line
@@ -536,8 +521,6 @@ Wire Wire Line
 	11100 4100 11100 4450
 Wire Wire Line
 	10450 4100 10450 4450
-Wire Wire Line
-	10100 5900 10300 5900
 Connection ~ 10100 5900
 Wire Wire Line
 	10100 5900 10100 6450
@@ -1722,10 +1705,6 @@ Connection ~ 11100 4450
 Wire Wire Line
 	11100 4450 11750 4450
 Wire Wire Line
-	11000 5900 11750 5900
-Wire Wire Line
-	11000 5800 11750 5800
-Wire Wire Line
 	11100 2600 11750 2600
 Wire Wire Line
 	11200 2700 11750 2700
@@ -1733,6 +1712,24 @@ Wire Wire Line
 	10350 2400 11750 2400
 Wire Wire Line
 	10450 2500 11750 2500
+$Sheet
+S 10500 5700 700  300 
+U 5FAAF22F
+F0 "TSAL_Circuit" 50
+F1 "TSAL_Circuit.sch" 50
+F2 "TS+" I L 10500 5800 50 
+F3 "TS-" I L 10500 5900 50 
+F4 "TSAL+" I R 11200 5800 50 
+F5 "TSAL-" I R 11200 5900 50 
+$EndSheet
+Wire Wire Line
+	10250 5800 10500 5800
+Wire Wire Line
+	10100 5900 10500 5900
+Wire Wire Line
+	11200 5800 12150 5800
+Wire Wire Line
+	11200 5900 12150 5900
 Wire Bus Line
 	1850 1900 1850 3750
 Wire Bus Line

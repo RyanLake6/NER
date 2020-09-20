@@ -15,17 +15,6 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	4800 2850 5050 2850
-$Comp
-L LatchingFaultBoard-rescue:1N4001-Diode-Shutdown-rescue D1
-U 1 1 5DDE3BD5
-P 4350 2000
-F 0 "D1" H 4350 2216 50  0000 C CNN
-F 1 "1N4001" H 4350 2125 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 1825 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 2000 50  0001 C CNN
-	1    4350 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 2000 4200 2000
 Wire Wire Line
@@ -36,30 +25,8 @@ Wire Wire Line
 	4900 2450 4800 2450
 Wire Wire Line
 	3800 1700 5050 1700
-$Comp
-L LatchingFaultBoard-rescue:3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue K2
-U 1 1 5DE0D324
-P 4350 4600
-F 0 "K2" H 4350 4715 50  0000 C CNN
-F 1 "3PoleSwitchingRelay" H 4350 4624 50  0000 C CNN
-F 2 "" H 4350 4600 50  0001 C CNN
-F 3 "" H 4350 4600 50  0001 C CNN
-	1    4350 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 5200 5050 5200
-$Comp
-L LatchingFaultBoard-rescue:1N4001-Diode-Shutdown-rescue D2
-U 1 1 5DE0D338
-P 4350 4350
-F 0 "D2" H 4350 4566 50  0000 C CNN
-F 1 "1N4001" H 4350 4475 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 4175 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 4350 50  0001 C CNN
-	1    4350 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 4050 3800 4350
 Wire Wire Line
@@ -74,17 +41,6 @@ Wire Wire Line
 	4900 4800 4800 4800
 Wire Wire Line
 	3800 4050 5050 4050
-$Comp
-L LatchingFaultBoard-rescue:3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue K1
-U 1 1 5DDDA065
-P 4350 2250
-F 0 "K1" H 4350 2365 50  0000 C CNN
-F 1 "3PoleSwitchingRelay" H 4350 2274 50  0000 C CNN
-F 2 "" H 4350 2250 50  0001 C CNN
-F 3 "" H 4350 2250 50  0001 C CNN
-	1    4350 2250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5F718C39
@@ -229,4 +185,48 @@ Wire Wire Line
 Connection ~ 5600 3600
 Wire Wire Line
 	5600 3600 5600 4800
+$Comp
+L Diode:1N4001 D?
+U 1 1 5F682B6B
+P 4350 2000
+F 0 "D?" H 4350 2216 50  0000 C CNN
+F 1 "1N4001" H 4350 2125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 1825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D?
+U 1 1 5F684662
+P 4350 4350
+F 0 "D?" H 4350 4566 50  0000 C CNN
+F 1 "1N4001" H 4350 4475 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 4175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 4350 50  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NER:3PoleSwitchingRelay K?
+U 1 1 5F6868C5
+P 4350 2250
+F 0 "K?" H 4350 2365 50  0000 C CNN
+F 1 "3PoleSwitchingRelay" H 4350 2274 50  0000 C CNN
+F 2 "" H 4350 2250 50  0001 C CNN
+F 3 "" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NER:3PoleSwitchingRelay K?
+U 1 1 5F68C6F6
+P 4350 4600
+F 0 "K?" H 4350 4715 50  0000 C CNN
+F 1 "3PoleSwitchingRelay" H 4350 4624 50  0000 C CNN
+F 2 "" H 4350 4600 50  0001 C CNN
+F 3 "" H 4350 4600 50  0001 C CNN
+	1    4350 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

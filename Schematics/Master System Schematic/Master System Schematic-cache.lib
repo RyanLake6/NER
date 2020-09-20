@@ -158,6 +158,24 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_CircuitBreaker_1P
+#
+DEF Device_CircuitBreaker_1P CB 0 20 Y Y 1 F N
+F0 "CB" 75 0 50 H V L CNN
+F1 "Device_CircuitBreaker_1P" 75 75 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 -200 0 -150 N
+P 2 0 1 0 0 -150 -100 150 N
+P 2 1 1 0 -25 175 25 125 N
+P 2 1 1 0 0 200 0 150 N
+P 2 1 1 0 25 175 -25 125 N
+X ~ 1 0 300 100 D 50 50 1 1 P
+X ~ 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Fuse
 #
 DEF Device_Fuse F 0 0 N Y 1 F N
@@ -254,30 +272,31 @@ X ~ 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LatchingFaultBoard-rescue_1N4001-Diode-Shutdown-rescue
+# Diode_1N4001
 #
-DEF LatchingFaultBoard-rescue_1N4001-Diode-Shutdown-rescue D 0 40 N N 1 F N
+DEF Diode_1N4001 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "LatchingFaultBoard-rescue_1N4001-Diode-Shutdown-rescue" 0 -100 50 H V C CNN
+F1 "Diode_1N4001" 0 -100 50 H V C CNN
 F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
 $FPLIST
  D*DO?41*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 8 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LatchingFaultBoard-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue
+# NER_3PoleSwitchingRelay
 #
-DEF LatchingFaultBoard-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue K 0 40 Y Y 1 F N
+DEF NER_3PoleSwitchingRelay K 0 40 Y Y 1 F N
 F0 "K" 0 0 50 H V C CNN
-F1 "LatchingFaultBoard-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue" 0 0 50 H V C CNN
+F1 "NER_3PoleSwitchingRelay" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -567,36 +586,6 @@ X AC3_OUT ~ 900 -300 100 L 50 50 1 1 O
 X RTD_INPUT ~ -900 -1850 100 R 50 50 1 1 I
 X TS+ ~ -900 -200 100 R 50 50 1 1 I
 X TS- ~ -900 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# NER_TSAL
-#
-DEF NER_TSAL U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "NER_TSAL" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -200 -50 100 -350 0 1 0 N
-X DC_+ ~ -300 -100 100 R 50 50 1 1 I
-X DC_- ~ -300 -300 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# NER_TSAL_ISOLATION
-#
-DEF NER_TSAL_ISOLATION U 0 40 Y Y 1 F N
-F0 "U" 0 50 50 H V C CNN
-F1 "NER_TSAL_ISOLATION" 200 150 50 H V C CNN
-F2 "" 0 50 50 H I C CNN
-F3 "" 0 50 50 H I C CNN
-DRAW
-S 250 -200 -250 0 0 1 0 N
-X *TS+ ~ 350 -50 100 L 50 50 1 1 O
-X *TS- ~ 350 -150 100 L 50 50 1 1 O
-X TS+ ~ -350 -50 100 R 50 50 1 1 I
-X TS- ~ -350 -150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
