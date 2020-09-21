@@ -212,7 +212,7 @@ P 4350 2250
 F 0 "K?" H 4350 2365 50  0000 C CNN
 F 1 "3PoleSwitchingRelay" H 4350 2274 50  0000 C CNN
 F 2 "" H 4350 2250 50  0001 C CNN
-F 3 "" H 4350 2250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/ly_ds_e_4_8_csm54-1291204.pdf" H 4350 2250 50  0001 C CNN
 	1    4350 2250
 	1    0    0    -1  
 $EndComp
@@ -223,7 +223,7 @@ P 4350 4600
 F 0 "K?" H 4350 4715 50  0000 C CNN
 F 1 "3PoleSwitchingRelay" H 4350 4624 50  0000 C CNN
 F 2 "" H 4350 4600 50  0001 C CNN
-F 3 "" H 4350 4600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/ly_ds_e_4_8_csm54-1291204.pdf" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	1    0    0    -1  
 $EndComp
