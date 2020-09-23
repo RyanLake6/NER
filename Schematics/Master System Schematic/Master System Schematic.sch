@@ -94,6 +94,7 @@ F9 "BMS_Status" I R 4700 1500 50
 F10 "BMS_Fault_Indicator" O L 2950 1900 50 
 F11 "BMS_Latch_Reset+" I R 4700 2500 50 
 F12 "BMS_Latch_Reset-" I R 4700 2600 50 
+F13 "Ground" I R 4700 1750 50 
 $EndSheet
 $Comp
 L Switch:SW_Push_Open SW?
@@ -752,4 +753,8 @@ Wire Wire Line
 Connection ~ 6150 5100
 Wire Wire Line
 	6150 5100 6150 5500
+Text GLabel 4850 1750 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	4850 1750 4700 1750
 $EndSCHEMATC
