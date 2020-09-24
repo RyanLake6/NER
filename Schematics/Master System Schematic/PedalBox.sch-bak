@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 11 11
+Sheet 12 12
 Title "Pedal Box"
 Date "2020-09-20"
 Rev "1"
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6600 3050 2    50   Input ~ 0
+Text HLabel 6500 4050 2    50   Input ~ 0
 GLV+
 Wire Wire Line
 	6600 3050 5550 3050
@@ -22,25 +22,14 @@ GLV_GND
 Wire Wire Line
 	3600 3050 4350 3050
 $Comp
-L NER:Arduino_UNO_rev3 A1
+L NER:Arduino_UNO_rev3 A?
 U 1 1 5F6833F8
 P 4950 2900
-F 0 "A1" H 4950 3015 50  0000 C CNN
+F 0 "A?" H 4950 3015 50  0000 C CNN
 F 1 "Arduino_UNO_rev3" H 4950 2924 50  0000 C CNN
 F 2 "" H 4950 3050 50  0001 C CNN
 F 3 "" H 4950 3050 50  0001 C CNN
 	1    4950 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L NER:CAN-Module U1
-U 1 1 5F6A22C3
-P 7600 3100
-F 0 "U1" H 7625 3115 50  0000 C CNN
-F 1 "CAN_Module" H 7625 3024 50  0000 C CNN
-F 2 "" H 7600 3100 50  0001 C CNN
-F 3 "" H 7600 3100 50  0001 C CNN
-	1    7600 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -77,14 +66,14 @@ Wire Wire Line
 	5750 3400 5750 3550
 Wire Wire Line
 	5750 3550 5550 3550
-Text HLabel 8950 3650 2    50   Input ~ 0
+Text HLabel 8950 3750 2    50   Input ~ 0
 CAN_L
 Text HLabel 8950 3500 2    50   Input ~ 0
 CAN_H
 Wire Wire Line
 	8200 3500 8950 3500
 Wire Wire Line
-	8950 3650 8200 3650
+	8950 3750 8200 3750
 NoConn ~ 4350 3200
 NoConn ~ 4350 3300
 NoConn ~ 4350 3400
@@ -242,4 +231,15 @@ Connection ~ 6000 5650
 Wire Wire Line
 	6000 5650 6600 5650
 NoConn ~ 4350 4150
+$Comp
+L NER:CAN_Bus_Module U?
+U 1 1 5F6D982E
+P 7600 3200
+F 0 "U?" H 7625 3315 50  0000 C CNN
+F 1 "CAN_Bus_Module" H 7625 3224 50  0000 C CNN
+F 2 "" H 7600 3200 50  0001 C CNN
+F 3 "" H 7600 3200 50  0001 C CNN
+	1    7600 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

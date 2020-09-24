@@ -119,6 +119,27 @@ X STATUS_OK ~ -700 -150 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# CAN_Bus_Module
+#
+DEF CAN_Bus_Module U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "CAN_Bus_Module" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -450 -50 500 -850 0 1 0 N
+X 5_VDC ~ -550 -750 100 R 50 50 1 1 I
+X CAN_High ~ 600 -300 100 L 50 50 1 1 I
+X CAN_Low ~ 600 -550 100 L 50 50 1 1 I
+X Chip_Select ~ -550 -550 100 R 50 50 1 1 I
+X Ground ~ -550 -650 100 R 50 50 1 1 I
+X Interrupt ~ -550 -150 100 R 50 50 1 1 I
+X MISO ~ -550 -450 100 R 50 50 1 1 I
+X MOSI ~ -550 -350 100 R 50 50 1 1 I
+X Serial_Clock ~ -550 -250 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Device_Battery
 #
 DEF Device_Battery BT 0 0 N N 1 F N
