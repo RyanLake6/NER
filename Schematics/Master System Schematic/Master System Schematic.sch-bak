@@ -86,14 +86,15 @@ F1 "Shutdown_LatchingCircuits.sch" 50
 F2 "Shutdown_OUT" O R 4700 1950 50 
 F3 "Shutdown_IN" I L 2950 2600 50 
 F4 "IMD_Fault_Indicator" O L 2950 1500 50 
-F5 "IMD_Latch_Reset+" I R 4700 2250 50 
-F6 "IMD_Latch_Reset-" I R 4700 2350 50 
+F5 "IMD_Latch_Reset+" I R 4700 2400 50 
+F6 "IMD_Latch_Reset-" I R 4700 2500 50 
 F7 "GLV+_Fused" I L 2950 2450 50 
 F8 "IMD_Status" I R 4700 1600 50 
 F9 "BMS_Status" I R 4700 1500 50 
 F10 "BMS_Fault_Indicator" O L 2950 1900 50 
-F11 "BMS_Latch_Reset+" I R 4700 2500 50 
+F11 "BMS_Latch_Reset+" I R 4700 2300 50 
 F12 "BMS_Latch_Reset-" I R 4700 2600 50 
+F13 "Ground" I R 4700 1750 50 
 $EndSheet
 $Comp
 L Switch:SW_Push_Open SW?
@@ -223,37 +224,37 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Female J3
 U 1 1 5FB0713A
-P 5550 7950
-F 0 "J3" V 5450 7800 50  0000 L CNN
-F 1 "TS-" V 5350 7750 50  0000 L CNN
-F 2 "" H 5550 7950 50  0001 C CNN
-F 3 "~" H 5550 7950 50  0001 C CNN
-	1    5550 7950
+P 5850 8650
+F 0 "J3" V 5750 8500 50  0000 L CNN
+F 1 "TS-" V 5650 8450 50  0000 L CNN
+F 2 "" H 5850 8650 50  0001 C CNN
+F 3 "~" H 5850 8650 50  0001 C CNN
+	1    5850 8650
 	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J2
 U 1 1 5FB022E4
-P 5300 7950
-F 0 "J2" V 5200 7800 50  0000 L CNN
-F 1 "TS+" V 5100 7750 50  0000 L CNN
-F 2 "" H 5300 7950 50  0001 C CNN
-F 3 "~" H 5300 7950 50  0001 C CNN
-	1    5300 7950
+P 5600 8650
+F 0 "J2" V 5500 8500 50  0000 L CNN
+F 1 "TS+" V 5400 8450 50  0000 L CNN
+F 2 "" H 5600 8650 50  0001 C CNN
+F 3 "~" H 5600 8650 50  0001 C CNN
+	1    5600 8650
 	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5FAE402D
-P 5050 7950
-F 0 "J1" V 4950 7800 50  0000 L CNN
-F 1 "GND" V 4850 7750 50  0000 L CNN
-F 2 "" H 5050 7950 50  0001 C CNN
-F 3 "~" H 5050 7950 50  0001 C CNN
-	1    5050 7950
+P 6100 8650
+F 0 "J1" V 6000 8500 50  0000 L CNN
+F 1 "GND" V 5900 8450 50  0000 L CNN
+F 2 "" H 6100 8650 50  0001 C CNN
+F 3 "~" H 6100 8650 50  0001 C CNN
+	1    6100 8650
 	0    -1   1    0   
 $EndComp
-Text Notes 3850 8200 0    50   ~ 0
+Text Notes 4400 8900 0    50   ~ 0
 TSMP and Shutdown Reset Container
 Text GLabel 6150 5600 0    50   UnSpc ~ 0
 CHASSIS_GND
@@ -347,7 +348,7 @@ F16 "Segment2_VoltageTaps" I L 10100 6650 50
 F17 "Segment3_VoltageTaps" I L 10100 6750 50 
 F18 "Segment4_VoltageTaps" I L 10100 6850 50 
 $EndSheet
-Text GLabel 5150 6750 2    50   UnSpc ~ 0
+Text GLabel 6450 8050 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:FuseBox_PSZACCEPS052H U?
@@ -407,28 +408,6 @@ Wire Wire Line
 	2000 3500 2000 1100
 Wire Wire Line
 	1850 1000 1850 3350
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5FA44CBD
-P 4400 7700
-F 0 "SW?" H 4400 7850 50  0000 C CNN
-F 1 "IMD_FaultLatch_Reset" H 4400 7950 50  0000 C CNN
-F 2 "" H 4400 7900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/57/Bulgin_2010_p194-10070.pdf" H 4400 7900 50  0001 C CNN
-	1    4400 7700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5FA470C6
-P 4400 7150
-F 0 "SW?" H 4400 7300 50  0000 C CNN
-F 1 "BMS_FaultLatch_Reset" H 4400 7400 50  0000 C CNN
-F 2 "" H 4400 7350 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/57/Bulgin_2010_p194-10070.pdf" H 4400 7350 50  0001 C CNN
-	1    4400 7150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6150 5500 6700 5500
 Wire Wire Line
@@ -452,30 +431,6 @@ Connection ~ 6150 1950
 Wire Wire Line
 	6150 1950 6250 1950
 Wire Wire Line
-	4600 7700 4950 7700
-Wire Wire Line
-	4200 7700 4000 7700
-Wire Wire Line
-	4000 7700 4000 7600
-Wire Wire Line
-	4000 7600 4900 7600
-Wire Wire Line
-	4200 7150 4000 7150
-Wire Wire Line
-	4000 7150 4000 7050
-Wire Wire Line
-	4600 7150 4850 7150
-Wire Wire Line
-	4000 7050 4800 7050
-Wire Wire Line
-	4800 2600 4700 2600
-Wire Wire Line
-	4700 2500 4850 2500
-Wire Wire Line
-	4900 2350 4700 2350
-Wire Wire Line
-	4700 2250 4950 2250
-Wire Wire Line
 	6150 2350 6150 3150
 Connection ~ 6150 2350
 Wire Wire Line
@@ -483,13 +438,13 @@ Wire Wire Line
 Wire Wire Line
 	6150 4400 6150 3550
 Wire Notes Line
-	3800 8050 3800 6850
+	4350 8750 4350 7550
 Wire Notes Line
-	3800 6850 5850 6850
+	4350 7550 6400 7550
 Wire Notes Line
-	5850 6850 5850 8050
+	6400 7550 6400 8750
 Wire Notes Line
-	5850 8050 3800 8050
+	6400 8750 4350 8750
 Wire Wire Line
 	11500 6100 11700 6100
 Wire Wire Line
@@ -683,20 +638,6 @@ F 3 "" H 16100 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 6750 5050 6750
-Wire Wire Line
-	5300 7100 6700 7100
-Wire Wire Line
-	5550 7200 6700 7200
-Wire Wire Line
-	4800 2600 4800 7050
-Wire Wire Line
-	4850 2500 4850 7150
-Wire Wire Line
-	4900 2350 4900 7600
-Wire Wire Line
-	4950 2250 4950 7700
-Wire Wire Line
 	1850 3950 6900 3950
 Wire Wire Line
 	4700 1950 6150 1950
@@ -743,13 +684,74 @@ Wire Wire Line
 	2300 3800 2300 3400
 Wire Wire Line
 	2300 2600 2300 3000
-Wire Wire Line
-	5050 6750 5050 7750
-Wire Wire Line
-	5300 7100 5300 7750
-Wire Wire Line
-	5550 7200 5550 7750
 Connection ~ 6150 5100
 Wire Wire Line
 	6150 5100 6150 5500
+Text GLabel 4850 1750 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	4850 1750 4700 1750
+$Comp
+L Switch:SW_DPST SW?
+U 1 1 5F864268
+P 4950 8250
+F 0 "SW?" H 4950 8050 50  0000 C CNN
+F 1 "Latching Circuit Reset Switch" H 4950 7900 50  0000 C CNN
+F 2 "" H 4950 8250 50  0001 C CNN
+F 3 "~" H 4950 8250 50  0001 C CNN
+	1    4950 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 8150 4700 8150
+Wire Wire Line
+	4700 8150 4700 8050
+Wire Wire Line
+	4700 8050 4900 8050
+Wire Wire Line
+	5150 8150 5200 8150
+Wire Wire Line
+	5200 8150 5200 8050
+Wire Wire Line
+	5200 8050 5000 8050
+Wire Wire Line
+	5150 8350 5250 8350
+Wire Wire Line
+	5250 8350 5250 8000
+Wire Wire Line
+	5250 8000 5050 8000
+Wire Wire Line
+	4750 8350 4650 8350
+Wire Wire Line
+	4650 8350 4650 8000
+Wire Wire Line
+	4650 8000 4850 8000
+Wire Wire Line
+	4850 2600 4850 8000
+Wire Wire Line
+	5050 2300 4700 2300
+Wire Wire Line
+	4700 2600 4850 2600
+Wire Wire Line
+	5050 2300 5050 8000
+Wire Wire Line
+	4700 2400 5000 2400
+Wire Wire Line
+	5000 2400 5000 8050
+Wire Wire Line
+	4900 2500 4700 2500
+Wire Wire Line
+	4900 2500 4900 8050
+Wire Wire Line
+	6700 7100 5600 7100
+Wire Wire Line
+	5600 7100 5600 8450
+Wire Wire Line
+	5850 7200 6700 7200
+Wire Wire Line
+	5850 7200 5850 8450
+Wire Wire Line
+	6450 8050 6100 8050
+Wire Wire Line
+	6100 8050 6100 8450
 $EndSCHEMATC
