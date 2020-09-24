@@ -121,7 +121,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 5200 6150 5400
 Wire Wire Line
-	5900 5400 6150 5400
+	5900 5400 6000 5400
 NoConn ~ 7050 3350
 NoConn ~ 5550 3250
 NoConn ~ 5550 3350
@@ -152,7 +152,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 4250 3950 4600
 Wire Wire Line
-	3950 5650 6600 5650
+	3950 5650 6000 5650
 Wire Wire Line
 	6600 5650 6600 5150
 Wire Wire Line
@@ -220,4 +220,26 @@ Text HLabel 3300 5000 0    50   Input ~ 0
 POT2_INPUT
 Text HLabel 3300 5100 0    50   Input ~ 0
 POT2-
+Wire Wire Line
+	7050 3950 7050 4300
+Wire Wire Line
+	7050 4300 7600 4300
+Wire Wire Line
+	7600 4300 7600 5850
+Wire Wire Line
+	7600 5850 2500 5850
+Wire Wire Line
+	2500 5850 2500 4050
+Wire Wire Line
+	2500 4050 3850 4050
+Connection ~ 3850 4050
+Wire Wire Line
+	6000 5400 6000 5650
+Connection ~ 6000 5400
+Wire Wire Line
+	6000 5400 6150 5400
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6600 5650
+NoConn ~ 4350 4150
 $EndSCHEMATC
