@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 3 11
+Sheet 3 12
 Title "Charging System"
 Date "2020-09-17"
 Rev "2"
