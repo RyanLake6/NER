@@ -185,10 +185,10 @@ F 3 "~" H 13600 7350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J8
 U 1 1 5F1EC371
 P 13600 7350
-F 0 "J?" H 13572 7278 50  0001 R CNN
+F 0 "J8" H 13572 7278 50  0001 R CNN
 F 1 "Conn_01x02_Male" H 13572 7233 50  0001 R CNN
 F 2 "" H 13600 7350 50  0001 C CNN
 F 3 "~" H 13600 7350 50  0001 C CNN
@@ -196,10 +196,10 @@ F 3 "~" H 13600 7350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J7
 U 1 1 5F1EE03B
 P 13200 5900
-F 0 "J?" H 13172 5874 50  0001 R CNN
+F 0 "J7" H 13172 5874 50  0001 R CNN
 F 1 "Conn_01x02_Male" H 13172 5828 50  0001 R CNN
 F 2 "" H 13200 5900 50  0001 C CNN
 F 3 "~" H 13200 5900 50  0001 C CNN
@@ -265,10 +265,10 @@ F 3 "~" H 9050 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J?
+L Connector:Conn_01x06_Male J5
 U 1 1 5F2FD6BE
 P 9050 1550
-F 0 "J?" V 9112 1694 50  0001 L CNN
+F 0 "J5" V 9112 1694 50  0001 L CNN
 F 1 "Conn_01x04_Male" V 9158 1694 50  0001 L CNN
 F 2 "" H 9050 1550 50  0001 C CNN
 F 3 "~" H 9050 1550 50  0001 C CNN
@@ -377,10 +377,10 @@ TSMP-
 Text HLabel 13400 3950 2    50   Output ~ 0
 TSMP+
 $Comp
-L Connector:Conn_01x04_Male J?
+L Connector:Conn_01x04_Male J6
 U 1 1 5F154419
 P 13200 4050
-F 0 "J?" H 13172 3978 50  0001 R CNN
+F 0 "J6" H 13172 3978 50  0001 R CNN
 F 1 "Conn_01x04_Male" H 13172 3933 50  0001 R CNN
 F 2 "" H 13200 4050 50  0001 C CNN
 F 3 "~" H 13200 4050 50  0001 C CNN
@@ -1656,10 +1656,10 @@ Wire Wire Line
 Wire Wire Line
 	12450 7450 13400 7450
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K5
 U 1 1 5F80B7CF
 P 8800 2950
-F 0 "K?" V 8233 2950 50  0000 C CNN
+F 0 "K5" V 8233 2950 50  0000 C CNN
 F 1 "SPST-NO (AIR Control)" V 8324 2950 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9150 2900 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8800 2950 50  0001 C CNN
@@ -1667,10 +1667,10 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K6
 U 1 1 5F814F76
 P 9950 2950
-F 0 "K?" V 9383 2950 50  0000 C CNN
+F 0 "K6" V 9383 2950 50  0000 C CNN
 F 1 "SPST-NO (Precharge Control)" V 9474 2950 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 10300 2900 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9950 2950 50  0001 C CNN
