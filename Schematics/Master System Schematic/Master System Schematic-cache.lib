@@ -158,24 +158,6 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_CircuitBreaker_1P
-#
-DEF Device_CircuitBreaker_1P CB 0 20 Y Y 1 F N
-F0 "CB" 75 0 50 H V L CNN
-F1 "Device_CircuitBreaker_1P" 75 75 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 0 -200 0 -150 N
-P 2 0 1 0 0 -150 -100 150 N
-P 2 1 1 0 -25 175 25 125 N
-P 2 1 1 0 0 200 0 150 N
-P 2 1 1 0 25 175 -25 125 N
-X ~ 1 0 300 100 D 50 50 1 1 P
-X ~ 2 0 -300 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Fuse
 #
 DEF Device_Fuse F 0 0 N Y 1 F N
@@ -272,14 +254,13 @@ X ~ 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_1N4001
+# Master-System-Schematic-rescue_1N4001-Diode-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue
 #
-DEF Diode_1N4001 D 0 40 N N 1 F N
+DEF Master-System-Schematic-rescue_1N4001-Diode-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Diode_1N4001" 0 -100 50 H V C CNN
+F1 "Master-System-Schematic-rescue_1N4001-Diode-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue" 0 -100 50 H V C CNN
 F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
 $FPLIST
  D*DO?41*
 $ENDFPLIST
@@ -292,11 +273,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NER_3PoleSwitchingRelay
+# Master-System-Schematic-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue
 #
-DEF NER_3PoleSwitchingRelay K 0 40 Y Y 1 F N
+DEF Master-System-Schematic-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue K 0 40 Y Y 1 F N
 F0 "K" 0 0 50 H V C CNN
-F1 "NER_3PoleSwitchingRelay" 0 0 50 H V C CNN
+F1 "Master-System-Schematic-rescue_3PoleSwitchingRelay-FSAE_Components-Shutdown-rescue-LatchingFaultBoard-rescue-Master-System-Schematic-rescue" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -341,6 +322,56 @@ X ~ 9 -450 -1200 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# NER_Arduino_UNO_rev3
+#
+DEF NER_Arduino_UNO_rev3 A 0 40 Y Y 1 F N
+F0 "A" 0 150 50 H V C CNN
+F1 "NER_Arduino_UNO_rev3" 0 50 50 H V C CNN
+F2 "" 0 150 50 H I C CNN
+F3 "" 0 150 50 H I C CNN
+DRAW
+S 500 -2250 -500 -50 0 1 0 N
+X +3V3 ~ -600 -1050 100 R 50 50 1 1 w
+X +5V ~ -600 -1150 100 R 50 50 1 1 w
+X A0 ~ -600 -1600 100 R 50 50 1 1 I
+X A1 ~ -600 -1700 100 R 50 50 1 1 I
+X A2 ~ -600 -1800 100 R 50 50 1 1 I
+X A3 ~ -600 -1900 100 R 50 50 1 1 I
+X A4 ~ -600 -2000 100 R 50 50 1 1 I
+X A5 ~ -600 -2100 100 R 50 50 1 1 I
+X AREF ~ 600 -550 100 L 50 50 1 1 P
+X D0/RX ~ 600 -2100 100 L 50 50 1 1 B
+X D1/TX ~ 600 -2000 100 L 50 50 1 1 B
+X D12 ~ 600 -850 100 L 50 50 1 1 B
+X D13 ~ 600 -750 100 L 50 50 1 1 B
+X D18/SDA ~ 600 -450 100 L 50 50 1 1 B
+X D19/SCL ~ 600 -350 100 L 50 50 1 1 B
+X D2 ~ 600 -1900 100 L 50 50 1 1 B
+X D4 ~ 600 -1700 100 L 50 50 1 1 B
+X D7 ~ 600 -1400 100 L 50 50 1 1 B
+X D8 ~ 600 -1250 100 L 50 50 1 1 B
+X GND ~ -600 -1350 100 R 50 50 1 1 P
+X GND ~ -600 -1250 100 R 50 50 1 1 P
+X GND ~ 600 -650 100 L 50 50 1 1 P
+X IOREF ~ -600 -850 100 R 50 50 1 1 P
+X NC ~ -600 -750 100 R 50 50 1 1 N
+X PWR_GND ~ -600 -150 100 R 50 50 1 1 P
+X PWR_VIN ~ 600 -150 100 L 50 50 1 1 W
+X RESET ~ -600 -950 100 R 50 50 1 1 I
+X USB_DATA+ ~ -600 -300 100 R 50 50 1 1 B
+X USB_DATA- ~ -600 -400 100 R 50 50 1 1 B
+X USB_GND ~ -600 -600 100 R 50 50 1 1 P
+X USB_Vcc ~ -600 -500 100 R 50 50 1 1 W
+X VIN ~ -600 -1450 100 R 50 50 1 1 W
+X ~~D10 ~ 600 -1050 100 L 50 50 1 1 B
+X ~~D11 ~ 600 -950 100 L 50 50 1 1 B
+X ~~D3 ~ 600 -1800 100 L 50 50 1 1 B
+X ~~D5 ~ 600 -1600 100 L 50 50 1 1 B
+X ~~D6 ~ 600 -1500 100 L 50 50 1 1 B
+X ~~D9 ~ 600 -1150 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # NER_Bender_Isometer_IR155-3204
 #
 DEF NER_Bender_Isometer_IR155-3204 U 0 40 Y Y 1 F N
@@ -357,6 +388,27 @@ X GND ~ 700 -250 100 L 50 50 1 1 I
 X HV_Sense+ ~ -700 -350 100 R 50 50 1 1 I
 X HV_Sense- ~ -700 -450 100 R 50 50 1 1 I
 X STATUS_OK ~ -700 -150 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# NER_CAN-Module
+#
+DEF NER_CAN-Module U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "NER_CAN-Module" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -450 -150 500 -950 0 1 0 N
+X 5_VDC ~ -550 -850 100 R 50 50 1 1 I
+X CAN_High ~ 600 -400 100 L 50 50 1 1 I
+X CAN_Low ~ 600 -550 100 L 50 50 1 1 I
+X Chip_Select ~ -550 -650 100 R 50 50 1 1 I
+X Ground ~ -550 -750 100 R 50 50 1 1 I
+X Interrupt ~ -550 -250 100 R 50 50 1 1 O
+X MISO ~ -550 -550 100 R 50 50 1 1 I
+X MOSI ~ -550 -450 100 R 50 50 1 1 I
+X Serial_Clock ~ -550 -350 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -589,6 +641,36 @@ X TS- ~ -900 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# NER_TSAL
+#
+DEF NER_TSAL U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "NER_TSAL" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 -50 100 -350 0 1 0 N
+X DC_+ ~ -300 -100 100 R 50 50 1 1 I
+X DC_- ~ -300 -300 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# NER_TSAL_ISOLATION
+#
+DEF NER_TSAL_ISOLATION U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "NER_TSAL_ISOLATION" 200 150 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+S 250 -200 -250 0 0 1 0 N
+X *TS+ ~ 350 -50 100 L 50 50 1 1 O
+X *TS- ~ 350 -150 100 L 50 50 1 1 O
+X TS+ ~ -350 -50 100 R 50 50 1 1 I
+X TS- ~ -350 -150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # NER_TSM2500
 #
 DEF NER_TSM2500 U 0 40 Y Y 1 F N
@@ -787,6 +869,23 @@ DRAW
 C -80 0 20 0 0 0 N
 C 80 0 20 0 0 0 N
 P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_SPST_Temperature
+#
+DEF Switch_SW_SPST_Temperature SW 0 0 Y N 1 F N
+F0 "SW" 70 120 50 H V L CNN
+F1 "Switch_SW_SPST_Temperature" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+P 8 0 0 0 0 40 0 80 -30 80 -30 100 30 100 30 120 0 120 0 150 N
 X A 1 -200 0 100 R 50 50 1 1 P
 X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
