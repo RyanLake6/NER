@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -257,7 +256,7 @@ F 3 "~" H 6100 8650 50  0001 C CNN
 $EndComp
 Text Notes 4400 8900 0    50   ~ 0
 TSMP and Shutdown Reset Container
-Text GLabel 6150 5600 0    50   UnSpc ~ 0
+Text GLabel 6150 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:OrionCurrentSens U?
@@ -270,8 +269,6 @@ F 3 "" H 9350 8050 50  0001 C CNN
 	1    9350 8050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6150 5600 6700 5600
 $Sheet
 S 8850 8900 1000 250 
 U 61ECC7CF
@@ -285,39 +282,37 @@ $EndSheet
 Text GLabel 8500 5850 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Sheet
-S 6700 5450 1750 1850
+S 6700 5250 1750 2000
 U 5F45B05E
 F0 "Accumulator Container" 50
 F1 "Accumulator_Container.sch" 50
-F2 "MotorController_Precharge_-" I R 8450 5850 50 
-F3 "MotorController_Precharge_+" I R 8450 5750 50 
-F4 "Shutdown+" I L 6700 5500 50 
-F5 "Shutdown-" I L 6700 5600 50 
-F6 "TS+" O R 8450 7100 50 
-F7 "TS-" O R 8450 7200 50 
-F8 "TSAL+" O L 6700 6150 50 
-F9 "TSAL-" O L 6700 6450 50 
-F10 "IMD_HV_SENSE-" O R 8450 5500 50 
-F11 "IMD_HV_SENSE+" O R 8450 5600 50 
-F12 "TSMP-" O L 6700 7200 50 
-F13 "TSMP+" O L 6700 7100 50 
-F14 "Segment1_Thermistors" O R 8450 6100 50 
-F15 "Segment2_Thermistors" O R 8450 6200 50 
-F16 "Segment3_Thermistors" O R 8450 6300 50 
-F17 "Segment4_Thermistors" O R 8450 6400 50 
-F18 "Segment1_VoltageTaps" O R 8450 6550 50 
-F19 "Segment2_VoltageTaps" O R 8450 6650 50 
-F20 "Segment3_VoltageTaps" O R 8450 6750 50 
-F21 "Segment4_VoltageTaps" O R 8450 6850 50 
+F2 "Shutdown+" I L 6700 5300 50 
+F3 "Shutdown-" I L 6700 5400 50 
+F4 "TS+" O R 8450 7100 50 
+F5 "TS-" O R 8450 7200 50 
+F6 "TSAL+" O L 6700 5950 50 
+F7 "TSAL-" O L 6700 6250 50 
+F8 "IMD_HV_SENSE-" O R 8450 5300 50 
+F9 "IMD_HV_SENSE+" O R 8450 5400 50 
+F10 "TSMP-" O L 6700 7200 50 
+F11 "TSMP+" O L 6700 7100 50 
+F12 "Segment1_Thermistors" O R 8450 6100 50 
+F13 "Segment2_Thermistors" O R 8450 6200 50 
+F14 "Segment3_Thermistors" O R 8450 6300 50 
+F15 "Segment4_Thermistors" O R 8450 6400 50 
+F16 "Segment1_VoltageTaps" O R 8450 6550 50 
+F17 "Segment2_VoltageTaps" O R 8450 6650 50 
+F18 "Segment3_VoltageTaps" O R 8450 6750 50 
+F19 "Segment4_VoltageTaps" O R 8450 6850 50 
+F20 "MotorController_AIR_Control-" I R 8450 5550 50 
+F21 "MotorController_AIR_Control+" I R 8450 5650 50 
+F22 "MotorController_Precharge-" I R 8450 5850 50 
+F23 "MotorController_Precharge+" I R 8450 5750 50 
 $EndSheet
 Wire Wire Line
-	8450 5500 8550 5500
+	8450 5300 8550 5300
 Wire Wire Line
-	8550 5500 8550 4250
-Wire Wire Line
-	8450 5600 8600 5600
-Wire Wire Line
-	8600 5600 8600 4150
+	8450 5400 8600 5400
 Wire Wire Line
 	6150 2350 6250 2350
 Wire Wire Line
@@ -410,7 +405,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 1000 1850 3350
 Wire Wire Line
-	6150 5500 6700 5500
+	6150 5300 6700 5300
 Wire Wire Line
 	8450 7100 8650 7100
 Wire Wire Line
@@ -515,18 +510,18 @@ Connection ~ 8650 7900
 $Comp
 L Device:LED D?
 U 1 1 5FA58D8C
-P 6050 6300
-F 0 "D?" V 6089 6379 50  0000 L CNN
-F 1 "TSAL" V 5998 6379 50  0000 L CNN
-F 2 "" H 6050 6300 50  0001 C CNN
-F 3 "~" H 6050 6300 50  0001 C CNN
-	1    6050 6300
+P 6050 6100
+F 0 "D?" V 6089 6179 50  0000 L CNN
+F 1 "TSAL" V 5998 6179 50  0000 L CNN
+F 2 "" H 6050 6100 50  0001 C CNN
+F 3 "~" H 6050 6100 50  0001 C CNN
+	1    6050 6100
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6700 6150 6050 6150
+	6700 5950 6050 5950
 Wire Wire Line
-	6700 6450 6050 6450
+	6700 6250 6050 6250
 Wire Wire Line
 	15300 5750 15300 7700
 Wire Wire Line
@@ -752,7 +747,7 @@ $EndComp
 Wire Wire Line
 	1850 3950 6900 3950
 Wire Wire Line
-	6150 5100 6150 5500
+	6150 5100 6150 5300
 $Comp
 L Switch:SW_SPST_Temperature SW?
 U 1 1 5F6E407C
@@ -859,4 +854,20 @@ Wire Wire Line
 	12750 4250 12950 4250
 Wire Wire Line
 	6150 4800 6150 5100
+Wire Wire Line
+	8600 5400 8600 4150
+Wire Wire Line
+	8550 4250 8550 5300
+Text GLabel 8500 5550 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	8500 5550 8450 5550
+Wire Wire Line
+	8450 5650 15400 5650
+Wire Wire Line
+	15400 5650 15400 7950
+Wire Wire Line
+	15400 7950 15200 7950
+Wire Wire Line
+	6150 5400 6700 5400
 $EndSCHEMATC
