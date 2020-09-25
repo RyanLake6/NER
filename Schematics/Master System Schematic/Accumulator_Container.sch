@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -176,23 +175,23 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5F1E9418
-P 13600 7350
-F 0 "J2" H 13492 7535 50  0000 C CNN
-F 1 "TSAL Connector" H 13492 7444 50  0000 C CNN
-F 2 "" H 13600 7350 50  0001 C CNN
-F 3 "~" H 13600 7350 50  0001 C CNN
-	1    13600 7350
+P 14550 4850
+F 0 "J2" H 14442 5035 50  0000 C CNN
+F 1 "TSAL Connector" H 14442 4944 50  0000 C CNN
+F 2 "" H 14550 4850 50  0001 C CNN
+F 3 "~" H 14550 4850 50  0001 C CNN
+	1    14550 4850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J8
 U 1 1 5F1EC371
-P 13600 7350
-F 0 "J8" H 13572 7278 50  0001 R CNN
-F 1 "Conn_01x02_Male" H 13572 7233 50  0001 R CNN
-F 2 "" H 13600 7350 50  0001 C CNN
-F 3 "~" H 13600 7350 50  0001 C CNN
-	1    13600 7350
+P 14550 4850
+F 0 "J8" H 14522 4778 50  0001 R CNN
+F 1 "Conn_01x02_Male" H 14522 4733 50  0001 R CNN
+F 2 "" H 14550 4850 50  0001 C CNN
+F 3 "~" H 14550 4850 50  0001 C CNN
+	1    14550 4850
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -228,9 +227,9 @@ Text Label 10050 4900 0    50   ~ 0
 11_2
 Text Label 9650 8000 0    50   ~ 0
 12_2
-Text Label 12800 7350 0    50   ~ 0
+Text Label 13750 4850 0    50   ~ 0
 21_20
-Text Label 12800 7450 0    50   ~ 0
+Text Label 13750 4950 0    50   ~ 0
 22_20
 Text Label 8000 3950 0    50   ~ 0
 25_20
@@ -349,9 +348,9 @@ Wire Wire Line
 Wire Wire Line
 	7450 8000 8300 8000
 Text HLabel 9600 1100 2    50   Input ~ 0
-MotorController_Precharge-
+MotorController_AIR_Control-
 Text HLabel 9600 1200 2    50   Input ~ 0
-MotorController_Precharge+
+MotorController_AIR_Control+
 Text HLabel 8650 950  0    50   Input ~ 0
 Shutdown+
 Wire Wire Line
@@ -364,9 +363,9 @@ Text HLabel 13750 5900 2    50   Output ~ 0
 TS+
 Text HLabel 13750 6000 2    50   Output ~ 0
 TS-
-Text HLabel 13800 7350 2    50   Output ~ 0
+Text HLabel 14750 4850 2    50   Output ~ 0
 TSAL+
-Text HLabel 13800 7450 2    50   Output ~ 0
+Text HLabel 14750 4950 2    50   Output ~ 0
 TSAL-
 Text HLabel 13400 4150 2    50   Output ~ 0
 IMD_HV_SENSE-
@@ -403,14 +402,11 @@ Wire Wire Line
 Wire Wire Line
 	11700 4050 11700 5350
 Wire Wire Line
-	12350 4150 12350 5350
+	12350 4150 12350 4950
 Wire Wire Line
-	12450 4250 12450 5350
+	12450 4250 12450 4850
 Wire Wire Line
 	11600 5900 11600 5650
-Wire Wire Line
-	11500 7350 11500 5900
-Connection ~ 11500 5900
 Wire Wire Line
 	13750 5900 13400 5900
 Wire Wire Line
@@ -446,11 +442,6 @@ Wire Wire Line
 	12350 5650 12350 6000
 Wire Wire Line
 	11700 5650 11700 6000
-Connection ~ 11350 7450
-Wire Wire Line
-	11350 7450 11350 8000
-Wire Wire Line
-	11350 6000 11350 7450
 $Sheet
 S 3950 6200 1550 2000
 U 5F7F6054
@@ -1613,12 +1604,8 @@ Wire Bus Line
 	1450 2350 5650 2350
 Wire Wire Line
 	11350 6000 11700 6000
-Wire Wire Line
-	11500 5900 11600 5900
 Connection ~ 11600 5900
 Connection ~ 11700 6000
-Wire Wire Line
-	11000 5900 11500 5900
 Wire Wire Line
 	11600 5900 12450 5900
 Connection ~ 12450 5900
@@ -1638,43 +1625,30 @@ Wire Wire Line
 Wire Wire Line
 	11700 4050 13000 4050
 $Sheet
-S 11750 7250 700  300 
+S 12700 4750 700  300 
 U 5FAAF22F
 F0 "TSAL_Circuit" 50
 F1 "TSAL_Circuit.sch" 50
-F2 "TS+" I L 11750 7350 50 
-F3 "TS-" I L 11750 7450 50 
-F4 "TSAL+" I R 12450 7350 50 
-F5 "TSAL-" I R 12450 7450 50 
+F2 "TS+" I L 12700 4850 50 
+F3 "TS-" I L 12700 4950 50 
+F4 "TSAL+" I R 13400 4850 50 
+F5 "TSAL-" I R 13400 4950 50 
 $EndSheet
 Wire Wire Line
-	11500 7350 11750 7350
+	12450 4850 12700 4850
 Wire Wire Line
-	11350 7450 11750 7450
+	13400 4850 14350 4850
 Wire Wire Line
-	12450 7350 13400 7350
-Wire Wire Line
-	12450 7450 13400 7450
+	13400 4950 14350 4950
 $Comp
 L Relay:DIPxx-1Axx-11x K5
 U 1 1 5F80B7CF
 P 8800 2950
 F 0 "K5" V 8233 2950 50  0000 C CNN
-F 1 "SPST-NO (AIR Control)" V 8324 2950 50  0000 C CNN
+F 1 "SPST-NO (Precharge Control)" V 8324 2950 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9150 2900 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 8800 2950 50  0001 C CNN
 	1    8800 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Relay:DIPxx-1Axx-11x K6
-U 1 1 5F814F76
-P 9950 2950
-F 0 "K6" V 9383 2950 50  0000 C CNN
-F 1 "SPST-NO (Precharge Control)" V 9474 2950 50  0000 C CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 10300 2900 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9950 2950 50  0001 C CNN
-	1    9950 2950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1717,7 +1691,7 @@ Wire Wire Line
 Text HLabel 8650 1100 0    50   Input ~ 0
 MotorController_Precharge-
 Text HLabel 8650 1200 0    50   Input ~ 0
-MotorController_AIR+
+MotorController_Precharge+
 Wire Wire Line
 	8650 1100 8850 1100
 Wire Wire Line
@@ -1799,6 +1773,31 @@ Wire Notes Line
 	10450 3700 10450 2050
 Wire Notes Line
 	8150 2050 8150 3700
+Text Notes 8200 3650 0    50   ~ 0
+MC Control Relay PCB
+$Comp
+L Relay:DIPxx-1Axx-11x K6
+U 1 1 5F814F76
+P 9950 2950
+F 0 "K6" V 9383 2950 50  0000 C CNN
+F 1 "SPST-NO (AIR Control)" V 9474 2950 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 10300 2900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9950 2950 50  0001 C CNN
+	1    9950 2950
+	0    1    1    0   
+$EndComp
+Connection ~ 12450 4850
+Wire Wire Line
+	12450 4850 12450 5350
+Wire Wire Line
+	11350 6000 11350 8000
+Wire Wire Line
+	12700 4950 12350 4950
+Connection ~ 12350 4950
+Wire Wire Line
+	12350 4950 12350 5350
+Wire Wire Line
+	11000 5900 11600 5900
 Wire Bus Line
 	1850 3000 1850 4850
 Wire Bus Line
@@ -1815,6 +1814,4 @@ Wire Bus Line
 	3700 2450 3700 4600
 Wire Bus Line
 	5650 2350 5650 4200
-Text Notes 8200 3650 0    50   ~ 0
-MC Control Relay PCB
 $EndSCHEMATC
