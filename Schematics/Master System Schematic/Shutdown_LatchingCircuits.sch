@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -44,10 +45,10 @@ BMS_Status
 Text HLabel 3150 5750 0    50   Input ~ 0
 Ground
 $Comp
-L Relay:G5V-2 K?
+L Relay:G5V-2 K10
 U 1 1 5F6E0AD1
 P 7350 4850
-F 0 "K?" V 6583 4850 50  0000 C CNN
+F 0 "K10" V 6583 4850 50  0000 C CNN
 F 1 "Omron DPDT Relay" V 6674 4850 50  0000 C CNN
 F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 8000 4800 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 7350 4850 50  0001 C CNN
@@ -55,10 +56,10 @@ F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 7350 4850 5
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:G5V-2 K?
+L Relay:G5V-2 K9
 U 1 1 5F6E0AD7
 P 7350 2650
-F 0 "K?" V 6583 2650 50  0000 C CNN
+F 0 "K9" V 6583 2650 50  0000 C CNN
 F 1 "Omron DPDT Relay" V 6674 2650 50  0000 C CNN
 F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 8000 2600 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 7350 2650 50  0001 C CNN
@@ -66,10 +67,10 @@ F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 7350 2650 5
 	0    1    -1   0   
 $EndComp
 $Comp
-L Diode:1N4001 D?
+L Diode:1N4001 D7
 U 1 1 5F6E5F37
 P 7350 3800
-F 0 "D?" H 7350 4016 50  0000 C CNN
+F 0 "D7" H 7350 4016 50  0000 C CNN
 F 1 "1N4001" H 7350 3925 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7350 3625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7350 3800 50  0001 C CNN
@@ -95,10 +96,10 @@ Wire Wire Line
 Wire Wire Line
 	3150 4650 3350 4650
 $Comp
-L Relay:G5V-2 K?
+L Relay:G5V-2 K8
 U 1 1 5F7C981B
 P 4200 4850
-F 0 "K?" V 3433 4850 50  0000 C CNN
+F 0 "K8" V 3433 4850 50  0000 C CNN
 F 1 "Omron DPDT Relay" V 3524 4850 50  0000 C CNN
 F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 4850 4800 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 4200 4850 50  0001 C CNN
@@ -106,10 +107,10 @@ F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 4200 4850 5
 	0    1    1    0   
 $EndComp
 $Comp
-L Relay:G5V-2 K?
+L Relay:G5V-2 K7
 U 1 1 5F7C9821
 P 4200 2650
-F 0 "K?" V 3433 2650 50  0000 C CNN
+F 0 "K7" V 3433 2650 50  0000 C CNN
 F 1 "Omron DPDT Relay" V 3524 2650 50  0000 C CNN
 F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 4850 2600 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 4200 2650 50  0001 C CNN
@@ -117,10 +118,10 @@ F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 4200 2650 5
 	0    1    -1   0   
 $EndComp
 $Comp
-L Diode:1N4001 D?
+L Diode:1N4001 D6
 U 1 1 5F7C9827
 P 4200 3800
-F 0 "D?" H 4200 4016 50  0000 C CNN
+F 0 "D6" H 4200 4016 50  0000 C CNN
 F 1 "1N4001" H 4200 3925 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4200 3625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4200 3800 50  0001 C CNN

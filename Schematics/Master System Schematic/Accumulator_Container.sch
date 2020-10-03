@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -117,50 +118,6 @@ F 3 "~" H 11100 5600 50  0001 C CNN
 	1    11100 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5F1E6F1F
-P 13200 6000
-F 0 "J3" H 13092 6185 50  0000 C CNN
-F 1 "Main TS Connector" H 13092 6094 50  0000 C CNN
-F 2 "" H 13200 6000 50  0001 C CNN
-F 3 "~" H 13200 6000 50  0001 C CNN
-	1    13200 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5F1E9418
-P 14550 4950
-F 0 "J2" H 14442 5135 50  0000 C CNN
-F 1 "TSAL Connector" H 14442 5044 50  0000 C CNN
-F 2 "" H 14550 4950 50  0001 C CNN
-F 3 "~" H 14550 4950 50  0001 C CNN
-	1    14550 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J8
-U 1 1 5F1EC371
-P 14550 4950
-F 0 "J8" H 14522 4878 50  0001 R CNN
-F 1 "Conn_01x02_Male" H 14522 4833 50  0001 R CNN
-F 2 "" H 14550 4950 50  0001 C CNN
-F 3 "~" H 14550 4950 50  0001 C CNN
-	1    14550 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5F1EE03B
-P 13200 6000
-F 0 "J7" H 13172 5974 50  0001 R CNN
-F 1 "Conn_01x02_Male" H 13172 5928 50  0001 R CNN
-F 2 "" H 13200 6000 50  0001 C CNN
-F 3 "~" H 13200 6000 50  0001 C CNN
-	1    13200 6000
-	-1   0    0    -1  
-$EndComp
 Text Label 5700 6850 0    50   ~ 0
 1_2
 Text Label 5400 6450 0    50   ~ 0
@@ -208,37 +165,15 @@ F 3 "~" H 11600 5600 50  0001 C CNN
 	1    11600 5600
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female J1
-U 1 1 5F2FC148
-P 9050 1650
-F 0 "J1" V 8900 1900 50  0000 L CNN
-F 1 "Shutdown/Precharge Connector" V 9000 1900 50  0000 L CNN
-F 2 "" H 9050 1650 50  0001 C CNN
-F 3 "~" H 9050 1650 50  0001 C CNN
-	1    9050 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x06_Male J5
-U 1 1 5F2FD6BE
-P 9050 1650
-F 0 "J5" V 9112 1794 50  0001 L CNN
-F 1 "Conn_01x04_Male" V 9158 1794 50  0001 L CNN
-F 2 "" H 9050 1650 50  0001 C CNN
-F 3 "~" H 9050 1650 50  0001 C CNN
-	1    9050 1650
-	0    1    1    0   
-$EndComp
 Connection ~ 8000 4600
 Wire Wire Line
-	9600 1300 9250 1300
+	9600 1200 9250 1200
 Wire Wire Line
-	9250 1300 9250 1450
+	9250 1200 9250 1350
 Wire Wire Line
-	9600 1200 9150 1200
+	9600 1100 9150 1100
 Wire Wire Line
-	9150 1200 9150 1450
+	9150 1100 9150 1350
 $Comp
 L Device:R R4
 U 1 1 5F39A796
@@ -283,54 +218,32 @@ Wire Wire Line
 	5500 6750 5550 6750
 Wire Wire Line
 	7450 8100 8300 8100
-Text HLabel 9600 1200 2    50   Input ~ 0
+Text HLabel 9600 1100 2    50   Input ~ 0
 MotorController_AIR_Control-
-Text HLabel 9600 1300 2    50   Input ~ 0
+Text HLabel 9600 1200 2    50   Input ~ 0
 MotorController_AIR_Control+
-Text HLabel 8650 1050 0    50   Input ~ 0
-Shutdown+
 Text HLabel 8650 950  0    50   Input ~ 0
+Shutdown+
+Text HLabel 8650 850  0    50   Input ~ 0
 Shutdown-
 Wire Wire Line
-	9050 950  8650 950 
-Text HLabel 13750 6000 2    50   Output ~ 0
+	9050 850  8650 850 
+Text HLabel 13850 6000 2    50   Output ~ 0
 TS+
-Text HLabel 13750 6100 2    50   Output ~ 0
+Text HLabel 13850 6100 2    50   Output ~ 0
 TS-
-Text HLabel 14750 4950 2    50   Output ~ 0
+Text HLabel 14950 4950 2    50   Output ~ 0
 TSAL+
-Text HLabel 14750 5050 2    50   Output ~ 0
+Text HLabel 14950 5050 2    50   Output ~ 0
 TSAL-
-Text HLabel 13400 4250 2    50   Output ~ 0
+Text HLabel 13600 4250 2    50   Output ~ 0
 IMD_HV_SENSE-
-Text HLabel 13400 4350 2    50   Output ~ 0
+Text HLabel 13600 4350 2    50   Output ~ 0
 IMD_HV_SENSE+
-Text HLabel 13400 4150 2    50   Output ~ 0
+Text HLabel 13600 4150 2    50   Output ~ 0
 TSMP-
-Text HLabel 13400 4050 2    50   Output ~ 0
+Text HLabel 13600 4050 2    50   Output ~ 0
 TSMP+
-$Comp
-L Connector:Conn_01x04_Male J6
-U 1 1 5F154419
-P 13200 4150
-F 0 "J6" H 13172 4078 50  0001 R CNN
-F 1 "Conn_01x04_Male" H 13172 4033 50  0001 R CNN
-F 2 "" H 13200 4150 50  0001 C CNN
-F 3 "~" H 13200 4150 50  0001 C CNN
-	1    13200 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Female J4
-U 1 1 5F1518CD
-P 13200 4150
-F 0 "J4" H 13092 4435 50  0000 C CNN
-F 1 "IMD/TSMP Connector" H 13092 4344 50  0000 C CNN
-F 2 "" H 13200 4150 50  0001 C CNN
-F 3 "~" H 13200 4150 50  0001 C CNN
-	1    13200 4150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	11600 4050 11600 5450
 Wire Wire Line
@@ -342,9 +255,9 @@ Wire Wire Line
 Wire Wire Line
 	11600 6000 11600 5750
 Wire Wire Line
-	13750 6000 13400 6000
+	13850 6000 13500 6000
 Wire Wire Line
-	13400 6100 13750 6100
+	13500 6100 13850 6100
 Text HLabel 6550 9300 2    50   Output ~ 0
 Segment1_Thermistors
 Text HLabel 6550 9400 2    50   Output ~ 0
@@ -1608,19 +1521,19 @@ Wire Wire Line
 Wire Wire Line
 	8000 2050 8950 2050
 Wire Wire Line
-	8950 1050 8950 1450
-Text HLabel 8650 1200 0    50   Input ~ 0
+	8950 950  8950 1350
+Text HLabel 8650 1100 0    50   Input ~ 0
 MotorController_Precharge-
-Text HLabel 8650 1300 0    50   Input ~ 0
+Text HLabel 8650 1200 0    50   Input ~ 0
 MotorController_Precharge+
 Wire Wire Line
-	8650 1200 8850 1200
+	8650 1100 8850 1100
 Wire Wire Line
-	8850 1200 8850 1450
+	8850 1100 8850 1350
 Wire Wire Line
-	8650 1300 8750 1300
+	8650 1200 8750 1200
 Wire Wire Line
-	8750 1300 8750 1450
+	8750 1200 8750 1350
 Wire Wire Line
 	8750 2400 8400 2400
 Wire Wire Line
@@ -1751,9 +1664,9 @@ Connection ~ 11700 6100
 Wire Wire Line
 	11700 6100 11700 8100
 Wire Wire Line
-	9050 950  9050 1450
+	9050 850  9050 1350
 Wire Wire Line
-	8650 1050 8950 1050
+	8650 950  8950 950 
 Wire Wire Line
 	9100 8100 11700 8100
 Wire Wire Line
@@ -1773,6 +1686,51 @@ Wire Wire Line
 	11100 6550 11100 7000
 Wire Wire Line
 	9750 7000 11100 7000
+$Comp
+L NER:2-Pos_Generic J6
+U 1 1 5F84E6B9
+P 13250 5900
+F 0 "J6" H 13250 6025 50  0000 C CNN
+F 1 "Main TS Connector" H 13250 5934 50  0000 C CNN
+F 2 "" H 13250 5900 50  0001 C CNN
+F 3 "" H 13250 5900 50  0001 C CNN
+	1    13250 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L NER:2-Pos_Generic J7
+U 1 1 5F95267C
+P 14600 4850
+F 0 "J7" H 14600 4975 50  0000 C CNN
+F 1 "TSAL Connector" H 14600 4884 50  0000 C CNN
+F 2 "" H 14600 4850 50  0001 C CNN
+F 3 "" H 14600 4850 50  0001 C CNN
+	1    14600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L NER:4-Pos_Generic J5
+U 1 1 5F95323D
+P 13250 3950
+F 0 "J5" H 13250 4075 50  0000 C CNN
+F 1 "TSMP/IMD Connector" H 13250 3984 50  0000 C CNN
+F 2 "" H 13250 3950 50  0001 C CNN
+F 3 "" H 13250 3950 50  0001 C CNN
+	1    13250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 4050 13600 4050
+Wire Wire Line
+	13500 4150 13600 4150
+Wire Wire Line
+	13500 4250 13600 4250
+Wire Wire Line
+	13500 4350 13600 4350
+Wire Wire Line
+	14850 4950 14950 4950
+Wire Wire Line
+	14850 5050 14950 5050
 Wire Bus Line
 	1850 3500 1850 5350
 Wire Bus Line
@@ -1789,4 +1747,15 @@ Wire Bus Line
 	3700 2950 3700 5100
 Wire Bus Line
 	5650 2850 5650 4700
+$Comp
+L NER:6-Pos_Generic J4
+U 1 1 5FAB592D
+P 9350 1600
+F 0 "J4" V 9304 1588 50  0000 L CNN
+F 1 "Shutdown/MC Control Connector" V 9395 1588 50  0000 L CNN
+F 2 "" H 9350 1600 50  0001 C CNN
+F 3 "" H 9350 1600 50  0001 C CNN
+	1    9350 1600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
