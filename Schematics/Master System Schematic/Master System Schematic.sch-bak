@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -70,8 +71,8 @@ L Switch:SW_SPST SW?
 U 1 1 5F633AC3
 P 2300 3200
 AR Path="/5F45AFB3/5F633AC3" Ref="SW?"  Part="1" 
-AR Path="/5F633AC3" Ref="SW?"  Part="1" 
-F 0 "SW?" V 2300 2650 50  0000 C CNN
+AR Path="/5F633AC3" Ref="SW4"  Part="1" 
+F 0 "SW4" V 2300 2650 50  0000 C CNN
 F 1 "Brake Over-Travel Switch" V 2200 2600 50  0000 C CNN
 F 2 "" H 2300 3200 50  0001 C CNN
 F 3 "https://www.mcmaster.com/cadinlnord%2fnull" H 2300 3200 50  0001 C CNN
@@ -101,8 +102,8 @@ L Switch:SW_Push_Open SW?
 U 1 1 5F67997D
 P 5950 3350
 AR Path="/5F45AFB3/5F67997D" Ref="SW?"  Part="1" 
-AR Path="/5F67997D" Ref="SW?"  Part="1" 
-F 0 "SW?" V 6000 3600 50  0000 R CNN
+AR Path="/5F67997D" Ref="SW6"  Part="1" 
+F 0 "SW6" V 6000 3600 50  0000 R CNN
 F 1 "Cockpit Shutdown (BRB)" V 5900 4350 50  0000 R CNN
 F 2 "" H 5950 3550 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 5950 3550 50  0001 C CNN
@@ -114,8 +115,8 @@ L Switch:SW_SPST SW?
 U 1 1 5F67998A
 P 5950 4600
 AR Path="/5F45AFB3/5F67998A" Ref="SW?"  Part="1" 
-AR Path="/5F67998A" Ref="SW?"  Part="1" 
-F 0 "SW?" V 5904 4698 50  0000 L CNN
+AR Path="/5F67998A" Ref="SW7"  Part="1" 
+F 0 "SW7" V 5904 4698 50  0000 L CNN
 F 1 "TSMS" V 5995 4698 50  0000 L CNN
 F 2 "" H 5950 4600 50  0001 C CNN
 F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 5950 4600 50  0001 C CNN
@@ -137,8 +138,8 @@ L Device:LED D?
 U 1 1 5F67996F
 P 6200 2350
 AR Path="/5F45AFB3/5F67996F" Ref="D?"  Part="1" 
-AR Path="/5F67996F" Ref="D?"  Part="1" 
-F 0 "D?" H 6193 2095 50  0000 C CNN
+AR Path="/5F67996F" Ref="D4"  Part="1" 
+F 0 "D4" H 6193 2095 50  0000 C CNN
 F 1 "SSOK1" H 6193 2186 50  0000 C CNN
 F 2 "" H 6200 2350 50  0001 C CNN
 F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-truck-and-trailer-lights-4-double-bullseye-led-side-clearance-lights-w-12-high-flux-leds-pigtail-connector/596/" H 6200 2350 50  0001 C CNN
@@ -150,8 +151,8 @@ L Device:LED D?
 U 1 1 5F679969
 P 6200 1950
 AR Path="/5F45AFB3/5F679969" Ref="D?"  Part="1" 
-AR Path="/5F679969" Ref="D?"  Part="1" 
-F 0 "D?" H 6193 1695 50  0000 C CNN
+AR Path="/5F679969" Ref="D3"  Part="1" 
+F 0 "D3" H 6193 1695 50  0000 C CNN
 F 1 "SSOK2" H 6193 1786 50  0000 C CNN
 F 2 "" H 6200 1950 50  0001 C CNN
 F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-truck-and-trailer-lights-4-double-bullseye-led-side-clearance-lights-w-12-high-flux-leds-pigtail-connector/596/" H 6200 1950 50  0001 C CNN
@@ -159,10 +160,10 @@ F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-tru
 	-1   0    0    1   
 $EndComp
 $Comp
-L NER:Bender_Isometer_IR155-3204 U?
+L NER:Bender_Isometer_IR155-3204 U4
 U 1 1 5F94A015
 P 7600 3800
-F 0 "U?" H 7600 3915 50  0000 C CNN
+F 0 "U4" H 7600 3915 50  0000 C CNN
 F 1 "Bender_Isometer_IR155-3204" H 7600 3824 50  0000 C CNN
 F 2 "" H 7600 3800 50  0001 C CNN
 F 3 "" H 7600 3800 50  0001 C CNN
@@ -179,10 +180,10 @@ Connection ~ 6550 2150
 Wire Wire Line
 	6550 2150 6550 1950
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5F4E06AE
 P 7600 3500
-F 0 "R?" V 7807 3500 50  0000 C CNN
+F 0 "R5" V 7807 3500 50  0000 C CNN
 F 1 "2.2k" V 7716 3500 50  0000 C CNN
 F 2 "" V 7530 3500 50  0001 C CNN
 F 3 "~" H 7600 3500 50  0001 C CNN
@@ -259,10 +260,10 @@ TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
-L NER:OrionCurrentSens U?
+L NER:OrionCurrentSens U5
 U 1 1 6111F589
 P 9350 8050
-F 0 "U?" H 9350 8050 50  0000 C CNN
+F 0 "U5" H 9350 8050 50  0000 C CNN
 F 1 "OrionCurrentSens" H 9350 8100 50  0000 C CNN
 F 2 "" H 9350 8050 50  0001 C CNN
 F 3 "" H 9350 8050 50  0001 C CNN
@@ -353,10 +354,10 @@ $EndSheet
 Text GLabel 6450 8050 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
-L NER:FuseBox_PSZACCEPS052H U?
+L NER:FuseBox_PSZACCEPS052H U3
 U 1 1 5F6D724E
 P 1250 3250
-F 0 "U?" H 1250 3415 50  0000 C CNN
+F 0 "U3" H 1250 3415 50  0000 C CNN
 F 1 "FuseBox_PSZACCEPS052H" H 1250 3324 50  0000 C CNN
 F 2 "" H 1250 3400 50  0001 C CNN
 F 3 "" H 1250 3400 50  0001 C CNN
@@ -366,10 +367,10 @@ $EndComp
 Wire Wire Line
 	1250 4150 1250 4500
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5F90AC4F
 P 2550 1500
-F 0 "D?" H 2543 1716 50  0000 C CNN
+F 0 "D1" H 2543 1716 50  0000 C CNN
 F 1 "IMD Fault Indicator" H 2543 1625 50  0000 C CNN
 F 2 "" H 2550 1500 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1500 50  0001 C CNN
@@ -377,10 +378,10 @@ F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-173
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5F90FD2E
 P 2550 1900
-F 0 "D?" H 2550 1800 50  0000 C CNN
+F 0 "D2" H 2550 1800 50  0000 C CNN
 F 1 "BMS Fault Indicator" H 2550 1700 50  0000 C CNN
 F 2 "" H 2550 1900 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1900 50  0001 C CNN
@@ -509,10 +510,10 @@ Wire Wire Line
 	8650 8950 8650 7900
 Connection ~ 8650 7900
 $Comp
-L Device:LED D?
+L Device:LED D5
 U 1 1 5FA58D8C
 P 6300 5500
-F 0 "D?" H 6250 5400 50  0000 L CNN
+F 0 "D5" H 6250 5400 50  0000 L CNN
 F 1 "TSAL" H 6250 5300 50  0000 L CNN
 F 2 "" H 6300 5500 50  0001 C CNN
 F 3 "~" H 6300 5500 50  0001 C CNN
@@ -524,10 +525,10 @@ Wire Wire Line
 Wire Wire Line
 	15350 1000 15350 7900
 $Comp
-L NER:RinehartPM100DX_MotorController U?
+L NER:RinehartPM100DX_MotorController U6
 U 1 1 5F97D518
 P 14300 8350
-F 0 "U?" H 14300 8515 50  0000 C CNN
+F 0 "U6" H 14300 8515 50  0000 C CNN
 F 1 "RinehartPM100DX_MotorController" H 14300 8424 50  0000 C CNN
 F 2 "" H 14300 8350 50  0001 C CNN
 F 3 "" H 14300 8350 50  0001 C CNN
@@ -535,10 +536,10 @@ F 3 "" H 14300 8350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV4
 U 1 1 6233DFFE
 P 13050 7750
-F 0 "RV?" H 12800 7850 50  0000 C CNN
+F 0 "RV4" H 12800 7850 50  0000 C CNN
 F 1 "ACCEL_POT" H 12800 7750 50  0000 C CNN
 F 2 "" H 13050 7750 50  0001 C CNN
 F 3 "~" H 13050 7750 50  0001 C CNN
@@ -546,10 +547,10 @@ F 3 "~" H 13050 7750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV3
 U 1 1 6233F5CA
 P 13050 7350
-F 0 "RV?" H 12800 7450 50  0000 C CNN
+F 0 "RV3" H 12800 7450 50  0000 C CNN
 F 1 "BRAKE_POT" H 12800 7350 50  0000 C CNN
 F 2 "" H 13050 7350 50  0001 C CNN
 F 3 "~" H 13050 7350 50  0001 C CNN
@@ -557,10 +558,10 @@ F 3 "~" H 13050 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST SW?
+L Switch:SW_SPST SW11
 U 1 1 62347AF0
 P 13050 6200
-F 0 "SW?" H 13050 5975 50  0000 C CNN
+F 0 "SW11" H 13050 5975 50  0000 C CNN
 F 1 "BRAKE_SWITCH" H 13050 6066 50  0000 C CNN
 F 2 "" H 13050 6200 50  0001 C CNN
 F 3 "~" H 13050 6200 50  0001 C CNN
@@ -618,10 +619,10 @@ Wire Wire Line
 Wire Wire Line
 	15750 8250 15750 8300
 $Comp
-L NER:Emrax228HV_Motor U?
+L NER:Emrax228HV_Motor U7
 U 1 1 5F972C2B
 P 16100 7800
-F 0 "U?" H 16050 7950 50  0000 L CNN
+F 0 "U7" H 16050 7950 50  0000 L CNN
 F 1 "Emrax228HV_Motor" H 15750 7850 50  0000 L CNN
 F 2 "" H 16100 7800 50  0001 C CNN
 F 3 "" H 16100 7800 50  0001 C CNN
@@ -728,10 +729,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 8050 6100 8450
 $Comp
-L Switch:SW_DPST SW?
+L Switch:SW_DPST SW5
 U 1 1 5F864268
 P 4950 8250
-F 0 "SW?" H 4950 8050 50  0000 C CNN
+F 0 "SW5" H 4950 8050 50  0000 C CNN
 F 1 "Latching Circuit Reset [Momentary Button NO]" H 4500 7900 50  0000 C CNN
 F 2 "" H 4950 8250 50  0001 C CNN
 F 3 "~" H 4950 8250 50  0001 C CNN
@@ -741,10 +742,10 @@ $EndComp
 Wire Wire Line
 	1850 3950 6900 3950
 $Comp
-L Switch:SW_SPST_Temperature SW?
+L Switch:SW_SPST_Temperature SW12
 U 1 1 5F6E407C
 P 14850 3700
-F 0 "SW?" H 14850 4015 50  0000 C CNN
+F 0 "SW12" H 14850 4015 50  0000 C CNN
 F 1 "SW_SPST_Pressure" H 14850 3924 50  0000 C CNN
 F 2 "" H 14850 3700 50  0001 C CNN
 F 3 "~" H 14850 3700 50  0001 C CNN
@@ -752,10 +753,10 @@ F 3 "~" H 14850 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST_Temperature SW?
+L Switch:SW_SPST_Temperature SW13
 U 1 1 5F6E49B5
 P 14850 4200
-F 0 "SW?" H 14850 4515 50  0000 C CNN
+F 0 "SW13" H 14850 4515 50  0000 C CNN
 F 1 "SW_SPST_Pressure" H 14850 4424 50  0000 C CNN
 F 2 "" H 14850 4200 50  0001 C CNN
 F 3 "~" H 14850 4200 50  0001 C CNN
@@ -795,10 +796,10 @@ F14 "POT2_INPUT" I L 12950 4150 50
 F15 "POT2-" I L 12950 4250 50 
 $EndSheet
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV2
 U 1 1 5F71DF92
 P 12450 4150
-F 0 "RV?" H 12381 4196 50  0000 R CNN
+F 0 "RV2" H 12381 4196 50  0000 R CNN
 F 1 "R_POT" H 12381 4105 50  0000 R CNN
 F 2 "" H 12450 4150 50  0001 C CNN
 F 3 "~" H 12450 4150 50  0001 C CNN
@@ -806,10 +807,10 @@ F 3 "~" H 12450 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV1
 U 1 1 5F71E67B
 P 12450 3650
-F 0 "RV?" H 12381 3696 50  0000 R CNN
+F 0 "RV1" H 12381 3696 50  0000 R CNN
 F 1 "R_POT" H 12381 3605 50  0000 R CNN
 F 2 "" H 12450 3650 50  0001 C CNN
 F 3 "~" H 12450 3650 50  0001 C CNN
@@ -863,8 +864,8 @@ L Switch:SW_SPST SW?
 U 1 1 60DA2E32
 P 6250 6400
 AR Path="/5F45B05E/60DA2E32" Ref="SW?"  Part="1" 
-AR Path="/60DA2E32" Ref="SW?"  Part="1" 
-F 0 "SW?" H 6250 6550 50  0000 C CNN
+AR Path="/60DA2E32" Ref="SW9"  Part="1" 
+F 0 "SW9" H 6250 6550 50  0000 C CNN
 F 1 "HVD" H 6250 6650 50  0000 C CNN
 F 2 "" H 6250 6400 50  0001 C CNN
 F 3 "~" H 6250 6400 50  0001 C CNN
@@ -876,8 +877,8 @@ L Switch:SW_SPST SW?
 U 1 1 60DA2E38
 P 6250 6000
 AR Path="/5F45B05E/60DA2E38" Ref="SW?"  Part="1" 
-AR Path="/60DA2E38" Ref="SW?"  Part="1" 
-F 0 "SW?" H 6250 6235 50  0000 C CNN
+AR Path="/60DA2E38" Ref="SW8"  Part="1" 
+F 0 "SW8" H 6250 6235 50  0000 C CNN
 F 1 "SMD" H 6250 6144 50  0000 C CNN
 F 2 "" H 6250 6000 50  0001 C CNN
 F 3 "~" H 6250 6000 50  0001 C CNN
@@ -889,8 +890,8 @@ L Switch:SW_SPST SW?
 U 1 1 60DA2E3E
 P 6250 6800
 AR Path="/5F45B05E/60DA2E3E" Ref="SW?"  Part="1" 
-AR Path="/60DA2E3E" Ref="SW?"  Part="1" 
-F 0 "SW?" H 6250 6950 50  0000 C CNN
+AR Path="/60DA2E3E" Ref="SW10"  Part="1" 
+F 0 "SW10" H 6250 6950 50  0000 C CNN
 F 1 "SMD" H 6250 7050 50  0000 C CNN
 F 2 "" H 6250 6800 50  0001 C CNN
 F 3 "~" H 6250 6800 50  0001 C CNN

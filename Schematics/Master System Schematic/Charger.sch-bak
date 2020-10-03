@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -18,8 +19,8 @@ L Relay:Fujitsu_FTR-F1A K?
 U 1 1 61EEF404
 P 5200 2750
 AR Path="/61EEF404" Ref="K?"  Part="1" 
-AR Path="/61ECC7CF/61EEF404" Ref="K?"  Part="1" 
-F 0 "K?" H 5200 2233 50  0000 C CNN
+AR Path="/61ECC7CF/61EEF404" Ref="K11"  Part="1" 
+F 0 "K11" H 5200 2233 50  0000 C CNN
 F 1 "Safety Relay" H 5200 2324 50  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5200 2350 50  0001 C CNN
 F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 5250 3300 50  0001 C CNN
@@ -31,8 +32,8 @@ L Device:Fuse F?
 U 1 1 61EEF40A
 P 5900 2950
 AR Path="/61EEF40A" Ref="F?"  Part="1" 
-AR Path="/61ECC7CF/61EEF40A" Ref="F?"  Part="1" 
-F 0 "F?" V 6000 2950 50  0000 C CNN
+AR Path="/61ECC7CF/61EEF40A" Ref="F4"  Part="1" 
+F 0 "F4" V 6000 2950 50  0000 C CNN
 F 1 "10A" V 5800 2950 50  0000 C CNN
 F 2 "" V 5830 2950 50  0001 C CNN
 F 3 "~" H 5900 2950 50  0001 C CNN
@@ -44,8 +45,8 @@ L NER:TSM2500 U?
 U 1 1 61EEF410
 P 5550 4350
 AR Path="/61EEF410" Ref="U?"  Part="1" 
-AR Path="/61ECC7CF/61EEF410" Ref="U?"  Part="1" 
-F 0 "U?" H 5550 4350 50  0001 C CNN
+AR Path="/61ECC7CF/61EEF410" Ref="U8"  Part="1" 
+F 0 "U8" H 5550 4350 50  0001 C CNN
 F 1 "TSM2500" H 5600 4383 50  0000 C CNN
 F 2 "" H 5550 4350 50  0001 C CNN
 F 3 "http://www.thunderstruck-ev.com/images/ThunderStruck%20TSM2500%20ManualV1.05.pdf" H 5550 4350 50  0001 C CNN
@@ -59,8 +60,8 @@ L Device:Fuse F?
 U 1 1 61EEF417
 P 6450 4200
 AR Path="/61EEF417" Ref="F?"  Part="1" 
-AR Path="/61ECC7CF/61EEF417" Ref="F?"  Part="1" 
-F 0 "F?" V 6253 4200 50  0000 C CNN
+AR Path="/61ECC7CF/61EEF417" Ref="F5"  Part="1" 
+F 0 "F5" V 6253 4200 50  0000 C CNN
 F 1 "15A" V 6344 4200 50  0000 C CNN
 F 2 "" V 6380 4200 50  0001 C CNN
 F 3 "~" H 6450 4200 50  0001 C CNN
@@ -80,8 +81,8 @@ L Connector:Conn_WallSocket_Earth J?
 U 1 1 61EEF421
 P 6500 2950
 AR Path="/61EEF421" Ref="J?"  Part="1" 
-AR Path="/61ECC7CF/61EEF421" Ref="J?"  Part="1" 
-F 0 "J?" H 6506 2454 50  0000 C CNN
+AR Path="/61ECC7CF/61EEF421" Ref="J9"  Part="1" 
+F 0 "J9" H 6506 2454 50  0000 C CNN
 F 1 "WallSocket" H 6506 2545 50  0000 C CNN
 F 2 "" H 6200 3050 50  0001 C CNN
 F 3 "~" H 6200 3050 50  0001 C CNN
