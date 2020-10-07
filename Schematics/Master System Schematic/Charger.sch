@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -40,7 +41,7 @@ F 3 "~" H 5900 2950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Master-System-Schematic-rescue:TSM2500-NER U?
+L NER:TSM2500 U?
 U 1 1 61EEF410
 P 5550 4350
 AR Path="/61EEF410" Ref="U?"  Part="1" 
