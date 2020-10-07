@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -160,7 +159,7 @@ F 3 "https://www.superbrightleds.com/moreinfo/marker-clearance/rectangle-led-tru
 	-1   0    0    1   
 $EndComp
 $Comp
-L NER:Bender_Isometer_IR155-3204 U4
+L Master-System-Schematic-rescue:Bender_Isometer_IR155-3204-NER U4
 U 1 1 5F94A015
 P 7600 3800
 F 0 "U4" H 7600 3915 50  0000 C CNN
@@ -260,7 +259,7 @@ TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
-L NER:OrionCurrentSens U5
+L Master-System-Schematic-rescue:OrionCurrentSens-NER U5
 U 1 1 6111F589
 P 9350 8050
 F 0 "U5" H 9350 8050 50  0000 C CNN
@@ -354,7 +353,7 @@ $EndSheet
 Text GLabel 6450 8050 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
-L NER:FuseBox_PSZACCEPS052H U3
+L Master-System-Schematic-rescue:FuseBox_PSZACCEPS052H-NER U3
 U 1 1 5F6D724E
 P 1250 3250
 F 0 "U3" H 1250 3415 50  0000 C CNN
@@ -525,7 +524,7 @@ Wire Wire Line
 Wire Wire Line
 	15350 1000 15350 7900
 $Comp
-L NER:RinehartPM100DX_MotorController U6
+L Master-System-Schematic-rescue:RinehartPM100DX_MotorController-NER U6
 U 1 1 5F97D518
 P 14300 8350
 F 0 "U6" H 14300 8515 50  0000 C CNN
@@ -619,7 +618,7 @@ Wire Wire Line
 Wire Wire Line
 	15750 8250 15750 8300
 $Comp
-L NER:Emrax228HV_Motor U7
+L Master-System-Schematic-rescue:Emrax228HV_Motor-NER U7
 U 1 1 5F972C2B
 P 16100 7800
 F 0 "U7" H 16050 7950 50  0000 L CNN

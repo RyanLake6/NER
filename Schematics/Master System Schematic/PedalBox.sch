@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -23,7 +22,7 @@ GLV_GND
 Wire Wire Line
 	3600 3050 4350 3050
 $Comp
-L NER:Arduino_UNO_rev3 A1
+L Master-System-Schematic-rescue:Arduino_UNO_rev3-NER A1
 U 1 1 5F6833F8
 P 4950 2900
 F 0 "A1" H 4950 3015 50  0000 C CNN
@@ -233,7 +232,7 @@ Wire Wire Line
 	6000 5650 6600 5650
 NoConn ~ 4350 4150
 $Comp
-L NER:CAN_Bus_Module U9
+L Master-System-Schematic-rescue:CAN_Bus_Module-NER U9
 U 1 1 5F6D982E
 P 7600 3200
 F 0 "U9" H 7625 3315 50  0000 C CNN

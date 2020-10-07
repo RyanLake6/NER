@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L NER:OrionThermExp U2
+L Master-System-Schematic-rescue:OrionThermExp-NER U2
 U 1 1 60D555EB
 P 4500 4150
 F 0 "U2" H 4500 4275 50  0000 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 4500 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:OrionBMS2 U1
+L Master-System-Schematic-rescue:OrionBMS2-NER U1
 U 1 1 60D58399
 P 4500 950
 F 0 "U1" H 4530 1075 50  0000 C CNN

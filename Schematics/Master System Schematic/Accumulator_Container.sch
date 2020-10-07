@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1687,7 +1686,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 7000 11100 7000
 $Comp
-L NER:2-Pos_Generic J6
+L Master-System-Schematic-rescue:2-Pos_Generic-NER J6
 U 1 1 5F84E6B9
 P 13250 5900
 F 0 "J6" H 13250 6025 50  0000 C CNN
@@ -1698,7 +1697,7 @@ F 3 "" H 13250 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:2-Pos_Generic J7
+L Master-System-Schematic-rescue:2-Pos_Generic-NER J7
 U 1 1 5F95267C
 P 14600 4850
 F 0 "J7" H 14600 4975 50  0000 C CNN
@@ -1709,7 +1708,7 @@ F 3 "" H 14600 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:4-Pos_Generic J5
+L Master-System-Schematic-rescue:4-Pos_Generic-NER J5
 U 1 1 5F95323D
 P 13250 3950
 F 0 "J5" H 13250 4075 50  0000 C CNN
@@ -1748,7 +1747,7 @@ Wire Bus Line
 Wire Bus Line
 	5650 2850 5650 4700
 $Comp
-L NER:6-Pos_Generic J4
+L Master-System-Schematic-rescue:6-Pos_Generic-NER J4
 U 1 1 5FAB592D
 P 9350 1600
 F 0 "J4" V 9304 1588 50  0000 L CNN
