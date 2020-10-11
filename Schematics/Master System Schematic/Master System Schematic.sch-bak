@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -19,8 +18,8 @@ L Device:Battery_Cell BT?
 U 1 1 5F633A5B
 P 1250 7650
 AR Path="/5F45AFB3/5F633A5B" Ref="BT?"  Part="1" 
-AR Path="/5F633A5B" Ref="BT1"  Part="1" 
-F 0 "BT1" H 1600 7750 50  0000 L CNN
+AR Path="/5F633A5B" Ref="BT505"  Part="1" 
+F 0 "BT505" H 1600 7750 50  0000 L CNN
 F 1 "12V GLV Battery" H 1400 7650 50  0000 L CNN
 F 2 "" V 1250 7710 50  0001 C CNN
 F 3 "~" V 1250 7710 50  0001 C CNN
