@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -258,17 +259,6 @@ Text Notes 4400 8900 0    50   ~ 0
 TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
-$Comp
-L NER:OrionCurrentSens U5
-U 1 1 6111F589
-P 9350 8050
-F 0 "U5" H 9350 8050 50  0000 C CNN
-F 1 "OrionCurrentSens" H 9350 8100 50  0000 C CNN
-F 2 "" H 9350 8050 50  0001 C CNN
-F 3 "" H 9350 8050 50  0001 C CNN
-	1    9350 8050
-	-1   0    0    1   
-$EndComp
 $Sheet
 S 8850 8900 1000 250 
 U 61ECC7CF
@@ -481,33 +471,6 @@ Wire Wire Line
 	8600 3950 8300 3950
 Wire Wire Line
 	11500 6350 11800 6350
-Wire Wire Line
-	8950 7900 8650 7900
-Wire Wire Line
-	9100 7050 10100 7050
-Wire Wire Line
-	9250 7150 10100 7150
-Wire Wire Line
-	9400 7250 10100 7250
-Wire Wire Line
-	10100 7350 9550 7350
-Wire Wire Line
-	9550 7350 9550 7400
-Wire Wire Line
-	9400 7250 9400 7400
-Wire Wire Line
-	9250 7150 9250 7400
-Wire Wire Line
-	9100 7050 9100 7400
-Wire Wire Line
-	8650 7100 8650 7900
-Wire Wire Line
-	10100 7900 10100 8150
-Wire Wire Line
-	9750 7900 10100 7900
-Wire Wire Line
-	8650 8950 8650 7900
-Connection ~ 8650 7900
 $Comp
 L Device:LED D5
 U 1 1 5FA58D8C
@@ -655,8 +618,6 @@ Wire Wire Line
 Connection ~ 8550 8250
 Wire Wire Line
 	8550 8250 8550 9050
-Wire Wire Line
-	10100 8150 13400 8150
 Wire Wire Line
 	13250 6200 13400 6200
 Wire Wire Line
@@ -1031,4 +992,11 @@ Wire Wire Line
 	11250 5200 11150 5200
 Wire Wire Line
 	11150 5200 11150 5250
+Wire Wire Line
+	8650 7100 8650 8150
+Wire Wire Line
+	8650 8150 13400 8150
+Connection ~ 8650 8150
+Wire Wire Line
+	8650 8150 8650 8950
 $EndSCHEMATC
