@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title "NER FH 2020-2021 Master Electrical Schematic"
 Date "2020-09-17"
 Rev "2"
@@ -600,10 +600,14 @@ Wire Wire Line
 	15200 7250 15200 7500
 Connection ~ 15200 7500
 $Sheet
-S 9300 3200 1700 1550
+S 9300 3500 1700 1550
 U 5F647A32
 F0 "Driver IO Enclosure" 50
 F1 "Driver IO Enclosure.sch" 50
+F2 "CAN_L" I R 11000 3800 50 
+F3 "CAN_H" I R 11000 3650 50 
+F4 "GLV+" I L 9300 3650 50 
+F5 "GLV_GND" I L 9300 3800 50 
 $EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
@@ -943,4 +947,17 @@ Wire Wire Line
 	5950 5000 5950 5300
 Wire Wire Line
 	5950 5300 6700 5300
+$Sheet
+S 9300 1900 1700 1100
+U 5F890A03
+F0 "Brake Light" 50
+F1 "Brake Light.sch" 50
+F2 "CAN_H" I R 11000 2000 50 
+F3 "CAN_L" I R 11000 2150 50 
+F4 "GLV+" I L 9300 2000 50 
+F5 "GLV_GND" I L 9300 2150 50 
+F6 "Brake_Light_1+" I L 9300 2600 50 
+F7 "Brake_Light_2+" I L 9300 2750 50 
+F8 "Brake_Light_GND" I L 9300 2900 50 
+$EndSheet
 $EndSCHEMATC
