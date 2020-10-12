@@ -271,40 +271,6 @@ F5 "TS-" O L 8850 9050 50
 $EndSheet
 Text GLabel 8650 5850 2    50   UnSpc ~ 0
 CHASSIS_GND
-$Sheet
-S 6700 5250 1750 2000
-U 5F45B05E
-F0 "Accumulator Container" 50
-F1 "Accumulator_Container.sch" 50
-F2 "Shutdown+" I L 6700 5300 50 
-F3 "Shutdown-" I L 6700 5400 50 
-F4 "TS+" O R 8450 7100 50 
-F5 "TS-" O R 8450 7200 50 
-F6 "TSAL+" O L 6700 5500 50 
-F7 "TSAL-" O L 6700 5750 50 
-F8 "IMD_HV_SENSE-" O R 8450 5300 50 
-F9 "IMD_HV_SENSE+" O R 8450 5400 50 
-F10 "TSMP-" O L 6700 7200 50 
-F11 "TSMP+" O L 6700 7100 50 
-F12 "Segment1_Thermistors" O R 8450 6100 50 
-F13 "Segment2_Thermistors" O R 8450 6200 50 
-F14 "Segment3_Thermistors" O R 8450 6300 50 
-F15 "Segment4_Thermistors" O R 8450 6400 50 
-F16 "Segment1_VoltageTaps" O R 8450 6550 50 
-F17 "Segment2_VoltageTaps" O R 8450 6650 50 
-F18 "Segment3_VoltageTaps" O R 8450 6750 50 
-F19 "Segment4_VoltageTaps" O R 8450 6850 50 
-F20 "MotorController_AIR_Control-" I R 8450 5550 50 
-F21 "MotorController_AIR_Control+" I R 8450 5650 50 
-F22 "MotorController_Precharge-" I R 8450 5850 50 
-F23 "MotorController_Precharge+" I R 8450 5750 50 
-F24 "HVD-" I L 6700 6400 50 
-F25 "HVD+" I L 6700 6300 50 
-F26 "SMD_2-" I L 6700 6000 50 
-F27 "SMD_2+" I L 6700 5900 50 
-F28 "SMD_1-" I L 6700 6800 50 
-F29 "SMD_1+" I L 6700 6700 50 
-$EndSheet
 Wire Wire Line
 	8450 5300 8550 5300
 Wire Wire Line
@@ -315,8 +281,6 @@ Wire Wire Line
 	8550 4250 8300 4250
 Wire Wire Line
 	8300 4150 8600 4150
-Wire Wire Line
-	8450 7200 8550 7200
 $Sheet
 S 10100 6050 1400 1350
 U 60D53BFB
@@ -330,15 +294,12 @@ F6 "CAN+" B R 11500 6550 50
 F7 "CAN-" B R 11500 6450 50 
 F8 "GLV" I R 11500 6350 50 
 F9 "GLV_GND" B R 11500 7300 50 
-F10 "C_GND" I L 10100 7150 50 
-F11 "C_Pow" I L 10100 7350 50 
-F12 "C_High" I L 10100 7250 50 
-F13 "C_Low" I L 10100 7050 50 
-F14 "BMS_Fault" O R 11500 6100 50 
-F15 "Segment1_VoltageTaps" I L 10100 6550 50 
-F16 "Segment2_VoltageTaps" I L 10100 6650 50 
-F17 "Segment3_VoltageTaps" I L 10100 6750 50 
-F18 "Segment4_VoltageTaps" I L 10100 6850 50 
+F10 "BMS_Fault" O R 11500 6100 50 
+F11 "Segment1_VoltageTaps" I L 10100 6550 50 
+F12 "Segment2_VoltageTaps" I L 10100 6650 50 
+F13 "Segment3_VoltageTaps" I L 10100 6750 50 
+F14 "Segment4_VoltageTaps" I L 10100 6850 50 
+F15 "Current_Sensor" I L 10100 7000 50 
 $EndSheet
 Text GLabel 6450 8050 2    50   UnSpc ~ 0
 CHASSIS_GND
@@ -400,8 +361,6 @@ Wire Wire Line
 	2000 3500 2000 1100
 Wire Wire Line
 	1850 1000 1850 3350
-Wire Wire Line
-	8450 7100 8650 7100
 $Comp
 L Device:CircuitBreaker_1P CB1
 U 1 1 5F6B20F0
@@ -606,8 +565,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 1500 11700 1500
 Wire Wire Line
-	8550 7200 8550 8250
-Wire Wire Line
 	15200 8150 15750 8150
 Wire Wire Line
 	15750 8050 15200 8050
@@ -615,7 +572,6 @@ Wire Wire Line
 	15200 8250 15750 8250
 Wire Wire Line
 	8550 8250 13400 8250
-Connection ~ 8550 8250
 Wire Wire Line
 	8550 8250 8550 9050
 Wire Wire Line
@@ -687,13 +643,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 2500 4900 8050
 Wire Wire Line
-	6700 7100 5600 7100
+	6700 7300 5600 7300
 Wire Wire Line
-	5600 7100 5600 8450
-Wire Wire Line
-	5850 7200 6700 7200
-Wire Wire Line
-	5850 7200 5850 8450
+	5850 7400 6700 7400
 Wire Wire Line
 	6450 8050 6100 8050
 Wire Wire Line
@@ -993,10 +945,58 @@ Wire Wire Line
 Wire Wire Line
 	11150 5200 11150 5250
 Wire Wire Line
-	8650 7100 8650 8150
-Wire Wire Line
 	8650 8150 13400 8150
 Connection ~ 8650 8150
 Wire Wire Line
 	8650 8150 8650 8950
+Connection ~ 8550 8250
+Wire Wire Line
+	8450 7300 8650 7300
+Wire Wire Line
+	8450 7400 8550 7400
+Wire Wire Line
+	8650 7300 8650 8150
+Wire Wire Line
+	8550 7400 8550 8250
+$Sheet
+S 6700 5250 1750 2200
+U 5F45B05E
+F0 "Accumulator Container" 50
+F1 "Accumulator_Container.sch" 50
+F2 "Shutdown+" I L 6700 5300 50 
+F3 "Shutdown-" I L 6700 5400 50 
+F4 "TS+" O R 8450 7300 50 
+F5 "TS-" O R 8450 7400 50 
+F6 "TSAL+" O L 6700 5500 50 
+F7 "TSAL-" O L 6700 5750 50 
+F8 "IMD_HV_SENSE-" O R 8450 5300 50 
+F9 "IMD_HV_SENSE+" O R 8450 5400 50 
+F10 "TSMP-" O L 6700 7400 50 
+F11 "TSMP+" O L 6700 7300 50 
+F12 "Segment1_Thermistors" O R 8450 6100 50 
+F13 "Segment2_Thermistors" O R 8450 6200 50 
+F14 "Segment3_Thermistors" O R 8450 6300 50 
+F15 "Segment4_Thermistors" O R 8450 6400 50 
+F16 "Segment1_VoltageTaps" O R 8450 6550 50 
+F17 "Segment2_VoltageTaps" O R 8450 6650 50 
+F18 "Segment3_VoltageTaps" O R 8450 6750 50 
+F19 "Segment4_VoltageTaps" O R 8450 6850 50 
+F20 "MotorController_AIR_Control-" I R 8450 5550 50 
+F21 "MotorController_AIR_Control+" I R 8450 5650 50 
+F22 "MotorController_Precharge-" I R 8450 5850 50 
+F23 "MotorController_Precharge+" I R 8450 5750 50 
+F24 "HVD-" I L 6700 6400 50 
+F25 "HVD+" I L 6700 6300 50 
+F26 "SMD_2-" I L 6700 6000 50 
+F27 "SMD_2+" I L 6700 5900 50 
+F28 "SMD_1-" I L 6700 6800 50 
+F29 "SMD_1+" I L 6700 6700 50 
+F30 "Current_Sensor" O R 8450 7000 50 
+$EndSheet
+Wire Wire Line
+	5600 7300 5600 8450
+Wire Wire Line
+	5850 7400 5850 8450
+Wire Bus Line
+	8450 7000 10100 7000
 $EndSCHEMATC

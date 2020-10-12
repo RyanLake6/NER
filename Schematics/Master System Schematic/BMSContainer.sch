@@ -175,9 +175,9 @@ Segment2_Thermistors
 NoConn ~ 5200 4450
 NoConn ~ 5200 4550
 Text HLabel 2350 2650 0    50   BiDi ~ 0
-CAN+
+CAN_H
 Text HLabel 2350 2750 0    50   BiDi ~ 0
-CAN-
+CAN_L
 Entry Wire Line
 	3650 2650 3750 2750
 Entry Wire Line
