@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -46,17 +47,6 @@ F 3 "" H 5350 1800 50  0001 C CNN
 	1    5400 2100
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:Speaker LS1
-U 1 1 5F88B910
-P 5350 1500
-F 0 "LS1" V 5359 1220 50  0000 R CNN
-F 1 "Speaker" V 5268 1220 50  0000 R CNN
-F 2 "" H 5350 1300 50  0001 C CNN
-F 3 "~" H 5340 1450 50  0001 C CNN
-	1    5350 1500
-	0    -1   -1   0   
-$EndComp
 Text HLabel 8100 3450 2    50   Input ~ 0
 CAN_L
 Wire Wire Line
@@ -90,19 +80,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 4050 4850 4050
 Wire Wire Line
-	5650 2300 5800 2300
-Wire Wire Line
-	5800 2300 5800 1800
-Wire Wire Line
-	5800 1800 5350 1800
-Wire Wire Line
-	5350 1800 5350 1700
-Wire Wire Line
 	4750 4150 4850 4150
-Wire Wire Line
-	5450 1700 5450 1750
-Wire Wire Line
-	5450 1750 4750 1750
 Wire Wire Line
 	4750 1750 4750 4150
 Wire Wire Line
@@ -175,62 +153,6 @@ NoConn ~ 4850 3550
 NoConn ~ 4850 3750
 NoConn ~ 4850 4250
 NoConn ~ 4850 3850
-$Comp
-L NER:ULV8F2BSS331 S1
-U 1 1 5F906A21
-P 3700 3800
-F 0 "S1" H 3700 4285 50  0000 C CNN
-F 1 "ULV8F2BSS331" H 3700 4194 50  0000 C CNN
-F 2 "" H 3700 4000 50  0001 C CNN
-F 3 "~" H 3700 4000 50  0001 C CNN
-	1    3700 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 4500 6200 4500
-Wire Wire Line
-	6200 4500 6200 5250
-Wire Wire Line
-	6200 5250 3300 5250
-Wire Wire Line
-	3300 5250 3300 3600
-Wire Wire Line
-	3300 3600 3500 3600
-Wire Wire Line
-	6050 4600 6150 4600
-Wire Wire Line
-	6150 4600 6150 5150
-Wire Wire Line
-	6150 5150 3900 5150
-Wire Wire Line
-	3900 5150 3900 3900
-Wire Wire Line
-	3500 3900 3500 4150
-Wire Wire Line
-	3500 4150 4100 4150
-Wire Wire Line
-	3900 3700 4100 3700
-Wire Wire Line
-	4100 3700 4100 4150
-Connection ~ 4100 4150
-Wire Wire Line
-	3900 3500 4100 3500
-Wire Wire Line
-	4100 3500 4100 3200
-Wire Wire Line
-	4100 3200 3050 3200
-Wire Wire Line
-	3050 3200 3050 5800
-Wire Wire Line
-	3050 5800 6550 5800
-Wire Wire Line
-	6550 5800 6550 4050
-Wire Wire Line
-	6550 4050 6050 4050
-Text Notes 2450 5050 0    50   ~ 0
-This connection\nWas originally\nIntended to go\nto +5V
-Wire Wire Line
-	4100 4150 4750 4150
 Connection ~ 4750 4150
 Text Notes 3400 4600 0    50   ~ 0
 Remember to ask\nif the connection\nfrom the switch to\nGND is allowed\nto be a junction
@@ -248,4 +170,26 @@ NoConn ~ 6050 4900
 NoConn ~ 6050 3150
 NoConn ~ 6050 3250
 NoConn ~ 6050 3350
+Wire Wire Line
+	6050 4600 7200 4600
+Text HLabel 7200 4600 2    50   Input ~ 0
+LED(-)
+Wire Wire Line
+	3500 4150 4750 4150
+Text HLabel 3500 4150 0    50   Input ~ 0
+Button_GND
+Text HLabel 7200 4500 2    50   Input ~ 0
+Button_Input
+Wire Wire Line
+	6050 4500 7200 4500
+Text HLabel 7200 4050 2    50   Input ~ 0
+Button_+5V
+Wire Wire Line
+	6050 4050 7200 4050
+Text HLabel 5750 2300 2    50   Input ~ 0
+Speaker+
+Text HLabel 4750 1750 1    50   Input ~ 0
+Speaker-
+Wire Wire Line
+	5650 2300 5750 2300
 $EndSCHEMATC

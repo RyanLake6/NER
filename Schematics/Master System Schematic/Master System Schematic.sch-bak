@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -258,63 +259,21 @@ Text Notes 4400 8900 0    50   ~ 0
 TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
-$Comp
-L NER:OrionCurrentSens U5
-U 1 1 6111F589
-P 9350 8050
-F 0 "U5" H 9350 8050 50  0000 C CNN
-F 1 "OrionCurrentSens" H 9350 8100 50  0000 C CNN
-F 2 "" H 9350 8050 50  0001 C CNN
-F 3 "" H 9350 8050 50  0001 C CNN
-	1    9350 8050
-	-1   0    0    1   
-$EndComp
 $Sheet
-S 8850 8900 1000 250 
+S 8850 8900 1000 500 
 U 61ECC7CF
 F0 "Charger" 50
 F1 "Charger.sch" 50
-F2 "CHARGER_SAFETY" I R 9850 9050 50 
-F3 "+12V" I R 9850 8950 50 
-F4 "TS+" O L 8850 8950 50 
-F5 "TS-" O L 8850 9050 50 
+F2 "+12V" O L 8850 9200 50 
+F3 "TS+" O L 8850 8950 50 
+F4 "TS-" O L 8850 9050 50 
+F5 "Charger_Safety" O R 9850 9300 50 
+F6 "CAN_L" B R 9850 8950 50 
+F7 "CAN_H" B R 9850 9050 50 
+F8 "GND" O L 8850 9300 50 
 $EndSheet
 Text GLabel 8650 5850 2    50   UnSpc ~ 0
 CHASSIS_GND
-$Sheet
-S 6700 5250 1750 2000
-U 5F45B05E
-F0 "Accumulator Container" 50
-F1 "Accumulator_Container.sch" 50
-F2 "Shutdown+" I L 6700 5300 50 
-F3 "Shutdown-" I L 6700 5400 50 
-F4 "TS+" O R 8450 7100 50 
-F5 "TS-" O R 8450 7200 50 
-F6 "TSAL+" O L 6700 5500 50 
-F7 "TSAL-" O L 6700 5750 50 
-F8 "IMD_HV_SENSE-" O R 8450 5300 50 
-F9 "IMD_HV_SENSE+" O R 8450 5400 50 
-F10 "TSMP-" O L 6700 7200 50 
-F11 "TSMP+" O L 6700 7100 50 
-F12 "Segment1_Thermistors" O R 8450 6100 50 
-F13 "Segment2_Thermistors" O R 8450 6200 50 
-F14 "Segment3_Thermistors" O R 8450 6300 50 
-F15 "Segment4_Thermistors" O R 8450 6400 50 
-F16 "Segment1_VoltageTaps" O R 8450 6550 50 
-F17 "Segment2_VoltageTaps" O R 8450 6650 50 
-F18 "Segment3_VoltageTaps" O R 8450 6750 50 
-F19 "Segment4_VoltageTaps" O R 8450 6850 50 
-F20 "MotorController_AIR_Control-" I R 8450 5550 50 
-F21 "MotorController_AIR_Control+" I R 8450 5650 50 
-F22 "MotorController_Precharge-" I R 8450 5850 50 
-F23 "MotorController_Precharge+" I R 8450 5750 50 
-F24 "HVD-" I L 6700 6400 50 
-F25 "HVD+" I L 6700 6300 50 
-F26 "SMD_2-" I L 6700 6000 50 
-F27 "SMD_2+" I L 6700 5900 50 
-F28 "SMD_1-" I L 6700 6800 50 
-F29 "SMD_1+" I L 6700 6700 50 
-$EndSheet
 Wire Wire Line
 	8450 5300 8550 5300
 Wire Wire Line
@@ -325,8 +284,6 @@ Wire Wire Line
 	8550 4250 8300 4250
 Wire Wire Line
 	8300 4150 8600 4150
-Wire Wire Line
-	8450 7200 8550 7200
 $Sheet
 S 10100 6050 1400 1350
 U 60D53BFB
@@ -336,19 +293,16 @@ F2 "Segment4_Thermistors" I L 10100 6400 50
 F3 "Segment3_Thermistors" I L 10100 6300 50 
 F4 "Segment1_Thermistors" I L 10100 6100 50 
 F5 "Segment2_Thermistors" I L 10100 6200 50 
-F6 "CAN+" B R 11500 6550 50 
-F7 "CAN-" B R 11500 6450 50 
-F8 "GLV" I R 11500 6350 50 
-F9 "GLV_GND" B R 11500 7300 50 
-F10 "C_GND" I L 10100 7150 50 
-F11 "C_Pow" I L 10100 7350 50 
-F12 "C_High" I L 10100 7250 50 
-F13 "C_Low" I L 10100 7050 50 
-F14 "BMS_Fault" O R 11500 6100 50 
-F15 "Segment1_VoltageTaps" I L 10100 6550 50 
-F16 "Segment2_VoltageTaps" I L 10100 6650 50 
-F17 "Segment3_VoltageTaps" I L 10100 6750 50 
-F18 "Segment4_VoltageTaps" I L 10100 6850 50 
+F6 "GLV" I R 11500 6350 50 
+F7 "GLV_GND" B R 11500 7300 50 
+F8 "BMS_Fault" O R 11500 6100 50 
+F9 "Segment1_VoltageTaps" I L 10100 6550 50 
+F10 "Segment2_VoltageTaps" I L 10100 6650 50 
+F11 "Segment3_VoltageTaps" I L 10100 6750 50 
+F12 "Segment4_VoltageTaps" I L 10100 6850 50 
+F13 "Current_Sensor" I L 10100 7000 50 
+F14 "CAN_H" B R 11500 6450 50 
+F15 "CAN_L" B R 11500 6550 50 
 $EndSheet
 Text GLabel 6450 8050 2    50   UnSpc ~ 0
 CHASSIS_GND
@@ -410,8 +364,6 @@ Wire Wire Line
 	2000 3500 2000 1100
 Wire Wire Line
 	1850 1000 1850 3350
-Wire Wire Line
-	8450 7100 8650 7100
 $Comp
 L Device:CircuitBreaker_1P CB1
 U 1 1 5F6B20F0
@@ -481,33 +433,6 @@ Wire Wire Line
 	8600 3950 8300 3950
 Wire Wire Line
 	11500 6350 11800 6350
-Wire Wire Line
-	8950 7900 8650 7900
-Wire Wire Line
-	9100 7050 10100 7050
-Wire Wire Line
-	9250 7150 10100 7150
-Wire Wire Line
-	9400 7250 10100 7250
-Wire Wire Line
-	10100 7350 9550 7350
-Wire Wire Line
-	9550 7350 9550 7400
-Wire Wire Line
-	9400 7250 9400 7400
-Wire Wire Line
-	9250 7150 9250 7400
-Wire Wire Line
-	9100 7050 9100 7400
-Wire Wire Line
-	8650 7100 8650 7900
-Wire Wire Line
-	10100 7900 10100 8150
-Wire Wire Line
-	9750 7900 10100 7900
-Wire Wire Line
-	8650 8950 8650 7900
-Connection ~ 8650 7900
 $Comp
 L Device:LED D5
 U 1 1 5FA58D8C
@@ -600,14 +525,20 @@ Wire Wire Line
 	15200 7250 15200 7500
 Connection ~ 15200 7500
 $Sheet
-S 9300 3500 1700 1550
+S 9450 3500 1700 1550
 U 5F647A32
 F0 "Driver IO Enclosure" 50
 F1 "Driver IO Enclosure.sch" 50
-F2 "CAN_L" I R 11000 3800 50 
-F3 "CAN_H" I R 11000 3650 50 
-F4 "GLV+" I L 9300 3650 50 
-F5 "GLV_GND" I L 9300 3800 50 
+F2 "CAN_L" I R 11150 3700 50 
+F3 "CAN_H" I R 11150 3600 50 
+F4 "GLV+" I L 9450 3650 50 
+F5 "GLV_GND" I L 9450 3800 50 
+F6 "LED(-)" I L 9450 4400 50 
+F7 "Button_GND" I L 9450 4600 50 
+F8 "Button_Input" I L 9450 4800 50 
+F9 "Button_+5V" I L 9450 4200 50 
+F10 "Speaker+" I R 11150 4900 50 
+F11 "Speaker-" I R 11150 5000 50 
 $EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
@@ -637,8 +568,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 1500 11700 1500
 Wire Wire Line
-	8550 7200 8550 8250
-Wire Wire Line
 	15200 8150 15750 8150
 Wire Wire Line
 	15750 8050 15200 8050
@@ -646,11 +575,8 @@ Wire Wire Line
 	15200 8250 15750 8250
 Wire Wire Line
 	8550 8250 13400 8250
-Connection ~ 8550 8250
 Wire Wire Line
 	8550 8250 8550 9050
-Wire Wire Line
-	10100 8150 13400 8150
 Wire Wire Line
 	13250 6200 13400 6200
 Wire Wire Line
@@ -720,13 +646,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 2500 4900 8050
 Wire Wire Line
-	6700 7100 5600 7100
+	6700 7300 5600 7300
 Wire Wire Line
-	5600 7100 5600 8450
-Wire Wire Line
-	5850 7200 6700 7200
-Wire Wire Line
-	5850 7200 5850 8450
+	5850 7400 6700 7400
 Wire Wire Line
 	6450 8050 6100 8050
 Wire Wire Line
@@ -953,11 +875,229 @@ U 5F890A03
 F0 "Brake Light" 50
 F1 "Brake Light.sch" 50
 F2 "CAN_H" I R 11000 2000 50 
-F3 "CAN_L" I R 11000 2150 50 
+F3 "CAN_L" I R 11000 2100 50 
 F4 "GLV+" I L 9300 2000 50 
 F5 "GLV_GND" I L 9300 2150 50 
 F6 "Brake_Light_1+" I L 9300 2600 50 
 F7 "Brake_Light_2+" I L 9300 2750 50 
 F8 "Brake_Light_GND" I L 9300 2900 50 
 $EndSheet
+$Comp
+L NER:ULV8F2BSS331 S1
+U 1 1 5F94EA0B
+P 9000 4300
+F 0 "S1" H 9000 4785 50  0000 C CNN
+F 1 "ULV8F2BSS331" H 9000 4694 50  0000 C CNN
+F 2 "" H 9000 4500 50  0001 C CNN
+F 3 "~" H 9000 4500 50  0001 C CNN
+	1    9000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4400 9450 4400
+Wire Wire Line
+	8800 4400 8750 4400
+Wire Wire Line
+	9200 4200 9250 4200
+Wire Wire Line
+	9450 4800 8700 4800
+Wire Wire Line
+	8700 4800 8700 4100
+Wire Wire Line
+	8700 4100 8800 4100
+Wire Wire Line
+	9200 4000 9350 4000
+Wire Wire Line
+	9350 4000 9350 4200
+Wire Wire Line
+	9350 4200 9450 4200
+Wire Wire Line
+	9450 4600 9250 4600
+Wire Wire Line
+	8750 4600 8750 4400
+Wire Wire Line
+	9250 4200 9250 4600
+Connection ~ 9250 4600
+Wire Wire Line
+	9250 4600 8750 4600
+$Comp
+L Device:Speaker LS1
+U 1 1 5F9B2999
+P 11150 5450
+F 0 "LS1" V 11067 5630 50  0000 L CNN
+F 1 "Speaker" V 11158 5630 50  0000 L CNN
+F 2 "" H 11150 5250 50  0001 C CNN
+F 3 "~" H 11140 5400 50  0001 C CNN
+	1    11150 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11150 5000 11200 5000
+Wire Wire Line
+	11200 5000 11200 5150
+Wire Wire Line
+	11200 5150 11050 5150
+Wire Wire Line
+	11050 5150 11050 5250
+Wire Wire Line
+	11150 4900 11250 4900
+Wire Wire Line
+	11250 4900 11250 5200
+Wire Wire Line
+	11250 5200 11150 5200
+Wire Wire Line
+	11150 5200 11150 5250
+Wire Wire Line
+	8650 8150 13400 8150
+Connection ~ 8650 8150
+Wire Wire Line
+	8650 8150 8650 8950
+Connection ~ 8550 8250
+Wire Wire Line
+	8450 7300 8650 7300
+Wire Wire Line
+	8450 7400 8550 7400
+Wire Wire Line
+	8650 7300 8650 8150
+Wire Wire Line
+	8550 7400 8550 8250
+$Sheet
+S 6700 5250 1750 2200
+U 5F45B05E
+F0 "Accumulator Container" 50
+F1 "Accumulator_Container.sch" 50
+F2 "Shutdown+" I L 6700 5300 50 
+F3 "Shutdown-" I L 6700 5400 50 
+F4 "TS+" O R 8450 7300 50 
+F5 "TS-" O R 8450 7400 50 
+F6 "TSAL+" O L 6700 5500 50 
+F7 "TSAL-" O L 6700 5750 50 
+F8 "IMD_HV_SENSE-" O R 8450 5300 50 
+F9 "IMD_HV_SENSE+" O R 8450 5400 50 
+F10 "TSMP-" O L 6700 7400 50 
+F11 "TSMP+" O L 6700 7300 50 
+F12 "Segment1_Thermistors" O R 8450 6100 50 
+F13 "Segment2_Thermistors" O R 8450 6200 50 
+F14 "Segment3_Thermistors" O R 8450 6300 50 
+F15 "Segment4_Thermistors" O R 8450 6400 50 
+F16 "Segment1_VoltageTaps" O R 8450 6550 50 
+F17 "Segment2_VoltageTaps" O R 8450 6650 50 
+F18 "Segment3_VoltageTaps" O R 8450 6750 50 
+F19 "Segment4_VoltageTaps" O R 8450 6850 50 
+F20 "MotorController_AIR_Control-" I R 8450 5550 50 
+F21 "MotorController_AIR_Control+" I R 8450 5650 50 
+F22 "MotorController_Precharge-" I R 8450 5850 50 
+F23 "MotorController_Precharge+" I R 8450 5750 50 
+F24 "HVD-" I L 6700 6400 50 
+F25 "HVD+" I L 6700 6300 50 
+F26 "SMD_2-" I L 6700 6000 50 
+F27 "SMD_2+" I L 6700 5900 50 
+F28 "SMD_1-" I L 6700 6800 50 
+F29 "SMD_1+" I L 6700 6700 50 
+F30 "Current_Sensor" O R 8450 7000 50 
+$EndSheet
+Wire Wire Line
+	5600 7300 5600 8450
+Wire Wire Line
+	5850 7400 5850 8450
+Wire Bus Line
+	8450 7000 10100 7000
+Entry Wire Line
+	11550 6450 11650 6550
+Entry Wire Line
+	11550 6550 11650 6650
+Wire Wire Line
+	11500 6450 11550 6450
+Wire Wire Line
+	11500 6550 11550 6550
+Wire Wire Line
+	13400 6800 13350 6800
+Wire Wire Line
+	13400 6900 13350 6900
+Entry Wire Line
+	13250 6800 13350 6900
+Entry Wire Line
+	13250 6700 13350 6800
+Wire Bus Line
+	13250 6800 13250 6700
+Wire Bus Line
+	11650 6550 11650 6650
+Entry Bus Bus
+	11650 6650 11750 6750
+Entry Bus Bus
+	13150 6600 13250 6700
+Entry Bus Bus
+	12050 6500 12150 6600
+Wire Bus Line
+	11750 6750 12050 6750
+Wire Bus Line
+	12150 6600 13150 6600
+Wire Bus Line
+	12050 800  11850 800 
+Wire Wire Line
+	11000 2000 11050 2000
+Wire Wire Line
+	11000 2100 11050 2100
+Entry Wire Line
+	11050 2100 11150 2000
+Entry Wire Line
+	11050 2000 11150 1900
+Wire Wire Line
+	14400 3150 14450 3150
+Wire Wire Line
+	14400 3250 14450 3250
+Entry Wire Line
+	14450 3250 14550 3150
+Entry Wire Line
+	14450 3150 14550 3050
+Entry Bus Bus
+	11950 1650 12050 1550
+Entry Bus Bus
+	12050 2450 12150 2550
+Wire Bus Line
+	12150 2550 14550 2550
+Wire Bus Line
+	11150 1650 11950 1650
+Wire Wire Line
+	11150 3600 11200 3600
+Wire Wire Line
+	11150 3700 11200 3700
+Entry Wire Line
+	11200 3700 11300 3600
+Entry Wire Line
+	11200 3600 11300 3500
+Entry Bus Bus
+	11950 3250 12050 3150
+Wire Bus Line
+	11950 3250 11300 3250
+Wire Wire Line
+	8850 9300 8700 9300
+Text GLabel 8700 9300 0    50   UnSpc ~ 0
+CHASSIS_GND
+Entry Wire Line
+	10000 8950 9900 9050
+Entry Wire Line
+	10000 8850 9900 8950
+Wire Bus Line
+	10000 8950 10000 8850
+Entry Bus Bus
+	10100 8750 10000 8850
+Wire Wire Line
+	9900 8950 9850 8950
+Wire Wire Line
+	9850 9050 9900 9050
+Wire Bus Line
+	12250 8750 12250 6700
+Wire Bus Line
+	10100 8750 12250 8750
+Entry Bus Bus
+	12150 6600 12250 6700
+Wire Bus Line
+	14550 2550 14550 3150
+Wire Bus Line
+	11150 1650 11150 2000
+Wire Bus Line
+	11300 3250 11300 3600
+Wire Bus Line
+	12050 800  12050 6750
 $EndSCHEMATC
