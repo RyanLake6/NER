@@ -6,7 +6,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 12 13
 Title "Pedal Box"
-Date "2020-09-20"
+Date "2020-10-12"
 Rev "1"
 Comp "Northeastern Electric Racing"
 Comment1 "Peter Rydzynski"
