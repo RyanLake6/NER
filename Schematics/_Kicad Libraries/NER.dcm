@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ULV8F2BSS331
+D Button with LED
+F ~
+$ENDCMP
+#
 #End Doc Library
