@@ -103,8 +103,6 @@ Wire Wire Line
 	8300 3500 7900 3500
 Text HLabel 5800 2850 2    50   Input ~ 0
 GLV+
-Wire Wire Line
-	5800 2850 5550 2850
 Text HLabel 3350 2850 0    50   Input ~ 0
 GLV_GND
 Wire Wire Line
@@ -126,11 +124,11 @@ Wire Wire Line
 	5550 5150 5550 3850
 Wire Wire Line
 	5550 3850 5300 3850
-Text HLabel 1950 2000 0    50   Input ~ 0
+Text HLabel 6000 2350 2    50   Input ~ 0
 Brake_Light_1+
-Text HLabel 1950 2200 0    50   Input ~ 0
+Text HLabel 6000 2150 2    50   Input ~ 0
 Brake_Light_2+
-Text HLabel 1950 2400 0    50   Input ~ 0
+Text HLabel 3300 4050 0    50   Input ~ 0
 Brake_Light_GND
 Wire Wire Line
 	4400 1850 3800 1850
@@ -148,6 +146,44 @@ Wire Wire Line
 	4000 1950 4000 3950
 Wire Wire Line
 	4000 3950 4100 3950
-Text Notes 6000 1800 0    50   ~ 0
-To Do:\nFind component for LEDs (Power, Acc Power, and GND)\nWire LEDs to Relay (LEDS OUTSIDE OF THIS SHEET)\nChange pins to reflect the change of LEDs from inside to outside the sheet
+Wire Wire Line
+	5550 2850 5650 2850
+Wire Wire Line
+	4950 2150 6000 2150
+Wire Wire Line
+	6000 2350 5650 2350
+Wire Wire Line
+	5650 2350 5650 2850
+Connection ~ 5650 2850
+Wire Wire Line
+	5650 2850 5800 2850
+Wire Wire Line
+	4100 4050 3300 4050
+NoConn ~ 4950 1850
+NoConn ~ 5300 3050
+NoConn ~ 5300 3150
+NoConn ~ 5300 3250
+NoConn ~ 5300 3950
+NoConn ~ 5300 4200
+NoConn ~ 5300 4300
+NoConn ~ 5300 4400
+NoConn ~ 5300 4500
+NoConn ~ 5300 4600
+NoConn ~ 5300 4700
+NoConn ~ 5300 4800
+NoConn ~ 4100 4800
+NoConn ~ 4100 4700
+NoConn ~ 4100 4600
+NoConn ~ 4100 4500
+NoConn ~ 4100 4400
+NoConn ~ 4100 4300
+NoConn ~ 4100 4150
+NoConn ~ 4100 3750
+NoConn ~ 4100 3650
+NoConn ~ 4100 3550
+NoConn ~ 4100 3450
+NoConn ~ 4100 3300
+NoConn ~ 4100 3200
+NoConn ~ 4100 3100
+NoConn ~ 4100 3000
 $EndSCHEMATC

@@ -46,8 +46,6 @@ F 3 "" H 7300 2950 50  0001 C CNN
 	1    7300 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 6600 3950 0    50   ~ 0
-Is a second CAN Module listed in the BOM?
 NoConn ~ 6750 3100
 Wire Wire Line
 	6750 3200 6100 3200
