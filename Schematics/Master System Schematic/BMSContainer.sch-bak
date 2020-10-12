@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 9 13
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -174,9 +175,9 @@ Segment2_Thermistors
 NoConn ~ 5200 4450
 NoConn ~ 5200 4550
 Text HLabel 2350 2650 0    50   BiDi ~ 0
-CAN+
+CAN_H
 Text HLabel 2350 2750 0    50   BiDi ~ 0
-CAN-
+CAN_L
 Entry Wire Line
 	3650 2650 3750 2750
 Entry Wire Line
@@ -321,22 +322,6 @@ Entry Wire Line
 	3300 6350 3400 6450
 Entry Wire Line
 	3350 6350 3450 6450
-Wire Wire Line
-	5200 1750 5300 1750
-Wire Wire Line
-	5200 1850 5300 1850
-Wire Wire Line
-	5200 2650 5300 2650
-Wire Wire Line
-	5200 2750 5300 2750
-Text HLabel 5300 2650 2    50   Input ~ 0
-C_GND
-Text HLabel 5300 2750 2    50   Input ~ 0
-C_Pow
-Text HLabel 5300 1750 2    50   Input ~ 0
-C_High
-Text HLabel 5300 1850 2    50   Input ~ 0
-C_Low
 Text HLabel 3700 3550 0    50   Output ~ 0
 BMS_Fault
 Wire Wire Line
@@ -381,6 +366,38 @@ Text HLabel 5600 3550 2    50   Input ~ 0
 Segment4_VoltageTaps
 Wire Bus Line
 	5600 3550 5600 3350
+Wire Wire Line
+	5200 2750 5250 2750
+Wire Wire Line
+	5200 2650 5250 2650
+Wire Wire Line
+	5200 1850 5250 1850
+Wire Wire Line
+	5200 1750 5250 1750
+Entry Wire Line
+	5250 1750 5350 1650
+Entry Wire Line
+	5250 1850 5350 1750
+Entry Wire Line
+	5250 2650 5350 2550
+Entry Wire Line
+	5250 2750 5350 2650
+Wire Bus Line
+	5350 2650 5350 2550
+Wire Bus Line
+	5350 1650 5350 1750
+Entry Bus Bus
+	5350 1650 5450 1550
+Entry Bus Bus
+	5350 2550 5450 2450
+Wire Bus Line
+	5450 1550 5600 1550
+Wire Bus Line
+	5600 1550 5600 2450
+Wire Bus Line
+	5450 2450 5600 2450
+Wire Bus Line
+	5600 1550 5900 1550
 Wire Bus Line
 	2150 5150 2150 6450
 Wire Bus Line
@@ -405,4 +422,7 @@ Wire Bus Line
 	5350 5650 5350 6150
 Wire Bus Line
 	6800 1450 6800 6450
+Connection ~ 5600 1550
+Text HLabel 5900 1550 2    50   Input ~ 0
+Current_Sensor
 $EndSCHEMATC

@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 3 13
 Title "Charging System"
-Date "2020-09-17"
-Rev "2"
+Date "2020-10-12"
+Rev "3"
 Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
@@ -16,14 +17,14 @@ $EndDescr
 $Comp
 L Relay:Fujitsu_FTR-F1A K?
 U 1 1 61EEF404
-P 5200 2750
+P 4250 2750
 AR Path="/61EEF404" Ref="K?"  Part="1" 
 AR Path="/61ECC7CF/61EEF404" Ref="K11"  Part="1" 
-F 0 "K11" H 5200 2233 50  0000 C CNN
-F 1 "Safety Relay" H 5200 2324 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5200 2350 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 5250 3300 50  0001 C CNN
-	1    5200 2750
+F 0 "K11" H 4250 2233 50  0000 C CNN
+F 1 "Safety Relay" H 4250 2324 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 4250 2350 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 4300 3300 50  0001 C CNN
+	1    4250 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -52,8 +53,6 @@ F 3 "http://www.thunderstruck-ev.com/images/ThunderStruck%20TSM2500%20ManualV1.0
 	1    5550 4350
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5750 2950 5500 2950
 $Comp
 L Device:Fuse F?
 U 1 1 61EEF417
@@ -68,13 +67,7 @@ F 3 "~" H 6450 4200 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6300 2950 6050 2950
-Wire Wire Line
-	6300 2750 5500 2750
-Wire Wire Line
-	5500 2550 5550 2550
-Wire Wire Line
-	5550 2250 5550 2550
+	6300 2950 6100 2950
 $Comp
 L Connector:Conn_WallSocket_Earth J?
 U 1 1 61EEF421
@@ -91,55 +84,125 @@ $EndComp
 Wire Wire Line
 	6200 4200 6300 4200
 Wire Wire Line
-	6200 4050 6700 4050
+	6700 4200 6700 5450
 Wire Wire Line
-	6600 4200 6600 5450
+	3850 3800 3850 2950
 Wire Wire Line
-	4800 3800 4800 2950
+	3850 2950 3950 2950
 Wire Wire Line
-	4800 2950 4900 2950
+	3950 2750 3750 2750
 Wire Wire Line
-	4800 3800 4950 3800
-Wire Wire Line
-	4900 2750 4700 2750
-Wire Wire Line
-	4700 2750 4700 3950
-Wire Wire Line
-	4700 3950 4950 3950
-Wire Wire Line
-	5700 3150 5700 3400
-Wire Wire Line
-	4600 3400 4600 4200
+	3750 2750 3750 3950
 Wire Wire Line
 	4600 4200 4950 4200
-Wire Wire Line
-	5700 3400 4600 3400
-Wire Wire Line
-	5700 3150 6300 3150
-Wire Notes Line
-	4450 2100 4450 4500
-Wire Notes Line
-	6800 4500 6800 2100
-Wire Wire Line
-	6700 4050 6700 5550
-Wire Wire Line
-	4300 2550 4900 2550
-Wire Notes Line
-	4450 4500 6800 4500
-Wire Notes Line
-	4450 2100 6800 2100
-Text Notes 4450 2100 0    50   ~ 0
-CHARGING CART
-Text HLabel 4300 2250 0    50   Input ~ 0
-CHARGER_SAFETY
-Text HLabel 4300 2550 0    50   Input ~ 0
+Text HLabel 3700 2550 0    50   Output ~ 0
+Charger_Safety
+Text HLabel 3700 2200 0    50   Output ~ 0
 +12V
-Text HLabel 6600 5450 0    50   Output ~ 0
+Text HLabel 6700 5450 3    50   Output ~ 0
 TS+
-Text HLabel 6600 5550 0    50   Output ~ 0
+Text HLabel 6800 5450 3    50   Output ~ 0
 TS-
 Wire Wire Line
-	6700 5550 6600 5550
+	6200 3650 6750 3650
 Wire Wire Line
-	4300 2250 5550 2250
+	6200 3800 6750 3800
+Text HLabel 6750 3650 2    50   BiDi ~ 0
+CAN_L
+Text HLabel 6750 3800 2    50   BiDi ~ 0
+CAN_H
+$Comp
+L Converter_ACDC:HLK-PM12 PS1
+U 1 1 6015DD85
+P 5500 2100
+F 0 "PS1" H 5500 1783 50  0000 C CNN
+F 1 "PLACEHOLDER" H 5500 1874 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 5500 1800 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=56" H 5900 1750 50  0001 C CNN
+	1    5500 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2200 6000 2200
+Wire Wire Line
+	5900 2000 6100 2000
+Wire Wire Line
+	6100 2350 6100 2950
+Connection ~ 6100 2950
+Wire Wire Line
+	6100 2950 6050 2950
+$Comp
+L Device:Fuse F6
+U 1 1 6016ADF1
+P 6100 2200
+F 0 "F6" H 6160 2246 50  0000 L CNN
+F 1 "Fuse" H 6160 2155 50  0000 L CNN
+F 2 "" V 6030 2200 50  0001 C CNN
+F 3 "~" H 6100 2200 50  0001 C CNN
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2050 6100 2000
+Wire Wire Line
+	6000 2200 6000 2750
+Connection ~ 6000 2750
+Wire Wire Line
+	6000 2750 6300 2750
+Wire Wire Line
+	5100 2000 4900 2000
+Wire Wire Line
+	4900 2000 4900 3150
+Connection ~ 4900 2000
+Connection ~ 4900 3150
+Wire Wire Line
+	4900 3150 4600 3150
+Wire Wire Line
+	4900 3150 6300 3150
+Wire Wire Line
+	4600 3150 4600 4200
+Wire Wire Line
+	5100 2200 4750 2200
+Wire Wire Line
+	4750 2200 4750 2550
+Wire Wire Line
+	4750 2550 4550 2550
+Connection ~ 4750 2200
+Wire Wire Line
+	3950 2550 3700 2550
+Wire Wire Line
+	3700 2200 4750 2200
+Wire Wire Line
+	3700 2000 4900 2000
+Text HLabel 3700 2000 0    50   Output ~ 0
+GND
+Wire Wire Line
+	4550 2750 6000 2750
+Wire Wire Line
+	4550 2950 5750 2950
+Wire Wire Line
+	3850 3800 4950 3800
+Wire Wire Line
+	3750 3950 4950 3950
+Wire Wire Line
+	6700 4200 6600 4200
+$Comp
+L Device:Fuse F?
+U 1 1 6017BDE1
+P 6450 4050
+AR Path="/6017BDE1" Ref="F?"  Part="1" 
+AR Path="/61ECC7CF/6017BDE1" Ref="F7"  Part="1" 
+F 0 "F7" V 6253 4050 50  0000 C CNN
+F 1 "15A" V 6344 4050 50  0000 C CNN
+F 2 "" V 6380 4050 50  0001 C CNN
+F 3 "~" H 6450 4050 50  0001 C CNN
+	1    6450 4050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6200 4050 6300 4050
+Wire Wire Line
+	6600 4050 6800 4050
+Wire Wire Line
+	6800 5450 6800 4050
 $EndSCHEMATC
