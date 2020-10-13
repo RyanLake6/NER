@@ -153,8 +153,6 @@ NoConn ~ 4850 3750
 NoConn ~ 4850 4250
 NoConn ~ 4850 3850
 Connection ~ 4750 4150
-Text Notes 3400 4600 0    50   ~ 0
-Remember to ask\nif the connection\nfrom the switch to\nGND is allowed\nto be a junction
 NoConn ~ 4850 4400
 NoConn ~ 4850 4500
 NoConn ~ 4850 4600
@@ -172,7 +170,7 @@ NoConn ~ 6050 3350
 Wire Wire Line
 	6050 4600 7200 4600
 Text HLabel 7200 4600 2    50   Input ~ 0
-LED(-)
+LED(+)
 Wire Wire Line
 	3500 4150 4750 4150
 Text HLabel 3500 4150 0    50   Input ~ 0
