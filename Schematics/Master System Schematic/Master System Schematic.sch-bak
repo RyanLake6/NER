@@ -1063,10 +1063,10 @@ F 3 "~" H 3950 9750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J11
 U 1 1 5F8D4529
 P 3650 9750
-F 0 "J?" V 3700 9550 50  0000 L CNN
+F 0 "J11" V 3700 9550 50  0000 L CNN
 F 1 "Charger +12V" V 3800 9100 50  0000 L CNN
 F 2 "" H 3650 9750 50  0001 C CNN
 F 3 "~" H 3650 9750 50  0001 C CNN
@@ -1074,10 +1074,10 @@ F 3 "~" H 3650 9750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J10
 U 1 1 5F93092A
 P 3650 9350
-F 0 "J?" V 3550 9200 50  0000 L CNN
+F 0 "J10" V 3550 9200 50  0000 L CNN
 F 1 "+12V" V 3450 9150 50  0000 L CNN
 F 2 "" H 3650 9350 50  0001 C CNN
 F 3 "~" H 3650 9350 50  0001 C CNN
@@ -1090,10 +1090,10 @@ Connection ~ 1250 5750
 Wire Wire Line
 	1250 5750 1250 5900
 $Comp
-L Master-System-Schematic-cache:Relay_DIPxx-1Axx-11x K?
+L Master-System-Schematic-cache:Relay_DIPxx-1Axx-11x K12
 U 1 1 5F9B5A7A
 P 2950 5550
-F 0 "K?" V 2383 5550 50  0000 C CNN
+F 0 "K12" V 2383 5550 50  0000 C CNN
 F 1 "Cooling Pump Relay" V 2474 5550 50  0000 C CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3300 5500 50  0001 L CNN
 F 3 "" H 2950 5550 50  0001 C CNN
@@ -1113,10 +1113,10 @@ Wire Wire Line
 Text GLabel 3500 5350 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
-L Motor:Motor_DC M?
+L Motor:Motor_DC M1
 U 1 1 5FA2966E
 P 3650 5750
-F 0 "M?" V 3450 5650 50  0000 L CNN
+F 0 "M1" V 3450 5650 50  0000 L CNN
 F 1 "Cooling Pump" V 3350 5450 50  0000 L CNN
 F 2 "" H 3650 5660 50  0001 C CNN
 F 3 "~" H 3650 5660 50  0001 C CNN

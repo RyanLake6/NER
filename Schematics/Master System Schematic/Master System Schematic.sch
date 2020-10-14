@@ -254,22 +254,22 @@ F 3 "~" H 3950 9350 50  0001 C CNN
 	1    3950 9350
 	0    -1   1    0   
 $EndComp
-Text Notes 4200 9800 0    50   ~ 0
+Text Notes 4750 9800 0    50   ~ 0
 TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
 $Sheet
-S 8850 8900 1000 500 
+S 8700 8900 1000 500 
 U 61ECC7CF
 F0 "Charger" 50
 F1 "Charger.sch" 50
-F2 "+12V" O L 8850 9200 50 
-F3 "TS+" O L 8850 8950 50 
-F4 "TS-" O L 8850 9050 50 
-F5 "Charger_Safety" O R 9850 9300 50 
-F6 "CAN_L" B R 9850 8950 50 
-F7 "CAN_H" B R 9850 9050 50 
-F8 "GND" O L 8850 9300 50 
+F2 "+12V" O L 8700 9200 50 
+F3 "TS+" O L 8700 8950 50 
+F4 "TS-" O L 8700 9050 50 
+F5 "Charger_Safety" O R 9700 9300 50 
+F6 "CAN_L" B R 9700 8950 50 
+F7 "CAN_H" B R 9700 9050 50 
+F8 "GND" O L 8700 9300 50 
 $EndSheet
 Text GLabel 8650 5850 2    50   UnSpc ~ 0
 CHASSIS_GND
@@ -302,6 +302,7 @@ F12 "Segment4_VoltageTaps" I L 10100 6850 50
 F13 "Current_Sensor" I L 10100 7000 50 
 F14 "CAN_H" B R 11500 6450 50 
 F15 "CAN_L" B R 11500 6550 50 
+F16 "ChargeSafety" O L 10100 7300 50 
 $EndSheet
 Text GLabel 4100 8500 2    50   UnSpc ~ 0
 CHASSIS_GND
@@ -385,10 +386,6 @@ Wire Wire Line
 	5950 4400 5950 3550
 Wire Wire Line
 	11500 6100 11700 6100
-Wire Wire Line
-	8650 8950 8850 8950
-Wire Wire Line
-	8550 9050 8850 9050
 Wire Wire Line
 	11700 6100 11700 1500
 Wire Wire Line
@@ -720,12 +717,6 @@ Wire Wire Line
 	8550 4250 8550 5300
 Text GLabel 8650 5550 2    50   UnSpc ~ 0
 CHASSIS_GND
-Wire Wire Line
-	8450 5650 15400 5650
-Wire Wire Line
-	15400 5650 15400 7950
-Wire Wire Line
-	15400 7950 15200 7950
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 60DA2E32
@@ -1001,21 +992,19 @@ Entry Bus Bus
 Wire Bus Line
 	11950 3250 11300 3250
 Entry Wire Line
-	10000 8950 9900 9050
+	9850 8950 9750 9050
 Entry Wire Line
-	10000 8850 9900 8950
+	9850 8850 9750 8950
 Wire Bus Line
-	10000 8950 10000 8850
+	9850 8950 9850 8850
 Entry Bus Bus
-	10100 8750 10000 8850
+	9950 8750 9850 8850
 Wire Wire Line
-	9900 8950 9850 8950
+	9750 8950 9700 8950
 Wire Wire Line
-	9850 9050 9900 9050
+	9700 9050 9750 9050
 Wire Bus Line
 	12250 8750 12250 6700
-Wire Bus Line
-	10100 8750 12250 8750
 Entry Bus Bus
 	12150 6600 12250 6700
 Text GLabel 9350 2300 0    50   UnSpc ~ 0
@@ -1139,24 +1128,6 @@ Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
 	650  2200 900  2200
-Text GLabel 900  2200 2    50   Input ~ 0
-Arduinos
-Wire Wire Line
-	650  3500 600  3500
-Wire Wire Line
-	600  3500 600  2000
-Wire Wire Line
-	600  2000 900  2000
-Text GLabel 900  2000 2    50   Input ~ 0
-AccumulatorFans
-Wire Wire Line
-	650  3650 550  3650
-Wire Wire Line
-	550  3650 550  1800
-Wire Wire Line
-	550  1800 900  1800
-Text GLabel 900  1800 2    50   Input ~ 0
-Brakelight
 $Comp
 L Switch:SW_DPST SW5
 U 1 1 5F864268
@@ -1211,15 +1182,11 @@ Wire Wire Line
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
-	8550 9200 8850 9200
-Wire Wire Line
 	3950 9950 3950 10250
 Wire Wire Line
 	3950 10250 8500 10250
 Wire Wire Line
 	8500 10250 8500 9300
-Wire Wire Line
-	8500 9300 8850 9300
 Wire Notes Line
 	6150 9700 6150 8650
 Wire Notes Line
@@ -1238,6 +1205,55 @@ Wire Wire Line
 	5050 2300 5050 9050
 Text GLabel 11850 800  0    50   Input ~ 0
 PC_Link
+Wire Wire Line
+	600  750  9050 750 
+Wire Bus Line
+	9450 3650 8750 3650
+Wire Bus Line
+	8750 3650 8750 700 
+Connection ~ 8750 700 
+Wire Bus Line
+	12950 3150 12750 3150
+Wire Bus Line
+	12750 3150 12750 700 
+Wire Bus Line
+	8750 700  12750 700 
+Wire Bus Line
+	550  3650 650  3650
+Wire Bus Line
+	550  700  550  3650
+Wire Bus Line
+	550  700  8750 700 
+Wire Wire Line
+	650  3500 600  3500
+Wire Wire Line
+	600  3500 600  750 
+Wire Wire Line
+	9050 2150 9050 750 
+Wire Wire Line
+	9050 2150 9450 2150
+Wire Wire Line
+	8450 5650 15450 5650
+Text Label 900  2200 0    50   ~ 0
+AccumulatorFans
+Text Label 15450 5650 0    50   ~ 0
+MotorControllerAIRControl
+Wire Wire Line
+	8500 9300 8700 9300
+Wire Wire Line
+	8550 9050 8700 9050
+Wire Wire Line
+	8550 9200 8700 9200
+Wire Wire Line
+	8650 8950 8700 8950
+Wire Bus Line
+	9950 8750 12250 8750
+Wire Wire Line
+	9700 9300 10000 9300
+Wire Wire Line
+	10000 9300 10000 7300
+Wire Wire Line
+	10000 7300 10100 7300
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
