@@ -1,3 +1,6 @@
+#include <mcp_can.h>
+#include <mcp_can_dfs.h>
+
 /**
  * TODO:
  *  Update message formats for what is expected in motor controller 
@@ -23,26 +26,24 @@ int brakePin1Val;
 int brakePin2Val;
  
 // CAN stuff
-const int myCAN_accel = 0x01;       // device's CAN id
-const int myCAN_accel_broke = 0x02; // device error ID
-const int myCAN_brake = 0x03;       // device's CAN id
-const int myCAN_brake_broke = 0x04; // device error ID
+const int CAN_ACCEL = 0x01;       // device's CAN id
+const int CAN_ACCEL_BROKE = 0x02; // device error ID
+const int CAN_BRAKE = 0x03;       // device's CAN id
+const int CAN_BRAKE_BROKE = 0x04; // device error ID
 
-const int spiCSPin = 10; //base CAN pin
+const int SPI_CS_PIN = 10; // base CAN pin
 unsigned char errorMessage[8] = {0, 255, 0, 0, 0, 0, 0, 0}; // output message for when the potentiometers are too far apart
 // this message can be changed, but for now has value in second index as no "good" message will have a value there
 
-MCP_CAN CAN(spiCSPin); // setup can device
+MCP_CAN CAN(SPI_CS_PIN); // setup can device
 
 /**
  * Start CAN and initialize digital pins
  */
-void setup()
-{
+void setup() {
   Serial.begin(115200); // baud rate for CAN
 
-  while (CAN_OK != CAN.begin(CAN_500KBPS, MCP_8MHz)) // specify 8MHz crystal
-  { 
+  while (CAN_OK != CAN.begin(CAN_500KBPS, MCP_8MHz)) { // specify 8MHz crystal
     Serial.println("CAN BUS init Failed"); // failure message
     delay(250); // delay, retry
   }
@@ -73,9 +74,9 @@ void readPotentiometers() {
     int averageReading = (accelPin1Val + accelPin2Val) / 2;
     unsigned char byteReading = averageReading / 4;
     unsigned char valueMessage[8] = {byteReading, 0, 0, 0, 0, 0, 0, 0};
-    CAN.sendMsgBuf(myCAN_accel, 0, 8, valueMessage); // send message of the average value of the two potentiometers
+    CAN.sendMsgBuf(CAN_ACCEL, 0, 8, valueMessage); // send message of the average value of the two potentiometers
   } else {
-    CAN.sendMsgBuf(myCAN_accel_broke, 0, 8, errorMessage); // send message that the two potentiometer values are too far apart
+    CAN.sendMsgBuf(CAN_ACCEL_BROKE, 0, 8, errorMessage); // send message that the two potentiometer values are too far apart
   }
 }
 
@@ -89,8 +90,8 @@ void readSwitches() {
 
   if ((brakePin1Val == LOW) && (brakePin2Val == LOW)) {
     unsigned char valueMessage[8] = {1, 0, 0, 0, 0, 0, 0, 0};
-    CAN.sendMsgBuf(myCAN_brake, 0, 8, valueMessage); //send message that the switches are turned on
+    CAN.sendMsgBuf(CAN_BRAKE, 0, 8, valueMessage); // send message that the switches are turned on
   } else if (brakePin1Val != brakePin2Val) {
-    CAN.sendMsgBuf(myCAN_brake_broke, 0, 8, errorMessage); //send message that the two switch values are not equal
+    CAN.sendMsgBuf(CAN_BRAKE_BROKE, 0, 8, errorMessage); // send message that the two switch values are not equal
   }
 }
