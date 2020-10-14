@@ -40,7 +40,8 @@ void loop() {
     state = 0;
     speakerCooldown = millis();
   }
-  
+
+  // Turns speaker off once cooldown is passed or state is false.
   if (speakerCooldown < millis() || !state) {
     // Serial.println("Speaker Off");
     analogWrite(SPEAKER, 0);
