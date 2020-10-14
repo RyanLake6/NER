@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 13
+Sheet 8 13
 Title "Accumulator Container"
 Date "2020-09-17"
 Rev "2"
@@ -227,9 +228,9 @@ Text HLabel 8650 850  0    50   Input ~ 0
 Shutdown-
 Wire Wire Line
 	9050 850  8650 850 
-Text HLabel 13850 6000 2    50   Output ~ 0
+Text HLabel 14800 6000 2    50   Output ~ 0
 TS+
-Text HLabel 13850 6100 2    50   Output ~ 0
+Text HLabel 14800 6100 2    50   Output ~ 0
 TS-
 Text HLabel 14950 4950 2    50   Output ~ 0
 TSAL+
@@ -254,9 +255,9 @@ Wire Wire Line
 Wire Wire Line
 	11600 6000 11600 5750
 Wire Wire Line
-	13850 6000 13500 6000
+	14800 6000 14450 6000
 Wire Wire Line
-	13500 6100 13850 6100
+	14450 6100 14800 6100
 Text HLabel 6550 9300 2    50   Output ~ 0
 Segment1_Thermistors
 Text HLabel 6550 9400 2    50   Output ~ 0
@@ -284,10 +285,6 @@ F 3 "~" H 12350 5600 50  0001 C CNN
 	1    12350 5600
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	12350 5750 12350 6100
-Wire Wire Line
-	11700 5750 11700 6100
 $Sheet
 S 3950 6700 1550 2000
 U 5F7F6054
@@ -995,8 +992,6 @@ Wire Bus Line
 Wire Bus Line
 	1750 9500 6550 9500
 Wire Bus Line
-	6550 9600 1650 9600
-Wire Bus Line
 	1650 9600 1650 3050
 Wire Bus Line
 	1650 3050 3800 3050
@@ -1454,10 +1449,8 @@ Connection ~ 12450 6000
 Wire Wire Line
 	12450 6000 13000 6000
 Wire Wire Line
-	11700 6100 12350 6100
-Connection ~ 12350 6100
-Wire Wire Line
-	12350 6100 13000 6100
+	11700 6450 12350 6450
+Connection ~ 12350 6450
 Wire Wire Line
 	12350 4250 13000 4250
 Wire Wire Line
@@ -1659,9 +1652,9 @@ Wire Wire Line
 Wire Wire Line
 	7450 6850 7450 8100
 Connection ~ 11600 6000
-Connection ~ 11700 6100
+Connection ~ 11700 6450
 Wire Wire Line
-	11700 6100 11700 8100
+	11700 6450 11700 8100
 Wire Wire Line
 	9050 850  9050 1350
 Wire Wire Line
@@ -1688,12 +1681,12 @@ Wire Wire Line
 $Comp
 L NER:2-Pos_Generic J6
 U 1 1 5F84E6B9
-P 13250 5900
-F 0 "J6" H 13250 6025 50  0000 C CNN
-F 1 "Main TS Connector" H 13250 5934 50  0000 C CNN
-F 2 "" H 13250 5900 50  0001 C CNN
-F 3 "" H 13250 5900 50  0001 C CNN
-	1    13250 5900
+P 14200 5900
+F 0 "J6" H 14200 6025 50  0000 C CNN
+F 1 "Main TS Connector" H 14200 5934 50  0000 C CNN
+F 2 "" H 14200 5900 50  0001 C CNN
+F 3 "" H 14200 5900 50  0001 C CNN
+	1    14200 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1730,6 +1723,72 @@ Wire Wire Line
 	14850 4950 14950 4950
 Wire Wire Line
 	14850 5050 14950 5050
+$Comp
+L NER:6-Pos_Generic J4
+U 1 1 5FAB592D
+P 9350 1600
+F 0 "J4" V 9304 1588 50  0000 L CNN
+F 1 "Shutdown/MC Control Connector" V 9395 1588 50  0000 L CNN
+F 2 "" H 9350 1600 50  0001 C CNN
+F 3 "" H 9350 1600 50  0001 C CNN
+	1    9350 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L NER:OrionCurrentSens U5
+U 1 1 5F8DBC0B
+P 13400 6150
+F 0 "U5" H 13400 6173 50  0000 C CNN
+F 1 "OrionCurrentSens" H 13400 6264 50  0000 C CNN
+F 2 "" H 13400 6150 50  0001 C CNN
+F 3 "" H 13400 6150 50  0001 C CNN
+	1    13400 6150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	11700 5750 11700 6450
+Wire Wire Line
+	12350 5750 12350 6450
+Wire Wire Line
+	13900 6450 13900 6100
+Wire Wire Line
+	13900 6100 13950 6100
+Wire Wire Line
+	12350 6450 13900 6450
+Wire Wire Line
+	13800 6000 13950 6000
+Wire Wire Line
+	13650 5500 13650 5450
+Wire Wire Line
+	13500 5500 13500 5450
+Wire Wire Line
+	13350 5500 13350 5450
+Wire Wire Line
+	13200 5500 13200 5450
+Entry Wire Line
+	13200 5450 13300 5350
+Entry Wire Line
+	13350 5450 13450 5350
+Entry Wire Line
+	13500 5450 13600 5350
+Entry Wire Line
+	13650 5450 13750 5350
+Wire Bus Line
+	15300 8950 6100 8950
+Wire Bus Line
+	15300 5350 15300 8950
+Text Notes 11900 8900 2    50   ~ 0
+Current sense line will be fed from the accumulator to the BMS via the termistor connectors, and then split back out within the BMS container
+Wire Bus Line
+	1650 9600 6550 9600
+Wire Bus Line
+	6100 8950 6100 9150
+Wire Bus Line
+	6100 9150 6550 9150
+Text HLabel 6550 9150 2    50   Output ~ 0
+Current_Sensor
+Wire Bus Line
+	13300 5350 15300 5350
 Wire Bus Line
 	1850 3500 1850 5350
 Wire Bus Line
@@ -1746,15 +1805,4 @@ Wire Bus Line
 	3700 2950 3700 5100
 Wire Bus Line
 	5650 2850 5650 4700
-$Comp
-L NER:6-Pos_Generic J4
-U 1 1 5FAB592D
-P 9350 1600
-F 0 "J4" V 9304 1588 50  0000 L CNN
-F 1 "Shutdown/MC Control Connector" V 9395 1588 50  0000 L CNN
-F 2 "" H 9350 1600 50  0001 C CNN
-F 3 "" H 9350 1600 50  0001 C CNN
-	1    9350 1600
-	0    1    1    0   
-$EndComp
 $EndSCHEMATC
