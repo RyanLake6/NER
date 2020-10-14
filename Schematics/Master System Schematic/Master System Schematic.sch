@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 13
+Sheet 1 17
 Title "NER FH 2020-2021 Master Electrical Schematic"
 Date "2020-10-12"
 Rev "3"
@@ -848,30 +848,14 @@ Wire Wire Line
 $Comp
 L Device:Speaker LS1
 U 1 1 5F9B2999
-P 11150 5450
-F 0 "LS1" V 11067 5630 50  0000 L CNN
-F 1 "Speaker" V 11158 5630 50  0000 L CNN
-F 2 "" H 11150 5250 50  0001 C CNN
-F 3 "~" H 11140 5400 50  0001 C CNN
-	1    11150 5450
-	0    1    1    0   
+P 11500 4900
+F 0 "LS1" H 11400 4650 50  0000 L CNN
+F 1 "Speaker" H 11350 4550 50  0000 L CNN
+F 2 "" H 11500 4700 50  0001 C CNN
+F 3 "~" H 11490 4850 50  0001 C CNN
+	1    11500 4900
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11150 5000 11200 5000
-Wire Wire Line
-	11200 5000 11200 5150
-Wire Wire Line
-	11200 5150 11050 5150
-Wire Wire Line
-	11050 5150 11050 5250
-Wire Wire Line
-	11150 4900 11250 4900
-Wire Wire Line
-	11250 4900 11250 5200
-Wire Wire Line
-	11250 5200 11150 5200
-Wire Wire Line
-	11150 5200 11150 5250
 Wire Wire Line
 	8650 8150 13400 8150
 Connection ~ 8650 8150
@@ -1208,22 +1192,9 @@ PC_Link
 Wire Wire Line
 	600  750  9050 750 
 Wire Bus Line
-	9450 3650 8750 3650
-Wire Bus Line
-	8750 3650 8750 700 
-Connection ~ 8750 700 
-Wire Bus Line
-	12950 3150 12750 3150
-Wire Bus Line
-	12750 3150 12750 700 
-Wire Bus Line
-	8750 700  12750 700 
-Wire Bus Line
 	550  3650 650  3650
 Wire Bus Line
 	550  700  550  3650
-Wire Bus Line
-	550  700  8750 700 
 Wire Wire Line
 	650  3500 600  3500
 Wire Wire Line
@@ -1254,6 +1225,32 @@ Wire Wire Line
 	10000 9300 10000 7300
 Wire Wire Line
 	10000 7300 10100 7300
+Entry Bus Bus
+	8650 700  8750 800 
+Entry Wire Line
+	9150 3550 9250 3650
+Wire Wire Line
+	9250 3650 9450 3650
+Wire Bus Line
+	12450 2950 12450 700 
+Entry Bus Bus
+	12450 2950 12550 3050
+Wire Bus Line
+	12550 3050 12600 3050
+Entry Wire Line
+	12600 3050 12700 3150
+Wire Wire Line
+	12700 3150 12950 3150
+Wire Bus Line
+	9150 3550 8750 3550
+Wire Bus Line
+	8750 800  8750 3550
+Wire Wire Line
+	11150 5000 11300 5000
+Wire Wire Line
+	11150 4900 11300 4900
+Wire Bus Line
+	550  700  12450 700 
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line

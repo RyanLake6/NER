@@ -1,0 +1,699 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K13
+U 1 1 6054192C
+P 3650 1850
+AR Path="/5F45B05E/604010F7/6054192C" Ref="K13"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054192C" Ref="K23"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054192C" Ref="K33"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054192C" Ref="K43"  Part="1" 
+F 0 "K13" H 3650 2367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 3650 2276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3650 1450 50  0001 C CNN
+F 3 "" H 3650 1850 50  0001 C CNN
+	1    3650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K14
+U 1 1 6054391B
+P 3650 2850
+AR Path="/5F45B05E/604010F7/6054391B" Ref="K14"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054391B" Ref="K24"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054391B" Ref="K34"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054391B" Ref="K44"  Part="1" 
+F 0 "K14" H 3650 3367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 3650 3276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3650 2450 50  0001 C CNN
+F 3 "" H 3650 2850 50  0001 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K15
+U 1 1 60543EA1
+P 3650 3850
+AR Path="/5F45B05E/604010F7/60543EA1" Ref="K15"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60543EA1" Ref="K25"  Part="1" 
+AR Path="/5F45B05E/604E5331/60543EA1" Ref="K35"  Part="1" 
+AR Path="/5F45B05E/604E5333/60543EA1" Ref="K45"  Part="1" 
+F 0 "K15" H 3650 4367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 3650 4276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3650 3450 50  0001 C CNN
+F 3 "" H 3650 3850 50  0001 C CNN
+	1    3650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K16
+U 1 1 6054435E
+P 3650 4800
+AR Path="/5F45B05E/604010F7/6054435E" Ref="K16"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054435E" Ref="K26"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054435E" Ref="K36"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054435E" Ref="K46"  Part="1" 
+F 0 "K16" H 3650 5317 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 3650 5226 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3650 4400 50  0001 C CNN
+F 3 "" H 3650 4800 50  0001 C CNN
+	1    3650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K17
+U 1 1 605448E5
+P 3650 5750
+AR Path="/5F45B05E/604010F7/605448E5" Ref="K17"  Part="1" 
+AR Path="/5F45B05E/604B77CB/605448E5" Ref="K27"  Part="1" 
+AR Path="/5F45B05E/604E5331/605448E5" Ref="K37"  Part="1" 
+AR Path="/5F45B05E/604E5333/605448E5" Ref="K47"  Part="1" 
+F 0 "K17" H 3650 6267 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 3650 6176 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3650 5350 50  0001 C CNN
+F 3 "" H 3650 5750 50  0001 C CNN
+	1    3650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K18
+U 1 1 60548E5D
+P 5650 1850
+AR Path="/5F45B05E/604010F7/60548E5D" Ref="K18"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60548E5D" Ref="K28"  Part="1" 
+AR Path="/5F45B05E/604E5331/60548E5D" Ref="K38"  Part="1" 
+AR Path="/5F45B05E/604E5333/60548E5D" Ref="K48"  Part="1" 
+F 0 "K18" H 5650 2367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 5650 2276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5650 1450 50  0001 C CNN
+F 3 "" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K19
+U 1 1 6054A887
+P 5650 2850
+AR Path="/5F45B05E/604010F7/6054A887" Ref="K19"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054A887" Ref="K29"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054A887" Ref="K39"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054A887" Ref="K49"  Part="1" 
+F 0 "K19" H 5650 3367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 5650 3276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5650 2450 50  0001 C CNN
+F 3 "" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K20
+U 1 1 6054A88D
+P 5650 3850
+AR Path="/5F45B05E/604010F7/6054A88D" Ref="K20"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054A88D" Ref="K30"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054A88D" Ref="K40"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054A88D" Ref="K50"  Part="1" 
+F 0 "K20" H 5650 4367 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 5650 4276 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5650 3450 50  0001 C CNN
+F 3 "" H 5650 3850 50  0001 C CNN
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K21
+U 1 1 6054A893
+P 5650 4800
+AR Path="/5F45B05E/604010F7/6054A893" Ref="K21"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054A893" Ref="K31"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054A893" Ref="K41"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054A893" Ref="K51"  Part="1" 
+F 0 "K21" H 5650 5317 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 5650 5226 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4800 50  0001 C CNN
+	1    5650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Master-System-Schematic-cache:Relay_Fujitsu_FTR-F1A K22
+U 1 1 6054A899
+P 5650 5750
+AR Path="/5F45B05E/604010F7/6054A899" Ref="K22"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6054A899" Ref="K32"  Part="1" 
+AR Path="/5F45B05E/604E5331/6054A899" Ref="K42"  Part="1" 
+AR Path="/5F45B05E/604E5333/6054A899" Ref="K52"  Part="1" 
+F 0 "K22" H 5650 6267 50  0000 C CNN
+F 1 "Voltage Tap Relay" H 5650 6176 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5650 5350 50  0001 C CNN
+F 3 "" H 5650 5750 50  0001 C CNN
+	1    5650 5750
+	1    0    0    -1  
+$EndComp
+Text HLabel 9850 6050 2    50   Input ~ 0
+ParallelCells_GND
+Text HLabel 9850 5800 2    50   Input ~ 0
+ParallelCells_Row1
+Text HLabel 9850 5550 2    50   Input ~ 0
+ParallelCells_Row2
+Text HLabel 9850 5300 2    50   Input ~ 0
+ParallelCells_Row3
+Text HLabel 9850 5050 2    50   Input ~ 0
+ParallelCells_Row4
+Text HLabel 9850 4800 2    50   Input ~ 0
+ParallelCells_Row5
+Text HLabel 9850 4550 2    50   Input ~ 0
+ParallelCells_Row6
+Text HLabel 9850 4300 2    50   Input ~ 0
+ParallelCells_Row7
+Text HLabel 9850 4050 2    50   Input ~ 0
+ParallelCells_Row8
+Text HLabel 9850 3800 2    50   Input ~ 0
+ParallelCells_Row9
+Text HLabel 9850 3600 2    50   Input ~ 0
+ParallelCells_Row10
+Text HLabel 9850 3350 2    50   Input ~ 0
+ParallelCells_Row11
+Text HLabel 9850 3100 2    50   Input ~ 0
+ParallelCells_Row12
+Text HLabel 9850 2850 2    50   Input ~ 0
+ParallelCells_Row13
+Text HLabel 9850 2600 2    50   Input ~ 0
+ParallelCells_Row14
+Text HLabel 9850 2350 2    50   Input ~ 0
+ParallelCells_Row15
+Text HLabel 9850 1850 2    50   Input ~ 0
+ParallelCells_Row17
+Text HLabel 1500 1900 0    50   Output ~ 0
+VoltageTap1-
+Text HLabel 1500 2050 0    50   Output ~ 0
+VoltageTap1
+Text HLabel 1500 2200 0    50   Output ~ 0
+VoltageTap2
+Text HLabel 1500 2350 0    50   Output ~ 0
+VoltageTap3
+Text HLabel 1500 2500 0    50   Output ~ 0
+VoltageTap4
+Text HLabel 1500 2650 0    50   Output ~ 0
+VoltageTap5
+Text HLabel 1500 2800 0    50   Output ~ 0
+VoltageTap6
+Text HLabel 1500 2950 0    50   Output ~ 0
+VoltageTap7
+Text HLabel 1500 3100 0    50   Output ~ 0
+VoltageTap8
+Text HLabel 1500 3250 0    50   Output ~ 0
+VoltageTap9
+Text HLabel 1500 3400 0    50   Output ~ 0
+VoltageTap10
+Text HLabel 1500 3550 0    50   Output ~ 0
+VoltageTap11
+Text HLabel 1500 3700 0    50   Output ~ 0
+VoltageTap12
+Text HLabel 1500 4000 0    50   Output ~ 0
+VoltageTap13-
+Text HLabel 1500 4150 0    50   Output ~ 0
+VoltageTap13
+Text HLabel 1500 4300 0    50   Output ~ 0
+VoltageTap14
+Text HLabel 1500 4450 0    50   Output ~ 0
+VoltageTap15
+Text HLabel 1500 4600 0    50   Output ~ 0
+VoltageTap16
+Text HLabel 1500 4750 0    50   Output ~ 0
+VoltageTap17
+Text HLabel 1500 4900 0    50   Output ~ 0
+VoltageTap18
+Text HLabel 1500 5050 0    50   Output ~ 0
+VoltageTap19
+Text HLabel 1500 5200 0    50   Output ~ 0
+VoltageTap20
+Text HLabel 1500 5350 0    50   Output ~ 0
+VoltageTap21
+Text HLabel 1500 5500 0    50   Output ~ 0
+VoltageTap22
+Text HLabel 1500 5650 0    50   Output ~ 0
+VoltageTap23
+Text HLabel 1500 5800 0    50   Output ~ 0
+VoltageTap24
+Text HLabel 9900 850  2    50   Input ~ 0
+Shutdown+
+Text HLabel 9900 950  2    50   Input ~ 0
+Shutdown-
+$Comp
+L Device:Fuse F17
+U 1 1 6057568E
+P 9550 1850
+AR Path="/5F45B05E/604010F7/6057568E" Ref="F17"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057568E" Ref="F35"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057568E" Ref="F53"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057568E" Ref="F71"  Part="1" 
+F 0 "F17" V 9353 1850 50  0000 C CNN
+F 1 "Fuse" V 9444 1850 50  0000 C CNN
+F 2 "" V 9480 1850 50  0001 C CNN
+F 3 "~" H 9550 1850 50  0001 C CNN
+	1    9550 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 1850 9850 1850
+$Comp
+L Device:Fuse F18
+U 1 1 6057794E
+P 9550 2350
+AR Path="/5F45B05E/604010F7/6057794E" Ref="F18"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057794E" Ref="F36"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057794E" Ref="F54"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057794E" Ref="F72"  Part="1" 
+F 0 "F18" V 9353 2350 50  0000 C CNN
+F 1 "Fuse" V 9444 2350 50  0000 C CNN
+F 2 "" V 9480 2350 50  0001 C CNN
+F 3 "~" H 9550 2350 50  0001 C CNN
+	1    9550 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F9
+U 1 1 60577954
+P 9250 2600
+AR Path="/5F45B05E/604010F7/60577954" Ref="F9"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60577954" Ref="F27"  Part="1" 
+AR Path="/5F45B05E/604E5331/60577954" Ref="F45"  Part="1" 
+AR Path="/5F45B05E/604E5333/60577954" Ref="F63"  Part="1" 
+F 0 "F9" V 9053 2600 50  0000 C CNN
+F 1 "Fuse" V 9144 2600 50  0000 C CNN
+F 2 "" V 9180 2600 50  0001 C CNN
+F 3 "~" H 9250 2600 50  0001 C CNN
+	1    9250 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 2350 9850 2350
+Wire Wire Line
+	9850 2600 9400 2600
+$Comp
+L Device:Fuse F19
+U 1 1 60579EA8
+P 9550 2850
+AR Path="/5F45B05E/604010F7/60579EA8" Ref="F19"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60579EA8" Ref="F37"  Part="1" 
+AR Path="/5F45B05E/604E5331/60579EA8" Ref="F55"  Part="1" 
+AR Path="/5F45B05E/604E5333/60579EA8" Ref="F73"  Part="1" 
+F 0 "F19" V 9353 2850 50  0000 C CNN
+F 1 "Fuse" V 9444 2850 50  0000 C CNN
+F 2 "" V 9480 2850 50  0001 C CNN
+F 3 "~" H 9550 2850 50  0001 C CNN
+	1    9550 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F10
+U 1 1 60579EAE
+P 9250 3100
+AR Path="/5F45B05E/604010F7/60579EAE" Ref="F10"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60579EAE" Ref="F28"  Part="1" 
+AR Path="/5F45B05E/604E5331/60579EAE" Ref="F46"  Part="1" 
+AR Path="/5F45B05E/604E5333/60579EAE" Ref="F64"  Part="1" 
+F 0 "F10" V 9053 3100 50  0000 C CNN
+F 1 "Fuse" V 9144 3100 50  0000 C CNN
+F 2 "" V 9180 3100 50  0001 C CNN
+F 3 "~" H 9250 3100 50  0001 C CNN
+	1    9250 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 2850 9850 2850
+Wire Wire Line
+	9850 3100 9400 3100
+$Comp
+L Device:Fuse F20
+U 1 1 60579EB6
+P 9550 3350
+AR Path="/5F45B05E/604010F7/60579EB6" Ref="F20"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60579EB6" Ref="F38"  Part="1" 
+AR Path="/5F45B05E/604E5331/60579EB6" Ref="F56"  Part="1" 
+AR Path="/5F45B05E/604E5333/60579EB6" Ref="F74"  Part="1" 
+F 0 "F20" V 9353 3350 50  0000 C CNN
+F 1 "Fuse" V 9444 3350 50  0000 C CNN
+F 2 "" V 9480 3350 50  0001 C CNN
+F 3 "~" H 9550 3350 50  0001 C CNN
+	1    9550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F11
+U 1 1 60579EBC
+P 9250 3600
+AR Path="/5F45B05E/604010F7/60579EBC" Ref="F11"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60579EBC" Ref="F29"  Part="1" 
+AR Path="/5F45B05E/604E5331/60579EBC" Ref="F47"  Part="1" 
+AR Path="/5F45B05E/604E5333/60579EBC" Ref="F65"  Part="1" 
+F 0 "F11" V 9053 3600 50  0000 C CNN
+F 1 "Fuse" V 9144 3600 50  0000 C CNN
+F 2 "" V 9180 3600 50  0001 C CNN
+F 3 "~" H 9250 3600 50  0001 C CNN
+	1    9250 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 3350 9850 3350
+Wire Wire Line
+	9850 3600 9400 3600
+$Comp
+L Device:Fuse F21
+U 1 1 6057BB2B
+P 9550 3800
+AR Path="/5F45B05E/604010F7/6057BB2B" Ref="F21"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB2B" Ref="F39"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB2B" Ref="F57"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB2B" Ref="F75"  Part="1" 
+F 0 "F21" V 9353 3800 50  0000 C CNN
+F 1 "Fuse" V 9444 3800 50  0000 C CNN
+F 2 "" V 9480 3800 50  0001 C CNN
+F 3 "~" H 9550 3800 50  0001 C CNN
+	1    9550 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F12
+U 1 1 6057BB31
+P 9250 4050
+AR Path="/5F45B05E/604010F7/6057BB31" Ref="F12"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB31" Ref="F30"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB31" Ref="F48"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB31" Ref="F66"  Part="1" 
+F 0 "F12" V 9053 4050 50  0000 C CNN
+F 1 "Fuse" V 9144 4050 50  0000 C CNN
+F 2 "" V 9180 4050 50  0001 C CNN
+F 3 "~" H 9250 4050 50  0001 C CNN
+	1    9250 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 3800 9850 3800
+Wire Wire Line
+	9850 4050 9400 4050
+$Comp
+L Device:Fuse F22
+U 1 1 6057BB39
+P 9550 4300
+AR Path="/5F45B05E/604010F7/6057BB39" Ref="F22"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB39" Ref="F40"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB39" Ref="F58"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB39" Ref="F76"  Part="1" 
+F 0 "F22" V 9353 4300 50  0000 C CNN
+F 1 "Fuse" V 9444 4300 50  0000 C CNN
+F 2 "" V 9480 4300 50  0001 C CNN
+F 3 "~" H 9550 4300 50  0001 C CNN
+	1    9550 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F13
+U 1 1 6057BB3F
+P 9250 4550
+AR Path="/5F45B05E/604010F7/6057BB3F" Ref="F13"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB3F" Ref="F31"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB3F" Ref="F49"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB3F" Ref="F67"  Part="1" 
+F 0 "F13" V 9053 4550 50  0000 C CNN
+F 1 "Fuse" V 9144 4550 50  0000 C CNN
+F 2 "" V 9180 4550 50  0001 C CNN
+F 3 "~" H 9250 4550 50  0001 C CNN
+	1    9250 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 4300 9850 4300
+Wire Wire Line
+	9850 4550 9400 4550
+$Comp
+L Device:Fuse F23
+U 1 1 6057BB47
+P 9550 4800
+AR Path="/5F45B05E/604010F7/6057BB47" Ref="F23"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB47" Ref="F41"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB47" Ref="F59"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB47" Ref="F77"  Part="1" 
+F 0 "F23" V 9353 4800 50  0000 C CNN
+F 1 "Fuse" V 9444 4800 50  0000 C CNN
+F 2 "" V 9480 4800 50  0001 C CNN
+F 3 "~" H 9550 4800 50  0001 C CNN
+	1    9550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F14
+U 1 1 6057BB4D
+P 9250 5050
+AR Path="/5F45B05E/604010F7/6057BB4D" Ref="F14"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB4D" Ref="F32"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB4D" Ref="F50"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB4D" Ref="F68"  Part="1" 
+F 0 "F14" V 9053 5050 50  0000 C CNN
+F 1 "Fuse" V 9144 5050 50  0000 C CNN
+F 2 "" V 9180 5050 50  0001 C CNN
+F 3 "~" H 9250 5050 50  0001 C CNN
+	1    9250 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 4800 9850 4800
+Wire Wire Line
+	9850 5050 9400 5050
+$Comp
+L Device:Fuse F24
+U 1 1 6057BB55
+P 9550 5300
+AR Path="/5F45B05E/604010F7/6057BB55" Ref="F24"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB55" Ref="F42"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB55" Ref="F60"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB55" Ref="F78"  Part="1" 
+F 0 "F24" V 9353 5300 50  0000 C CNN
+F 1 "Fuse" V 9444 5300 50  0000 C CNN
+F 2 "" V 9480 5300 50  0001 C CNN
+F 3 "~" H 9550 5300 50  0001 C CNN
+	1    9550 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F15
+U 1 1 6057BB5B
+P 9250 5550
+AR Path="/5F45B05E/604010F7/6057BB5B" Ref="F15"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057BB5B" Ref="F33"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057BB5B" Ref="F51"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057BB5B" Ref="F69"  Part="1" 
+F 0 "F15" V 9053 5550 50  0000 C CNN
+F 1 "Fuse" V 9144 5550 50  0000 C CNN
+F 2 "" V 9180 5550 50  0001 C CNN
+F 3 "~" H 9250 5550 50  0001 C CNN
+	1    9250 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 5300 9850 5300
+Wire Wire Line
+	9850 5550 9400 5550
+$Comp
+L Device:Fuse F25
+U 1 1 6057D363
+P 9550 5800
+AR Path="/5F45B05E/604010F7/6057D363" Ref="F25"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057D363" Ref="F43"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057D363" Ref="F61"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057D363" Ref="F79"  Part="1" 
+F 0 "F25" V 9353 5800 50  0000 C CNN
+F 1 "Fuse" V 9444 5800 50  0000 C CNN
+F 2 "" V 9480 5800 50  0001 C CNN
+F 3 "~" H 9550 5800 50  0001 C CNN
+	1    9550 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F16
+U 1 1 6057D369
+P 9250 6050
+AR Path="/5F45B05E/604010F7/6057D369" Ref="F16"  Part="1" 
+AR Path="/5F45B05E/604B77CB/6057D369" Ref="F34"  Part="1" 
+AR Path="/5F45B05E/604E5331/6057D369" Ref="F52"  Part="1" 
+AR Path="/5F45B05E/604E5333/6057D369" Ref="F70"  Part="1" 
+F 0 "F16" V 9053 6050 50  0000 C CNN
+F 1 "Fuse" V 9144 6050 50  0000 C CNN
+F 2 "" V 9180 6050 50  0001 C CNN
+F 3 "~" H 9250 6050 50  0001 C CNN
+	1    9250 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 5800 9850 5800
+Wire Wire Line
+	9850 6050 9400 6050
+Wire Wire Line
+	9900 850  5100 850 
+Wire Wire Line
+	3100 850  3100 1650
+Wire Wire Line
+	3100 1650 3350 1650
+Wire Wire Line
+	3100 5550 3350 5550
+Connection ~ 3100 1650
+Wire Wire Line
+	3350 4600 3100 4600
+Connection ~ 3100 4600
+Wire Wire Line
+	3100 4600 3100 5550
+Wire Wire Line
+	3350 3650 3100 3650
+Wire Wire Line
+	3100 1650 3100 2850
+Connection ~ 3100 3650
+Wire Wire Line
+	3100 3650 3100 4600
+Wire Wire Line
+	3350 2850 3100 2850
+Connection ~ 3100 2850
+Wire Wire Line
+	3100 2850 3100 3650
+Wire Wire Line
+	5350 1650 5100 1650
+Wire Wire Line
+	5100 1650 5100 850 
+Connection ~ 5100 850 
+Wire Wire Line
+	5100 850  3100 850 
+Connection ~ 5100 4600
+Wire Wire Line
+	5100 4600 5100 5550
+Connection ~ 5100 3650
+Wire Wire Line
+	5100 3650 5100 4600
+Connection ~ 5100 2650
+Wire Wire Line
+	5100 2650 5100 3650
+Wire Wire Line
+	5100 1650 5100 2650
+Connection ~ 5100 1650
+Wire Wire Line
+	5100 2650 5350 2650
+Wire Wire Line
+	5100 3650 5350 3650
+Wire Wire Line
+	5100 4600 5350 4600
+Wire Wire Line
+	5100 5550 5350 5550
+Wire Wire Line
+	6200 950  6200 1650
+Wire Wire Line
+	6200 950  9900 950 
+Wire Wire Line
+	5950 1650 6200 1650
+Connection ~ 6200 1650
+Wire Wire Line
+	5950 2650 6200 2650
+Wire Wire Line
+	6200 1650 6200 2650
+Connection ~ 6200 2650
+Wire Wire Line
+	6200 2650 6200 3650
+Wire Wire Line
+	5950 3650 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6200 3650 6200 4600
+Wire Wire Line
+	5950 4600 6200 4600
+Connection ~ 6200 4600
+Wire Wire Line
+	6200 4600 6200 5550
+Wire Wire Line
+	5950 5550 6200 5550
+Wire Wire Line
+	5950 1850 9400 1850
+Wire Wire Line
+	9850 2100 9400 2100
+$Comp
+L Device:Fuse F8
+U 1 1 60575FDA
+P 9250 2100
+AR Path="/5F45B05E/604010F7/60575FDA" Ref="F8"  Part="1" 
+AR Path="/5F45B05E/604B77CB/60575FDA" Ref="F26"  Part="1" 
+AR Path="/5F45B05E/604E5331/60575FDA" Ref="F44"  Part="1" 
+AR Path="/5F45B05E/604E5333/60575FDA" Ref="F62"  Part="1" 
+F 0 "F8" V 9053 2100 50  0000 C CNN
+F 1 "Fuse" V 9144 2100 50  0000 C CNN
+F 2 "" V 9180 2100 50  0001 C CNN
+F 3 "~" H 9250 2100 50  0001 C CNN
+	1    9250 2100
+	0    1    1    0   
+$EndComp
+Text HLabel 9850 2100 2    50   Input ~ 0
+ParallelCells_Row16
+Wire Wire Line
+	9100 2100 6500 2100
+Wire Wire Line
+	6500 2100 6500 2050
+Wire Wire Line
+	6500 2050 5950 2050
+Wire Wire Line
+	9400 2350 6500 2350
+Wire Wire Line
+	6500 2350 6500 2850
+Wire Wire Line
+	6500 2850 5950 2850
+Wire Wire Line
+	5950 3050 6550 3050
+Wire Wire Line
+	6550 3050 6550 2600
+Wire Wire Line
+	6550 2600 9100 2600
+Wire Wire Line
+	9400 2850 6600 2850
+Wire Wire Line
+	6600 2850 6600 3850
+Wire Wire Line
+	6600 3850 5950 3850
+Wire Wire Line
+	5950 4050 6650 4050
+Wire Wire Line
+	6650 4050 6650 3100
+Wire Wire Line
+	6650 3100 9100 3100
+Wire Wire Line
+	9400 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 4800
+Wire Wire Line
+	6700 4800 5950 4800
+Wire Wire Line
+	5950 5000 6750 5000
+Wire Wire Line
+	6750 5000 6750 3600
+Wire Wire Line
+	6750 3600 9100 3600
+Wire Wire Line
+	9400 3800 6800 3800
+Wire Wire Line
+	6800 3800 6800 5750
+Wire Wire Line
+	6800 5750 5950 5750
+Wire Wire Line
+	5950 5950 6850 5950
+Wire Wire Line
+	6850 5950 6850 4050
+Wire Wire Line
+	6850 4050 9100 4050
+$EndSCHEMATC

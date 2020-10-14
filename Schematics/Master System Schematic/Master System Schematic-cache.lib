@@ -298,6 +298,42 @@ X ~ 8 200 300 100 D 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
+# Master-System-Schematic-cache_Relay_Fujitsu_FTR-F1A
+#
+DEF Master-System-Schematic-cache_Relay_Fujitsu_FTR-F1A K 0 20 Y Y 1 F N
+F0 "K" 0 500 50 H V C CNN
+F1 "Master-System-Schematic-cache_Relay_Fujitsu_FTR-F1A" 0 400 50 H V C CNN
+F2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" 0 -400 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Relay*DPST*Fujitsu*FTR*F1A*
+$ENDFPLIST
+DRAW
+S -50 300 50 100 0 1 10 N
+S 200 350 -200 -350 1 1 10 f
+P 2 0 1 10 -50 300 50 100 N
+P 2 1 1 0 -100 -200 -200 -200 N
+P 2 1 1 20 -100 -200 150 -130 N
+P 2 1 1 0 -100 0 -200 0 N
+P 2 1 1 20 -100 0 150 70 N
+P 2 1 1 10 0 -125 0 -150 N
+P 2 1 1 10 0 -75 0 -100 N
+P 2 1 1 10 0 -25 0 -50 N
+P 2 1 1 10 0 25 0 0 N
+P 2 1 1 10 0 75 0 50 N
+P 2 1 1 0 200 200 50 200 N
+P 3 1 1 0 -200 200 -50 200 -60 200 N
+P 4 1 1 0 200 -200 100 -200 125 -175 150 -200 N
+P 4 1 1 0 200 0 100 0 125 25 150 0 N
+X ~ 1 300 -200 100 L 50 50 1 1 P
+X ~ 2 -300 -200 100 R 50 50 1 1 P
+X ~ 4 300 200 100 L 50 50 1 1 P
+X ~ 5 -300 200 100 R 50 50 1 1 P
+X ~ 7 -300 0 100 R 50 50 1 1 P
+X ~ 8 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Motor_Motor_DC
 #
 DEF Motor_Motor_DC M 0 0 Y Y 1 F N

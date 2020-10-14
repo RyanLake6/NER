@@ -1777,7 +1777,7 @@ Wire Bus Line
 Wire Bus Line
 	15300 5350 15300 8950
 Text Notes 11900 8900 2    50   ~ 0
-Current sense line will be fed from the accumulator to the BMS via the termistor connectors, and then split back out within the BMS container
+Current sense line will be fed from the accumulator to the BMS via the thermistor connectors, and then split back out within the BMS container
 Wire Bus Line
 	1650 9600 6550 9600
 Wire Bus Line

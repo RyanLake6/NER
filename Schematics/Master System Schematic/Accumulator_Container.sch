@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 8 13
+Sheet 8 17
 Title "Accumulator Container"
 Date "2020-10-12"
 Rev "2"
@@ -1777,7 +1777,7 @@ Wire Bus Line
 Wire Bus Line
 	15300 5350 15300 8950
 Text Notes 11900 8900 2    50   ~ 0
-Current sense line will be fed from the accumulator to the BMS via the termistor connectors, and then split back out within the BMS container
+Current sense line will be fed from the accumulator to the BMS via the thermistor connectors, and then split back out within the BMS container
 Wire Bus Line
 	1650 9600 6550 9600
 Wire Bus Line
@@ -1786,6 +1786,30 @@ Wire Bus Line
 	6100 9150 6550 9150
 Text HLabel 6550 9150 2    50   Output ~ 0
 Current_Sensor
+$Sheet
+S 2450 1150 1150 150 
+U 604010F7
+F0 "SegmentPCB 1" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 3850 1150 1150 150 
+U 604B77CB
+F0 "Segement PCB 2" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 2450 1650 1150 150 
+U 604E5331
+F0 "Segment PCB 3" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 3850 1650 1150 150 
+U 604E5333
+F0 "Segment PCB 4" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
 Wire Bus Line
 	13300 5350 15300 5350
 Wire Bus Line
