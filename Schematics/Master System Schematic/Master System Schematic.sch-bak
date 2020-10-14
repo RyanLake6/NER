@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 13
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-09-17"
-Rev "2"
+Date "2020-10-12"
+Rev "3"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -217,7 +216,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 6300 1250 6650
 Wire Wire Line
-	1250 5650 1250 5900
+	1250 5650 1250 5750
 Wire Wire Line
 	1250 4900 1250 5250
 Wire Wire Line
@@ -236,26 +235,26 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J2
 U 1 1 5FB022E4
-P 5600 8650
-F 0 "J2" V 5500 8500 50  0000 L CNN
-F 1 "TS+" V 5400 8450 50  0000 L CNN
-F 2 "" H 5600 8650 50  0001 C CNN
-F 3 "~" H 5600 8650 50  0001 C CNN
-	1    5600 8650
+P 5550 8650
+F 0 "J2" V 5450 8500 50  0000 L CNN
+F 1 "TS+" V 5350 8450 50  0000 L CNN
+F 2 "" H 5550 8650 50  0001 C CNN
+F 3 "~" H 5550 8650 50  0001 C CNN
+	1    5550 8650
 	0    -1   1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5FAE402D
-P 6100 8650
-F 0 "J1" V 6000 8500 50  0000 L CNN
-F 1 "GND" V 5900 8450 50  0000 L CNN
-F 2 "" H 6100 8650 50  0001 C CNN
-F 3 "~" H 6100 8650 50  0001 C CNN
-	1    6100 8650
+P 6450 8650
+F 0 "J1" V 6350 8500 50  0000 L CNN
+F 1 "GND" V 6250 8450 50  0000 L CNN
+F 2 "" H 6450 8650 50  0001 C CNN
+F 3 "~" H 6450 8650 50  0001 C CNN
+	1    6450 8650
 	0    -1   1    0   
 $EndComp
-Text Notes 4400 8900 0    50   ~ 0
+Text Notes 3100 9250 0    50   ~ 0
 TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
@@ -304,7 +303,7 @@ F13 "Current_Sensor" I L 10100 7000 50
 F14 "CAN_H" B R 11500 6450 50 
 F15 "CAN_L" B R 11500 6550 50 
 $EndSheet
-Text GLabel 6450 8050 2    50   UnSpc ~ 0
+Text GLabel 6800 8400 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:FuseBox_PSZACCEPS052H U3
@@ -389,9 +388,9 @@ Wire Notes Line
 Wire Notes Line
 	4350 7550 6400 7550
 Wire Notes Line
-	6400 7550 6400 8750
+	6700 7550 6700 8750
 Wire Notes Line
-	6400 8750 4350 8750
+	6700 8750 4650 8750
 Wire Wire Line
 	11500 6100 11700 6100
 Wire Wire Line
@@ -529,14 +528,14 @@ S 9450 3500 1700 1550
 U 5F647A32
 F0 "Driver IO Enclosure" 50
 F1 "Driver IO Enclosure.sch" 50
-F2 "CAN_L" I R 11150 3800 50 
-F3 "CAN_H" I R 11150 3650 50 
+F2 "CAN_L" I R 11150 3700 50 
+F3 "CAN_H" I R 11150 3600 50 
 F4 "GLV+" I L 9450 3650 50 
 F5 "GLV_GND" I L 9450 3800 50 
-F6 "LED(+)" I L 9450 4400 50 
-F7 "Button_GND" I L 9450 4600 50 
-F8 "Button_Input" I L 9450 4800 50 
-F9 "Button_+5V" I L 9450 4200 50 
+F6 "LED(+)" I L 9450 4500 50 
+F7 "Button_GND" I L 9450 4700 50 
+F8 "Button_Input" I L 9450 4900 50 
+F9 "Button_+5V" I L 9450 4100 50 
 F10 "Speaker+" I R 11150 4900 50 
 F11 "Speaker-" I R 11150 5000 50 
 $EndSheet
@@ -646,13 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 2500 4900 8050
 Wire Wire Line
-	6700 7300 5600 7300
-Wire Wire Line
 	5850 7400 6700 7400
-Wire Wire Line
-	6450 8050 6100 8050
-Wire Wire Line
-	6100 8050 6100 8450
 $Comp
 L Switch:SW_DPST SW5
 U 1 1 5F864268
@@ -879,47 +872,39 @@ F3 "CAN_L" I R 11150 2300 50
 F4 "GLV+" I L 9450 2150 50 
 F5 "GLV_GND" I L 9450 2300 50 
 F6 "Brake_Light_1+" I L 9450 2750 50 
-F7 "Brake_Light_2+" I L 9450 2900 50 
-F8 "Brake_Light_GND" I L 9450 3050 50 
+F7 "Brake_Light_2+" I L 9450 2850 50 
+F8 "Brake_Light_GND" I L 9450 2950 50 
 $EndSheet
 $Comp
 L NER:ULV8F2BSS331 S1
 U 1 1 5F94EA0B
-P 9000 4300
-F 0 "S1" H 9000 4785 50  0000 C CNN
-F 1 "ULV8F2BSS331" H 9000 4694 50  0000 C CNN
-F 2 "" H 9000 4500 50  0001 C CNN
-F 3 "~" H 9000 4500 50  0001 C CNN
-	1    9000 4300
+P 9000 4400
+F 0 "S1" H 9000 4885 50  0000 C CNN
+F 1 "ULV8F2BSS331" H 9000 4794 50  0000 C CNN
+F 2 "" H 9000 4600 50  0001 C CNN
+F 3 "~" H 9000 4600 50  0001 C CNN
+	1    9000 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 4400 9450 4400
+	9200 4500 9450 4500
 Wire Wire Line
-	8800 4400 8750 4400
+	8800 4500 8750 4500
 Wire Wire Line
-	9200 4200 9250 4200
+	9200 4300 9250 4300
 Wire Wire Line
-	9450 4800 8700 4800
+	9450 4900 8700 4900
 Wire Wire Line
-	8700 4800 8700 4100
+	8700 4200 8800 4200
 Wire Wire Line
-	8700 4100 8800 4100
+	9450 4700 9250 4700
 Wire Wire Line
-	9200 4000 9350 4000
+	8750 4700 8750 4500
 Wire Wire Line
-	9350 4000 9350 4200
+	9250 4300 9250 4700
+Connection ~ 9250 4700
 Wire Wire Line
-	9350 4200 9450 4200
-Wire Wire Line
-	9450 4600 9250 4600
-Wire Wire Line
-	8750 4600 8750 4400
-Wire Wire Line
-	9250 4200 9250 4600
-Connection ~ 9250 4600
-Wire Wire Line
-	9250 4600 8750 4600
+	9250 4700 8750 4700
 $Comp
 L Device:Speaker LS1
 U 1 1 5F9B2999
@@ -997,7 +982,7 @@ F29 "SMD_1+" I L 6700 6700 50
 F30 "Current_Sensor" O R 8450 7000 50 
 $EndSheet
 Wire Wire Line
-	5600 7300 5600 8450
+	5550 7300 5550 8450
 Wire Wire Line
 	5850 7400 5850 8450
 Wire Bus Line
@@ -1070,10 +1055,6 @@ Entry Bus Bus
 	11950 3250 12050 3150
 Wire Bus Line
 	11950 3250 11300 3250
-Wire Wire Line
-	8850 9300 8700 9300
-Text GLabel 8700 9300 0    50   UnSpc ~ 0
-CHASSIS_GND
 Entry Wire Line
 	10000 8950 9900 9050
 Entry Wire Line
@@ -1092,6 +1073,131 @@ Wire Bus Line
 	10100 8750 12250 8750
 Entry Bus Bus
 	12150 6600 12250 6700
+Text GLabel 9200 2150 0    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	9450 3800 9300 3800
+Text GLabel 9300 3800 0    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	8700 4200 8700 4900
+Wire Wire Line
+	9200 4100 9450 4100
+Wire Wire Line
+	9300 2150 9200 2150
+$Comp
+L NER:ST-R10_LED D8
+U 1 1 5F87123F
+P 9200 2800
+F 0 "D8" H 9175 3031 50  0000 C CNN
+F 1 "ST-R10_LED" H 9175 2940 50  0000 C CNN
+F 2 "" H 9150 2800 50  0001 C CNN
+F 3 "" H 9150 2800 50  0001 C CNN
+	1    9200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2750 9450 2750
+Wire Wire Line
+	9350 2850 9450 2850
+Wire Wire Line
+	9450 2950 8900 2950
+Wire Wire Line
+	8900 2950 8900 2800
+Wire Wire Line
+	8900 2800 9000 2800
+$Comp
+L Connector:Conn_01x01_Male J8
+U 1 1 5F89DD3D
+P 6050 9750
+F 0 "J8" V 6112 9794 50  0000 L CNN
+F 1 "Charger GND" V 6203 9794 50  0000 L CNN
+F 2 "" H 6050 9750 50  0001 C CNN
+F 3 "~" H 6050 9750 50  0001 C CNN
+	1    6050 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 9300 8850 9300
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F8D4529
+P 5350 9200
+F 0 "J?" V 5412 9244 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 5503 9244 50  0000 L CNN
+F 2 "" H 5350 9200 50  0001 C CNN
+F 3 "~" H 5350 9200 50  0001 C CNN
+	1    5350 9200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J?
+U 1 1 5F93092A
+P 6150 8650
+F 0 "J?" V 6050 8500 50  0000 L CNN
+F 1 "+12V" V 5950 8450 50  0000 L CNN
+F 2 "" H 6150 8650 50  0001 C CNN
+F 3 "~" H 6150 8650 50  0001 C CNN
+	1    6150 8650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5550 7300 6700 7300
+Wire Wire Line
+	6800 8400 6450 8400
+Wire Wire Line
+	6450 8400 6450 8450
+Wire Wire Line
+	6150 8450 6150 7200
+Wire Wire Line
+	6150 7200 3400 7200
+Connection ~ 1250 5750
+Wire Wire Line
+	1250 5750 1250 5900
+$Comp
+L Master-System-Schematic-cache:Relay_DIPxx-1Axx-11x K?
+U 1 1 5F9B5A7A
+P 2950 5550
+F 0 "K?" V 2383 5550 50  0000 C CNN
+F 1 "Cooling Pump Relay" V 2474 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3300 5500 50  0001 L CNN
+F 3 "" H 2950 5550 50  0001 C CNN
+	1    2950 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 5750 2650 5750
+Wire Wire Line
+	650  3950 550  3950
+Wire Wire Line
+	550  3950 550  4350
+Wire Wire Line
+	550  4350 2300 4350
+Wire Wire Line
+	2300 4350 2300 5350
+Wire Wire Line
+	2300 5350 2650 5350
+Wire Wire Line
+	3250 5350 3500 5350
+Text GLabel 3500 5350 2    50   UnSpc ~ 0
+CHASSIS_GND
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5FA2966E
+P 3650 5750
+F 0 "M?" V 3450 5650 50  0000 L CNN
+F 1 "Cooling Pump" V 3350 5450 50  0000 L CNN
+F 2 "" H 3650 5660 50  0001 C CNN
+F 3 "~" H 3650 5660 50  0001 C CNN
+	1    3650 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 5750 3450 5750
+Text GLabel 4150 5750 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	4150 5750 3950 5750
 Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
