@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 8 13
 Title "Accumulator Container"
-Date "2020-09-17"
-Rev "2"
+Date "2020-10-15"
+Rev "3"
 Comp "Northeastern Electric Racing"
 Comment1 ""
 Comment2 ""
@@ -1777,8 +1777,8 @@ Wire Bus Line
 	15300 8950 6100 8950
 Wire Bus Line
 	15300 5350 15300 8950
-Text Notes 11900 8900 2    50   ~ 0
-Current sense line will be fed from the accumulator to the BMS via the termistor connectors, and then split back out within the BMS container
+Text Notes 14550 8900 2    50   ~ 0
+Current sense line will be fed from the accumulator to the BMS via the thermistor connectors, and then split back out within the BMS container. May also be done via a separate connector. TBD
 Wire Bus Line
 	1650 9600 6550 9600
 Wire Bus Line

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 13
+Sheet 13 13
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -22,4 +22,8 @@ Text HLabel 3650 3450 0    50   Input ~ 0
 TSAL+
 Text HLabel 3650 3650 0    50   Input ~ 0
 TSAL-
+Text HLabel 3050 3450 0    50   Input ~ 0
+VBATT+
+Text HLabel 3050 3650 0    50   Input ~ 0
+VBATT-
 $EndSCHEMATC
