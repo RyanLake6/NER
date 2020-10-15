@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -803,19 +802,6 @@ Wire Wire Line
 	5950 5000 5950 5300
 Wire Wire Line
 	5950 5300 6700 5300
-$Sheet
-S 9450 2050 1700 1100
-U 5F890A03
-F0 "Brake Light" 50
-F1 "Brake Light.sch" 50
-F2 "CAN_H" I R 11150 2150 50 
-F3 "CAN_L" I R 11150 2300 50 
-F4 "GLV+" I L 9450 2150 50 
-F5 "GLV_GND" I L 9450 2300 50 
-F6 "Brake_Light_1+" I L 9450 2750 50 
-F7 "Brake_Light_2+" I L 9450 2850 50 
-F8 "Brake_Light_GND" I L 9450 2950 50 
-$EndSheet
 $Comp
 L NER:ULV8F2BSS331 S1
 U 1 1 5F94EA0B
@@ -941,14 +927,6 @@ Wire Bus Line
 Wire Bus Line
 	12050 800  11850 800 
 Wire Wire Line
-	11000 2000 11050 2000
-Wire Wire Line
-	11000 2100 11050 2100
-Entry Wire Line
-	11050 2100 11150 2000
-Entry Wire Line
-	11050 2000 11150 1900
-Wire Wire Line
 	14400 3150 14450 3150
 Wire Wire Line
 	14400 3250 14450 3250
@@ -962,8 +940,6 @@ Entry Bus Bus
 	12050 2450 12150 2550
 Wire Bus Line
 	12150 2550 14550 2550
-Wire Bus Line
-	11150 1650 11950 1650
 Wire Wire Line
 	11150 3600 11200 3600
 Wire Wire Line
@@ -1192,10 +1168,6 @@ Text GLabel 11850 800  0    50   Input ~ 0
 PC_Link
 Wire Wire Line
 	600  750  9050 750 
-Wire Bus Line
-	550  3650 650  3650
-Wire Bus Line
-	550  700  550  3650
 Wire Wire Line
 	650  3500 600  3500
 Wire Wire Line
@@ -1226,38 +1198,60 @@ Wire Wire Line
 	10000 9300 10000 7300
 Wire Wire Line
 	10000 7300 10100 7300
-Entry Bus Bus
-	8650 700  8750 800 
-Entry Wire Line
-	9150 3550 9250 3650
-Wire Wire Line
-	9250 3650 9450 3650
-Wire Bus Line
-	12450 2950 12450 700 
-Entry Bus Bus
-	12450 2950 12550 3050
-Wire Bus Line
-	12550 3050 12600 3050
-Entry Wire Line
-	12600 3050 12700 3150
-Wire Wire Line
-	12700 3150 12950 3150
-Wire Bus Line
-	9150 3550 8750 3550
-Wire Bus Line
-	8750 800  8750 3550
 Wire Wire Line
 	11150 5000 11300 5000
 Wire Wire Line
 	11150 4900 11300 4900
+Wire Wire Line
+	650  3650 550  3650
+Wire Wire Line
+	550  3650 550  700 
+Wire Wire Line
+	550  700  8750 700 
+Wire Wire Line
+	9450 3650 8750 3650
+Wire Wire Line
+	8750 3650 8750 700 
+Connection ~ 8750 700 
+Wire Wire Line
+	11150 2250 11200 2250
+Entry Wire Line
+	11200 2250 11300 2150
+Wire Wire Line
+	11150 2150 11200 2150
+$Sheet
+S 9450 2050 1700 1100
+U 5F890A03
+F0 "Brake Light" 50
+F1 "Brake Light.sch" 50
+F2 "CAN_H" I R 11150 2150 50 
+F3 "CAN_L" I R 11150 2250 50 
+F4 "GLV+" I L 9450 2150 50 
+F5 "GLV_GND" I L 9450 2300 50 
+F6 "Brake_Light_1+" I L 9450 2750 50 
+F7 "Brake_Light_2+" I L 9450 2850 50 
+F8 "Brake_Light_GND" I L 9450 2950 50 
+$EndSheet
+Entry Wire Line
+	11200 2150 11300 2050
+Wire Wire Line
+	12700 3150 12950 3150
 Wire Bus Line
-	550  700  12450 700 
+	11300 1650 11950 1650
+Wire Wire Line
+	12700 3150 12700 700 
+Wire Wire Line
+	8750 700  12700 700 
+Text GLabel 12750 3250 0    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	12750 3250 12950 3250
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
-	11150 1650 11150 2000
+	11300 1650 11300 2150
 Wire Bus Line
 	12050 800  12050 6750
 $EndSCHEMATC
