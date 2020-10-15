@@ -21,4 +21,8 @@ Text HLabel 3650 3450 0    50   Input ~ 0
 TSAL+
 Text HLabel 3650 3650 0    50   Input ~ 0
 TSAL-
+Text HLabel 3050 3450 0    50   Input ~ 0
+VBATT+
+Text HLabel 3050 3650 0    50   Input ~ 0
+VBATT-
 $EndSCHEMATC
