@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1063,7 +1064,7 @@ Connection ~ 1250 5750
 Wire Wire Line
 	1250 5750 1250 5900
 $Comp
-L Master-System-Schematic-cache:Relay_DIPxx-1Axx-11x K12
+L Relay:DIPxx-1Axx-11x K12
 U 1 1 5F9B5A7A
 P 2950 5550
 F 0 "K12" V 2383 5550 50  0000 C CNN
