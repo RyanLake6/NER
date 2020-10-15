@@ -512,22 +512,6 @@ Connection ~ 15200 7900
 Wire Wire Line
 	15200 7250 15200 7500
 Connection ~ 15200 7500
-$Sheet
-S 9450 3500 1700 1550
-U 5F647A32
-F0 "Driver IO Enclosure" 50
-F1 "Driver IO Enclosure.sch" 50
-F2 "CAN_L" I R 11150 3700 50 
-F3 "CAN_H" I R 11150 3600 50 
-F4 "GLV+" I L 9450 3650 50 
-F5 "GLV_GND" I L 9450 3800 50 
-F6 "LED(+)" I L 9450 4500 50 
-F7 "Button_GND" I L 9450 4700 50 
-F8 "Button_Input" I L 9450 4900 50 
-F9 "Button_+5V" I L 9450 4100 50 
-F10 "Speaker+" I R 11150 4900 50 
-F11 "Speaker-" I R 11150 5000 50 
-$EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
@@ -1246,12 +1230,30 @@ Text GLabel 12750 3250 0    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
 	12750 3250 12950 3250
+$Sheet
+S 9450 3500 1700 1550
+U 5F647A32
+F0 "Driver IO Enclosure" 50
+F1 "Driver IO Enclosure.sch" 50
+F2 "CAN_L" I R 11150 3700 50 
+F3 "CAN_H" I R 11150 3600 50 
+F4 "GLV+" I L 9450 3650 50 
+F5 "GLV_GND" I L 9450 3800 50 
+F6 "LED(+)" I L 9450 4500 50 
+F7 "Button_GND" I L 9450 4700 50 
+F8 "Button_Input" I L 9450 4900 50 
+F9 "Button_+5V" I L 9450 4100 50 
+F10 "Speaker+" I R 11150 4900 50 
+F11 "Speaker-" I R 11150 5000 50 
+$EndSheet
+Wire Bus Line
+	11300 1650 11300 2150
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
-	11300 1650 11300 2150
-Wire Bus Line
 	12050 800  12050 6750
+Text HLabel 11150 4100 0    50   Input ~ 0
+StartEnable
 $EndSCHEMATC
