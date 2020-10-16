@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 17
+Sheet 1 1
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -117,7 +117,7 @@ Wire Bus Line
 	8850 2400 9000 2400
 Text HLabel 9000 2200 2    50   BiDi ~ 0
 GLV_GND
-Text HLabel 1950 4350 0    50   Input ~ 0
+Text HLabel 1950 4750 0    50   Input ~ 0
 BMS_Fault
 Text HLabel 6800 2400 0    50   BiDi ~ 0
 CAN_H
@@ -361,6 +361,40 @@ Wire Bus Line
 NoConn ~ 8600 2300
 NoConn ~ 8600 2400
 NoConn ~ 7200 2100
+$Comp
+L NER:OrionThermExp U?
+U 1 1 5F8ADC5C
+P 7900 1900
+F 0 "U?" H 7900 2065 50  0000 C CNN
+F 1 "OrionThermExp" H 7900 1974 50  0000 C CNN
+F 2 "" H 7900 1800 50  0001 C CNN
+F 3 "" H 7900 1800 50  0001 C CNN
+	1    7900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4750 2350 4750
+NoConn ~ 2350 2250
+NoConn ~ 2350 2450
+NoConn ~ 2350 2550
+NoConn ~ 2350 2650
+NoConn ~ 2350 2750
+NoConn ~ 2350 2850
+NoConn ~ 2350 2950
+NoConn ~ 2350 3050
+NoConn ~ 2350 3150
+NoConn ~ 2350 3450
+NoConn ~ 2350 3550
+NoConn ~ 2350 3650
+NoConn ~ 2350 3750
+NoConn ~ 2350 3850
+NoConn ~ 2350 4150
+NoConn ~ 2350 4250
+NoConn ~ 2350 4350
+NoConn ~ 2350 4450
+NoConn ~ 2350 4550
+NoConn ~ 2250 5600
+NoConn ~ 2350 5700
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line
@@ -377,15 +411,4 @@ Wire Bus Line
 	6950 3750 6950 4450
 Wire Bus Line
 	8850 3750 8850 4450
-$Comp
-L NER:OrionThermExp U?
-U 1 1 5F8ADC5C
-P 7900 1900
-F 0 "U?" H 7900 2065 50  0000 C CNN
-F 1 "OrionThermExp" H 7900 1974 50  0000 C CNN
-F 2 "" H 7900 1800 50  0001 C CNN
-F 3 "" H 7900 1800 50  0001 C CNN
-	1    7900 1900
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
