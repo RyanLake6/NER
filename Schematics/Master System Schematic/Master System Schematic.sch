@@ -7,9 +7,9 @@ encoding utf-8
 Sheet 1 18
 Title "NER FH 2020-2021 Master Electrical Schematic"
 Date "2020-10-15"
-Rev "4"
+Rev "5"
 Comp "Northeastern Electric Racing"
-Comment1 "Dylan Gardner, Matthew McCauley"
+Comment1 "Dylan Gardner, Matthew McCauley, and the NER Team"
 Comment2 ""
 Comment3 ""
 Comment4 ""
