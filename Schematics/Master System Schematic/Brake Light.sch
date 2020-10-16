@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 21
+Sheet 21 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -26,10 +25,10 @@ F 3 "" H 4700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:KY-019 U12
+L NER:KY-019 U15
 U 1 1 5F8C06C7
 P 4700 1950
-F 0 "U12" V 4275 1925 50  0000 C CNN
+F 0 "U15" V 4275 1925 50  0000 C CNN
 F 1 "KY-019" V 4366 1925 50  0000 C CNN
 F 2 "" H 4650 1650 50  0001 C CNN
 F 3 "" H 4650 1650 50  0001 C CNN
