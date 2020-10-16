@@ -1,15 +1,14 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 17
-Title ""
-Date "2020-10-12"
-Rev ""
-Comp ""
-Comment1 ""
+Sheet 1 1
+Title "BMS Container Schematic"
+Date "2020-10-16"
+Rev "1"
+Comp "Northeaster Electric Racing"
+Comment1 "Dylan Gardner, Zack Perry"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -335,10 +334,10 @@ NoConn ~ 8600 2300
 NoConn ~ 8600 2400
 NoConn ~ 7200 2100
 $Comp
-L NER:OrionThermExp U?
+L NER:OrionThermExp U2
 U 1 1 5F8ADC5C
 P 7900 1900
-F 0 "U?" H 7900 2065 50  0000 C CNN
+F 0 "U2" H 7900 2065 50  0000 C CNN
 F 1 "OrionThermExp" H 7900 1974 50  0000 C CNN
 F 2 "" H 7900 1800 50  0001 C CNN
 F 3 "" H 7900 1800 50  0001 C CNN
@@ -394,6 +393,14 @@ Wire Wire Line
 	6700 2500 7200 2500
 Wire Wire Line
 	1400 3950 2350 3950
+NoConn ~ 4250 2250
+NoConn ~ 4250 2350
+NoConn ~ 4250 2450
+NoConn ~ 4250 2550
+NoConn ~ 4250 2750
+NoConn ~ 4250 2850
+NoConn ~ 4250 3150
+NoConn ~ 4250 3250
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line
