@@ -1250,7 +1250,7 @@ Wire Bus Line
 $Sheet
 S 1350 1200 1050 1700
 U 6015F1FE
-F0 "Thermistor PCB 1" 50
+F0 "Thermistor PCB 4" 50
 F1 "ThermistorPCB.sch" 50
 F2 "ThermistorA" I R 2400 1250 30 
 F3 "ThermistorB" I R 2400 1300 30 
@@ -1341,7 +1341,7 @@ Wire Wire Line
 $Sheet
 S 1350 3400 1050 1700
 U 616A3BA9
-F0 "sheet616A3B8A" 50
+F0 "Thermistor PCB 3" 50
 F1 "ThermistorPCB.sch" 50
 F2 "ThermistorA" I R 2400 3450 30 
 F3 "ThermistorB" I R 2400 3500 30 
@@ -1432,7 +1432,7 @@ Wire Wire Line
 $Sheet
 S 1350 5600 1050 1700
 U 616C72F3
-F0 "sheet616C72D4" 50
+F0 "Thermistor PCB 2" 50
 F1 "ThermistorPCB.sch" 50
 F2 "ThermistorA" I R 2400 5650 30 
 F3 "ThermistorB" I R 2400 5700 30 
@@ -1585,7 +1585,7 @@ Wire Bus Line
 $Sheet
 S 1350 7800 1050 1700
 U 616F2C65
-F0 "sheet616F2C46" 50
+F0 "Thermistor PCB 1" 50
 F1 "ThermistorPCB.sch" 50
 F2 "ThermistorA" I R 2400 7850 30 
 F3 "ThermistorB" I R 2400 7900 30 
