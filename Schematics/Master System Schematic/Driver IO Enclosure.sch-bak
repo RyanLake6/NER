@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 17
+Sheet 5 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -191,10 +192,10 @@ Wire Wire Line
 Text HLabel 7200 4300 2    50   Input ~ 0
 StartEnable
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5F8BB898
 P 6950 4300
-F 0 "R?" V 6743 4300 50  0000 C CNN
+F 0 "R7" V 6743 4300 50  0000 C CNN
 F 1 "10MΩ" V 6834 4300 50  0000 C CNN
 F 2 "" V 6880 4300 50  0001 C CNN
 F 3 "~" H 6950 4300 50  0001 C CNN
@@ -209,10 +210,10 @@ Wire Wire Line
 Wire Wire Line
 	6050 4300 6550 4300
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5F8C0C28
 P 5300 5900
-F 0 "R?" V 5507 5900 50  0000 C CNN
+F 0 "R6" V 5507 5900 50  0000 C CNN
 F 1 "6.8MΩ" V 5416 5900 50  0000 C CNN
 F 2 "" V 5230 5900 50  0001 C CNN
 F 3 "~" H 5300 5900 50  0001 C CNN
