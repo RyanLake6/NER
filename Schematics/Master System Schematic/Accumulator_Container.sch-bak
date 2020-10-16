@@ -1731,34 +1731,6 @@ Wire Bus Line
 	6100 9150 6550 9150
 Text HLabel 6550 9150 2    50   Output ~ 0
 Current_Sensor
-$Sheet
-S 2500 1450 1150 150 
-U 604010F7
-F0 "SegmentPCB 1" 50
-F1 "SegmentPCB.sch" 50
-$EndSheet
-$Sheet
-S 3900 1450 1150 150 
-U 604B77CB
-F0 "Segement PCB 2" 50
-F1 "SegmentPCB.sch" 50
-$EndSheet
-$Sheet
-S 2500 1950 1150 150 
-U 604E5331
-F0 "Segment PCB 3" 50
-F1 "SegmentPCB.sch" 50
-$EndSheet
-$Sheet
-S 3900 1950 1150 150 
-U 604E5333
-F0 "Segment PCB 4" 50
-F1 "SegmentPCB.sch" 50
-$EndSheet
-Wire Bus Line
-	15300 8950 6100 8950
-Wire Bus Line
-	15300 5350 15300 8950
 Wire Wire Line
 	15350 4250 15450 4250
 Wire Wire Line
@@ -1861,6 +1833,221 @@ Wire Wire Line
 	7000 5550 7000 8400
 Wire Wire Line
 	7000 5250 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 7450 5000
+$Sheet
+S 2500 700  1050 1550
+U 60034172
+F0 "VT PCB 2" 50
+F1 "VT_PCB.sch" 50
+F2 "ParallelCells_GND" I L 2500 900 30 
+F3 "ParallelCells_Row1" I L 2500 950 30 
+F4 "ParallelCells_Row2" I L 2500 1000 30 
+F5 "ParallelCells_Row3" I L 2500 1050 30 
+F6 "ParallelCells_Row4" I L 2500 1100 30 
+F7 "ParallelCells_Row5" I L 2500 1150 30 
+F8 "ParallelCells_Row6" I L 2500 1200 30 
+F9 "ParallelCells_Row7" I L 2500 1250 30 
+F10 "ParallelCells_Row8" I L 2500 1300 30 
+F11 "ParallelCells_Row9" I L 2500 1350 30 
+F12 "VoltageTap1-" O R 3550 900 30 
+F13 "VoltageTap1" O R 3550 950 30 
+F14 "VoltageTap2" O R 3550 1000 30 
+F15 "VoltageTap3" O R 3550 1050 30 
+F16 "VoltageTap4" O R 3550 1100 30 
+F17 "VoltageTap5" O R 3550 1150 30 
+F18 "VoltageTap6" O R 3550 1200 30 
+F19 "VoltageTap7" O R 3550 1250 30 
+F20 "VoltageTap8" O R 3550 1300 30 
+F21 "VoltageTap9" O R 3550 1350 30 
+F22 "VoltageTap10" O R 3550 1400 30 
+F23 "VoltageTap11" O R 3550 1450 30 
+F24 "VoltageTap12" O R 3550 1500 30 
+F25 "Shutdown+" I L 2500 750 50 
+F26 "Shutdown-" I R 3550 750 50 
+F27 "VoltageTap24" O R 3550 2200 30 
+F28 "VoltageTap23" O R 3550 2150 30 
+F29 "VoltageTap22" O R 3550 2100 30 
+F30 "VoltageTap21" O R 3550 2050 30 
+F31 "VoltageTap20" O R 3550 2000 30 
+F32 "VoltageTap19" O R 3550 1950 30 
+F33 "VoltageTap18" O R 3550 1900 30 
+F34 "VoltageTap17" O R 3550 1850 30 
+F35 "VoltageTap16" O R 3550 1800 30 
+F36 "VoltageTap15" O R 3550 1750 30 
+F37 "VoltageTap14" O R 3550 1700 30 
+F38 "VoltageTap13" O R 3550 1650 30 
+F39 "VoltageTap13-" O R 3550 1600 30 
+F40 "ParallelCells_Row16" I L 2500 1700 30 
+F41 "ParallelCells_Row17" I L 2500 1750 30 
+F42 "ParallelCells_Row15" I L 2500 1650 30 
+F43 "ParallelCells_Row14" I L 2500 1600 30 
+F44 "ParallelCells_Row13" I L 2500 1550 30 
+F45 "ParallelCells_Row12" I L 2500 1500 30 
+F46 "ParallelCells_Row11" I L 2500 1450 30 
+F47 "ParallelCells_Row10" I L 2500 1400 30 
+F48 "ParallelCells_Row18" I L 2500 1800 30 
+$EndSheet
+$Sheet
+S 1350 700  1050 1550
+U 604010F7
+F0 "VT PCB 1" 50
+F1 "VT_PCB.sch" 50
+F2 "ParallelCells_GND" I L 1350 900 30 
+F3 "ParallelCells_Row1" I L 1350 950 30 
+F4 "ParallelCells_Row2" I L 1350 1000 30 
+F5 "ParallelCells_Row3" I L 1350 1050 30 
+F6 "ParallelCells_Row4" I L 1350 1100 30 
+F7 "ParallelCells_Row5" I L 1350 1150 30 
+F8 "ParallelCells_Row6" I L 1350 1200 30 
+F9 "ParallelCells_Row7" I L 1350 1250 30 
+F10 "ParallelCells_Row8" I L 1350 1300 30 
+F11 "ParallelCells_Row9" I L 1350 1350 30 
+F12 "VoltageTap1-" O R 2400 900 30 
+F13 "VoltageTap1" O R 2400 950 30 
+F14 "VoltageTap2" O R 2400 1000 30 
+F15 "VoltageTap3" O R 2400 1050 30 
+F16 "VoltageTap4" O R 2400 1100 30 
+F17 "VoltageTap5" O R 2400 1150 30 
+F18 "VoltageTap6" O R 2400 1200 30 
+F19 "VoltageTap7" O R 2400 1250 30 
+F20 "VoltageTap8" O R 2400 1300 30 
+F21 "VoltageTap9" O R 2400 1350 30 
+F22 "VoltageTap10" O R 2400 1400 30 
+F23 "VoltageTap11" O R 2400 1450 30 
+F24 "VoltageTap12" O R 2400 1500 30 
+F25 "Shutdown+" I L 1350 750 50 
+F26 "Shutdown-" I R 2400 750 50 
+F27 "VoltageTap24" O R 2400 2200 30 
+F28 "VoltageTap23" O R 2400 2150 30 
+F29 "VoltageTap22" O R 2400 2100 30 
+F30 "VoltageTap21" O R 2400 2050 30 
+F31 "VoltageTap20" O R 2400 2000 30 
+F32 "VoltageTap19" O R 2400 1950 30 
+F33 "VoltageTap18" O R 2400 1900 30 
+F34 "VoltageTap17" O R 2400 1850 30 
+F35 "VoltageTap16" O R 2400 1800 30 
+F36 "VoltageTap15" O R 2400 1750 30 
+F37 "VoltageTap14" O R 2400 1700 30 
+F38 "VoltageTap13" O R 2400 1650 30 
+F39 "VoltageTap13-" O R 2400 1600 30 
+F40 "ParallelCells_Row16" I L 1350 1700 30 
+F41 "ParallelCells_Row17" I L 1350 1750 30 
+F42 "ParallelCells_Row15" I L 1350 1650 30 
+F43 "ParallelCells_Row14" I L 1350 1600 30 
+F44 "ParallelCells_Row13" I L 1350 1550 30 
+F45 "ParallelCells_Row12" I L 1350 1500 30 
+F46 "ParallelCells_Row11" I L 1350 1450 30 
+F47 "ParallelCells_Row10" I L 1350 1400 30 
+F48 "ParallelCells_Row18" I L 1350 1800 30 
+$EndSheet
+$Sheet
+S 4850 700  1050 1550
+U 600F3FA0
+F0 "VT PCB 4" 50
+F1 "VT_PCB.sch" 50
+F2 "ParallelCells_GND" I L 4850 900 30 
+F3 "ParallelCells_Row1" I L 4850 950 30 
+F4 "ParallelCells_Row2" I L 4850 1000 30 
+F5 "ParallelCells_Row3" I L 4850 1050 30 
+F6 "ParallelCells_Row4" I L 4850 1100 30 
+F7 "ParallelCells_Row5" I L 4850 1150 30 
+F8 "ParallelCells_Row6" I L 4850 1200 30 
+F9 "ParallelCells_Row7" I L 4850 1250 30 
+F10 "ParallelCells_Row8" I L 4850 1300 30 
+F11 "ParallelCells_Row9" I L 4850 1350 30 
+F12 "VoltageTap1-" O R 5900 900 30 
+F13 "VoltageTap1" O R 5900 950 30 
+F14 "VoltageTap2" O R 5900 1000 30 
+F15 "VoltageTap3" O R 5900 1050 30 
+F16 "VoltageTap4" O R 5900 1100 30 
+F17 "VoltageTap5" O R 5900 1150 30 
+F18 "VoltageTap6" O R 5900 1200 30 
+F19 "VoltageTap7" O R 5900 1250 30 
+F20 "VoltageTap8" O R 5900 1300 30 
+F21 "VoltageTap9" O R 5900 1350 30 
+F22 "VoltageTap10" O R 5900 1400 30 
+F23 "VoltageTap11" O R 5900 1450 30 
+F24 "VoltageTap12" O R 5900 1500 30 
+F25 "Shutdown+" I L 4850 750 50 
+F26 "Shutdown-" I R 5900 750 50 
+F27 "VoltageTap24" O R 5900 2200 30 
+F28 "VoltageTap23" O R 5900 2150 30 
+F29 "VoltageTap22" O R 5900 2100 30 
+F30 "VoltageTap21" O R 5900 2050 30 
+F31 "VoltageTap20" O R 5900 2000 30 
+F32 "VoltageTap19" O R 5900 1950 30 
+F33 "VoltageTap18" O R 5900 1900 30 
+F34 "VoltageTap17" O R 5900 1850 30 
+F35 "VoltageTap16" O R 5900 1800 30 
+F36 "VoltageTap15" O R 5900 1750 30 
+F37 "VoltageTap14" O R 5900 1700 30 
+F38 "VoltageTap13" O R 5900 1650 30 
+F39 "VoltageTap13-" O R 5900 1600 30 
+F40 "ParallelCells_Row16" I L 4850 1700 30 
+F41 "ParallelCells_Row17" I L 4850 1750 30 
+F42 "ParallelCells_Row15" I L 4850 1650 30 
+F43 "ParallelCells_Row14" I L 4850 1600 30 
+F44 "ParallelCells_Row13" I L 4850 1550 30 
+F45 "ParallelCells_Row12" I L 4850 1500 30 
+F46 "ParallelCells_Row11" I L 4850 1450 30 
+F47 "ParallelCells_Row10" I L 4850 1400 30 
+F48 "ParallelCells_Row18" I L 4850 1800 30 
+$EndSheet
+$Sheet
+S 3700 700  1050 1550
+U 600F3FD1
+F0 "VT PCB 3" 50
+F1 "VT_PCB.sch" 50
+F2 "ParallelCells_GND" I L 3700 900 30 
+F3 "ParallelCells_Row1" I L 3700 950 30 
+F4 "ParallelCells_Row2" I L 3700 1000 30 
+F5 "ParallelCells_Row3" I L 3700 1050 30 
+F6 "ParallelCells_Row4" I L 3700 1100 30 
+F7 "ParallelCells_Row5" I L 3700 1150 30 
+F8 "ParallelCells_Row6" I L 3700 1200 30 
+F9 "ParallelCells_Row7" I L 3700 1250 30 
+F10 "ParallelCells_Row8" I L 3700 1300 30 
+F11 "ParallelCells_Row9" I L 3700 1350 30 
+F12 "VoltageTap1-" O R 4750 900 30 
+F13 "VoltageTap1" O R 4750 950 30 
+F14 "VoltageTap2" O R 4750 1000 30 
+F15 "VoltageTap3" O R 4750 1050 30 
+F16 "VoltageTap4" O R 4750 1100 30 
+F17 "VoltageTap5" O R 4750 1150 30 
+F18 "VoltageTap6" O R 4750 1200 30 
+F19 "VoltageTap7" O R 4750 1250 30 
+F20 "VoltageTap8" O R 4750 1300 30 
+F21 "VoltageTap9" O R 4750 1350 30 
+F22 "VoltageTap10" O R 4750 1400 30 
+F23 "VoltageTap11" O R 4750 1450 30 
+F24 "VoltageTap12" O R 4750 1500 30 
+F25 "Shutdown+" I L 3700 750 50 
+F26 "Shutdown-" I R 4750 750 50 
+F27 "VoltageTap24" O R 4750 2200 30 
+F28 "VoltageTap23" O R 4750 2150 30 
+F29 "VoltageTap22" O R 4750 2100 30 
+F30 "VoltageTap21" O R 4750 2050 30 
+F31 "VoltageTap20" O R 4750 2000 30 
+F32 "VoltageTap19" O R 4750 1950 30 
+F33 "VoltageTap18" O R 4750 1900 30 
+F34 "VoltageTap17" O R 4750 1850 30 
+F35 "VoltageTap16" O R 4750 1800 30 
+F36 "VoltageTap15" O R 4750 1750 30 
+F37 "VoltageTap14" O R 4750 1700 30 
+F38 "VoltageTap13" O R 4750 1650 30 
+F39 "VoltageTap13-" O R 4750 1600 30 
+F40 "ParallelCells_Row16" I L 3700 1700 30 
+F41 "ParallelCells_Row17" I L 3700 1750 30 
+F42 "ParallelCells_Row15" I L 3700 1650 30 
+F43 "ParallelCells_Row14" I L 3700 1600 30 
+F44 "ParallelCells_Row13" I L 3700 1550 30 
+F45 "ParallelCells_Row12" I L 3700 1500 30 
+F46 "ParallelCells_Row11" I L 3700 1450 30 
+F47 "ParallelCells_Row10" I L 3700 1400 30 
+F48 "ParallelCells_Row18" I L 3700 1800 30 
+$EndSheet
 Wire Bus Line
 	13300 5350 15300 5350
 Wire Bus Line
@@ -1879,7 +2066,4 @@ Wire Bus Line
 	3700 2950 3700 5100
 Wire Bus Line
 	5650 2850 5650 4700
-Connection ~ 7000 5000
-Wire Wire Line
-	7000 5000 7450 5000
 $EndSCHEMATC

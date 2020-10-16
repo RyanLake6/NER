@@ -402,6 +402,8 @@ Text HLabel 5900 1550 2    50   Input ~ 0
 Current_Sensor
 Wire Wire Line
 	3800 1550 2300 1550
+Text HLabel 2300 1550 0    50   Output ~ 0
+ChargeSafety
 Wire Bus Line
 	2150 5150 2150 6450
 Wire Bus Line
@@ -426,6 +428,4 @@ Wire Bus Line
 	5350 5650 5350 6150
 Wire Bus Line
 	6800 1450 6800 6450
-Text HLabel 2300 1550 0    50   Output ~ 0
-ChargeSafety
 $EndSCHEMATC
