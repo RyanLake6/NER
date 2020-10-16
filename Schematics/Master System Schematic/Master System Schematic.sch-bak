@@ -292,7 +292,7 @@ F2 "Segment4_Thermistors" I L 10100 6400 50
 F3 "Segment3_Thermistors" I L 10100 6300 50 
 F4 "Segment1_Thermistors" I L 10100 6100 50 
 F5 "Segment2_Thermistors" I L 10100 6200 50 
-F6 "GLV" I R 11500 6350 50 
+F6 "GLV+" I R 11500 6350 50 
 F7 "GLV_GND" B R 11500 7300 50 
 F8 "BMS_Fault" O R 11500 6100 50 
 F9 "Segment1_VoltageTaps" I L 10100 6550 50 
@@ -302,7 +302,6 @@ F12 "Segment4_VoltageTaps" I L 10100 6850 50
 F13 "Current_Sensor" I L 10100 7000 50 
 F14 "CAN_H" B R 11500 6450 50 
 F15 "CAN_L" B R 11500 6550 50 
-F16 "ChargeSafety" O L 10100 7300 50 
 $EndSheet
 Text GLabel 4100 8500 2    50   UnSpc ~ 0
 CHASSIS_GND

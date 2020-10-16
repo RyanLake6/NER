@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1756,10 +1755,6 @@ U 604E5333
 F0 "Segment PCB 4" 50
 F1 "SegmentPCB.sch" 50
 $EndSheet
-Wire Bus Line
-	15300 8950 6100 8950
-Wire Bus Line
-	15300 5350 15300 8950
 Wire Wire Line
 	15350 4250 15450 4250
 Wire Wire Line
@@ -1862,6 +1857,9 @@ Wire Wire Line
 	7000 5550 7000 8400
 Wire Wire Line
 	7000 5250 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 7450 5000
 Wire Bus Line
 	13300 5350 15300 5350
 Wire Bus Line
@@ -1880,7 +1878,4 @@ Wire Bus Line
 	3700 2950 3700 5100
 Wire Bus Line
 	5650 2850 5650 4700
-Connection ~ 7000 5000
-Wire Wire Line
-	7000 5000 7450 5000
 $EndSCHEMATC

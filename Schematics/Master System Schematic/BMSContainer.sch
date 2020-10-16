@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 4 17
 Title "BMS Container Schematic"
 Date "2020-10-16"
 Rev "1"
@@ -15,13 +15,13 @@ Comment4 ""
 $EndDescr
 Text HLabel 6800 3650 0    50   Input ~ 0
 Segment3_Thermistors
-Text HLabel 1100 1050 0    50   BiDi ~ 0
-CAN_H
 Text HLabel 1100 1150 0    50   BiDi ~ 0
+CAN_H
+Text HLabel 1100 1050 0    50   BiDi ~ 0
 CAN_L
-Text HLabel 1950 2350 0    50   Input ~ 0
-GLV
-Text HLabel 1950 3350 0    50   BiDi ~ 0
+Text HLabel 1100 800  0    50   Input ~ 0
+GLV+
+Text HLabel 1100 700  0    50   BiDi ~ 0
 GLV_GND
 Text HLabel 1950 5000 0    50   Input ~ 0
 Segment4_VoltageTaps
@@ -107,8 +107,6 @@ Wire Bus Line
 	8950 3650 9000 3650
 Entry Bus Bus
 	8850 3750 8950 3650
-Text HLabel 9000 2200 2    50   BiDi ~ 0
-GLV_GND
 Text HLabel 1950 4750 0    50   Input ~ 0
 BMS_Fault
 Text HLabel 6800 2600 0    50   Input ~ 0
@@ -179,24 +177,7 @@ Wire Wire Line
 	8750 2900 8600 2900
 Wire Wire Line
 	8700 2800 8750 2800
-Wire Wire Line
-	9000 2200 8600 2200
-Text HLabel 9000 2100 2    50   Input ~ 0
-GLV
-Wire Wire Line
-	9000 2100 8600 2100
-$Comp
-L NER:OrionBMS2v2 U1
-U 1 1 5F91103C
-P 3300 3100
-F 0 "U1" H 3300 4465 50  0000 C CNN
-F 1 "OrionBMS2v2" H 3300 4374 50  0000 C CNN
-F 2 "" H 3300 4400 50  0001 C CNN
-F 3 "" H 3300 4400 50  0001 C CNN
-	1    3300 3100
-	1    0    0    -1  
-$EndComp
-Text HLabel 4650 3550 2    50   Input ~ 0
+Text HLabel 4900 2750 2    50   Input ~ 0
 Current_Sensor
 Text HLabel 4650 5200 2    50   Input ~ 0
 Segment3_VoltageTaps
@@ -285,15 +266,7 @@ Entry Bus Bus
 Wire Bus Line
 	2000 5000 1950 5000
 Wire Wire Line
-	1950 3350 2350 3350
-Wire Wire Line
-	1950 2350 2350 2350
-Text HLabel 4650 3450 2    50   BiDi ~ 0
-GLV_GND
-Wire Wire Line
 	4650 3450 4250 3450
-Wire Wire Line
-	4650 3550 4250 3550
 Entry Wire Line
 	4400 3350 4500 3250
 Entry Wire Line
@@ -302,8 +275,6 @@ Wire Wire Line
 	4350 2650 4400 2650
 Wire Wire Line
 	4350 3350 4400 3350
-Wire Bus Line
-	4500 2550 4500 3250
 Entry Bus Bus
 	4500 2550 4600 2450
 Wire Bus Line
@@ -350,7 +321,6 @@ NoConn ~ 2350 2250
 NoConn ~ 2350 2450
 NoConn ~ 2350 2550
 NoConn ~ 2350 2650
-NoConn ~ 2350 2750
 NoConn ~ 2350 2850
 NoConn ~ 2350 2950
 NoConn ~ 2350 3050
@@ -378,29 +348,88 @@ Wire Wire Line
 Wire Wire Line
 	1300 4050 2350 4050
 Wire Wire Line
-	1400 1050 6700 1050
-Wire Wire Line
-	6700 1050 6700 2500
-Connection ~ 1400 1050
-Wire Wire Line
-	1300 1150 9500 1150
-Wire Wire Line
-	9500 1150 9500 2500
-Wire Wire Line
-	8600 2500 9500 2500
-Connection ~ 1300 1150
-Wire Wire Line
-	6700 2500 7200 2500
+	8600 2500 8850 2500
 Wire Wire Line
 	1400 3950 2350 3950
 NoConn ~ 4250 2250
 NoConn ~ 4250 2350
 NoConn ~ 4250 2450
 NoConn ~ 4250 2550
-NoConn ~ 4250 2750
-NoConn ~ 4250 2850
 NoConn ~ 4250 3150
 NoConn ~ 4250 3250
+Wire Bus Line
+	4900 2750 4850 2750
+Entry Bus Bus
+	4850 2750 4750 2850
+Wire Bus Line
+	4500 2550 4500 3250
+$Comp
+L NER:OrionBMS2v2 U1
+U 1 1 5F91103C
+P 3300 3100
+F 0 "U1" H 3300 4465 50  0000 C CNN
+F 1 "OrionBMS2v2" H 3300 4374 50  0000 C CNN
+F 2 "" H 3300 4400 50  0001 C CNN
+F 3 "" H 3300 4400 50  0001 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2850 4650 2850
+Wire Wire Line
+	4250 2750 4650 2750
+Wire Wire Line
+	4250 3550 4650 3550
+Entry Wire Line
+	4650 2750 4750 2850
+Entry Wire Line
+	4650 2850 4750 2950
+Entry Wire Line
+	4650 3450 4750 3350
+Entry Wire Line
+	4650 3550 4750 3450
+Wire Wire Line
+	1800 3350 2350 3350
+Wire Wire Line
+	1900 2350 2350 2350
+Wire Wire Line
+	9050 700  9050 2200
+Wire Wire Line
+	1100 800  1900 800 
+Wire Wire Line
+	1100 700  1800 700 
+Wire Wire Line
+	1900 2350 1900 800 
+Connection ~ 1900 800 
+Wire Wire Line
+	1800 3350 1800 700 
+Connection ~ 1800 700 
+Connection ~ 1300 1150
+Wire Wire Line
+	6950 1150 6950 2500
+Wire Wire Line
+	6950 2500 7200 2500
+Wire Wire Line
+	1300 1150 6950 1150
+Connection ~ 1400 1050
+Wire Wire Line
+	8850 1050 1400 1050
+Wire Wire Line
+	8850 1050 8850 2500
+Wire Wire Line
+	9050 2200 8600 2200
+Wire Wire Line
+	8600 2100 8950 2100
+Wire Wire Line
+	8950 800  8950 2100
+Wire Wire Line
+	1900 800  8950 800 
+Wire Wire Line
+	1800 700  9050 700 
+Text HLabel 1100 2750 0    50   Output ~ 0
+ChargerSafety
+Wire Wire Line
+	1100 2750 2350 2750
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line
@@ -409,6 +438,8 @@ Wire Bus Line
 	4500 5300 4500 5600
 Wire Bus Line
 	2100 5100 2100 5400
+Wire Bus Line
+	4750 2850 4750 3450
 Wire Bus Line
 	8850 2700 8850 3400
 Wire Bus Line
