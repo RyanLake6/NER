@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 4 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -347,7 +348,14 @@ Segment4_Thermistors
 Wire Bus Line
 	4600 2450 4600 2350
 Wire Bus Line
-	4600 2150 4650 2150
+	5600 1550 5900 1550
+Connection ~ 5600 1550
+Text HLabel 5900 1550 2    50   Input ~ 0
+Current_Sensor
+Wire Wire Line
+	3800 1550 2300 1550
+Text HLabel 2300 1550 0    50   Output ~ 0
+ChargeSafety
 Wire Bus Line
 	4600 2250 4650 2250
 Connection ~ 4600 2250
@@ -410,5 +418,5 @@ Wire Bus Line
 Wire Bus Line
 	6950 3750 6950 4450
 Wire Bus Line
-	8850 3750 8850 4450
+	6800 1450 6800 6450
 $EndSCHEMATC

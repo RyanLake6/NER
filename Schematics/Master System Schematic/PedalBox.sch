@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 6 17
+Sheet 6 21
 Title "Pedal Box"
 Date "2020-10-15"
 Rev "2"
