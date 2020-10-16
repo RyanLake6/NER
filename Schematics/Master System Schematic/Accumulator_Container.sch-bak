@@ -1731,6 +1731,35 @@ Wire Bus Line
 	6100 9150 6550 9150
 Text HLabel 6550 9150 2    50   Output ~ 0
 Current_Sensor
+
+$Sheet
+S 2500 1450 1150 150 
+U 604010F7
+F0 "SegmentPCB 1" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 3900 1450 1150 150 
+U 604B77CB
+F0 "Segement PCB 2" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 2500 1950 1150 150 
+U 604E5331
+F0 "Segment PCB 3" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+$Sheet
+S 3900 1950 1150 150 
+U 604E5333
+F0 "Segment PCB 4" 50
+F1 "SegmentPCB.sch" 50
+$EndSheet
+Wire Bus Line
+	15300 8950 6100 8950
+Wire Bus Line
+	15300 5350 15300 8950
 Wire Wire Line
 	15350 4250 15450 4250
 Wire Wire Line

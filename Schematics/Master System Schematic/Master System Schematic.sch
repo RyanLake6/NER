@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 17
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-12"
-Rev "3"
+Date "2020-10-15"
+Rev "4"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -124,8 +125,6 @@ F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 5950 4
 $EndComp
 Text GLabel 2950 8000 2    50   UnSpc ~ 0
 CHASSIS_GND
-Text Label 6200 5000 0    50   ~ 0
-LatchingStartStopController
 Text GLabel 6650 2150 2    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
@@ -219,6 +218,10 @@ Wire Wire Line
 	2800 5000 2800 5350
 Wire Wire Line
 	6200 5000 5950 5000
+Wire Wire Line
+	1250 5650 1250 5750
+Wire Wire Line
+	1250 4900 1250 5250
 $Comp
 L Connector:Conn_01x01_Female J3
 U 1 1 5FB0713A
@@ -510,22 +513,6 @@ Connection ~ 15200 7900
 Wire Wire Line
 	15200 7250 15200 7500
 Connection ~ 15200 7500
-$Sheet
-S 9450 3500 1700 1550
-U 5F647A32
-F0 "Driver IO Enclosure" 50
-F1 "Driver IO Enclosure.sch" 50
-F2 "CAN_L" I R 11150 3700 50 
-F3 "CAN_H" I R 11150 3600 50 
-F4 "GLV+" I L 9450 3650 50 
-F5 "GLV_GND" I L 9450 3800 50 
-F6 "LED(+)" I L 9450 4500 50 
-F7 "Button_GND" I L 9450 4700 50 
-F8 "Button_Input" I L 9450 4900 50 
-F9 "Button_+5V" I L 9450 4100 50 
-F10 "Speaker+" I R 11150 4900 50 
-F11 "Speaker-" I R 11150 5000 50 
-$EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
@@ -708,8 +695,6 @@ Wire Wire Line
 Wire Wire Line
 	12750 4250 12950 4250
 Wire Wire Line
-	5950 4800 5950 5000
-Wire Wire Line
 	8600 5400 8600 4150
 Wire Wire Line
 	8550 4250 8550 5300
@@ -795,9 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 1950 4700 1950
 Connection ~ 5950 1950
-Connection ~ 5950 5000
-Wire Wire Line
-	5950 5000 5950 5300
 Wire Wire Line
 	5950 5300 6700 5300
 $Comp
@@ -1250,12 +1232,36 @@ Wire Wire Line
 	650  5850 950  5850
 Wire Wire Line
 	1550 5850 2800 5850
+$Sheet
+S 9450 3500 1700 1600
+U 5F647A32
+F0 "Driver IO Enclosure" 50
+F1 "Driver IO Enclosure.sch" 50
+F2 "CAN_L" I R 11150 3700 50 
+F3 "CAN_H" I R 11150 3600 50 
+F4 "GLV+" I L 9450 3650 50 
+F5 "GLV_GND" I L 9450 3800 50 
+F6 "LED(+)" I L 9450 4500 50 
+F7 "Button_GND" I L 9450 4700 50 
+F8 "Button_Input" I L 9450 4900 50 
+F9 "Button_+5V" I L 9450 4100 50 
+F10 "Speaker+" I R 11150 4900 50 
+F11 "Speaker-" I R 11150 5000 50 
+F12 "StartEnable" I L 9450 5050 50 
+$EndSheet
+Wire Wire Line
+	5950 4800 5950 5050
+Wire Wire Line
+	9450 5050 5950 5050
+Wire Bus Line
+	11300 1650 11300 2150
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
-	11300 1650 11300 2150
-Wire Bus Line
 	12050 800  12050 6750
+Connection ~ 5950 5050
+Wire Wire Line
+	5950 5050 5950 5300
 $EndSCHEMATC
