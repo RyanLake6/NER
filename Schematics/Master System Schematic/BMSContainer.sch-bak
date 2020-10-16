@@ -202,10 +202,10 @@ GLV
 Wire Wire Line
 	9000 2100 8600 2100
 $Comp
-L NER:OrionBMS2v2 U?
+L NER:OrionBMS2v2 U1
 U 1 1 5F91103C
 P 3300 3100
-F 0 "U?" H 3300 4465 50  0000 C CNN
+F 0 "U1" H 3300 4465 50  0000 C CNN
 F 1 "OrionBMS2v2" H 3300 4374 50  0000 C CNN
 F 2 "" H 3300 4400 50  0001 C CNN
 F 3 "" H 3300 4400 50  0001 C CNN
@@ -223,7 +223,7 @@ F 3 "" H 7900 1900 50  0001 C CNN
 	1    7900 1900
 	1    0    0    -1  
 $EndComp
-Text HLabel 1950 2750 0    50   Input ~ 0
+Text HLabel 4650 3550 2    50   Input ~ 0
 Current_Sensor
 Text HLabel 4650 5200 2    50   Input ~ 0
 Segment3_VoltageTaps
@@ -327,6 +327,51 @@ Wire Wire Line
 	1950 3350 2350 3350
 Wire Wire Line
 	1950 2350 2350 2350
+Text HLabel 4650 3450 2    50   BiDi ~ 0
+GLV_GND
+Wire Wire Line
+	4650 3450 4250 3450
+Wire Wire Line
+	4650 3550 4250 3550
+Entry Wire Line
+	4400 3350 4500 3250
+Entry Wire Line
+	4400 2650 4500 2550
+Wire Wire Line
+	4350 2650 4400 2650
+Wire Wire Line
+	4350 3350 4400 3350
+Wire Bus Line
+	4500 2550 4500 3250
+Entry Bus Bus
+	4500 2550 4600 2450
+Wire Bus Line
+	4650 2450 4600 2450
+Text HLabel 4650 2450 2    50   Input ~ 0
+Segment1_Thermistors
+Text HLabel 4650 2350 2    50   Input ~ 0
+Segment2_Thermistors
+Text HLabel 4650 2250 2    50   Input ~ 0
+Segment3_Thermistors
+Text HLabel 4650 2150 2    50   Input ~ 0
+Segment4_Thermistors
+Wire Bus Line
+	4600 2450 4600 2350
+Wire Bus Line
+	4600 2150 4650 2150
+Wire Bus Line
+	4600 2250 4650 2250
+Connection ~ 4600 2250
+Wire Bus Line
+	4600 2250 4600 2150
+Wire Bus Line
+	4600 2350 4650 2350
+Connection ~ 4600 2350
+Wire Bus Line
+	4600 2350 4600 2250
+NoConn ~ 8600 2300
+NoConn ~ 8600 2400
+NoConn ~ 7200 2100
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line

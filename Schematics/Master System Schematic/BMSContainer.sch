@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 4 17
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -212,17 +212,6 @@ F 3 "" H 3300 4400 50  0001 C CNN
 	1    3300 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L NER:OrionThermExp U2
-U 1 1 60D555EB
-P 7900 1900
-F 0 "U2" H 7900 2025 50  0000 C CNN
-F 1 "OrionThermExp" H 7900 1934 50  0000 C CNN
-F 2 "" H 7900 1900 50  0001 C CNN
-F 3 "" H 7900 1900 50  0001 C CNN
-	1    7900 1900
-	1    0    0    -1  
-$EndComp
 Text HLabel 4650 3550 2    50   Input ~ 0
 Current_Sensor
 Text HLabel 4650 5200 2    50   Input ~ 0
@@ -388,4 +377,15 @@ Wire Bus Line
 	6950 3750 6950 4450
 Wire Bus Line
 	8850 3750 8850 4450
+$Comp
+L NER:OrionThermExp U?
+U 1 1 5F8ADC5C
+P 7900 1900
+F 0 "U?" H 7900 2065 50  0000 C CNN
+F 1 "OrionThermExp" H 7900 1974 50  0000 C CNN
+F 2 "" H 7900 1800 50  0001 C CNN
+F 3 "" H 7900 1800 50  0001 C CNN
+	1    7900 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
