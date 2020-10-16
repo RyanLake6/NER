@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 18
+Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
 Date "2020-10-15"
 Rev "5"
@@ -390,8 +390,6 @@ Wire Wire Line
 	11800 1100 11800 6350
 Wire Wire Line
 	11600 7300 11500 7300
-Wire Bus Line
-	10100 6100 10100 6050
 Wire Bus Line
 	8450 6100 10100 6100
 Wire Bus Line
