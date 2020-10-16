@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 17
+Sheet 4 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -16,9 +16,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 6800 3650 0    50   Input ~ 0
 Segment3_Thermistors
-Text HLabel 1100 1050 0    50   BiDi ~ 0
+Text HLabel 1950 3850 0    50   BiDi ~ 0
 CAN_H
-Text HLabel 1100 1150 0    50   BiDi ~ 0
+Text HLabel 1950 3950 0    50   BiDi ~ 0
 CAN_L
 Text HLabel 1950 2350 0    50   Input ~ 0
 GLV
@@ -108,14 +108,26 @@ Wire Bus Line
 	8950 3650 9000 3650
 Entry Bus Bus
 	8850 3750 8950 3650
+Entry Wire Line
+	6950 2400 7050 2500
+Text HLabel 9000 2400 2    50   BiDi ~ 0
+CAN_L
+Wire Bus Line
+	6800 2400 6950 2400
+Wire Bus Line
+	8850 2400 9000 2400
 Text HLabel 9000 2200 2    50   BiDi ~ 0
 GLV_GND
 Text HLabel 1950 4750 0    50   Input ~ 0
 BMS_Fault
+Text HLabel 6800 2400 0    50   BiDi ~ 0
+CAN_H
 Text HLabel 6800 2600 0    50   Input ~ 0
 Segment4_Thermistors
 Entry Wire Line
 	7050 3500 6950 3400
+Entry Wire Line
+	8850 2400 8750 2500
 Wire Wire Line
 	7050 2800 7100 2800
 Wire Wire Line
@@ -180,6 +192,10 @@ Wire Wire Line
 	8750 2900 8600 2900
 Wire Wire Line
 	8700 2800 8750 2800
+Wire Wire Line
+	8750 2500 8600 2500
+Wire Wire Line
+	7050 2500 7200 2500
 Wire Wire Line
 	9000 2200 8600 2200
 Text HLabel 9000 2100 2    50   Input ~ 0
@@ -285,6 +301,18 @@ Entry Bus Bus
 	2000 5000 2100 5100
 Wire Bus Line
 	2000 5000 1950 5000
+Entry Wire Line
+	2100 3850 2200 3950
+Wire Wire Line
+	2200 3950 2350 3950
+Entry Wire Line
+	2100 3950 2200 4050
+Wire Wire Line
+	2200 4050 2350 4050
+Wire Bus Line
+	1950 3850 2100 3850
+Wire Bus Line
+	1950 3950 2100 3950
 Wire Wire Line
 	1950 3350 2350 3350
 Wire Wire Line
@@ -320,7 +348,14 @@ Segment4_Thermistors
 Wire Bus Line
 	4600 2450 4600 2350
 Wire Bus Line
-	4600 2150 4650 2150
+	5600 1550 5900 1550
+Connection ~ 5600 1550
+Text HLabel 5900 1550 2    50   Input ~ 0
+Current_Sensor
+Wire Wire Line
+	3800 1550 2300 1550
+Text HLabel 2300 1550 0    50   Output ~ 0
+ChargeSafety
 Wire Bus Line
 	4600 2250 4650 2250
 Connection ~ 4600 2250
@@ -368,32 +403,6 @@ NoConn ~ 2350 4450
 NoConn ~ 2350 4550
 NoConn ~ 2250 5600
 NoConn ~ 2350 5700
-Wire Wire Line
-	1100 1050 1400 1050
-Wire Wire Line
-	1400 1050 1400 3950
-Wire Wire Line
-	1100 1150 1300 1150
-Wire Wire Line
-	1300 1150 1300 4050
-Wire Wire Line
-	1300 4050 2350 4050
-Wire Wire Line
-	1400 1050 6700 1050
-Wire Wire Line
-	6700 1050 6700 2500
-Connection ~ 1400 1050
-Wire Wire Line
-	1300 1150 9500 1150
-Wire Wire Line
-	9500 1150 9500 2500
-Wire Wire Line
-	8600 2500 9500 2500
-Connection ~ 1300 1150
-Wire Wire Line
-	6700 2500 7200 2500
-Wire Wire Line
-	1400 3950 2350 3950
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line
@@ -409,5 +418,5 @@ Wire Bus Line
 Wire Bus Line
 	6950 3750 6950 4450
 Wire Bus Line
-	8850 3750 8850 4450
+	6800 1450 6800 6450
 $EndSCHEMATC
