@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L NER:CAN_Bus_Module U11
+L NER:CAN_Bus_Module U9
 U 1 1 5F847676
 P 7250 2900
-F 0 "U11" H 7275 3015 50  0000 C CNN
+F 0 "U9" H 7275 3015 50  0000 C CNN
 F 1 "CAN_Bus_Module" H 7275 2924 50  0000 C CNN
 F 2 "" H 7250 2900 50  0001 C CNN
 F 3 "" H 7250 2900 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "" H 7250 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:Arduino_UNO_rev3 A3
+L NER:Arduino_UNO_rev3 A1
 U 1 1 5F848DBE
 P 5450 2800
-F 0 "A3" H 5450 2915 50  0000 C CNN
+F 0 "A1" H 5450 2915 50  0000 C CNN
 F 1 "Arduino_UNO_rev3" H 5450 2824 50  0000 C CNN
 F 2 "" H 5450 2950 50  0001 C CNN
 F 3 "" H 5450 2950 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "" H 5450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:KY-019 U12
+L NER:KY-019 U8
 U 1 1 5F8416AD
 P 5400 2100
-F 0 "U12" H 5678 2121 50  0000 L CNN
+F 0 "U8" H 5678 2121 50  0000 L CNN
 F 1 "KY-019" H 5678 2030 50  0000 L CNN
 F 2 "" H 5350 1800 50  0001 C CNN
 F 3 "" H 5350 1800 50  0001 C CNN
@@ -160,6 +160,7 @@ NoConn ~ 4850 4600
 NoConn ~ 4850 4700
 NoConn ~ 4850 4800
 NoConn ~ 4850 4900
+NoConn ~ 6050 4300
 NoConn ~ 6050 4400
 NoConn ~ 6050 4700
 NoConn ~ 6050 4800
@@ -172,7 +173,7 @@ Wire Wire Line
 Text HLabel 7200 4600 2    50   Input ~ 0
 LED(+)
 Wire Wire Line
-	3500 4150 4650 4150
+	3500 4150 4750 4150
 Text HLabel 3500 4150 0    50   Input ~ 0
 Button_GND
 Text HLabel 7200 4500 2    50   Input ~ 0
@@ -189,49 +190,4 @@ Text HLabel 4750 1750 1    50   Input ~ 0
 Speaker-
 Wire Wire Line
 	5650 2300 5750 2300
-Text HLabel 7200 4300 2    50   Input ~ 0
-StartEnable
-$Comp
-L Device:R R7
-U 1 1 5F8BB898
-P 6950 4300
-F 0 "R7" V 6743 4300 50  0000 C CNN
-F 1 "10MΩ" V 6834 4300 50  0000 C CNN
-F 2 "" V 6880 4300 50  0001 C CNN
-F 3 "~" H 6950 4300 50  0001 C CNN
-	1    6950 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7200 4300 7100 4300
-Connection ~ 7100 4300
-Wire Wire Line
-	7100 4300 7050 4300
-Wire Wire Line
-	6050 4300 6550 4300
-$Comp
-L Device:R R6
-U 1 1 5F8C0C28
-P 5300 5900
-F 0 "R6" V 5507 5900 50  0000 C CNN
-F 1 "6.8MΩ" V 5416 5900 50  0000 C CNN
-F 2 "" V 5230 5900 50  0001 C CNN
-F 3 "~" H 5300 5900 50  0001 C CNN
-	1    5300 5900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6550 4300 6550 5900
-Wire Wire Line
-	6550 5900 5450 5900
-Connection ~ 6550 4300
-Wire Wire Line
-	6550 4300 6800 4300
-Wire Wire Line
-	4650 5900 4650 4150
-Wire Wire Line
-	4650 5900 5150 5900
-Connection ~ 4650 4150
-Wire Wire Line
-	4650 4150 4750 4150
 $EndSCHEMATC
