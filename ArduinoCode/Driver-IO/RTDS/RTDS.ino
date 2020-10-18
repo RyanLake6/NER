@@ -10,16 +10,17 @@ long speakerCooldown = 0;
 long buttonCooldown = 0;
 bool state = false;
 
-/// Sets relavent pins to output or input, initializes serial for debugging.
-void setup()
-{
+/* 
+ *  Sets relavent pins to output or input, initializes serial for debugging.
+ */
+void setup() {
   Serial.begin(115200);
 
   pinMode(SHUTDOWN_DETECTION_PIN, INPUT);
-  pinMode(BUTTON, INPUT_PULLUP); // Uses built-in pullup resistor.
+  pinMode(BUTTON_PIN, INPUT_PULLUP); // Uses built-in pullup resistor.
 
-  pinMode(SPEAKER, OUTPUT);
-  pinMode(BUTTON_LED, OUTPUT);
+  pinMode(SPEAKER_PIN, OUTPUT);
+  pinMode(BUTTON_LED_PIN, OUTPUT);
 }
 
 /** 
@@ -34,9 +35,9 @@ void loop() {
 
   // If shutdown circuit is active, turn on the LED. Otherwise, turn LED and speaker off, and set state to off
   if (shutdownVoltage) {
-    digitalWrite(BUTTON_LED, HIGH);
+    digitalWrite(BUTTON_LED_PIN, HIGH);
   } else {
-    digitalWrite(BUTTON_LED, LOW);
+    digitalWrite(BUTTON_LED_PIN, LOW);
     state = 0;
     speakerCooldown = millis();
   }
@@ -44,17 +45,17 @@ void loop() {
   // Turns speaker off once cooldown is passed or state is false.
   if (speakerCooldown < millis() || !state) {
     // Serial.println("Speaker Off");
-    analogWrite(SPEAKER, 0);
+    analogWrite(SPEAKER_PIN, 0);
   }
 
   /* If the shutdown circuit is active, button cooldown has passed, and button is pressed,
    * toggle state, reset button cooldown. If state is true, turn on speaker.
    */
-  if (shutdownVoltage && buttonCooldown < millis() && digitalRead(BUTTON) == LOW) {
+  if (shutdownVoltage && buttonCooldown < millis() && digitalRead(BUTTON_PIN) == LOW) {
     state = !state;
     buttonCooldown = millis() + 500; // Set cooldown to 500ms (prevents triggering button multiple times with one press).
     if (state) {
-      analogWrite(SPEAKER, 128);
+      analogWrite(SPEAKER_PIN, 128);
       // Serial.println("Speaker On");
       speakerCooldown = millis() + 3000;
     }
