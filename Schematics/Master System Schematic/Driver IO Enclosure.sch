@@ -56,8 +56,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 1750 4750 4150
 Wire Wire Line
-	6700 5400 4550 5400
-Wire Wire Line
 	4550 5400 4550 3950
 Wire Wire Line
 	4550 3950 4850 3950
@@ -106,15 +104,15 @@ NoConn ~ 6050 4900
 NoConn ~ 6050 3150
 NoConn ~ 6050 3250
 NoConn ~ 6050 3350
-Text HLabel 8100 4600 2    50   Input ~ 0
+Text HLabel 7200 4600 2    50   Input ~ 0
 LED(+)
 Wire Wire Line
 	3500 4150 4650 4150
 Text HLabel 3500 4150 0    50   Input ~ 0
 Button_GND
-Text HLabel 8100 4500 2    50   Input ~ 0
+Text HLabel 7200 4500 2    50   Input ~ 0
 Button_Input
-Text HLabel 8100 4300 2    50   Input ~ 0
+Text HLabel 7200 4300 2    50   Input ~ 0
 Button_+5V
 Text HLabel 5750 2300 2    50   Input ~ 0
 Speaker+
@@ -143,34 +141,32 @@ Wire Wire Line
 $Comp
 L Device:R R8
 U 1 1 5F8E0B40
-P 7850 4300
-F 0 "R8" V 7643 4300 50  0000 C CNN
-F 1 "100Ω" V 7734 4300 50  0000 C CNN
-F 2 "" V 7780 4300 50  0001 C CNN
-F 3 "~" H 7850 4300 50  0001 C CNN
-	1    7850 4300
+P 6950 4300
+F 0 "R8" V 6743 4300 50  0000 C CNN
+F 1 "100Ω" V 6834 4300 50  0000 C CNN
+F 2 "" V 6880 4300 50  0001 C CNN
+F 3 "~" H 6950 4300 50  0001 C CNN
+	1    6950 4300
 	0    1    1    0   
 $EndComp
+NoConn ~ 7800 3450
 Wire Wire Line
-	8000 4300 8100 4300
-NoConn ~ 6700 3450
-Wire Wire Line
-	8100 3600 7850 3600
-Text HLabel 8100 3600 2    50   Input ~ 0
+	9200 3600 8950 3600
+Text HLabel 9200 3600 2    50   Input ~ 0
 CAN_H
 Wire Wire Line
-	8100 3850 7850 3850
-Text HLabel 8100 3850 2    50   Input ~ 0
+	9200 3850 8950 3850
+Text HLabel 9200 3850 2    50   Input ~ 0
 CAN_L
 $Comp
 L NER:CAN_Bus_Module U11
 U 1 1 5F847676
-P 7250 3300
-F 0 "U11" H 7275 3415 50  0000 C CNN
-F 1 "CAN_Bus_Module" H 7275 3324 50  0000 C CNN
-F 2 "" H 7250 3300 50  0001 C CNN
-F 3 "" H 7250 3300 50  0001 C CNN
-	1    7250 3300
+P 8350 3300
+F 0 "U11" H 8375 3415 50  0000 C CNN
+F 1 "CAN_Bus_Module" H 8375 3324 50  0000 C CNN
+F 2 "" H 8350 3300 50  0001 C CNN
+F 3 "" H 8350 3300 50  0001 C CNN
+	1    8350 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -182,9 +178,9 @@ F 1 "10MΩ" V 6834 4400 50  0000 C CNN
 F 2 "" V 6880 4400 50  0001 C CNN
 F 3 "~" H 6950 4400 50  0001 C CNN
 	1    6950 4400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
-Text HLabel 8100 4400 2    50   Input ~ 0
+Text HLabel 7200 4400 2    50   Input ~ 0
 StartEnable
 Wire Wire Line
 	6050 4400 6500 4400
@@ -196,31 +192,48 @@ Connection ~ 6500 4400
 Wire Wire Line
 	6500 4400 6800 4400
 Wire Wire Line
-	6050 3850 6700 3850
-Wire Wire Line
-	6050 3750 6700 3750
-Wire Wire Line
-	6050 3650 6700 3650
-Wire Wire Line
-	6050 3550 6700 3550
-Wire Wire Line
-	6700 3950 6450 3950
-Wire Wire Line
-	6450 3950 6450 3450
-Wire Wire Line
-	6450 3450 6050 3450
-Wire Wire Line
-	7100 4400 8100 4400
-Wire Wire Line
-	6050 4500 8100 4500
-Wire Wire Line
-	6050 4600 8100 4600
-Wire Wire Line
-	6700 4050 6700 5400
-Wire Wire Line
-	7700 4300 6050 4300
-Wire Wire Line
 	6200 1750 6200 2150
 Wire Wire Line
 	3500 2950 4850 2950
+Wire Wire Line
+	6800 4300 6050 4300
+Wire Wire Line
+	6050 4500 7200 4500
+Wire Wire Line
+	7200 4600 6050 4600
+Wire Wire Line
+	7200 4300 7100 4300
+Wire Wire Line
+	7100 4400 7200 4400
+Wire Wire Line
+	6050 3850 7800 3850
+Wire Wire Line
+	7800 3650 6850 3650
+Wire Wire Line
+	6850 3650 6850 3750
+Wire Wire Line
+	6850 3750 6050 3750
+Wire Wire Line
+	7800 3550 6050 3550
+Wire Wire Line
+	7800 3750 7000 3750
+Wire Wire Line
+	7000 3700 7000 3750
+Wire Wire Line
+	6700 3700 6700 3650
+Wire Wire Line
+	6700 3650 6050 3650
+Wire Wire Line
+	6700 3700 7000 3700
+Wire Wire Line
+	7350 3450 7350 3950
+Wire Wire Line
+	7350 3950 7800 3950
+Wire Wire Line
+	6050 3450 7350 3450
+Wire Wire Line
+	7800 4050 7800 5400
+Wire Wire Line
+	4550 5400 7800 5400
+NoConn ~ 6050 4050
 $EndSCHEMATC

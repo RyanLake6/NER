@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -172,9 +173,6 @@ F 3 "" H 7250 3300 50  0001 C CNN
 	1    7250 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7100 4400 7050 4400
-Connection ~ 7100 4400
 $Comp
 L Device:R R7
 U 1 1 5F8BB898
