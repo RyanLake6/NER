@@ -3,9 +3,9 @@
 
 bool shutdownVoltage = false;
 const int SHUTDOWN_DETECTION_PIN = 3; // Pin for detecting shutdown system voltage.
-const int BUTTON = 2; // Pin for on/off button.
-const int BUTTON_LED = 11; // Pin for integrated LED on the button.
-const int SPEAKER = 10; // Pin for speaker or relay for speaker (must be pwm pin).
+const int BUTTON_PIN = 2; // Pin for on/off button.
+const int BUTTON_LED_PIN = 11; // Pin for integrated LED on the button.
+const int SPEAKER_PIN = 10; // Pin for speaker or relay for speaker (must be pwm pin).
 long speakerCooldown = 0;
 long buttonCooldown = 0;
 bool state = false;
