@@ -1251,8 +1251,6 @@ Wire Wire Line
 	9500 7150 9500 7850
 Wire Wire Line
 	9500 7850 4250 7850
-Wire Wire Line
-	4250 7850 4250 9150
 $Comp
 L Connector:Conn_01x01_Female J12
 U 1 1 5F968F75
@@ -1277,6 +1275,24 @@ F 3 "~" H 4250 9750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 9950 4250 10300
+Connection ~ 4250 10300
+Wire Wire Line
+	4250 10300 8550 10300
+$Comp
+L Device:Fuse F86
+U 1 1 5F9E6519
+P 4250 8900
+F 0 "F86" H 4310 8946 50  0000 L CNN
+F 1 "Fuse" H 4310 8855 50  0000 L CNN
+F 2 "" V 4180 8900 50  0001 C CNN
+F 3 "~" H 4250 8900 50  0001 C CNN
+	1    4250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9150 4250 9050
+Wire Wire Line
+	4250 8750 4250 7850
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
@@ -1285,7 +1301,4 @@ Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
 	12050 800  12050 6750
-Connection ~ 4250 10300
-Wire Wire Line
-	4250 10300 8550 10300
 $EndSCHEMATC
