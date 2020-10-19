@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -124,8 +125,6 @@ F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 5950 4
 $EndComp
 Text GLabel 1400 7900 2    50   UnSpc ~ 0
 CHASSIS_GND
-Text Label 6200 5000 0    50   ~ 0
-LatchingStartStopController
 Text GLabel 6650 2150 2    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
@@ -219,8 +218,6 @@ Wire Wire Line
 	1250 5650 1250 5750
 Wire Wire Line
 	1250 4900 1250 5250
-Wire Wire Line
-	6200 5000 5950 5000
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5FB0713A
@@ -523,10 +520,11 @@ F4 "GLV+" I L 9450 3650 50
 F5 "GLV_GND" I L 9450 3800 50 
 F6 "LED(+)" I L 9450 4500 50 
 F7 "Button_GND" I L 9450 4700 50 
-F8 "Button_Input" I L 9450 4900 50 
+F8 "Button_Input" I L 9450 4800 50 
 F9 "Button_+5V" I L 9450 4100 50 
 F10 "Speaker+" I R 11150 4900 50 
 F11 "Speaker-" I R 11150 5000 50 
+F12 "StartEnable" I L 9450 5000 50 
 $EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
@@ -820,7 +818,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 4300 9250 4300
 Wire Wire Line
-	9450 4900 8700 4900
+	9450 4800 8700 4800
 Wire Wire Line
 	8700 4200 8800 4200
 Wire Wire Line
@@ -975,7 +973,7 @@ Wire Wire Line
 Text GLabel 9300 3800 0    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
-	8700 4200 8700 4900
+	8700 4200 8700 4800
 Wire Wire Line
 	9200 4100 9450 4100
 Wire Wire Line
@@ -1246,6 +1244,8 @@ Text GLabel 12750 3250 0    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
 	12750 3250 12950 3250
+Wire Wire Line
+	5950 5000 9450 5000
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
