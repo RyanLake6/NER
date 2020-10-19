@@ -299,6 +299,7 @@ F13 "Current_Sensor" I L 10100 7000 50
 F14 "CAN_H" B R 11500 6450 50 
 F15 "CAN_L" B R 11500 6550 50 
 F16 "ChargerSafety" O L 10100 7300 50 
+F17 "ChargerPWR" O L 10100 7150 50 
 $EndSheet
 Text GLabel 4100 8500 2    50   UnSpc ~ 0
 CHASSIS_GND
