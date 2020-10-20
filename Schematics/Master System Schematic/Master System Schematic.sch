@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-12"
-Rev "3"
+Date "2020-10-19"
+Rev "4"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -299,8 +300,9 @@ F13 "Current_Sensor" I L 10100 7000 50
 F14 "CAN_H" B R 11500 6450 50 
 F15 "CAN_L" B R 11500 6550 50 
 F16 "ChargerSafety" O L 10100 7300 50 
+F17 "ChargerPWR" O L 10100 7150 50 
 $EndSheet
-Text GLabel 4100 8500 2    50   UnSpc ~ 0
+Text GLabel 3950 8500 1    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:FuseBox_PSZACCEPS052H U1
@@ -1002,8 +1004,8 @@ $Comp
 L Connector:Conn_01x01_Male J4
 U 1 1 5F89DD3D
 P 3950 9750
-F 0 "J4" V 4012 9794 50  0000 L CNN
-F 1 "Charger GND" V 4103 9794 50  0000 L CNN
+F 0 "J4" H 3950 9700 50  0000 L CNN
+F 1 "Charger GND" H 3950 9600 50  0000 L CNN
 F 2 "" H 3950 9750 50  0001 C CNN
 F 3 "~" H 3950 9750 50  0001 C CNN
 	1    3950 9750
@@ -1013,8 +1015,8 @@ $Comp
 L Connector:Conn_01x01_Male J2
 U 1 1 5F8D4529
 P 3650 9750
-F 0 "J2" V 3700 9550 50  0000 L CNN
-F 1 "Charger +12V" V 3800 9100 50  0000 L CNN
+F 0 "J2" H 3650 9700 50  0000 L CNN
+F 1 "Charger +12V" H 3650 9600 50  0000 L CNN
 F 2 "" H 3650 9750 50  0001 C CNN
 F 3 "~" H 3650 9750 50  0001 C CNN
 	1    3650 9750
@@ -1126,8 +1128,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3950 8500 4100 8500
-Wire Wire Line
 	3650 8500 550  8500
 Wire Wire Line
 	3650 8500 3650 9150
@@ -1136,7 +1136,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 9950 3650 10300
 Wire Wire Line
-	3650 10300 8550 10300
+	3650 10300 4250 10300
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
@@ -1245,6 +1245,54 @@ Wire Wire Line
 	12750 3250 12950 3250
 Wire Wire Line
 	5950 5000 9450 5000
+Wire Wire Line
+	10100 7150 9500 7150
+Wire Wire Line
+	9500 7150 9500 7850
+Wire Wire Line
+	9500 7850 4250 7850
+$Comp
+L Connector:Conn_01x01_Female J12
+U 1 1 5F968F75
+P 4250 9350
+F 0 "J12" V 4150 9200 50  0000 L CNN
+F 1 "BMS 12V" V 4050 9150 50  0000 C CNN
+F 2 "" H 4250 9350 50  0001 C CNN
+F 3 "~" H 4250 9350 50  0001 C CNN
+	1    4250 9350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J13
+U 1 1 5F97C76F
+P 4250 9750
+F 0 "J13" H 4250 9700 50  0000 L CNN
+F 1 "Charger BMS 12V" H 4250 9600 50  0000 L CNN
+F 2 "" H 4250 9750 50  0001 C CNN
+F 3 "~" H 4250 9750 50  0001 C CNN
+	1    4250 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 9950 4250 10300
+Connection ~ 4250 10300
+Wire Wire Line
+	4250 10300 8550 10300
+$Comp
+L Device:Fuse F86
+U 1 1 5F9E6519
+P 4250 8900
+F 0 "F86" H 4310 8946 50  0000 L CNN
+F 1 "Fuse" H 4310 8855 50  0000 L CNN
+F 2 "" V 4180 8900 50  0001 C CNN
+F 3 "~" H 4250 8900 50  0001 C CNN
+	1    4250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9150 4250 9050
+Wire Wire Line
+	4250 8750 4250 7850
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line

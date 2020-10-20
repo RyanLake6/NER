@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -316,7 +317,6 @@ F 3 "" H 7900 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2350 2250
-NoConn ~ 2350 2450
 NoConn ~ 2350 2550
 NoConn ~ 2350 2650
 NoConn ~ 2350 2850
@@ -430,6 +430,10 @@ Wire Wire Line
 	1100 2750 2350 2750
 Wire Wire Line
 	1900 4750 2350 4750
+Text HLabel 1100 2450 0    50   Output ~ 0
+ChargerPWR
+Wire Wire Line
+	1100 2450 2350 2450
 Wire Bus Line
 	4500 4000 4500 4300
 Wire Bus Line
