@@ -17,14 +17,14 @@ $EndDescr
 $Comp
 L Relay:Fujitsu_FTR-F1A K?
 U 1 1 61EEF404
-P 4250 2750
+P 3850 2750
 AR Path="/61EEF404" Ref="K?"  Part="1" 
 AR Path="/61ECC7CF/61EEF404" Ref="K6"  Part="1" 
-F 0 "K6" H 4250 2233 50  0000 C CNN
-F 1 "Safety Relay" H 4250 2324 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 4250 2350 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 4300 3300 50  0001 C CNN
-	1    4250 2750
+F 0 "K6" H 3850 2233 50  0000 C CNN
+F 1 "Safety Relay" H 3850 2324 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3850 2350 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 3900 3300 50  0001 C CNN
+	1    3850 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -86,18 +86,16 @@ Wire Wire Line
 Wire Wire Line
 	6700 4200 6700 5450
 Wire Wire Line
-	3850 3800 3850 2950
+	3450 3800 3450 2950
 Wire Wire Line
-	3850 2950 3950 2950
+	3450 2950 3550 2950
 Wire Wire Line
-	3950 2750 3750 2750
-Wire Wire Line
-	3750 2750 3750 3950
+	3300 2750 3300 3950
 Wire Wire Line
 	4600 4200 4950 4200
-Text HLabel 3700 2550 0    50   Output ~ 0
+Text HLabel 3300 2550 0    50   Output ~ 0
 Charger_Safety
-Text HLabel 3700 2200 0    50   Output ~ 0
+Text HLabel 3300 2200 0    50   Output ~ 0
 +12V
 Text HLabel 6700 5450 3    50   Output ~ 0
 TS+
@@ -162,28 +160,9 @@ Wire Wire Line
 Wire Wire Line
 	4600 3150 4600 4200
 Wire Wire Line
-	5100 2200 4750 2200
-Wire Wire Line
-	4750 2200 4750 2550
-Wire Wire Line
-	4750 2550 4550 2550
-Connection ~ 4750 2200
-Wire Wire Line
-	3950 2550 3700 2550
-Wire Wire Line
-	3700 2200 4750 2200
-Wire Wire Line
-	3700 2000 4900 2000
-Text HLabel 3700 2000 0    50   Output ~ 0
+	3550 2550 3300 2550
+Text HLabel 3300 2000 0    50   Output ~ 0
 GND
-Wire Wire Line
-	4550 2750 6000 2750
-Wire Wire Line
-	4550 2950 5750 2950
-Wire Wire Line
-	3850 3800 4950 3800
-Wire Wire Line
-	3750 3950 4950 3950
 Wire Wire Line
 	6700 4200 6600 4200
 $Comp
@@ -205,4 +184,38 @@ Wire Wire Line
 	6600 4050 6800 4050
 Wire Wire Line
 	6800 5450 6800 4050
+$Comp
+L Device:Fuse F86
+U 1 1 5FA10442
+P 4650 2200
+F 0 "F86" V 4847 2200 50  0000 C CNN
+F 1 "Fuse" V 4756 2200 50  0000 C CNN
+F 2 "" V 4580 2200 50  0001 C CNN
+F 3 "~" H 4650 2200 50  0001 C CNN
+	1    4650 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 2200 5100 2200
+Wire Wire Line
+	4150 2750 6000 2750
+Wire Wire Line
+	4500 2200 4350 2200
+Wire Wire Line
+	4350 2200 4350 2550
+Wire Wire Line
+	4350 2550 4150 2550
+Wire Wire Line
+	4150 2950 5750 2950
+Wire Wire Line
+	3450 3800 4950 3800
+Wire Wire Line
+	3300 2750 3550 2750
+Wire Wire Line
+	3300 3950 4950 3950
+Wire Wire Line
+	3300 2000 4900 2000
+Wire Wire Line
+	3300 2200 4350 2200
+Connection ~ 4350 2200
 $EndSCHEMATC
