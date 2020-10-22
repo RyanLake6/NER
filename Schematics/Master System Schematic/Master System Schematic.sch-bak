@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-12"
-Rev "3"
+Date "2020-10-19"
+Rev "4"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -1080,9 +1081,7 @@ Wire Wire Line
 Wire Wire Line
 	650  4350 2300 4350
 Wire Wire Line
-	650  3800 550  3800
-Wire Wire Line
-	550  3800 550  8500
+	750  5750 750  8500
 Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
@@ -1127,7 +1126,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3650 8500 550  8500
+	3650 8500 750  8500
 Wire Wire Line
 	3650 8500 3650 9150
 Wire Wire Line
@@ -1277,21 +1276,11 @@ Wire Wire Line
 Connection ~ 4250 10300
 Wire Wire Line
 	4250 10300 8550 10300
-$Comp
-L Device:Fuse F86
-U 1 1 5F9E6519
-P 4250 8900
-F 0 "F86" H 4310 8946 50  0000 L CNN
-F 1 "Fuse" H 4310 8855 50  0000 L CNN
-F 2 "" V 4180 8900 50  0001 C CNN
-F 3 "~" H 4250 8900 50  0001 C CNN
-	1    4250 8900
-	1    0    0    -1  
-$EndComp
+NoConn ~ 650  3800
 Wire Wire Line
-	4250 9150 4250 9050
+	4250 7850 4250 9150
 Wire Wire Line
-	4250 8750 4250 7850
+	750  5750 1250 5750
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
