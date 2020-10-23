@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 21
+Sheet 1 1
 Title "BMS Container"
-Date "2020-10-16"
-Rev "1"
+Date "2020-10-22"
+Rev "1.1"
 Comp "Northeaster Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
 Comment2 ""
@@ -180,72 +179,26 @@ Wire Wire Line
 	8700 2800 8750 2800
 Text HLabel 4900 2750 2    50   Input ~ 0
 Current_Sensor
-Text HLabel 4650 5200 2    50   Input ~ 0
+Text HLabel 4650 5950 2    50   Input ~ 0
 Segment3_VoltageTaps
-Text HLabel 4650 4300 2    50   Input ~ 0
+Text HLabel 4650 5000 2    50   Input ~ 0
 Segment2_VoltageTaps
-Text HLabel 4650 3900 2    50   Input ~ 0
-Segment1_VoltageTaps
 Entry Wire Line
-	4400 4100 4500 4000
+	4400 6250 4500 6150
 Entry Wire Line
-	4400 4200 4500 4100
+	4400 6350 4500 6250
 Entry Wire Line
-	4400 4300 4500 4200
-Entry Wire Line
-	4400 4400 4500 4300
-Entry Wire Line
-	4400 4500 4500 4400
-Entry Wire Line
-	4400 4600 4500 4500
-Entry Wire Line
-	4400 5200 4500 5100
-Entry Wire Line
-	4400 5300 4500 5200
-Entry Wire Line
-	4400 5400 4500 5300
-Entry Wire Line
-	4400 5500 4500 5400
-Entry Wire Line
-	4400 5600 4500 5500
-Entry Wire Line
-	4400 5700 4500 5600
-Entry Bus Bus
-	4500 4000 4600 3900
+	4400 6450 4500 6350
 Wire Bus Line
-	4600 3900 4650 3900
+	4600 5950 4650 5950
 Wire Wire Line
-	4350 4100 4400 4100
+	4350 6150 4400 6150
 Wire Wire Line
-	4250 4200 4400 4200
+	4250 6250 4400 6250
 Wire Wire Line
-	4350 4300 4400 4300
+	4400 6350 4350 6350
 Wire Wire Line
-	4250 4400 4400 4400
-Wire Wire Line
-	4350 4500 4400 4500
-Wire Wire Line
-	4400 4600 4250 4600
-Wire Wire Line
-	4400 5200 4350 5200
-Wire Wire Line
-	4400 5300 4250 5300
-Entry Bus Bus
-	4500 4400 4600 4300
-Wire Bus Line
-	4600 4300 4650 4300
-Entry Bus Bus
-	4500 5300 4600 5200
-Wire Bus Line
-	4600 5200 4650 5200
-Wire Wire Line
-	4350 5400 4400 5400
-Wire Wire Line
-	4250 5500 4400 5500
-Wire Wire Line
-	4400 5600 4350 5600
-Wire Wire Line
-	4250 5700 4400 5700
+	4250 6450 4400 6450
 Wire Wire Line
 	2250 5400 2200 5400
 Wire Wire Line
@@ -333,8 +286,6 @@ NoConn ~ 2350 4250
 NoConn ~ 2350 4350
 NoConn ~ 2350 4450
 NoConn ~ 2350 4550
-NoConn ~ 2250 5600
-NoConn ~ 2350 5700
 Wire Wire Line
 	1100 1050 1400 1050
 Wire Wire Line
@@ -361,17 +312,6 @@ Entry Bus Bus
 	4850 2750 4750 2850
 Wire Bus Line
 	4500 2550 4500 3250
-$Comp
-L NER:OrionBMS2v2 U6
-U 1 1 5F91103C
-P 3300 3100
-F 0 "U6" H 3300 4465 50  0000 C CNN
-F 1 "OrionBMS2v2" H 3300 4374 50  0000 C CNN
-F 2 "" H 3300 4400 50  0001 C CNN
-F 3 "" H 3300 4400 50  0001 C CNN
-	1    3300 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 2850 4650 2850
 Wire Wire Line
@@ -434,16 +374,77 @@ Text HLabel 1100 2450 0    50   Output ~ 0
 ChargerPWR
 Wire Wire Line
 	1100 2450 2350 2450
+$Comp
+L NER:OrionBMS2 U6
+U 1 1 5F91103C
+P 3300 3100
+F 0 "U6" H 3300 4465 50  0000 C CNN
+F 1 "OrionBMS2" H 3300 4374 50  0000 C CNN
+F 2 "" H 3300 4400 50  0001 C CNN
+F 3 "" H 3300 4400 50  0001 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
-	4500 4000 4500 4300
+	4600 4050 4650 4050
+Entry Bus Bus
+	4500 4150 4600 4050
+Text HLabel 4650 4050 2    50   Input ~ 0
+Segment1_VoltageTaps
+Wire Wire Line
+	4250 4350 4400 4350
+Wire Wire Line
+	4250 4550 4400 4550
+Wire Wire Line
+	4350 4450 4400 4450
+Wire Wire Line
+	4350 4250 4400 4250
+Entry Wire Line
+	4400 4550 4500 4450
+Entry Wire Line
+	4400 4450 4500 4350
+Entry Wire Line
+	4400 4350 4500 4250
+Entry Wire Line
+	4400 4250 4500 4150
 Wire Bus Line
-	4500 4400 4500 5200
+	4600 5000 4650 5000
+Entry Bus Bus
+	4500 5100 4600 5000
+Entry Wire Line
+	4400 6150 4500 6050
+Entry Bus Bus
+	4500 6050 4600 5950
+NoConn ~ 2250 6150
+NoConn ~ 2350 6250
+NoConn ~ 2250 6350
+NoConn ~ 2350 6450
+Wire Wire Line
+	4250 5300 4400 5300
+Wire Wire Line
+	4250 5500 4400 5500
+Wire Wire Line
+	4350 5400 4400 5400
+Wire Wire Line
+	4350 5200 4400 5200
+Entry Wire Line
+	4400 5500 4500 5400
+Entry Wire Line
+	4400 5400 4500 5300
+Entry Wire Line
+	4400 5300 4500 5200
+Entry Wire Line
+	4400 5200 4500 5100
 Wire Bus Line
-	4500 5300 4500 5600
+	4500 6050 4500 6350
 Wire Bus Line
 	2100 5100 2100 5400
 Wire Bus Line
 	4750 2850 4750 3450
+Wire Bus Line
+	4500 4150 4500 4450
+Wire Bus Line
+	4500 5100 4500 5400
 Wire Bus Line
 	8850 2700 8850 3400
 Wire Bus Line
