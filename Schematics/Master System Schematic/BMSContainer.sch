@@ -7,7 +7,7 @@ Sheet 21 21
 Title "BMS Container"
 Date "2020-10-22"
 Rev "1.1"
-Comp "Northeaster Electric Racing"
+Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
 Comment2 ""
 Comment3 ""
@@ -420,10 +420,10 @@ Wire Wire Line
 Wire Wire Line
 	1100 1600 2250 1600
 $Comp
-L Relay:DIPxx-1Axx-11x K?
+L Relay:DIPxx-1Axx-11x K53
 U 1 1 5FD72BB2
 P 2450 2050
-F 0 "K?" V 2900 2100 50  0000 R CNN
+F 0 "K53" V 2900 2100 50  0000 R CNN
 F 1 "BMS_PWR_Relay" V 2800 2350 50  0000 R CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2800 2000 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2450 2050 50  0001 C CNN
