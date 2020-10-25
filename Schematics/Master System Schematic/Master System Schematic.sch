@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1281,6 +1280,17 @@ Wire Wire Line
 	4250 7850 4250 9150
 Wire Wire Line
 	750  5750 1250 5750
+$Comp
+L Device:LED D?
+U 1 1 5F986518
+P 11350 3800
+F 0 "D?" H 11343 4016 50  0000 C CNN
+F 1 "IMD_Indicator" H 11343 3925 50  0000 C CNN
+F 2 "" H 11350 3800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 11350 3800 50  0001 C CNN
+	1    11350 3800
+	-1   0    0    1   
+$EndComp
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
@@ -1289,4 +1299,15 @@ Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
 	12050 800  12050 6750
+$Comp
+L Device:LED D?
+U 1 1 5F9AD83A
+P 11350 4150
+F 0 "D?" H 11343 4366 50  0000 C CNN
+F 1 "BMS_Indicator" H 11343 4275 50  0000 C CNN
+F 2 "" H 11350 4150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 11350 4150 50  0001 C CNN
+	1    11350 4150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
