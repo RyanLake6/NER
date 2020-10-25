@@ -29,27 +29,27 @@ $EndComp
 $Comp
 L Switch:SW_Push_Open SW?
 U 1 1 5F633A68
-P 1250 5450
+P 1250 5000
 AR Path="/5F45AFB3/5F633A68" Ref="SW?"  Part="1" 
 AR Path="/5F633A68" Ref="SW2"  Part="1" 
-F 0 "SW2" V 1200 6000 50  0000 R CNN
-F 1 "SideMounted (BRB)" V 1300 6300 50  0000 R CNN
-F 2 "" H 1250 5650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 5650 50  0001 C CNN
-	1    1250 5450
+F 0 "SW2" V 1200 5550 50  0000 R CNN
+F 1 "SideMounted (BRB)" V 1300 5850 50  0000 R CNN
+F 2 "" H 1250 5200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 5200 50  0001 C CNN
+	1    1250 5000
 	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push_Open SW?
 U 1 1 5F633A6E
-P 1250 4700
+P 1250 4500
 AR Path="/5F45AFB3/5F633A6E" Ref="SW?"  Part="1" 
 AR Path="/5F633A6E" Ref="SW1"  Part="1" 
-F 0 "SW1" V 1200 5250 50  0000 R CNN
-F 1 "SideMounted (BRB)" V 1300 5550 50  0000 R CNN
-F 2 "" H 1250 4900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 4900 50  0001 C CNN
-	1    1250 4700
+F 0 "SW1" V 1200 5050 50  0000 R CNN
+F 1 "SideMounted (BRB)" V 1300 5350 50  0000 R CNN
+F 2 "" H 1250 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 4700 50  0001 C CNN
+	1    1250 4500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -213,10 +213,6 @@ Wire Wire Line
 	1250 7250 1250 7450
 Wire Wire Line
 	1250 6300 1250 6650
-Wire Wire Line
-	1250 5650 1250 5750
-Wire Wire Line
-	1250 4900 1250 5250
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5FB0713A
@@ -279,7 +275,7 @@ Wire Wire Line
 	8550 4250 8300 4250
 Wire Wire Line
 	8300 4150 8600 4150
-Text GLabel 3950 8500 1    50   UnSpc ~ 0
+Text GLabel 4050 8550 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:FuseBox_PSZACCEPS052H U1
@@ -292,8 +288,6 @@ F 3 "" H 1250 3400 50  0001 C CNN
 	1    1250 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 4150 1250 4500
 $Comp
 L Device:LED D1
 U 1 1 5F90AC4F
@@ -969,23 +963,23 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J2
 U 1 1 5F8D4529
-P 3650 9750
-F 0 "J2" H 3650 9700 50  0000 L CNN
-F 1 "Charger +12V" H 3650 9600 50  0000 L CNN
-F 2 "" H 3650 9750 50  0001 C CNN
-F 3 "~" H 3650 9750 50  0001 C CNN
-	1    3650 9750
+P 3350 9750
+F 0 "J2" H 3350 9700 50  0000 L CNN
+F 1 "Charger +12V" H 3350 9600 50  0000 L CNN
+F 2 "" H 3350 9750 50  0001 C CNN
+F 3 "~" H 3350 9750 50  0001 C CNN
+	1    3350 9750
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5F93092A
-P 3650 9350
-F 0 "J1" V 3550 9200 50  0000 L CNN
-F 1 "+12V" V 3450 9150 50  0000 L CNN
-F 2 "" H 3650 9350 50  0001 C CNN
-F 3 "~" H 3650 9350 50  0001 C CNN
-	1    3650 9350
+P 3350 9350
+F 0 "J1" V 3250 9200 50  0000 L CNN
+F 1 "+12V" V 3150 9150 50  0000 L CNN
+F 2 "" H 3350 9350 50  0001 C CNN
+F 3 "~" H 3350 9350 50  0001 C CNN
+	1    3350 9350
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -996,24 +990,14 @@ Wire Wire Line
 $Comp
 L Relay:DIPxx-1Axx-11x K1
 U 1 1 5F9B5A7A
-P 2950 5550
-F 0 "K1" V 2383 5550 50  0000 C CNN
-F 1 "Cooling Pump Relay" V 2474 5550 50  0000 C CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3300 5500 50  0001 L CNN
-F 3 "" H 2950 5550 50  0001 C CNN
-	1    2950 5550
+P 2900 5550
+F 0 "K1" V 2333 5550 50  0000 C CNN
+F 1 "Cooling Pump Relay" V 2424 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3250 5500 50  0001 L CNN
+F 3 "" H 2900 5550 50  0001 C CNN
+	1    2900 5550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1250 5750 2650 5750
-Wire Wire Line
-	650  3950 650  4350
-Wire Wire Line
-	2300 4350 2300 5350
-Wire Wire Line
-	2300 5350 2650 5350
-Text GLabel 3500 5350 2    50   UnSpc ~ 0
-CHASSIS_GND
 $Comp
 L Motor:Motor_DC M1
 U 1 1 5FA2966E
@@ -1025,16 +1009,10 @@ F 3 "~" H 3650 5660 50  0001 C CNN
 	1    3650 5750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3250 5750 3450 5750
 Text GLabel 4150 5750 2    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
 	4150 5750 3950 5750
-Wire Wire Line
-	650  4350 2300 4350
-Wire Wire Line
-	750  5750 750  8200
 Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
@@ -1079,11 +1057,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3650 8200 750  8200
-Wire Wire Line
-	3950 8500 3950 9150
-Wire Wire Line
-	3650 9950 3650 10300
+	3350 9950 3350 10300
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
@@ -1095,11 +1069,9 @@ Wire Wire Line
 Wire Notes Line
 	6150 9700 6150 8650
 Wire Notes Line
-	6150 8650 3400 8650
+	3100 8650 3100 9700
 Wire Notes Line
-	3400 8650 3400 9700
-Wire Notes Line
-	3400 9700 6150 9700
+	3100 9700 5850 9700
 Wire Wire Line
 	4850 2600 4850 9050
 Wire Wire Line
@@ -1190,8 +1162,6 @@ Wire Wire Line
 	5950 5000 9450 5000
 NoConn ~ 650  3800
 Wire Wire Line
-	750  5750 1250 5750
-Wire Wire Line
 	11500 6650 11550 6650
 Wire Wire Line
 	9500 7150 9500 7850
@@ -1245,16 +1215,76 @@ Wire Bus Line
 Wire Bus Line
 	8450 7000 9950 7000
 Wire Wire Line
-	3250 5350 3500 5350
+	3350 10300 8250 10300
+$Comp
+L Simulation_SPICE:DIODE D29
+U 1 1 5F9870D2
+P 2400 6900
+F 0 "D29" V 2446 6820 50  0000 R CNN
+F 1 "DIODE" V 2355 6820 50  0000 R CNN
+F 2 "" H 2400 6900 50  0001 C CNN
+F 3 "~" H 2400 6900 50  0001 C CNN
+F 4 "Y" H 2400 6900 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 2400 6900 50  0001 L CNN "Spice_Primitive"
+	1    2400 6900
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3650 7850 3650 8200
+	2400 6750 2400 5750
 Wire Wire Line
-	3650 7850 9500 7850
+	2400 7050 2400 7850
+$Comp
+L Device:R R10
+U 1 1 5F9D4E09
+P 3950 8200
+F 0 "R10" H 3550 8100 50  0000 C CNN
+F 1 "Pull Down Resistor" H 3550 8200 50  0000 C CNN
+F 2 "" V 3880 8200 50  0001 C CNN
+F 3 "~" H 3950 8200 50  0001 C CNN
+	1    3950 8200
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	3650 10300 8550 10300
-Connection ~ 3650 8200
+	3350 5350 3350 7850
 Wire Wire Line
-	3650 8200 3650 9150
+	3350 7850 3950 7850
+Connection ~ 3350 7850
+Wire Notes Line
+	3100 8650 6150 8650
+Wire Wire Line
+	650  3950 650  5350
+Wire Wire Line
+	1250 4150 1250 4300
+Wire Wire Line
+	1250 4700 1250 4800
+Wire Wire Line
+	1250 5200 1250 5750
+Connection ~ 2400 5750
+Wire Wire Line
+	2400 5750 1250 5750
+Wire Wire Line
+	2400 7850 3350 7850
+Wire Wire Line
+	2400 5750 2600 5750
+Wire Wire Line
+	650  5350 2600 5350
+Wire Wire Line
+	3200 5350 3350 5350
+Wire Wire Line
+	3200 5750 3450 5750
+Wire Wire Line
+	3350 7850 3350 9150
+Connection ~ 3950 7850
+Wire Wire Line
+	3950 7850 9500 7850
+Wire Wire Line
+	3950 8550 4050 8550
+Wire Wire Line
+	3950 8550 3950 9150
+Wire Wire Line
+	3950 7850 3950 8050
+Wire Wire Line
+	3950 8350 3950 8550
 Wire Bus Line
 	11650 6550 11650 6750
 Wire Bus Line
@@ -1265,4 +1295,5 @@ Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
 	12050 800  12050 6850
+Connection ~ 3950 8550
 $EndSCHEMATC
