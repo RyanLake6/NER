@@ -1034,7 +1034,7 @@ Wire Wire Line
 Wire Wire Line
 	650  4350 2300 4350
 Wire Wire Line
-	750  5750 750  8500
+	750  5750 750  8200
 Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
@@ -1079,15 +1079,11 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3650 8500 750  8500
-Wire Wire Line
-	3650 8500 3650 9150
+	3650 8200 750  8200
 Wire Wire Line
 	3950 8500 3950 9150
 Wire Wire Line
 	3650 9950 3650 10300
-Wire Wire Line
-	3650 10300 4250 10300
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
@@ -1192,36 +1188,7 @@ Wire Wire Line
 	12750 3250 12950 3250
 Wire Wire Line
 	5950 5000 9450 5000
-$Comp
-L Connector:Conn_01x01_Female J12
-U 1 1 5F968F75
-P 4250 9350
-F 0 "J12" V 4150 9200 50  0000 L CNN
-F 1 "BMS 12V" V 4050 9150 50  0000 C CNN
-F 2 "" H 4250 9350 50  0001 C CNN
-F 3 "~" H 4250 9350 50  0001 C CNN
-	1    4250 9350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J13
-U 1 1 5F97C76F
-P 4250 9750
-F 0 "J13" H 4250 9700 50  0000 L CNN
-F 1 "Charger BMS 12V" H 4250 9600 50  0000 L CNN
-F 2 "" H 4250 9750 50  0001 C CNN
-F 3 "~" H 4250 9750 50  0001 C CNN
-	1    4250 9750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 9950 4250 10300
-Connection ~ 4250 10300
-Wire Wire Line
-	4250 10300 8550 10300
 NoConn ~ 650  3800
-Wire Wire Line
-	4250 7850 4250 9150
 Wire Wire Line
 	750  5750 1250 5750
 Wire Wire Line
@@ -1280,7 +1247,14 @@ Wire Bus Line
 Wire Wire Line
 	3250 5350 3500 5350
 Wire Wire Line
-	4250 7850 9500 7850
+	3650 7850 3650 8200
+Wire Wire Line
+	3650 7850 9500 7850
+Wire Wire Line
+	3650 10300 8550 10300
+Connection ~ 3650 8200
+Wire Wire Line
+	3650 8200 3650 9150
 Wire Bus Line
 	11650 6550 11650 6750
 Wire Bus Line
