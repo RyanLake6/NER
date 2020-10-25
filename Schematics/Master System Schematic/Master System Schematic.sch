@@ -279,28 +279,6 @@ Wire Wire Line
 	8550 4250 8300 4250
 Wire Wire Line
 	8300 4150 8600 4150
-$Sheet
-S 10100 6050 1400 1350
-U 60D53BFB
-F0 "BMS Container" 50
-F1 "BMSContainer.sch" 50
-F2 "Segment4_Thermistors" I L 10100 6400 50 
-F3 "Segment3_Thermistors" I L 10100 6300 50 
-F4 "Segment1_Thermistors" I L 10100 6100 50 
-F5 "Segment2_Thermistors" I L 10100 6200 50 
-F6 "GLV+" I R 11500 6350 50 
-F7 "GLV_GND" B R 11500 7300 50 
-F8 "BMS_Fault" O R 11500 6100 50 
-F9 "Segment1_VoltageTaps" I L 10100 6550 50 
-F10 "Segment2_VoltageTaps" I L 10100 6650 50 
-F11 "Segment3_VoltageTaps" I L 10100 6750 50 
-F12 "Segment4_VoltageTaps" I L 10100 6850 50 
-F13 "Current_Sensor" I L 10100 7000 50 
-F14 "CAN_H" B R 11500 6450 50 
-F15 "CAN_L" B R 11500 6550 50 
-F16 "ChargerSafety" O L 10100 7300 50 
-F17 "ChargerPWR" O L 10100 7150 50 
-$EndSheet
 Text GLabel 3950 8500 1    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
@@ -389,24 +367,6 @@ Wire Wire Line
 	11800 1100 11800 6350
 Wire Wire Line
 	11600 7300 11500 7300
-Wire Bus Line
-	10100 6100 10100 6050
-Wire Bus Line
-	8450 6100 10100 6100
-Wire Bus Line
-	8450 6200 10100 6200
-Wire Bus Line
-	8450 6300 10100 6300
-Wire Bus Line
-	8450 6400 10100 6400
-Wire Bus Line
-	8450 6550 10100 6550
-Wire Bus Line
-	8450 6650 10100 6650
-Wire Bus Line
-	8450 6750 10100 6750
-Wire Bus Line
-	8450 6850 10100 6850
 Wire Wire Line
 	8600 1600 8600 3500
 Wire Wire Line
@@ -896,8 +856,6 @@ F28 "SMD_1-" I L 6700 6800 50
 F29 "SMD_1+" I L 6700 6700 50 
 F30 "Current_Sensor" O R 8450 7000 50 
 $EndSheet
-Wire Bus Line
-	8450 7000 10100 7000
 Entry Wire Line
 	11550 6450 11650 6550
 Entry Wire Line
@@ -916,16 +874,14 @@ Entry Wire Line
 	13250 6700 13350 6800
 Wire Bus Line
 	13250 6800 13250 6700
-Wire Bus Line
-	11650 6550 11650 6650
 Entry Bus Bus
-	11650 6650 11750 6750
+	11650 6750 11750 6850
 Entry Bus Bus
 	13150 6600 13250 6700
 Entry Bus Bus
 	12050 6500 12150 6600
 Wire Bus Line
-	11750 6750 12050 6750
+	11750 6850 12050 6850
 Wire Bus Line
 	12150 6600 13150 6600
 Wire Bus Line
@@ -1062,8 +1018,6 @@ Wire Wire Line
 	2300 4350 2300 5350
 Wire Wire Line
 	2300 5350 2650 5350
-Wire Wire Line
-	3250 5350 3500 5350
 Text GLabel 3500 5350 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
@@ -1086,7 +1040,7 @@ Wire Wire Line
 Wire Wire Line
 	650  4350 2300 4350
 Wire Wire Line
-	750  5750 750  8500
+	750  5750 750  8200
 Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
@@ -1131,15 +1085,11 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3650 8500 750  8500
-Wire Wire Line
-	3650 8500 3650 9150
+	3650 8200 750  8200
 Wire Wire Line
 	3950 8500 3950 9150
 Wire Wire Line
 	3650 9950 3650 10300
-Wire Wire Line
-	3650 10300 4250 10300
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
@@ -1193,11 +1143,7 @@ Wire Wire Line
 Wire Bus Line
 	9950 8750 12250 8750
 Wire Wire Line
-	9700 9300 10000 9300
-Wire Wire Line
-	10000 9300 10000 7300
-Wire Wire Line
-	10000 7300 10100 7300
+	9700 9300 9800 9300
 Wire Wire Line
 	11150 5000 11300 5000
 Wire Wire Line
@@ -1248,42 +1194,64 @@ Wire Wire Line
 	12750 3250 12950 3250
 Wire Wire Line
 	5950 5000 9450 5000
+NoConn ~ 650  3800
 Wire Wire Line
-	10100 7150 9500 7150
+	750  5750 1250 5750
+Wire Wire Line
+	11500 6650 11550 6650
 Wire Wire Line
 	9500 7150 9500 7850
 Wire Wire Line
-	9500 7850 4250 7850
-$Comp
-L Connector:Conn_01x01_Female J12
-U 1 1 5F968F75
-P 4250 9350
-F 0 "J12" V 4150 9200 50  0000 L CNN
-F 1 "BMS 12V" V 4050 9150 50  0000 C CNN
-F 2 "" H 4250 9350 50  0001 C CNN
-F 3 "~" H 4250 9350 50  0001 C CNN
-	1    4250 9350
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J13
-U 1 1 5F97C76F
-P 4250 9750
-F 0 "J13" H 4250 9700 50  0000 L CNN
-F 1 "Charger BMS 12V" H 4250 9600 50  0000 L CNN
-F 2 "" H 4250 9750 50  0001 C CNN
-F 3 "~" H 4250 9750 50  0001 C CNN
-	1    4250 9750
-	0    1    1    0   
-$EndComp
+	9800 9300 9800 7300
+$Sheet
+S 9950 6050 1550 1350
+U 60D53BFB
+F0 "BMS Container" 50
+F1 "BMSContainer.sch" 50
+F2 "Segment4_Thermistors" I L 9950 6400 50 
+F3 "Segment3_Thermistors" I L 9950 6300 50 
+F4 "Segment1_Thermistors" I L 9950 6100 50 
+F5 "Segment2_Thermistors" I L 9950 6200 50 
+F6 "GLV+" I R 11500 6350 50 
+F7 "GLV_GND" B R 11500 7300 50 
+F8 "BMS_Fault" O R 11500 6100 50 
+F9 "Segment1_VoltageTaps" I L 9950 6550 50 
+F10 "Segment2_VoltageTaps" I L 9950 6650 50 
+F11 "Segment3_VoltageTaps" I L 9950 6750 50 
+F12 "Segment4_VoltageTaps" I L 9950 6850 50 
+F13 "Current_Sensor" I L 9950 7000 50 
+F14 "CAN_H" B R 11500 6450 50 
+F15 "CAN_L" B R 11500 6550 50 
+F16 "ChargerSafety" O L 9950 7300 50 
+F17 "ChargerPWR" O L 9950 7150 50 
+F18 "CAN_SHIELD" B R 11500 6650 50 
+$EndSheet
 Wire Wire Line
-	4250 9950 4250 10300
-Connection ~ 4250 10300
+	9800 7300 9950 7300
 Wire Wire Line
-	4250 10300 8550 10300
-NoConn ~ 650  3800
+	9500 7150 9950 7150
+Entry Wire Line
+	11550 6650 11650 6750
+Wire Bus Line
+	8450 6100 9950 6100
+Wire Bus Line
+	8450 6200 9950 6200
+Wire Bus Line
+	8450 6300 9950 6300
+Wire Bus Line
+	8450 6400 9950 6400
+Wire Bus Line
+	8450 6550 9950 6550
+Wire Bus Line
+	8450 6650 9950 6650
+Wire Bus Line
+	8450 6750 9950 6750
+Wire Bus Line
+	8450 6850 9950 6850
+Wire Bus Line
+	8450 7000 9950 7000
 Wire Wire Line
-	4250 7850 4250 9150
+	3250 5350 3500 5350
 Wire Wire Line
 	750  5750 1250 5750
 $Comp
@@ -1341,12 +1309,22 @@ Wire Wire Line
 	11600 4400 11600 4600
 Wire Wire Line
 	11600 4600 11150 4600
+	3650 7850 3650 8200
+Wire Wire Line
+	3650 7850 9500 7850
+Wire Wire Line
+	3650 10300 8550 10300
+Connection ~ 3650 8200
+Wire Wire Line
+	3650 8200 3650 9150
+Wire Bus Line
+	11650 6550 11650 6750
+Wire Bus Line
+	11300 1650 11300 2150
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
 	14550 2550 14550 3150
 Wire Bus Line
-	11300 1650 11300 2150
-Wire Bus Line
-	12050 800  12050 6750
+	12050 800  12050 6850
 $EndSCHEMATC
