@@ -1063,8 +1063,6 @@ Wire Notes Line
 	6150 9700 6150 8650
 Wire Notes Line
 	3100 8650 3100 9700
-Wire Notes Line
-	3100 9700 5850 9700
 Wire Wire Line
 	4850 2600 4850 9050
 Wire Wire Line
@@ -1207,8 +1205,6 @@ Wire Bus Line
 	8450 6850 9950 6850
 Wire Bus Line
 	8450 7000 9950 7000
-Wire Wire Line
-	3350 10300 8250 10300
 $Comp
 L Simulation_SPICE:DIODE D29
 U 1 1 5F9870D2
@@ -1224,8 +1220,6 @@ F 5 "D" H 2200 6900 50  0001 L CNN "Spice_Primitive"
 $EndComp
 Wire Wire Line
 	2200 6750 2200 5750
-Wire Wire Line
-	750  5750 1250 5750
 $Comp
 L Device:LED D29
 U 1 1 5F986518
@@ -1281,7 +1275,6 @@ Wire Wire Line
 	11600 4400 11600 4600
 Wire Wire Line
 	11600 4600 11150 4600
-	3650 7850 3650 8200
 Wire Wire Line
 	1250 4150 1250 4300
 Wire Wire Line
@@ -1360,6 +1353,14 @@ Wire Wire Line
 	4000 6650 4250 6650
 Wire Wire Line
 	4250 5750 4250 5950
+Wire Wire Line
+	2200 7050 2200 7850
+Wire Wire Line
+	3350 10300 8550 10300
+Wire Notes Line
+	3100 9700 6150 9700
+Wire Notes Line
+	6150 8650 3100 8650
 Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
