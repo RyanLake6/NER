@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -1206,10 +1207,10 @@ Wire Bus Line
 Wire Bus Line
 	8450 7000 9950 7000
 $Comp
-L Simulation_SPICE:DIODE D29
+L Simulation_SPICE:DIODE D31
 U 1 1 5F9870D2
 P 2200 6900
-F 0 "D29" V 2246 6820 50  0000 R CNN
+F 0 "D31" V 2246 6820 50  0000 R CNN
 F 1 "DIODE" V 2155 6820 50  0000 R CNN
 F 2 "" H 2200 6900 50  0001 C CNN
 F 3 "~" H 2200 6900 50  0001 C CNN
@@ -1291,8 +1292,6 @@ Wire Wire Line
 	3350 7850 9500 7850
 Text GLabel 4200 5350 2    50   UnSpc ~ 0
 CHASSIS_GND
-Wire Wire Line
-	5600 4300 5900 4300
 Wire Wire Line
 	550  3950 550  5350
 $Comp

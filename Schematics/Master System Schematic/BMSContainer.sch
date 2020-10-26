@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 21 21
 Title "BMS Container"
-Date "2020-10-22"
+Date "2020-10-25"
 Rev "1.1"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
@@ -458,10 +459,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 2350 2800 2350
 $Comp
-L Simulation_SPICE:DIODE D30
+L Simulation_SPICE:DIODE D32
 U 1 1 5FF47374
 P 2800 1650
-F 0 "D30" H 2800 1867 50  0000 C CNN
+F 0 "D32" H 2800 1867 50  0000 C CNN
 F 1 "DIODE" H 2800 1776 50  0000 C CNN
 F 2 "" H 2800 1650 50  0001 C CNN
 F 3 "~" H 2800 1650 50  0001 C CNN
