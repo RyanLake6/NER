@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-20"
-Rev "5"
+Date "2020-10-25"
+Rev "6"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -19,8 +20,8 @@ U 1 1 5F633A5B
 P 1250 7650
 AR Path="/5F45AFB3/5F633A5B" Ref="BT?"  Part="1" 
 AR Path="/5F633A5B" Ref="BT1"  Part="1" 
-F 0 "BT1" H 1600 7750 50  0000 L CNN
-F 1 "12V GLV Battery" H 1400 7650 50  0000 L CNN
+F 0 "BT1" H 850 7750 50  0000 L CNN
+F 1 "12V GLV Battery" H 550 7650 50  0000 L CNN
 F 2 "" V 1250 7710 50  0001 C CNN
 F 3 "~" V 1250 7710 50  0001 C CNN
 	1    1250 7650
@@ -28,28 +29,15 @@ F 3 "~" V 1250 7710 50  0001 C CNN
 $EndComp
 $Comp
 L Switch:SW_Push_Open SW?
-U 1 1 5F633A68
-P 1250 5450
-AR Path="/5F45AFB3/5F633A68" Ref="SW?"  Part="1" 
-AR Path="/5F633A68" Ref="SW2"  Part="1" 
-F 0 "SW2" V 1200 6000 50  0000 R CNN
-F 1 "SideMounted (BRB)" V 1300 6300 50  0000 R CNN
-F 2 "" H 1250 5650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 5650 50  0001 C CNN
-	1    1250 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L Switch:SW_Push_Open SW?
 U 1 1 5F633A6E
-P 1250 4700
+P 1250 4500
 AR Path="/5F45AFB3/5F633A6E" Ref="SW?"  Part="1" 
 AR Path="/5F633A6E" Ref="SW1"  Part="1" 
-F 0 "SW1" V 1200 5250 50  0000 R CNN
-F 1 "SideMounted (BRB)" V 1300 5550 50  0000 R CNN
-F 2 "" H 1250 4900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 4900 50  0001 C CNN
-	1    1250 4700
+F 0 "SW1" V 1200 5050 50  0000 R CNN
+F 1 "SideMounted (BRB)" V 1300 5350 50  0000 R CNN
+F 2 "" H 1250 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 4700 50  0001 C CNN
+	1    1250 4500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -58,8 +46,8 @@ U 1 1 5F633A74
 P 1250 6100
 AR Path="/5F45AFB3/5F633A74" Ref="SW?"  Part="1" 
 AR Path="/5F633A74" Ref="SW3"  Part="1" 
-F 0 "SW3" V 1250 5700 50  0000 L CNN
-F 1 "GLVMS" V 1350 5650 50  0000 L CNN
+F 0 "SW3" V 1250 6300 50  0000 L CNN
+F 1 "GLVMS" V 1350 6250 50  0000 L CNN
 F 2 "" H 1250 6100 50  0001 C CNN
 F 3 "https://www.pegasusautoracing.com/pdfs/4430WiringInstructions.pdf" H 1250 6100 50  0001 C CNN
 	1    1250 6100
@@ -213,10 +201,6 @@ Wire Wire Line
 	1250 7250 1250 7450
 Wire Wire Line
 	1250 6300 1250 6650
-Wire Wire Line
-	1250 5650 1250 5750
-Wire Wire Line
-	1250 4900 1250 5250
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5FB0713A
@@ -279,7 +263,7 @@ Wire Wire Line
 	8550 4250 8300 4250
 Wire Wire Line
 	8300 4150 8600 4150
-Text GLabel 3950 8500 1    50   UnSpc ~ 0
+Text GLabel 4050 8550 2    50   UnSpc ~ 0
 CHASSIS_GND
 $Comp
 L NER:FuseBox_PSZACCEPS052H U1
@@ -292,8 +276,6 @@ F 3 "" H 1250 3400 50  0001 C CNN
 	1    1250 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 4150 1250 4500
 $Comp
 L Device:LED D1
 U 1 1 5F90AC4F
@@ -343,8 +325,8 @@ $Comp
 L Device:CircuitBreaker_1P CB1
 U 1 1 5F6B20F0
 P 1250 6950
-F 0 "CB1" H 1303 6996 50  0000 L CNN
-F 1 "GLV Main Breaker [30A]" H 1303 6905 50  0000 L CNN
+F 0 "CB1" H 900 7000 50  0000 L CNN
+F 1 "GLV Main Breaker [30A]" H 250 6850 50  0000 L CNN
 F 2 "" H 1250 6950 50  0001 C CNN
 F 3 "~" H 1250 6950 50  0001 C CNN
 	1    1250 6950
@@ -975,23 +957,23 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J2
 U 1 1 5F8D4529
-P 3650 9750
-F 0 "J2" H 3650 9700 50  0000 L CNN
-F 1 "Charger +12V" H 3650 9600 50  0000 L CNN
-F 2 "" H 3650 9750 50  0001 C CNN
-F 3 "~" H 3650 9750 50  0001 C CNN
-	1    3650 9750
+P 3350 9750
+F 0 "J2" H 3350 9700 50  0000 L CNN
+F 1 "Charger +12V" H 3350 9600 50  0000 L CNN
+F 2 "" H 3350 9750 50  0001 C CNN
+F 3 "~" H 3350 9750 50  0001 C CNN
+	1    3350 9750
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5F93092A
-P 3650 9350
-F 0 "J1" V 3550 9200 50  0000 L CNN
-F 1 "+12V" V 3450 9150 50  0000 L CNN
-F 2 "" H 3650 9350 50  0001 C CNN
-F 3 "~" H 3650 9350 50  0001 C CNN
-	1    3650 9350
+P 3350 9350
+F 0 "J1" V 3250 9200 50  0000 L CNN
+F 1 "+12V" V 3150 9150 50  0000 L CNN
+F 2 "" H 3350 9350 50  0001 C CNN
+F 3 "~" H 3350 9350 50  0001 C CNN
+	1    3350 9350
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -1002,45 +984,29 @@ Wire Wire Line
 $Comp
 L Relay:DIPxx-1Axx-11x K1
 U 1 1 5F9B5A7A
-P 2950 5550
-F 0 "K1" V 2383 5550 50  0000 C CNN
-F 1 "Cooling Pump Relay" V 2474 5550 50  0000 C CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 3300 5500 50  0001 L CNN
-F 3 "" H 2950 5550 50  0001 C CNN
-	1    2950 5550
+P 3750 5550
+F 0 "K1" V 3183 5550 50  0000 C CNN
+F 1 "Cooling Pump Relay" V 3274 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 4100 5500 50  0001 L CNN
+F 3 "" H 3750 5550 50  0001 C CNN
+	1    3750 5550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1250 5750 2650 5750
-Wire Wire Line
-	650  3950 650  4350
-Wire Wire Line
-	2300 4350 2300 5350
-Wire Wire Line
-	2300 5350 2650 5350
-Text GLabel 3500 5350 2    50   UnSpc ~ 0
-CHASSIS_GND
 $Comp
 L Motor:Motor_DC M1
 U 1 1 5FA2966E
-P 3650 5750
-F 0 "M1" V 3450 5650 50  0000 L CNN
-F 1 "Cooling Pump" V 3350 5450 50  0000 L CNN
-F 2 "" H 3650 5660 50  0001 C CNN
-F 3 "~" H 3650 5660 50  0001 C CNN
-	1    3650 5750
-	0    -1   -1   0   
+P 4250 6150
+F 0 "M1" H 4650 6150 50  0000 L CNN
+F 1 "Cooling Pump" H 4450 6050 50  0000 L CNN
+F 2 "" H 4250 6060 50  0001 C CNN
+F 3 "~" H 4250 6060 50  0001 C CNN
+	1    4250 6150
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 5750 3450 5750
-Text GLabel 4150 5750 2    50   UnSpc ~ 0
+Text GLabel 4000 6650 0    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
-	4150 5750 3950 5750
-Wire Wire Line
-	650  4350 2300 4350
-Wire Wire Line
-	750  5750 750  8200
+	4250 6650 4250 6450
 Wire Wire Line
 	650  3350 650  2200
 Wire Wire Line
@@ -1085,11 +1051,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 7300 5550 9150
 Wire Wire Line
-	3650 8200 750  8200
-Wire Wire Line
-	3950 8500 3950 9150
-Wire Wire Line
-	3650 9950 3650 10300
+	3350 9950 3350 10300
 Wire Wire Line
 	8550 10300 8550 9200
 Wire Wire Line
@@ -1101,11 +1063,7 @@ Wire Wire Line
 Wire Notes Line
 	6150 9700 6150 8650
 Wire Notes Line
-	6150 8650 3400 8650
-Wire Notes Line
-	3400 8650 3400 9700
-Wire Notes Line
-	3400 9700 6150 9700
+	3100 8650 3100 9700
 Wire Wire Line
 	4850 2600 4850 9050
 Wire Wire Line
@@ -1196,8 +1154,6 @@ Wire Wire Line
 	5950 5000 9450 5000
 NoConn ~ 650  3800
 Wire Wire Line
-	750  5750 1250 5750
-Wire Wire Line
 	11500 6650 11550 6650
 Wire Wire Line
 	9500 7150 9500 7850
@@ -1250,10 +1206,21 @@ Wire Bus Line
 	8450 6850 9950 6850
 Wire Bus Line
 	8450 7000 9950 7000
+$Comp
+L Simulation_SPICE:DIODE D31
+U 1 1 5F9870D2
+P 2200 6900
+F 0 "D31" V 2246 6820 50  0000 R CNN
+F 1 "DIODE" V 2155 6820 50  0000 R CNN
+F 2 "" H 2200 6900 50  0001 C CNN
+F 3 "~" H 2200 6900 50  0001 C CNN
+F 4 "Y" H 2200 6900 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 2200 6900 50  0001 L CNN "Spice_Primitive"
+	1    2200 6900
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3250 5350 3500 5350
-Wire Wire Line
-	750  5750 1250 5750
+	2200 6750 2200 5750
 $Comp
 L Device:LED D29
 U 1 1 5F986518
@@ -1309,22 +1276,98 @@ Wire Wire Line
 	11600 4400 11600 4600
 Wire Wire Line
 	11600 4600 11150 4600
-	3650 7850 3650 8200
 Wire Wire Line
-	3650 7850 9500 7850
+	1250 4150 1250 4300
 Wire Wire Line
-	3650 10300 8550 10300
-Connection ~ 3650 8200
+	1250 4700 1250 4800
 Wire Wire Line
-	3650 8200 3650 9150
-Wire Bus Line
-	11650 6550 11650 6750
+	1250 5200 1250 5750
+Wire Wire Line
+	3350 7850 3350 9150
+Wire Wire Line
+	3950 8550 4050 8550
+Wire Wire Line
+	3950 8550 3950 9150
+Wire Wire Line
+	3350 7850 9500 7850
+Text GLabel 4200 5350 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	550  3950 550  5350
+$Comp
+L Relay:MSxx-1Bxx-75 K?
+U 1 1 60017B77
+P 3000 5150
+AR Path="/5F45B05E/60017B77" Ref="K?"  Part="1" 
+AR Path="/60017B77" Ref="K54"  Part="1" 
+F 0 "K54" V 2433 5150 50  0000 C CNN
+F 1 "Cooling Pump Shutoff Relay" V 2524 5150 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPST_StandexMeder_MS_Form1AB" H 3350 5100 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ms-reed-relais/" H 3000 5150 50  0001 C CNN
+	1    3000 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 5350 3450 5350
+Wire Wire Line
+	4050 5350 4200 5350
+Wire Wire Line
+	4050 5750 4250 5750
+Wire Wire Line
+	3300 4950 4200 4950
+Text GLabel 4200 4950 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	2700 4950 2600 4950
+Wire Wire Line
+	650  3950 550  3950
+Wire Wire Line
+	550  5350 2700 5350
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5F633A68
+P 1250 5000
+AR Path="/5F45AFB3/5F633A68" Ref="SW?"  Part="1" 
+AR Path="/5F633A68" Ref="SW2"  Part="1" 
+F 0 "SW2" V 1200 5550 50  0000 R CNN
+F 1 "SideMounted (BRB)" V 1300 5850 50  0000 R CNN
+F 2 "" H 1250 5200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf" H 1250 5200 50  0001 C CNN
+	1    1250 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4950 2600 7850
+Connection ~ 2600 7850
+Wire Wire Line
+	2600 7850 3350 7850
+Connection ~ 2200 5750
+Wire Wire Line
+	2200 5750 1250 5750
+Wire Wire Line
+	2200 5750 3450 5750
+Wire Wire Line
+	2200 7850 2600 7850
+Wire Wire Line
+	4000 6650 4250 6650
+Wire Wire Line
+	4250 5750 4250 5950
+Wire Wire Line
+	2200 7050 2200 7850
+Wire Wire Line
+	3350 10300 8550 10300
+Wire Notes Line
+	3100 9700 6150 9700
+Wire Notes Line
+	6150 8650 3100 8650
 Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
 	14550 2550 14550 3150
+Wire Bus Line
+	11650 6550 11650 6750
 Wire Bus Line
 	12050 800  12050 6850
 $EndSCHEMATC

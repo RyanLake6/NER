@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 21 21
 Title "BMS Container"
-Date "2020-10-22"
+Date "2020-10-25"
 Rev "1.1"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
@@ -418,37 +419,28 @@ Wire Wire Line
 Wire Wire Line
 	1100 2750 2950 2750
 Wire Wire Line
-	1100 1600 2250 1600
+	1100 1600 2100 1600
 $Comp
 L Relay:DIPxx-1Axx-11x K53
 U 1 1 5FD72BB2
-P 2450 2050
-F 0 "K53" V 2900 2100 50  0000 R CNN
-F 1 "BMS_PWR_Relay" V 2800 2350 50  0000 R CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2800 2000 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2450 2050 50  0001 C CNN
-	1    2450 2050
+P 2300 2050
+F 0 "K53" V 2750 2100 50  0000 R CNN
+F 1 "BMS_PWR_Relay" V 2650 2350 50  0000 R CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2650 2000 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 2300 2050 50  0001 C CNN
+	1    2300 2050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1100 800  2650 800 
-Connection ~ 2650 800 
+	1100 800  2500 800 
 Wire Wire Line
-	2650 2350 2950 2350
+	2100 1750 2100 1600
 Wire Wire Line
-	2250 1750 2250 1600
-Wire Wire Line
-	2250 2350 2250 2450
-Wire Wire Line
-	2250 2450 2950 2450
-Wire Wire Line
-	2650 800  2650 1750
+	2100 2350 2100 2450
 Wire Wire Line
 	1300 1150 7450 1150
 Wire Wire Line
 	1400 1050 9350 1050
-Wire Wire Line
-	2650 800  9450 800 
 Wire Wire Line
 	1800 700  9550 700 
 Wire Wire Line
@@ -459,6 +451,38 @@ Wire Wire Line
 	9450 800  9450 2100
 Wire Wire Line
 	9550 700  9550 2200
+Connection ~ 2500 800 
+Wire Wire Line
+	2500 800  2800 800 
+Wire Wire Line
+	2100 2450 2950 2450
+Wire Wire Line
+	2500 2350 2800 2350
+$Comp
+L Simulation_SPICE:DIODE D32
+U 1 1 5FF47374
+P 2800 1650
+F 0 "D32" H 2800 1867 50  0000 C CNN
+F 1 "DIODE" H 2800 1776 50  0000 C CNN
+F 2 "" H 2800 1650 50  0001 C CNN
+F 3 "~" H 2800 1650 50  0001 C CNN
+F 4 "Y" H 2800 1650 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 2800 1650 50  0001 L CNN "Spice_Primitive"
+	1    2800 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 1800 2800 2350
+Connection ~ 2800 2350
+Wire Wire Line
+	2800 2350 2950 2350
+Wire Wire Line
+	2500 800  2500 1750
+Wire Wire Line
+	2800 800  2800 1500
+Connection ~ 2800 800 
+Wire Wire Line
+	2800 800  9450 800 
 Wire Bus Line
 	5100 6050 5100 6350
 Wire Bus Line

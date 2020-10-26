@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 21
+Sheet 4 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -47,7 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 2100 4700 2100
 Wire Wire Line
-	4700 2100 4700 4050
+	4700 2100 4700 3900
 Wire Wire Line
 	4700 4050 4850 4050
 Wire Wire Line
@@ -55,7 +56,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 1750 4750 4150
 Wire Wire Line
-	4550 5400 4550 3950
+	4550 5400 4550 4350
 Wire Wire Line
 	4550 3950 4850 3950
 Wire Wire Line
@@ -97,8 +98,6 @@ NoConn ~ 4850 4600
 NoConn ~ 4850 4700
 NoConn ~ 4850 4800
 NoConn ~ 4850 4900
-NoConn ~ 6050 4700
-NoConn ~ 6050 4800
 NoConn ~ 6050 4900
 NoConn ~ 6050 3150
 NoConn ~ 6050 3250
@@ -211,7 +210,6 @@ Wire Wire Line
 	7800 4050 7800 5400
 Wire Wire Line
 	4550 5400 7800 5400
-NoConn ~ 6050 4050
 $Comp
 L Device:R R8
 U 1 1 5F8E0B40
@@ -260,4 +258,37 @@ Wire Wire Line
 Connection ~ 4900 5900
 Wire Wire Line
 	4900 5900 5150 5900
+Text HLabel 6550 4050 2    50   Input ~ 0
+IMD_Indicator(+)
+Text HLabel 3500 4000 0    50   Input ~ 0
+IMD_Indicator(-)
+Text HLabel 7250 4700 2    50   Input ~ 0
+BMS_Indicator(+)
+Text HLabel 3500 3900 0    50   Input ~ 0
+BMS_Indicator(-)
+Text HLabel 7250 4800 2    50   Input ~ 0
+Toggle(+)
+Text HLabel 3500 4350 0    50   Input ~ 0
+Toggle(-)
+Wire Wire Line
+	6050 4700 7250 4700
+Wire Wire Line
+	6050 4050 6550 4050
+Wire Wire Line
+	6050 4800 7250 4800
+Wire Wire Line
+	4700 4000 3500 4000
+Connection ~ 4700 4000
+Wire Wire Line
+	4700 4000 4700 4050
+Wire Wire Line
+	4700 3900 3500 3900
+Connection ~ 4700 3900
+Wire Wire Line
+	4700 3900 4700 4000
+Wire Wire Line
+	4550 4350 3500 4350
+Connection ~ 4550 4350
+Wire Wire Line
+	4550 4350 4550 3950
 $EndSCHEMATC
