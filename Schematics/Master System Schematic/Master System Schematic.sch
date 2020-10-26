@@ -1292,8 +1292,6 @@ Wire Wire Line
 Text GLabel 4200 5350 2    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
-	5600 4300 5900 4300
-Wire Wire Line
 	550  3950 550  5350
 $Comp
 L Relay:MSxx-1Bxx-75 K?
