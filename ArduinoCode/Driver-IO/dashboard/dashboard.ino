@@ -1,14 +1,18 @@
 // Author: Joshua Cheng
 // Date: October 12, 2020
 
-#include <mcp_can.h>
+#include <mcp_can.h> // uses seeed-studio's CAN_BUS_Shield library
 #include <mcp_can_dfs.h>
 #include <SPI.h>
 
-const int myCAN = 0x01;
-const int spiCSPin = 10; //base CAN pin
+const int myCAN = 0xC0; // my CAN ID
+const int spiCSPin = 10; // base CAN pin
 unsigned char stmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 unsigned long canId;
+
+const unsigned char DISABLE_INVERTER[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+const unsigned char FORWARD[8] = {0, 0, 0, 0, 1, 1, 0, 0};
+const unsigned char REVERSE[8] = {0, 0, 0, 0, 0, 1, 0, 0};
 
 MCP_CAN CAN(spiCSPin); // Set CS pin
 
@@ -32,7 +36,7 @@ long speakerCooldown = 0;
 long buttonCooldown = 0;
 bool state = false;
 
-/*
+/**
     Sets relavent pins to output or input, initializes serial for debugging.
 */
 void setup() {
@@ -45,7 +49,7 @@ void setup() {
   pinMode(BMS_INDICATOR_PIN, OUTPUT);
   pinMode(SPEAKER_PIN, OUTPUT);
   pinMode(BUTTON_LED_PIN, OUTPUT);
-  
+
 
   while (CAN_OK != CAN.begin(CAN_500KBPS, MCP_8MHz)) { //specify 8MHz crystal
     Serial.println("CAN BUS init Failed");
@@ -56,7 +60,7 @@ void setup() {
 }
 
 /**
-    On/off button with RTDS.
+    On/off button with RTDS. IMD, BMS indicators. On/off, forward/reverse signals send to CAN
 
     Will only set vehicle to "ready to drive" if shutdown circuit is enabled and button is pressed.
     Button LED is activated when shutdown circuit is detected. Speaker will activate for 3 seconds when
@@ -76,12 +80,6 @@ void loop() {
     digitalWrite(BMS_INDICATOR_PIN, LOW);
   }
 
-  if (digitalRead(GEAR_SELECTOR_PIN) {
-    //send can message FORWARD
-  } else {
-    //send can message REVERSE
-  }
-  
   shutdownVoltage = digitalRead(SHUTDOWN_DETECTION_PIN); // Detects if shutdown circuit is active (5v divided from 12v).
 
   // If shutdown circuit is active, turn on the LED. Otherwise, turn LED and speaker off, and set state to off
@@ -112,24 +110,43 @@ void loop() {
     }
   }
 
-//  if (state) {
-//    stmp[0] = 1;
-//    
-//    CAN.sendMsgBuf(canId, 0, 8, stmp); // send (my can id, 0, length of data, data)
-//
-//    if (CAN_MSGAVAIL == CAN.checkReceive()) { //if a new message has been recieved.
-//      CAN.readMsgBuf(&len, buf); //enters message into program
-//      canId = CAN.getCanId(); //gets canID
-//
-//      //if from 0x02
-//      if (canId == 0x02) {
-//      }
-//      //if from 0x03
-//      if (canId == 0x03) {
-//      }
-//    }
-//  }
+  //  if (state) {
+  //    stmp[0] = 1;
+  //
+  //    CAN.sendMsgBuf(canId, 0, 8, stmp); // send (my can id, 0, length of data, data)
+  //
+  //    if (CAN_MSGAVAIL == CAN.checkReceive()) { //if a new message has been recieved.
+  //      CAN.readMsgBuf(&len, buf); //enters message into program
+  //      canId = CAN.getCanId(); //gets canID
+  //
+  //      //if from 0x02
+  //      if (canId == 0x02) {
+  //      }
+  //      //if from 0x03
+  //      if (canId == 0x03) {
+  //      }
+  //    }
+  //  }
 
+  if (state) {
+    CAN.sendMsgBuf(canId, 0, 8, DISABLE_INVERTER); // release inverter from lockout?
+    CAN.sendMsgBuf(canId, 0, 8, FORWARD); // set inverter to forward
+  } else {
+    CAN.sendMsgBuf(canId, 0, 8, DISABLE_INVERTER); // disable inverter
+  }
+
+  if (digitalRead(GEAR_SELECTOR_PIN)) {
+    CAN.sendMsgBuf(canId, 0, 8, DISABLE_INVERTER); // disable inverter
+    CAN.sendMsgBuf(canId, 0, 8, FORWARD); // set inverter to forward
+  } else {
+    CAN.sendMsgBuf(canId, 0, 8, DISABLE_INVERTER); // disable inverter
+    CAN.sendMsgBuf(canId, 0, 8, REVERSE); // set inverter to reverse
+  }
+
+
+
+
+  // - - - - - - - - - - - - - - - Below is debug stuff - - - - - - - - - - - - - - - - - - - -
   String s = "off";
   if (state) {
     s = "on";
