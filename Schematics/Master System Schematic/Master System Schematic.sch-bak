@@ -525,6 +525,12 @@ F9 "Button_+5V" I L 9450 4100 50
 F10 "Speaker+" I R 11150 4900 50 
 F11 "Speaker-" I R 11150 5000 50 
 F12 "StartEnable" I L 9450 5000 50 
+F13 "IMD_Indicator(+)" I R 11150 3800 50 
+F14 "IMD_Indicator(-)" I R 11150 3950 50 
+F15 "BMS_Indicator(+)" I R 11150 4100 50 
+F16 "BMS_Indicator(-)" I R 11150 4250 50 
+F17 "Toggle(+)" I R 11150 4400 50 
+F18 "Toggle(-)" I R 11150 4600 50 
 $EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
@@ -1281,16 +1287,60 @@ Wire Wire Line
 Wire Wire Line
 	750  5750 1250 5750
 $Comp
-L Device:LED D?
+L Device:LED D29
 U 1 1 5F986518
 P 11350 3800
-F 0 "D?" H 11343 4016 50  0000 C CNN
-F 1 "IMD_Indicator" H 11343 3925 50  0000 C CNN
+F 0 "D29" H 11343 4016 50  0000 C CNN
+F 1 "IMD_Indicator" H 11350 3900 50  0000 C CNN
 F 2 "" H 11350 3800 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 11350 3800 50  0001 C CNN
 	1    11350 3800
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:LED D30
+U 1 1 5F9AD83A
+P 11350 4100
+F 0 "D30" H 11343 4316 50  0000 C CNN
+F 1 "BMS_Indicator" H 11350 4200 50  0000 C CNN
+F 2 "" H 11350 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 11350 4100 50  0001 C CNN
+	1    11350 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11150 3800 11200 3800
+Wire Wire Line
+	11500 3800 11600 3800
+Wire Wire Line
+	11600 3800 11600 3950
+Wire Wire Line
+	11600 3950 11150 3950
+Wire Wire Line
+	11150 4100 11200 4100
+Wire Wire Line
+	11500 4100 11600 4100
+Wire Wire Line
+	11600 4100 11600 4250
+Wire Wire Line
+	11600 4250 11150 4250
+$Comp
+L Switch:SW_SPST SW14
+U 1 1 5FA01B38
+P 11400 4400
+F 0 "SW14" H 11400 4200 50  0000 C CNN
+F 1 "TOGGLE_SWITCH" H 11400 4300 50  0000 C CNN
+F 2 "" H 11400 4400 50  0001 C CNN
+F 3 "~" H 11400 4400 50  0001 C CNN
+	1    11400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 4400 11200 4400
+Wire Wire Line
+	11600 4400 11600 4600
+Wire Wire Line
+	11600 4600 11150 4600
 Wire Bus Line
 	11300 3250 11300 3600
 Wire Bus Line
@@ -1299,15 +1349,4 @@ Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
 	12050 800  12050 6750
-$Comp
-L Device:LED D?
-U 1 1 5F9AD83A
-P 11350 4150
-F 0 "D?" H 11343 4366 50  0000 C CNN
-F 1 "BMS_Indicator" H 11343 4275 50  0000 C CNN
-F 2 "" H 11350 4150 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 11350 4150 50  0001 C CNN
-	1    11350 4150
-	-1   0    0    1   
-$EndComp
 $EndSCHEMATC
