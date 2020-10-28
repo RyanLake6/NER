@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -2900,68 +2901,6 @@ Text HLabel 4700 8850 0    50   Output ~ 0
 ThermistorC
 Text HLabel 4700 9200 0    50   Output ~ 0
 ThermistorD
-Text HLabel 10600 5800 2    50   Output ~ 0
-VoltageTap1-
-Text HLabel 10600 5650 2    50   Output ~ 0
-VoltageTap1
-Text HLabel 10600 5500 2    50   Output ~ 0
-VoltageTap2
-Text HLabel 10600 5350 2    50   Output ~ 0
-VoltageTap3
-Text HLabel 10600 5200 2    50   Output ~ 0
-VoltageTap4
-Text HLabel 10600 5050 2    50   Output ~ 0
-VoltageTap5
-Text HLabel 10600 4900 2    50   Output ~ 0
-VoltageTap6
-Text HLabel 10600 4750 2    50   Output ~ 0
-VoltageTap7
-Text HLabel 10600 4600 2    50   Output ~ 0
-VoltageTap8
-Text HLabel 10600 4450 2    50   Output ~ 0
-VoltageTap9
-Text HLabel 10600 4300 2    50   Output ~ 0
-VoltageTap10
-Text HLabel 10600 4150 2    50   Output ~ 0
-VoltageTap11
-Text HLabel 10600 4000 2    50   Output ~ 0
-VoltageTap12
-Text HLabel 10600 3700 2    50   Output ~ 0
-VoltageTap13-
-Text HLabel 10600 3550 2    50   Output ~ 0
-VoltageTap13
-Text HLabel 10600 3400 2    50   Output ~ 0
-VoltageTap14
-Text HLabel 10600 3250 2    50   Output ~ 0
-VoltageTap15
-Text HLabel 10600 3100 2    50   Output ~ 0
-VoltageTap16
-Text HLabel 10600 2950 2    50   Output ~ 0
-VoltageTap17
-Connection ~ 8700 6850
-Wire Wire Line
-	8700 6850 10300 6850
-Wire Wire Line
-	8700 6550 10250 6550
-Wire Wire Line
-	8700 6250 10200 6250
-Wire Wire Line
-	8700 5950 10150 5950
-Wire Wire Line
-	8700 5650 10100 5650
-Wire Wire Line
-	8700 5350 10050 5350
-Wire Wire Line
-	8700 5050 10000 5050
-Text HLabel 10600 2800 2    50   Output ~ 0
-VoltageTap18
-Wire Wire Line
-	10200 2050 8700 2050
-Wire Wire Line
-	10250 1750 8700 1750
-Wire Wire Line
-	10300 1450 8700 1450
-Connection ~ 8700 1450
 $Comp
 L Device:Thermistor TH3
 U 1 1 611D30EC
@@ -3444,145 +3383,6 @@ Wire Wire Line
 	4700 6850 5700 6850
 Text Notes 6500 7950 0    50   ~ 0
 *Thermistors are distributed evenly throughout the segment
-Wire Wire Line
-	10600 4000 10500 4000
-Wire Wire Line
-	10500 4000 10500 4150
-Wire Wire Line
-	10500 4150 10600 4150
-Wire Wire Line
-	10500 4150 10500 4300
-Wire Wire Line
-	10500 4300 10600 4300
-Connection ~ 10500 4150
-Wire Wire Line
-	10500 4300 10500 4450
-Wire Wire Line
-	10500 4450 10600 4450
-Connection ~ 10500 4300
-Wire Wire Line
-	10300 6850 10300 5800
-Wire Wire Line
-	10300 5800 10600 5800
-Wire Wire Line
-	10250 6550 10250 5650
-Wire Wire Line
-	10250 5650 10600 5650
-Wire Wire Line
-	10200 6250 10200 5500
-Wire Wire Line
-	10200 5500 10600 5500
-Wire Wire Line
-	10150 5950 10150 5350
-Wire Wire Line
-	10150 5350 10600 5350
-Wire Wire Line
-	10100 5650 10100 5200
-Wire Wire Line
-	10100 5200 10600 5200
-Wire Wire Line
-	10050 5350 10050 5050
-Wire Wire Line
-	10050 5050 10600 5050
-Wire Wire Line
-	10000 5050 10000 4900
-Wire Wire Line
-	10000 4900 10600 4900
-Wire Wire Line
-	8700 4750 10600 4750
-Wire Wire Line
-	10000 4450 10000 4600
-Wire Wire Line
-	10000 4600 10600 4600
-Wire Wire Line
-	8700 4450 10000 4450
-Wire Wire Line
-	10500 4450 10050 4450
-Wire Wire Line
-	10050 4450 10050 4150
-Connection ~ 10500 4450
-Wire Wire Line
-	10050 4150 8700 4150
-Text HLabel 10600 2650 2    50   Output ~ 0
-VoltageTap19
-Text HLabel 10600 2500 2    50   Output ~ 0
-VoltageTap20
-Text HLabel 10600 2350 2    50   Output ~ 0
-VoltageTap21
-Text HLabel 10600 2200 2    50   Output ~ 0
-VoltageTap22
-Text HLabel 10600 2050 2    50   Output ~ 0
-VoltageTap23
-Text HLabel 10600 1900 2    50   Output ~ 0
-VoltageTap24
-Wire Wire Line
-	10050 2950 8700 2950
-Wire Wire Line
-	10100 2650 8700 2650
-Wire Wire Line
-	10150 2350 8700 2350
-Wire Wire Line
-	10600 1900 10500 1900
-Wire Wire Line
-	10500 1900 10500 2050
-Wire Wire Line
-	10500 2050 10600 2050
-Wire Wire Line
-	10500 2050 10500 2200
-Wire Wire Line
-	10500 2200 10600 2200
-Connection ~ 10500 2050
-Wire Wire Line
-	10500 2200 10500 2350
-Wire Wire Line
-	10500 2350 10600 2350
-Connection ~ 10500 2200
-Wire Wire Line
-	10300 1450 10300 2350
-Wire Wire Line
-	10300 2350 10500 2350
-Connection ~ 10500 2350
-Wire Wire Line
-	10250 1750 10250 2500
-Wire Wire Line
-	10250 2500 10600 2500
-Wire Wire Line
-	10200 2050 10200 2650
-Wire Wire Line
-	10200 2650 10600 2650
-Wire Wire Line
-	10150 2350 10150 2800
-Wire Wire Line
-	10150 2800 10600 2800
-Wire Wire Line
-	10100 2650 10100 2950
-Wire Wire Line
-	10100 2950 10600 2950
-Wire Wire Line
-	10050 2950 10050 3100
-Wire Wire Line
-	10050 3100 10600 3100
-Wire Wire Line
-	8700 3250 10600 3250
-Wire Wire Line
-	10050 3550 10050 3400
-Wire Wire Line
-	10050 3400 10600 3400
-Wire Wire Line
-	8700 3550 10050 3550
-Wire Wire Line
-	10100 3850 10100 3550
-Wire Wire Line
-	10100 3550 10600 3550
-Wire Wire Line
-	8700 3850 10100 3850
-Wire Wire Line
-	10050 4150 10150 4150
-Wire Wire Line
-	10150 4150 10150 3700
-Wire Wire Line
-	10150 3700 10600 3700
-Connection ~ 10050 4150
 Text HLabel 2700 8150 2    50   Output ~ 0
 ThermistorF_GND
 Text HLabel 2700 8500 2    50   Output ~ 0
@@ -3707,4 +3507,81 @@ Wire Wire Line
 	5700 1100 6000 1100
 Wire Wire Line
 	5700 1100 5700 1450
+Wire Wire Line
+	8700 1450 10500 1450
+Connection ~ 8700 1450
+Wire Wire Line
+	8700 1750 10500 1750
+Wire Wire Line
+	8700 2050 10500 2050
+Wire Wire Line
+	8700 2350 10500 2350
+Wire Wire Line
+	8700 2650 10500 2650
+Wire Wire Line
+	8700 2950 10500 2950
+Wire Wire Line
+	8700 3250 10500 3250
+Wire Wire Line
+	8700 3550 10500 3550
+Wire Wire Line
+	8700 3850 10500 3850
+Wire Wire Line
+	8700 4150 10500 4150
+Wire Wire Line
+	8700 4450 10500 4450
+Wire Wire Line
+	8700 4750 10500 4750
+Wire Wire Line
+	8700 5050 10500 5050
+Wire Wire Line
+	8700 5350 10500 5350
+Wire Wire Line
+	8700 5650 10500 5650
+Wire Wire Line
+	8700 5950 10500 5950
+Wire Wire Line
+	8700 6250 10500 6250
+Wire Wire Line
+	8700 6550 10500 6550
+Wire Wire Line
+	8700 6850 10500 6850
+Text HLabel 10500 6850 2    50   Output ~ 0
+ParallelCells_GND
+Text HLabel 10500 6550 2    50   Output ~ 0
+ParallelCells_Row1
+Text HLabel 10500 6250 2    50   Output ~ 0
+ParallelCells_Row2
+Text HLabel 10500 5950 2    50   Output ~ 0
+ParallelCells_Row3
+Text HLabel 10500 5650 2    50   Output ~ 0
+ParallelCells_Row4
+Text HLabel 10500 5350 2    50   Output ~ 0
+ParallelCells_Row5
+Text HLabel 10500 5050 2    50   Output ~ 0
+ParallelCells_Row6
+Text HLabel 10500 4750 2    50   Output ~ 0
+ParallelCells_Row7
+Text HLabel 10500 4450 2    50   Output ~ 0
+ParallelCells_Row8
+Text HLabel 10500 4150 2    50   Output ~ 0
+ParallelCells_Row9
+Text HLabel 10500 3850 2    50   Output ~ 0
+ParallelCells_Row10
+Text HLabel 10500 3550 2    50   Output ~ 0
+ParallelCells_Row11
+Text HLabel 10500 3250 2    50   Output ~ 0
+ParallelCells_Row12
+Text HLabel 10500 2950 2    50   Output ~ 0
+ParallelCells_Row13
+Text HLabel 10500 2650 2    50   Output ~ 0
+ParallelCells_Row14
+Text HLabel 10500 2350 2    50   Output ~ 0
+ParallelCells_Row15
+Text HLabel 10500 2050 2    50   Output ~ 0
+ParallelCells_Row16
+Text HLabel 10500 1750 2    50   Output ~ 0
+ParallelCells_Row17
+Text HLabel 10500 1450 2    50   Output ~ 0
+ParallelCells_Row18
 $EndSCHEMATC

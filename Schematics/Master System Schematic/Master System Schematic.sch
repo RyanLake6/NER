@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Master System Schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
@@ -257,6 +258,41 @@ F 3 "" H 1250 3400 50  0001 C CNN
 	1    1250 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F90AC4F
+P 2550 1500
+F 0 "D1" H 2543 1716 50  0000 C CNN
+F 1 "IMD Fault Indicator" H 2543 1625 50  0000 C CNN
+F 2 "" H 2550 1500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F90FD2E
+P 2550 1900
+F 0 "D2" H 2550 1800 50  0000 C CNN
+F 1 "BMS Fault Indicator" H 2550 1700 50  0000 C CNN
+F 2 "" H 2550 1900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/26/apem_03162018_Q14_Series_HMI_2017-1730666.pdf" H 2550 1900 50  0001 C CNN
+	1    2550 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 1700 2    50   UnSpc ~ 0
+CHASSIS_GND
+Wire Wire Line
+	2400 1500 2200 1500
+Wire Wire Line
+	2200 1500 2200 1700
+Wire Wire Line
+	2200 1700 2300 1700
+Wire Wire Line
+	2200 1700 2200 1900
+Wire Wire Line
+	2200 1900 2400 1900
+Connection ~ 2200 1700
 Wire Wire Line
 	2700 1500 2950 1500
 Wire Wire Line
