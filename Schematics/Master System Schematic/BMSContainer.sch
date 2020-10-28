@@ -323,7 +323,7 @@ Text HLabel 1150 3650 0    50   Output ~ 0
 ChargerSafety
 Wire Wire Line
 	2550 5650 3000 5650
-Text HLabel 1150 3350 0    50   Output ~ 0
+Text HLabel 1100 1550 0    50   Output ~ 0
 ChargerPWR
 $Comp
 L NER:OrionBMS2 U6
@@ -401,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 3650 3000 3650
 Wire Wire Line
-	1150 3350 2150 3350
+	1100 1550 1650 1550
 $Comp
 L Relay:DIPxx-1Axx-11x K53
 U 1 1 5FD72BB2
@@ -443,8 +443,6 @@ Wire Wire Line
 	1450 1200 1450 4850
 Connection ~ 1450 1200
 Wire Wire Line
-	1450 1200 7500 1200
-Wire Wire Line
 	1550 1300 1550 4750
 Wire Wire Line
 	1850 750  1850 4250
@@ -467,8 +465,6 @@ Wire Wire Line
 	2850 3250 2850 2950
 Connection ~ 2850 850 
 Wire Wire Line
-	2850 850  9500 850 
-Wire Wire Line
 	2850 2950 2750 2950
 Connection ~ 2850 2950
 Wire Wire Line
@@ -486,6 +482,109 @@ Wire Wire Line
 	2050 2950 2150 2950
 Wire Wire Line
 	2050 2550 2050 750 
+Connection ~ 2050 2550
+Connection ~ 2050 750 
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5FA8A81B
+P 5700 2150
+AR Path="/5FA8A81B" Ref="K?"  Part="1" 
+AR Path="/60D53BFB/5FA8A81B" Ref="K54"  Part="1" 
+F 0 "K54" V 5133 2150 50  0000 C CNN
+F 1 "Cooling Pump Relay" V 5224 2150 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 6050 2100 50  0001 L CNN
+F 3 "" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:MSxx-1Bxx-75 K?
+U 1 1 5FA8A821
+P 4950 1750
+AR Path="/5F45B05E/5FA8A821" Ref="K?"  Part="1" 
+AR Path="/5FA8A821" Ref="K?"  Part="1" 
+AR Path="/60D53BFB/5FA8A821" Ref="K1"  Part="1" 
+F 0 "K1" V 4383 1750 50  0000 C CNN
+F 1 "Cooling Pump Shutoff Relay" V 4474 1750 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPST_StandexMeder_MS_Form1AB" H 5300 1700 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ms-reed-relais/" H 4950 1750 50  0001 C CNN
+	1    4950 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1950 5400 1950
+Wire Wire Line
+	6000 1950 6150 1950
+Wire Wire Line
+	6000 2350 6200 2350
+Wire Wire Line
+	5250 1550 6150 1550
+Text HLabel 4150 2350 0    50   Input ~ 0
+CoolingPumpPower_IN
+Text HLabel 6200 2350 2    50   Input ~ 0
+CoolingPumpPower_OUT
+Wire Wire Line
+	2150 3350 1650 3350
+Wire Wire Line
+	6150 1950 6150 1550
+Wire Wire Line
+	6150 1550 6150 750 
+Connection ~ 6150 1550
+Text HLabel 4150 1950 0    50   Input ~ 0
+CoolingPumpControl
+Wire Wire Line
+	4150 1950 4650 1950
+Wire Wire Line
+	2050 750  6150 750 
+Wire Wire Line
+	1650 1550 1650 3350
+Connection ~ 6150 750 
+Wire Wire Line
+	6150 750  9600 750 
+Connection ~ 1650 1550
+Text HLabel 9850 1200 2    50   Input ~ 0
+CANH(Charger)
+Text HLabel 9850 1100 2    50   Input ~ 0
+CANL(Charger)
+Wire Wire Line
+	9850 1100 9400 1100
+Connection ~ 9400 1100
+Wire Wire Line
+	9850 1200 7500 1200
+Connection ~ 7500 1200
+Text HLabel 9850 750  2    50   Input ~ 0
+GND(Charger)
+Wire Wire Line
+	9850 750  9600 750 
+Connection ~ 9600 750 
+$Comp
+L Simulation_SPICE:DIODE D31
+U 1 1 6026F91C
+P 4300 1750
+F 0 "D31" V 4350 1950 50  0000 C CNN
+F 1 "DIODE" V 4250 1950 50  0000 C CNN
+F 2 "" H 4300 1750 50  0001 C CNN
+F 3 "~" H 4300 1750 50  0001 C CNN
+F 4 "Y" H 4300 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4300 1750 50  0001 L CNN "Spice_Primitive"
+	1    4300 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 1200 7500 1200
+Wire Wire Line
+	2850 850  9500 850 
+Wire Wire Line
+	1650 1550 4300 1550
+Wire Wire Line
+	4150 2350 4300 2350
+Wire Wire Line
+	4300 1600 4300 1550
+Connection ~ 4300 1550
+Wire Wire Line
+	4300 1550 4650 1550
+Wire Wire Line
+	4300 1900 4300 2350
 Wire Bus Line
 	5150 6950 5150 7250
 Wire Bus Line
@@ -504,8 +603,7 @@ Wire Bus Line
 	7500 4650 7500 5350
 Wire Bus Line
 	9400 4650 9400 5350
-Connection ~ 2050 2550
-Connection ~ 2050 750 
+Connection ~ 4300 2350
 Wire Wire Line
-	2050 750  9600 750 
+	4300 2350 5400 2350
 $EndSCHEMATC
