@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 21 21
 Title "BMS Container"
-Date "2020-10-25"
-Rev "1.1"
+Date "2020-10-27"
+Rev "2"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
 Comment2 ""
@@ -585,6 +585,9 @@ Wire Wire Line
 	4300 1550 4650 1550
 Wire Wire Line
 	4300 1900 4300 2350
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 5400 2350
 Wire Bus Line
 	5150 6950 5150 7250
 Wire Bus Line
@@ -603,7 +606,4 @@ Wire Bus Line
 	7500 4650 7500 5350
 Wire Bus Line
 	9400 4650 9400 5350
-Connection ~ 4300 2350
-Wire Wire Line
-	4300 2350 5400 2350
 $EndSCHEMATC

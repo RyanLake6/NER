@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-25"
-Rev "6"
+Date "2020-10-27"
+Rev "7"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -973,7 +973,7 @@ Wire Wire Line
 Wire Notes Line
 	6150 9700 6150 8650
 Wire Notes Line
-	3100 8650 3100 9700
+	3700 8650 3700 9700
 Wire Wire Line
 	4850 2600 4850 9050
 Wire Wire Line
@@ -1161,10 +1161,6 @@ F 3 "https://www.mouser.com/datasheet/2/307/a165e_ds_e_11_2_csm1264-1291086.pdf"
 $EndComp
 Wire Wire Line
 	11600 9600 11850 9600
-Wire Notes Line
-	3100 9700 6150 9700
-Wire Notes Line
-	6150 8650 3100 8650
 Wire Wire Line
 	650  3800 500  3800
 Wire Wire Line
@@ -1242,6 +1238,12 @@ Wire Wire Line
 	1250 5550 1250 5900
 Wire Wire Line
 	850  10250 12100 10250
+Text Label 1250 5550 0    50   ~ 0
+CoolingPumpPower
+Wire Notes Line
+	3700 8650 6150 8650
+Wire Notes Line
+	6150 9700 3700 9700
 Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
@@ -1252,6 +1254,4 @@ Wire Bus Line
 	11650 6600 11650 6800
 Wire Bus Line
 	12050 800  12050 6900
-Text Label 1250 5550 0    50   ~ 0
-CoolingPumpPower
 $EndSCHEMATC
