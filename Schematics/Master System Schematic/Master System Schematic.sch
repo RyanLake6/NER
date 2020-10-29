@@ -5,8 +5,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 21
 Title "NER FH 2020-2021 Master Electrical Schematic"
-Date "2020-10-27"
-Rev "7"
+Date "2020-10-29"
+Rev "8"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Matthew McCauley"
 Comment2 ""
@@ -1222,10 +1222,10 @@ Wire Wire Line
 Wire Wire Line
 	9900 7300 9650 7300
 $Comp
-L NER:5-Pos_Generic J?
+L NER:5-Pos_Generic J2
 U 1 1 5FAEC04A
 P 9300 9200
-F 0 "J?" H 9250 8550 50  0000 L CNN
+F 0 "J2" H 9250 8550 50  0000 L CNN
 F 1 "ChargerLVConn" H 9050 8450 50  0000 L CNN
 F 2 "" H 9300 9200 50  0001 C CNN
 F 3 "" H 9300 9200 50  0001 C CNN
@@ -1233,10 +1233,10 @@ F 3 "" H 9300 9200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NER:2-Pos_Generic J?
+L NER:2-Pos_Generic J1
 U 1 1 5FB3F5F1
 P 7650 9200
-F 0 "J?" H 7650 9325 50  0000 C CNN
+F 0 "J1" H 7650 9325 50  0000 C CNN
 F 1 "ChargerHVConn" H 7650 9234 50  0000 C CNN
 F 2 "" H 7650 9200 50  0001 C CNN
 F 3 "" H 7650 9200 50  0001 C CNN

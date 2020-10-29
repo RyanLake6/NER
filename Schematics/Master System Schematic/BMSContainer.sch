@@ -5,8 +5,8 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 19 21
 Title "BMS Container"
-Date "2020-10-27"
-Rev "2"
+Date "2020-10-29"
+Rev "3"
 Comp "Northeastern Electric Racing"
 Comment1 "Dylan Gardner, Zack Perry"
 Comment2 ""
