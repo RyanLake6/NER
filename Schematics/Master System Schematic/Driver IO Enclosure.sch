@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 21
+Sheet 21 21
 Title ""
 Date "2020-10-12"
 Rev ""
@@ -45,18 +45,6 @@ Connection ~ 6200 2150
 Wire Wire Line
 	6200 2150 6200 2950
 Wire Wire Line
-	5100 2100 4700 2100
-Wire Wire Line
-	4700 2100 4700 3900
-Wire Wire Line
-	4700 4050 4850 4050
-Wire Wire Line
-	4750 4150 4850 4150
-Wire Wire Line
-	4750 1750 4750 4150
-Wire Wire Line
-	4550 5400 4550 4350
-Wire Wire Line
 	4550 3950 4850 3950
 Wire Wire Line
 	5100 1900 4350 1900
@@ -90,7 +78,6 @@ NoConn ~ 4850 3550
 NoConn ~ 4850 3750
 NoConn ~ 4850 4250
 NoConn ~ 4850 3850
-Connection ~ 4750 4150
 NoConn ~ 4850 4400
 NoConn ~ 4850 4500
 NoConn ~ 4850 4600
@@ -103,8 +90,6 @@ NoConn ~ 6050 3250
 NoConn ~ 6050 3350
 Text HLabel 7250 4600 2    50   Input ~ 0
 LED(+)
-Wire Wire Line
-	3500 4150 4650 4150
 Text HLabel 3500 4150 0    50   Input ~ 0
 Button_GND
 Text HLabel 7250 4500 2    50   Input ~ 0
@@ -113,7 +98,7 @@ Text HLabel 7250 4300 2    50   Input ~ 0
 Button_+5V
 Text HLabel 5750 2300 2    50   Input ~ 0
 Speaker+
-Text HLabel 4750 1750 1    50   Input ~ 0
+Text HLabel 3500 4250 0    50   Input ~ 0
 Speaker-
 Wire Wire Line
 	5650 2300 5750 2300
@@ -128,13 +113,6 @@ F 3 "~" H 5300 5900 50  0001 C CNN
 	1    5300 5900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4650 5900 4650 4150
-Wire Wire Line
-	4650 5900 4900 5900
-Connection ~ 4650 4150
-Wire Wire Line
-	4650 4150 4750 4150
 NoConn ~ 7800 3450
 Wire Wire Line
 	9200 3600 8950 3600
@@ -180,7 +158,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 1750 6200 2150
 Wire Wire Line
-	3500 2950 4850 2950
+	3500 2950 3550 2950
 Wire Wire Line
 	6050 3850 7800 3850
 Wire Wire Line
@@ -257,37 +235,77 @@ Wire Wire Line
 Connection ~ 4900 5900
 Wire Wire Line
 	4900 5900 5150 5900
-Text HLabel 6550 4050 2    50   Input ~ 0
+Text HLabel 6050 850  2    50   Input ~ 0
 IMD_Indicator(+)
 Text HLabel 3500 4000 0    50   Input ~ 0
 IMD_Indicator(-)
-Text HLabel 7250 4700 2    50   Input ~ 0
+Text HLabel 6050 750  2    50   Input ~ 0
 BMS_Indicator(+)
 Text HLabel 3500 3900 0    50   Input ~ 0
 BMS_Indicator(-)
-Text HLabel 7250 4800 2    50   Input ~ 0
+Text HLabel 7250 4050 2    50   Input ~ 0
 Toggle(+)
 Text HLabel 3500 4350 0    50   Input ~ 0
 Toggle(-)
 Wire Wire Line
-	6050 4700 7250 4700
+	4550 3950 4550 4350
 Wire Wire Line
-	6050 4050 6550 4050
+	3500 3900 3550 3900
 Wire Wire Line
-	6050 4800 7250 4800
+	3550 3900 3550 2950
+Connection ~ 3550 2950
 Wire Wire Line
-	4700 4000 3500 4000
-Connection ~ 4700 4000
+	3550 2950 3600 2950
 Wire Wire Line
-	4700 4000 4700 4050
+	3500 4000 3600 4000
 Wire Wire Line
-	4700 3900 3500 3900
-Connection ~ 4700 3900
+	3600 4000 3600 2950
+Connection ~ 3600 2950
 Wire Wire Line
-	4700 3900 4700 4000
+	3600 2950 3650 2950
 Wire Wire Line
-	4550 4350 3500 4350
+	3500 4150 3650 4150
+Wire Wire Line
+	3650 4150 3650 2950
+Connection ~ 3650 2950
+Wire Wire Line
+	3650 2950 3700 2950
+Wire Wire Line
+	3500 4250 3700 4250
+Wire Wire Line
+	3700 4250 3700 2950
+Connection ~ 3700 2950
+Wire Wire Line
+	3800 2100 3800 2950
+Wire Wire Line
+	3800 2100 5100 2100
+Connection ~ 3800 2950
+Wire Wire Line
+	3800 2950 3850 2950
+NoConn ~ 4850 4050
+Wire Wire Line
+	3850 5900 3850 2950
+Wire Wire Line
+	3850 5900 4900 5900
+Connection ~ 3850 2950
+Wire Wire Line
+	3850 2950 4850 2950
+NoConn ~ 4850 4150
+Text HLabel 5100 750  0    50   Input ~ 0
+BMS_Fault
+Text HLabel 5100 850  0    50   Input ~ 0
+IMD_Fault
 Connection ~ 4550 4350
 Wire Wire Line
-	4550 4350 4550 3950
+	4550 4350 4550 5400
+Wire Wire Line
+	3500 4350 4550 4350
+Wire Wire Line
+	3700 2950 3800 2950
+Wire Wire Line
+	6050 4050 7250 4050
+Wire Wire Line
+	5100 750  6050 750 
+Wire Wire Line
+	5100 850  6050 850 
 $EndSCHEMATC
