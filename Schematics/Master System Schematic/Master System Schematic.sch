@@ -220,17 +220,17 @@ TSMP and Shutdown Reset Container
 Text GLabel 5750 5400 0    50   UnSpc ~ 0
 CHASSIS_GND
 $Sheet
-S 8900 7250 700  600 
+S 8200 9250 700  600 
 U 61ECC7CF
 F0 "Charger" 50
 F1 "Charger.sch" 50
-F2 "+12V" O R 9600 7550 50 
-F3 "TS+" O L 8900 7300 50 
-F4 "TS-" O L 8900 7400 50 
-F5 "Charger_Safety" O R 9600 7750 50 
-F6 "CAN_L" B R 9600 7300 50 
-F7 "CAN_H" B R 9600 7400 50 
-F8 "GND" O R 9600 7650 50 
+F2 "+12V" O R 8900 9500 50 
+F3 "TS+" O L 8200 9400 50 
+F4 "TS-" O L 8200 9300 50 
+F5 "Charger_Safety" O R 8900 9700 50 
+F6 "CAN_L" B R 8900 9300 50 
+F7 "CAN_H" B R 8900 9400 50 
+F8 "GND" O R 8900 9600 50 
 $EndSheet
 Text GLabel 8650 5850 2    50   UnSpc ~ 0
 CHASSIS_GND
@@ -1122,25 +1122,9 @@ Wire Wire Line
 Wire Wire Line
 	11500 7350 11600 7350
 Wire Wire Line
-	8900 7300 8650 7300
-Wire Wire Line
-	8900 7400 8550 7400
-Connection ~ 8550 7400
-Connection ~ 8650 7300
-Wire Wire Line
 	8650 7300 8650 8150
 Wire Wire Line
 	8550 7400 8550 8250
-Wire Wire Line
-	9600 7750 9900 7750
-Wire Wire Line
-	9600 7550 9900 7550
-Wire Wire Line
-	9600 7400 9900 7400
-Wire Wire Line
-	9600 7300 9900 7300
-Wire Wire Line
-	9600 7650 9900 7650
 Wire Wire Line
 	11600 7350 11600 8000
 Wire Wire Line
@@ -1156,10 +1140,6 @@ Wire Wire Line
 	850  10250 12100 10250
 Text Label 1250 5550 0    50   ~ 0
 CoolingPumpPower
-Wire Notes Line
-	3700 8650 6150 8650
-Wire Notes Line
-	6150 8650 3100 8650
 Wire Wire Line
 	9450 3550 8750 3550
 Wire Wire Line
@@ -1227,6 +1207,100 @@ Wire Wire Line
 	8700 3800 9450 3800
 Wire Wire Line
 	2600 1900 2950 1900
+Wire Notes Line
+	6150 8650 3700 8650
+Wire Notes Line
+	3700 9700 6150 9700
+Wire Wire Line
+	9900 7750 9850 7750
+Wire Wire Line
+	9900 7650 9800 7650
+Wire Wire Line
+	9900 7550 9750 7550
+Wire Wire Line
+	9900 7400 9700 7400
+Wire Wire Line
+	9900 7300 9650 7300
+$Comp
+L NER:5-Pos_Generic J?
+U 1 1 5FAEC04A
+P 9300 9200
+F 0 "J?" H 9250 8550 50  0000 L CNN
+F 1 "ChargerLVConn" H 9050 8450 50  0000 L CNN
+F 2 "" H 9300 9200 50  0001 C CNN
+F 3 "" H 9300 9200 50  0001 C CNN
+	1    9300 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NER:2-Pos_Generic J?
+U 1 1 5FB3F5F1
+P 7650 9200
+F 0 "J?" H 7650 9325 50  0000 C CNN
+F 1 "ChargerHVConn" H 7650 9234 50  0000 C CNN
+F 2 "" H 7650 9200 50  0001 C CNN
+F 3 "" H 7650 9200 50  0001 C CNN
+	1    7650 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 9700 9050 9700
+Wire Wire Line
+	9050 9600 8900 9600
+Wire Wire Line
+	8900 9500 9050 9500
+Wire Wire Line
+	8900 9400 9050 9400
+Wire Wire Line
+	8900 9300 9050 9300
+Wire Wire Line
+	7200 8150 8650 8150
+Connection ~ 8650 8150
+Wire Wire Line
+	7300 8250 8550 8250
+Connection ~ 8550 8250
+Wire Wire Line
+	7300 9300 7300 8250
+Wire Wire Line
+	7200 8150 7200 9400
+Wire Wire Line
+	9650 9300 9550 9300
+Wire Wire Line
+	9650 7300 9650 9300
+Wire Wire Line
+	9550 9400 9700 9400
+Wire Wire Line
+	9700 7400 9700 9400
+Wire Wire Line
+	9550 9500 9750 9500
+Wire Wire Line
+	9750 7550 9750 9500
+Wire Wire Line
+	9550 9600 9800 9600
+Wire Wire Line
+	9800 7650 9800 9600
+Wire Wire Line
+	9550 9700 9850 9700
+Wire Wire Line
+	9850 7750 9850 9700
+Wire Notes Line
+	8000 9050 9050 9050
+Wire Notes Line
+	9050 9050 9050 10000
+Wire Notes Line
+	9050 10000 8000 10000
+Wire Notes Line
+	8000 9050 8000 10000
+Text Notes 8250 9000 0    50   ~ 0
+Charging Cart
+Wire Wire Line
+	7300 9300 7400 9300
+Wire Wire Line
+	7400 9400 7200 9400
+Wire Wire Line
+	7900 9300 8200 9300
+Wire Wire Line
+	7900 9400 8200 9400
 Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
