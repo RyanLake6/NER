@@ -46,18 +46,6 @@ Connection ~ 6200 2150
 Wire Wire Line
 	6200 2150 6200 2950
 Wire Wire Line
-	5100 2100 4700 2100
-Wire Wire Line
-	4700 2100 4700 3900
-Wire Wire Line
-	4700 4050 4850 4050
-Wire Wire Line
-	4750 4150 4850 4150
-Wire Wire Line
-	4750 1750 4750 4150
-Wire Wire Line
-	4550 5400 4550 4350
-Wire Wire Line
 	4550 3950 4850 3950
 Wire Wire Line
 	5100 1900 4350 1900
@@ -248,11 +236,11 @@ Wire Wire Line
 Connection ~ 4900 5900
 Wire Wire Line
 	4900 5900 5150 5900
-Text HLabel 6550 4050 2    50   Input ~ 0
+Text HLabel 6050 850  2    50   Input ~ 0
 IMD_Indicator(+)
 Text HLabel 3500 4000 0    50   Input ~ 0
 IMD_Indicator(-)
-Text HLabel 7250 4700 2    50   Input ~ 0
+Text HLabel 6050 750  2    50   Input ~ 0
 BMS_Indicator(+)
 Text HLabel 3500 3900 0    50   Input ~ 0
 BMS_Indicator(-)
@@ -260,10 +248,6 @@ Text HLabel 7250 4800 2    50   Input ~ 0
 Toggle(+)
 Text HLabel 3500 4350 0    50   Input ~ 0
 Toggle(-)
-Wire Wire Line
-	6050 4700 7250 4700
-Wire Wire Line
-	6050 4050 6550 4050
 Wire Wire Line
 	6050 4800 7250 4800
 Wire Wire Line
@@ -319,18 +303,8 @@ Connection ~ 3850 2950
 Wire Wire Line
 	3850 2950 4850 2950
 NoConn ~ 4850 4150
-	4700 4000 3500 4000
-Connection ~ 4700 4000
-Wire Wire Line
-	4700 4000 4700 4050
-Wire Wire Line
-	4700 3900 3500 3900
-Connection ~ 4700 3900
-Wire Wire Line
-	4700 3900 4700 4000
-Wire Wire Line
-	4550 4350 3500 4350
-Connection ~ 4550 4350
-Wire Wire Line
-	4550 4350 4550 3950
+Text HLabel 5100 750  0    50   Input ~ 0
+BMS_Indicator
+Text HLabel 5100 850  0    50   Input ~ 0
+IMD_Indicator
 $EndSCHEMATC

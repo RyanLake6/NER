@@ -66,24 +66,6 @@ F 3 "https://www.mcmaster.com/cadinlnord%2fnull" H 2300 3200 50  0001 C CNN
 	1    2300 3200
 	0    -1   -1   0   
 $EndComp
-$Sheet
-S 2950 1450 1750 1200
-U 5F45AFB3
-F0 "Shutdown Latching Circuits" 50
-F1 "Shutdown_LatchingCircuits.sch" 50
-F2 "Shutdown_OUT" O R 4700 1950 50 
-F3 "Shutdown_IN" I L 2950 2600 50 
-F4 "IMD_Fault_Indicator" O L 2950 1500 50 
-F5 "IMD_Latch_Reset+" I R 4700 2400 50 
-F6 "IMD_Latch_Reset-" I R 4700 2500 50 
-F7 "GLV+_Fused" I L 2950 2450 50 
-F8 "IMD_Status" I R 4700 1600 50 
-F9 "BMS_Status" I R 4700 1500 50 
-F10 "BMS_Fault_Indicator" O L 2950 1900 50 
-F11 "BMS_Latch_Reset+" I R 4700 2300 50 
-F12 "BMS_Latch_Reset-" I R 4700 2600 50 
-F13 "Ground" I R 4700 1750 50 
-$EndSheet
 $Comp
 L Switch:SW_Push_Open SW?
 U 1 1 5F67997D
@@ -314,8 +296,6 @@ Connection ~ 2200 1700
 Wire Wire Line
 	2700 1500 2950 1500
 Wire Wire Line
-	2700 1900 2950 1900
-Wire Wire Line
 	2150 3650 2150 2450
 Wire Wire Line
 	2000 3500 2000 1100
@@ -451,29 +431,6 @@ Connection ~ 15200 7900
 Wire Wire Line
 	15200 7250 15200 7500
 Connection ~ 15200 7500
-$Sheet
-S 9450 3500 1700 1550
-U 5F647A32
-F0 "Driver IO Enclosure" 50
-F1 "Driver IO Enclosure.sch" 50
-F2 "CAN_L" I R 11150 3700 50 
-F3 "CAN_H" I R 11150 3600 50 
-F4 "GLV+" I L 9450 3650 50 
-F5 "GLV_GND" I L 9450 3800 50 
-F6 "LED(+)" I L 9450 4500 50 
-F7 "Button_GND" I L 9450 4700 50 
-F8 "Button_Input" I L 9450 4800 50 
-F9 "Button_+5V" I L 9450 4100 50 
-F10 "Speaker+" I R 11150 4900 50 
-F11 "Speaker-" I R 11150 5000 50 
-F12 "StartEnable" I L 9450 5000 50 
-F13 "IMD_Indicator(+)" I R 11150 3800 50 
-F14 "IMD_Indicator(-)" I R 11150 3950 50 
-F15 "BMS_Indicator(+)" I R 11150 4100 50 
-F16 "BMS_Indicator(-)" I R 11150 4250 50 
-F17 "Toggle(+)" I R 11150 4400 50 
-F18 "Toggle(-)" I R 11150 4600 50 
-$EndSheet
 Text GLabel 15200 7250 1    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
@@ -751,33 +708,33 @@ Wire Wire Line
 $Comp
 L NER:ULV8F2BSS331 S1
 U 1 1 5F94EA0B
-P 9000 4400
-F 0 "S1" H 9000 4885 50  0000 C CNN
-F 1 "ULV8F2BSS331" H 9000 4794 50  0000 C CNN
-F 2 "" H 9000 4600 50  0001 C CNN
-F 3 "~" H 9000 4600 50  0001 C CNN
-	1    9000 4400
+P 9000 4500
+F 0 "S1" H 9000 4985 50  0000 C CNN
+F 1 "ULV8F2BSS331" H 9000 4894 50  0000 C CNN
+F 2 "" H 9000 4700 50  0001 C CNN
+F 3 "~" H 9000 4700 50  0001 C CNN
+	1    9000 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 4500 9450 4500
+	9200 4600 9450 4600
 Wire Wire Line
-	8800 4500 8750 4500
+	8800 4600 8750 4600
 Wire Wire Line
-	9200 4300 9250 4300
+	9200 4400 9250 4400
 Wire Wire Line
-	9450 4800 8700 4800
+	9450 4900 8700 4900
 Wire Wire Line
-	8700 4200 8800 4200
+	8700 4300 8800 4300
 Wire Wire Line
-	9450 4700 9250 4700
+	9450 4800 9250 4800
 Wire Wire Line
-	8750 4700 8750 4500
+	8750 4800 8750 4600
 Wire Wire Line
-	9250 4300 9250 4700
-Connection ~ 9250 4700
+	9250 4400 9250 4800
+Connection ~ 9250 4800
 Wire Wire Line
-	9250 4700 8750 4700
+	9250 4800 8750 4800
 $Comp
 L Device:Speaker LS1
 U 1 1 5F9B2999
@@ -912,14 +869,12 @@ Entry Bus Bus
 	12150 6600 12250 6700
 Text GLabel 9350 2300 0    50   UnSpc ~ 0
 CHASSIS_GND
-Wire Wire Line
-	9450 3800 9300 3800
-Text GLabel 9300 3800 0    50   UnSpc ~ 0
+Text GLabel 9300 3650 0    50   UnSpc ~ 0
 CHASSIS_GND
 Wire Wire Line
-	8700 4200 8700 4800
+	8700 4300 8700 4900
 Wire Wire Line
-	9200 4100 9450 4100
+	9200 4200 9450 4200
 Wire Wire Line
 	9450 2300 9350 2300
 $Comp
@@ -1112,10 +1067,6 @@ Wire Wire Line
 	550  3650 550  700 
 Wire Wire Line
 	550  700  8750 700 
-Wire Wire Line
-	9450 3650 8750 3650
-Wire Wire Line
-	8750 3650 8750 700 
 Connection ~ 8750 700 
 Wire Wire Line
 	11150 2250 11200 2250
@@ -1360,6 +1311,73 @@ Wire Notes Line
 	3100 9700 6150 9700
 Wire Notes Line
 	6150 8650 3100 8650
+Wire Wire Line
+	9450 3550 8750 3550
+Wire Wire Line
+	8750 3550 8750 700 
+Wire Wire Line
+	9300 3650 9450 3650
+$Sheet
+S 2950 1450 1750 1200
+U 5F45AFB3
+F0 "Shutdown Latching Circuits" 50
+F1 "Shutdown_LatchingCircuits.sch" 50
+F2 "Shutdown_OUT" O R 4700 1950 50 
+F3 "Shutdown_IN" I L 2950 2600 50 
+F4 "IMD_Fault_Indicator" O L 2950 1500 50 
+F5 "IMD_Latch_Reset+" I R 4700 2400 50 
+F6 "IMD_Latch_Reset-" I R 4700 2500 50 
+F7 "GLV+_Fused" I L 2950 2450 50 
+F8 "IMD_Status" I R 4700 1600 50 
+F9 "BMS_Status" I R 4700 1500 50 
+F10 "BMS_Fault_Indicator" O L 2950 1900 50 
+F11 "BMS_Latch_Reset+" I R 4700 2300 50 
+F12 "BMS_Latch_Reset-" I R 4700 2600 50 
+F13 "Ground" I R 4700 1750 50 
+$EndSheet
+$Sheet
+S 9450 3500 1700 1550
+U 5F647A32
+F0 "Driver IO Enclosure" 50
+F1 "Driver IO Enclosure.sch" 50
+F2 "CAN_L" I R 11150 3700 50 
+F3 "CAN_H" I R 11150 3600 50 
+F4 "GLV+" I L 9450 3550 50 
+F5 "GLV_GND" I L 9450 3650 50 
+F6 "LED(+)" I L 9450 4600 50 
+F7 "Button_GND" I L 9450 4800 50 
+F8 "Button_Input" I L 9450 4900 50 
+F9 "Button_+5V" I L 9450 4200 50 
+F10 "Speaker+" I R 11150 4900 50 
+F11 "Speaker-" I R 11150 5000 50 
+F12 "StartEnable" I L 9450 5000 50 
+F13 "IMD_Indicator(+)" I R 11150 3800 50 
+F14 "IMD_Indicator(-)" I R 11150 3950 50 
+F15 "BMS_Indicator(+)" I R 11150 4100 50 
+F16 "BMS_Indicator(-)" I R 11150 4250 50 
+F17 "Toggle(+)" I R 11150 4400 50 
+F18 "Toggle(-)" I R 11150 4600 50 
+F19 "BMS_Indicator" I L 9450 3800 50 
+F20 "IMD_Indicator" I L 9450 3900 50 
+$EndSheet
+Wire Wire Line
+	2700 1500 2700 1300
+Wire Wire Line
+	2700 1300 8650 1300
+Wire Wire Line
+	8650 1300 8650 3900
+Wire Wire Line
+	8650 3900 9450 3900
+Wire Wire Line
+	2600 1900 2600 1250
+Wire Wire Line
+	2600 1250 8700 1250
+Wire Wire Line
+	8700 1250 8700 3800
+Wire Wire Line
+	8700 3800 9450 3800
+Wire Wire Line
+	2600 1900 2950 1900
 Wire Bus Line
 	11300 1650 11300 2150
 Wire Bus Line
@@ -1369,5 +1387,5 @@ Wire Bus Line
 Wire Bus Line
 	11650 6550 11650 6750
 Wire Bus Line
-	12050 800  12050 6750
+	12050 800  12050 6850
 $EndSCHEMATC
